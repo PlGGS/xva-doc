@@ -1,22 +1,24 @@
-# General Formatting
+# Manual
 
-## Constants
+## General Formatting
+
+### Constants
 
 Constants used for distinguishing variable roles
 
 - `k` | K denotes a constant variable
 - `g` | G denotes a global variable
 
-#### Usage
+##### Usage
 
 ```js
 var gEvntPane;
 var gPaneFeed;
 var kSymbolName = "ESM9";
 ```
-# Enumerated Constants
+## Enumerated Constants
 
-## CEvntFeed.FeedStep
+### CEvntFeed.FeedStep
 
 Constants used for CEvntFeed.FeedStep
 
@@ -25,13 +27,13 @@ Constants used for CEvntFeed.FeedStep
 - `kStepHalt` | Shows the previous event
 - `kStepNext` | Advances the step position
 
-#### Usage
+##### Usage
 
 ```js
 gPaneFeed.FeedStep = kStepHide; //This will hide the current event in the feed
 ```
 
-## kEvent.Type
+### kEvent.Type
 
 Enumerated types of events
 
@@ -42,7 +44,7 @@ Enumerated types of events
 - `kEvent.Type.ImpliedAsk` | 
 - `kEvent.Type.BookReset` | 
 
-#### Usage
+##### Usage
 
 ```js
 if (tTick.Type == kEvent.Type.Trade)
@@ -51,14 +53,14 @@ if (tTick.Type == kEvent.Type.Trade)
 }
 ```
 
-## kEvent.Trade.Aggressor
+### kEvent.Trade.Aggressor
 
 Enumerated values for getting the type of aggressor of a trade event
 
 - `kEvent.Trade.Aggressor.Buy` | 
 - `kEvent.Trade.Aggressor.Sell` | 
 
-#### Usage
+##### Usage
 
 ```js
 if (tTick.Type == kEvent.Type.Trade)
@@ -70,7 +72,7 @@ if (tTick.Type == kEvent.Type.Trade)
 }
 ```
 
-## kEvent.Bid.Type
+### kEvent.Bid.Type
 
 Enumerated values for getting the type of a bid event
 
@@ -82,7 +84,7 @@ Enumerated values for getting the type of a bid event
 - `kEvent.Bid.Type.Overlay` | 
 - `kEvent.Bid.Type.Replace` | 
 
-#### Usage
+##### Usage
 
 ```js
 if (tTick.Bid.Type == kEvent.Bid.Type.New)
@@ -91,7 +93,7 @@ if (tTick.Bid.Type == kEvent.Bid.Type.New)
 }
 ```
 
-## kEvent.Ask.Type
+### kEvent.Ask.Type
 
 Enumerated values for getting the type of an ask event
 
@@ -101,7 +103,7 @@ Enumerated values for getting the type of an ask event
 - `kEvent.Ask.Type.DeleteThru` | 
 - `kEvent.Ask.Type.DeleteFrom` | 
 
-#### Usage
+##### Usage
 
 ```js
 if (tTick.Ask.Type == kEvent.Ask.Type.New)
@@ -110,7 +112,7 @@ if (tTick.Ask.Type == kEvent.Ask.Type.New)
 }
 ```
 
-## CEvntPane.Wave
+### CEvntPane.Wave
 
 Enumerated values for playing different audio files
 
@@ -127,7 +129,7 @@ Enumerated values for playing different audio files
 - `Slap` | 
 
 
-#### Usage
+##### Usage
 
 ```js
 CEvntPane.PlayWave(0); //Plays a bang!

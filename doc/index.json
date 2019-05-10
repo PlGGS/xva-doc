@@ -1196,9 +1196,33 @@
   },
   {
     "kind": "packageJSON",
-    "content": "{\r\n  \"name\": \"evntscript\",\r\n  \"version\": \"1.0.0\",\r\n  \"description\": \"Documentation for Vertex Analytics' EVNTScript JS Parser\",\r\n  \"author\": \"PlGGS\",\r\n  \"homepage\": \"https://doc.vertex-analytics.com\",\r\n  \"license\": \"MIT\",\r\n  \"repository\": {\r\n    \"type\": \"git\",\r\n    \"url\": \"https://github.com/PlGGS/xva-doc\"\r\n  },\r\n  \"dependencies\": {\r\n    \"esdoc\": \"^1.1.0\",\r\n    \"esdoc-standard-plugin\": \"^1.0.0\"\r\n  }\r\n}\r\n",
+    "content": "{\r\n  \"name\": \"evntscript\",\r\n  \"version\": \"1.0.0\",\r\n  \"description\": \"Documentation for Vertex Analytics' EVNTScript JS Parser\",\r\n  \"author\": \"PlGGS\",\r\n  \"homepage\": \"https://doc.vertex-analytics.com\",\r\n  \"license\": \"MIT\",\r\n  \"repository\": {\r\n    \"type\": \"git\",\r\n    \"url\": \"https://github.com/PlGGS/xva-doc\"\r\n  },\r\n  \"dependencies\": {\r\n    \"esdoc\": \"^1.1.0\",\r\n    \"esdoc-integrate-manual-plugin\": \"^1.0.0\",\r\n    \"esdoc-publish-html-plugin\": \"^1.1.2\",\r\n    \"esdoc-standard-plugin\": \"^1.0.0\"\r\n  }\r\n}\r\n",
     "longname": "C:\\Users\\Blake Reset\\source\\repos\\PlGGS\\xva-doc\\package.json",
     "name": "package.json",
+    "static": true,
+    "access": "public"
+  },
+  {
+    "kind": "manualIndex",
+    "globalIndex": true,
+    "content": "![possibly use other image](https://c.smartrecruiters.com/sr-company-logo-prod/59b85cbfe4b0081548fcf4d6/huge?r=s3&_1507067621421)\r\n# Vertex Analytics | EVNTScript\r\n\r\nProduction: [vnine.vertex-analytics.com](https://vnine.vertex-analytics.com)  \r\nContact: contact@vertex-analytics.com\r\n\r\nGeneral product description  \r\n\r\nList of features with links to their documentation\r\n\r\nOther resources\r\n\r\n###### Documentation by Blake Boris\r\n",
+    "longname": "C:\\Users\\Blake Reset\\source\\repos\\PlGGS\\xva-doc\\src\\index.md",
+    "name": "./src/index.md",
+    "static": true,
+    "access": "public"
+  },
+  {
+    "kind": "manualAsset",
+    "longname": "C:\\Users\\Blake Reset\\source\\repos\\PlGGS\\xva-doc\\src\\manual\\asset",
+    "name": "./src/manual/asset",
+    "static": true,
+    "access": "public"
+  },
+  {
+    "kind": "manual",
+    "longname": "C:\\Users\\Blake Reset\\source\\repos\\PlGGS\\xva-doc\\src\\manual\\index.md",
+    "name": "./src/manual/index.md",
+    "content": "# Manual\r\n\r\n## General Formatting\r\n\r\n### Constants\r\n\r\nConstants used for distinguishing variable roles\r\n\r\n- `k` | K denotes a constant variable\r\n- `g` | G denotes a global variable\r\n\r\n##### Usage\r\n\r\n```js\r\nvar gEvntPane;\r\nvar gPaneFeed;\r\nvar kSymbolName = \"ESM9\";\r\n```\r\n## Enumerated Constants\r\n\r\n### CEvntFeed.FeedStep\r\n\r\nConstants used for CEvntFeed.FeedStep\r\n\r\n- `kStepShow` | Shows the event aggregating by time\r\n- `kStepHide` | Withholds the even from the Symbol viewport\r\n- `kStepHalt` | Shows the previous event\r\n- `kStepNext` | Advances the step position\r\n\r\n##### Usage\r\n\r\n```js\r\ngPaneFeed.FeedStep = kStepHide; //This will hide the current event in the feed\r\n```\r\n\r\n### kEvent.Type\r\n\r\nEnumerated types of events\r\n\r\n- `kEvent.Type.Trade` | \r\n- `kEvent.Type.Bid` | \r\n- `kEvent.Type.Ask` | \r\n- `kEvent.Type.ImpliedBid` | \r\n- `kEvent.Type.ImpliedAsk` | \r\n- `kEvent.Type.BookReset` | \r\n\r\n##### Usage\r\n\r\n```js\r\nif (tTick.Type == kEvent.Type.Trade)\r\n{\r\n\t//Do something based on event being a trade\r\n}\r\n```\r\n\r\n### kEvent.Trade.Aggressor\r\n\r\nEnumerated values for getting the type of aggressor of a trade event\r\n\r\n- `kEvent.Trade.Aggressor.Buy` | \r\n- `kEvent.Trade.Aggressor.Sell` | \r\n\r\n##### Usage\r\n\r\n```js\r\nif (tTick.Type == kEvent.Type.Trade)\r\n{\r\n\tif (tTick.Trade.Aggressor == kEvent.Trade.Aggressor.Buy)\r\n\t{\r\n\t\t//Do something based on trade's aggressor being a buyer\r\n\t}\r\n}\r\n```\r\n\r\n### kEvent.Bid.Type\r\n\r\nEnumerated values for getting the type of a bid event\r\n\r\n- `kEvent.Bid.Type.New` | \r\n- `kEvent.Bid.Type.Change` | \r\n- `kEvent.Bid.Type.Delete` | \r\n- `kEvent.Bid.Type.DeleteThru` | \r\n- `kEvent.Bid.Type.DeleteFrom` | \r\n- `kEvent.Bid.Type.Overlay` | \r\n- `kEvent.Bid.Type.Replace` | \r\n\r\n##### Usage\r\n\r\n```js\r\nif (tTick.Bid.Type == kEvent.Bid.Type.New)\r\n{\r\n\t//Do something based on bid's type being new\r\n}\r\n```\r\n\r\n### kEvent.Ask.Type\r\n\r\nEnumerated values for getting the type of an ask event\r\n\r\n- `kEvent.Ask.Type.New` | \r\n- `kEvent.Ask.Type.Change` | \r\n- `kEvent.Ask.Type.Delete` | \r\n- `kEvent.Ask.Type.DeleteThru` | \r\n- `kEvent.Ask.Type.DeleteFrom` | \r\n\r\n##### Usage\r\n\r\n```js\r\nif (tTick.Ask.Type == kEvent.Ask.Type.New)\r\n{\r\n\t//Do something based on ask's type being new\r\n}\r\n```\r\n\r\n### CEvntPane.Wave\r\n\r\nEnumerated values for playing different audio files\r\n\r\n- `Bang` | \r\n- `Clang` | \r\n- `Punch` | \r\n- `Ring_1` | \r\n- `Ring_2` | \r\n- `Ring_3` | \r\n- `Ring_4` | \r\n- `Ring_5` | \r\n- `Ring_6` | \r\n- `Ring_7` | \r\n- `Slap` | \r\n\r\n\r\n##### Usage\r\n\r\n```js\r\nCEvntPane.PlayWave(0); //Plays a bang!\r\n```\r\n",
     "static": true,
     "access": "public"
   }

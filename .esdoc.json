@@ -1,7 +1,21 @@
 {
   "source": "./src",
   "destination": "./doc",
-  "plugins": [
-    { "name": "esdoc-publish-html-plugin" }
+  "plugins": 
+  [
+    {
+      "name": "esdoc-publish-html-plugin"
+    },
+    {
+      "name": "esdoc-integrate-manual-plugin",
+      "option": {
+        "index": "./src/index.md",
+        "globalIndex": true,
+        "asset": "./src/manual/asset",
+        "files": [
+          "./src/manual/index.md"
+        ]
+      }
+    }
   ]
 }
