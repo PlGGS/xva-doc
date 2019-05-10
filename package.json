@@ -1,0 +1,16 @@
+{
+  "name": "evntscript",
+  "version": "1.0.0",
+  "description": "Documentation for Vertex Analytics' EVNTScript JS Parser",
+  "author": "PlGGS",
+  "homepage": "https://doc.vertex-analytics.com",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/PlGGS/xva-doc"
+  },
+  "dependencies": {
+    "esdoc": "^1.1.0",
+    "esdoc-standard-plugin": "^1.0.0"
+  }
+}
