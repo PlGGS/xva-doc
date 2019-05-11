@@ -1,6 +1,11 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\css",
+    "\\doc",
+    "\\src",
+    "\\src\\manual"
   ],
+  "SelectedNode": "\\image",
   "PreviewInSolutionExplorer": false
 }
