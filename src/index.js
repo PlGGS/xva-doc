@@ -1,40 +1,4 @@
 /**
- * This is a built in function which triggers when the script starts to get general script parameters, including the primary script symbol.
- */
-export function onLoad()
-{
-
-}
-
-/**
- * This is a built in function which triggers when the symbol is successfully loaded and the EOS and instrument data is ready.
- */
-export function onOpen()
-{
-
-}
-
-/**
- * This public function is critical to creating your main pane.
- * @example
- * gEvntPane = MakePane();
- */
-export function MakePane()
-{
-
-}
-
-/**
- * This is a built in function which triggers for each event in the pFeed stream.
- * @param {CEvntFeed} pFeed - Time in nanosecond with 56 bit precision
- * @param {int} pSequ - Amount of events within this sequence
- */
-export function onEvent(pFeed, pSequ)
-{
-
-}
-
-/**
  * Class representing the a primary chart.
  * @example
  * var gEvntPane;
@@ -223,7 +187,7 @@ export class CEvntCalc
 }
 
 /**
- * Class representing a trigger event
+ * Class representing an event trigger.
  */
 export class CEvntTrig
 {
@@ -259,7 +223,7 @@ export class CEvntTrig
 }
 
 /**
- * Base Event class that all event types are based off of.
+ * Base Event class that all event types are based off of. (See manual for enumerated types of events)
  */
 export class Event
 {
@@ -296,6 +260,9 @@ export class Event
     }
 }
 
+/**
+ * Class representing an event with Type trade. (Trade is not technically its own class. It is simply an Event with a selected Type field)
+ */
 export class Trade extends Event
 {
     constructor()
@@ -326,7 +293,9 @@ export class Trade extends Event
         };
     }
 }
-
+/**
+ * Class representing an event with Type bid. (Bid is not technically its own class. It is simply an Event with a selected Type field)
+ */
 export class Bid extends Event
 {
     constructor()
@@ -363,6 +332,9 @@ export class Bid extends Event
     }
 }
 
+/**
+ * Class representing an event with Type ask. (Ask is not technically its own class. It is simply an Event with a selected Type field)
+ */
 export class Ask extends Event
 {
     constructor()
@@ -395,4 +367,40 @@ export class Ask extends Event
             DeleteFrom: 4,
         };
     }
+}
+
+/**
+ * This is a built in function which triggers when the script starts to get general script parameters, including the primary script symbol.
+ */
+export function onLoad()
+{
+    console.log("lmao");
+}
+
+/**
+ * This is a built in function which triggers when the symbol is successfully loaded and the EOS and instrument data is ready.
+ */
+export function onOpen()
+{
+
+}
+
+/**
+ * This public function is critical to creating your main pane.
+ * @example
+ * gEvntPane = MakePane();
+ */
+export function MakePane()
+{
+
+}
+
+/**
+ * This is a built in function which triggers for each event in the pFeed stream.
+ * @param {CEvntFeed} pFeed - Time in nanosecond with 56 bit precision
+ * @param {int} pSequ - Amount of events within this sequence
+ */
+export function onEvent(pFeed, pSequ)
+{
+
 }
