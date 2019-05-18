@@ -4,7 +4,8 @@
 
 ### Variable declaration
 
-Constants used for distinguishing variable roles
+Create your main CEVNTPane and CEVNTFeed variables. 
+More often than not, these are defined as gEvntPane and gPaneFeed
 
 - `k` | K denotes a constant variable
 - `g` | G denotes a global variable
