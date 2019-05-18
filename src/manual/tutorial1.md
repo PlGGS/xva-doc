@@ -1,14 +1,22 @@
-# Tutorial #1: The Basics
+# Tutorial: The Basics
 
-## Step 1
+## Step 1: Pane creation
 
-### Variable declaration
+Drag a new pane into your vNine dashboard
 
-Create your main CEVNTPane and CEVNTFeed variables. 
-More often than not, these are defined as gEvntPane and gPaneFeed
+![drag pane](drag_pane.png)
 
-- `k` | K denotes a constant variable
-- `g` | G denotes a global variable
+## Step 2: Opening the editor
+
+Click the JS button to open up the Javascript-esc editor. 
+You should be presented with an empty sample script corresponding to your new pane
+
+![click js](click_js.png)
+
+## Step 3: Variable declaration
+
+Once you've opened your Javascript editor, you should see your main CEVNTPane and CEVNTFeed variables. 
+These are most commonly defined as gEvntPane and gPaneFeed.  
 
 ```js
 var gEvntPane;
@@ -16,108 +24,51 @@ var gPaneFeed;
 var kSymbolName = "ESM9";
 ```
 
-## Step 2
+- [CEVNTPane](https://bblake.info/doc/class/src/index.js~CEvntPane.html) ```gEvntPane``` | 
+Our pane variable allows us to create just about everything else we're going to need 
+to make use of our script
+- [CEVNTFeed](https://bblake.info/doc/class/src/index.js~CEvntFeed.html) ```gPaneFeed``` | 
+Our feed variable will be used to track and make use of every single [Event](https://bblake.info/doc/class/src/index.js~Event.html) 
+that has occured since the exchange last opened
+- [string](//TODO link to string type) ```kSymbolName``` | 
+The symbol name is the technical name of the symbol we want to interpret. 
+A list of symbol names can be found at [symbols](//TODO link to symbol names)
 
-### CEvntFeed.FeedStep
+## Step 4: onLoad
 
-Constants used for CEvntFeed.FeedStep
+The built in onLoad function is called when the user clicks the run button shown below
 
-- `kStepShow` | Shows the event aggregating by time
-- `kStepHide` | Withholds the even from the Symbol viewport
-- `kStepHalt` | Shows the previous event
-- `kStepNext` | Advances the step position
-
-```js
-gPaneFeed.FeedStep = kStepHide; //This will hide the current event in the feed
-```
-
-### kEvent.Type
-
-Enumerated types of events
-
-- `kEvent.Type.Trade`
-- `kEvent.Type.Bid`
-- `kEvent.Type.Ask`
-- `kEvent.Type.ImpliedBid`
-- `kEvent.Type.ImpliedAsk`
-- `kEvent.Type.BookReset`
+![click run](click_run.png)
 
 ```js
-if (tTick.Type == kEvent.Type.Trade)
+function onLoad ()
 {
-	//Do something based on event being a trade
+	gEvntPane = MakePane();
+    gPaneFeed = gEvntPane.MakeFeed(gSymbolName);
+    gDrawFeed = gEvntPane.MakeDraw(gPaneFeed);	
 }
 ```
 
-### kEvent.Trade.Aggressor
+- ```MakePane()``` | Returns a new [CEVNTPane](https://bblake.info/doc/class/src/index.js~CEvntPane.html) object
+- ```gEvntPane.MakeFeed(gSymbolName)``` | Returns a new [CEVNTFeed](https://bblake.info/doc/class/src/index.js~CEvntFeed.html) object based on the specified symbol name 
+- ```gEvntPane.MakeDraw(gPaneFeed)``` | Returns a new [CEVNTDraw](https://bblake.info/doc/class/src/index.js~CEVNTDraw.html) object
 
-Enumerated values for getting the type of aggressor of a trade event
+## Step 5: onOpen
 
-- `kEvent.Trade.Aggressor.Buy`
-- `kEvent.Trade.Aggressor.Sell`
+## Step 6: onEvent
 
-```js
-if (tTick.Type == kEvent.Type.Trade)
-{
-	if (tTick.Trade.Aggressor == kEvent.Trade.Aggressor.Buy)
-	{
-		//Do something based on trade's aggressor being a buyer
-	}
-}
-```
+## Step 7: onStop
 
-### kEvent.Bid.Type
+## Results
 
-Enumerated values for getting the type of a bid event
+###### Thank you
 
-- `kEvent.Bid.Type.New`
-- `kEvent.Bid.Type.Change`
-- `kEvent.Bid.Type.Delete`
-- `kEvent.Bid.Type.DeleteThru`
-- `kEvent.Bid.Type.DeleteFrom`
-- `kEvent.Bid.Type.Overlay`
-- `kEvent.Bid.Type.Replace`
 
-```js
-if (tTick.Bid.Type == kEvent.Bid.Type.New)
-{
-	//Do something based on bid's type being new
-}
-```
 
-### kEvent.Ask.Type
+###### Troublingshooting
 
-Enumerated values for getting the type of an ask event
 
-- `kEvent.Ask.Type.New`
-- `kEvent.Ask.Type.Change`
-- `kEvent.Ask.Type.Delete`
-- `kEvent.Ask.Type.DeleteThru`
-- `kEvent.Ask.Type.DeleteFrom`
 
-```js
-if (tTick.Ask.Type == kEvent.Ask.Type.New)
-{
-	//Do something based on ask's type being new
-}
-```
+###### Contact
 
-### CEvntPane.Wave
 
-Enumerated values for playing different audio files
-
-- `Bang` | 0
-- `Clang` | 1
-- `Punch` | 2
-- `Ring_1` | 3
-- `Ring_2` | 4
-- `Ring_3` | 5
-- `Ring_4` | 6
-- `Ring_5` | 7
-- `Ring_6` | 8
-- `Ring_7` | 9
-- `Slap` | 10
-
-```js
-CEvntPane.PlayWave(0); //Plays a bang!
-```
