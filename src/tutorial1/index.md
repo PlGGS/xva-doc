@@ -1,8 +1,8 @@
-# Manual
+# Tutorial #1: The Basics
 
-## General Formatting
+## Step 1
 
-### Notation
+### Variable declaration
 
 Constants used for distinguishing variable roles
 
@@ -15,7 +15,7 @@ var gPaneFeed;
 var kSymbolName = "ESM9";
 ```
 
-## Enumerated Constants
+## Step 2
 
 ### CEvntFeed.FeedStep
 

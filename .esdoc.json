@@ -11,9 +11,10 @@
       "option": {
         "index": "./src/index.md",
         "globalIndex": true,
-        "asset": "./src/manual/asset",
+        "asset": "./src/asset",
         "files": [
-          "./src/manual/index.md"
+          "./src/manual/index.md",
+          "./src/tutorial1/index.md"
         ]
       }
     }
