@@ -13,8 +13,8 @@
         "globalIndex": true,
         "asset": "./src/asset",
         "files": [
-          "./src/manual/index.md",
-          "./src/tutorial1/index.md"
+          "./src/manual/formatting.md",
+          "./src/manual/tutorial1.md"
         ]
       }
     }
