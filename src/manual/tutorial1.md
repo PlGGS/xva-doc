@@ -4,14 +4,14 @@
 
 Drag a new pane into your vNine dashboard
 
-![drag pane](../asset/drag_pane.png)
+![drag pane](asset/drag_pane.png)
 
 ## Step 2: Opening the editor
 
 Click the JS button to open up the Javascript-esc editor. 
 You should be presented with an empty sample script corresponding to your new pane
 
-![click js](../asset/click_js.png)
+![click js](asset/click_js.png)
 
 ## Step 3: Declaring your variables
 
@@ -40,7 +40,7 @@ A list of symbol names can be found at ____.
 
 The built in onLoad function is called when the user clicks the run button shown below.
 
-![click run](../asset/click_run.png)
+![click run](asset/click_run.png)
 
 ```js
 function onLoad ()
@@ -87,7 +87,7 @@ function onEvent (pFeed, pSequ)
 The built in onStop function is called when the user clicks the stop button shown below. 
 For now, we won't make use of this function, but it is important to know what it does for the future.
 
-![click stop](../asset/click_stop.png)
+![click stop](asset/click_stop.png)
 
 [//]: # "//TODO add image"
 
@@ -105,7 +105,7 @@ function onStop ()
 At this point, you should see a chart based off of your selected Symbol for the most recent exchange period like the one shown below! 
 Feel free to zoom in and out and scroll through your newly created chart.
 
-![view chart](../asset/view_chart.png)
+![view chart](asset/view_chart.png)
 
 [//]: # "//TODO add image"
 
