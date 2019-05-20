@@ -40,8 +40,6 @@ A list of symbol names can be found at ____.
 
 The built in onLoad function is called when the user clicks the run button shown below.
 
-![click run](asset/click_run.png)
-
 ```js
 function onLoad ()
 {
@@ -54,6 +52,8 @@ function onLoad ()
 - ```MakePane()``` | Returns a new [CEVNTPane](https://bblake.info/doc/class/src/index.js~CEvntPane.html) object
 - ```gEvntPane.MakeFeed(gSymbolName)``` | Returns a new [CEVNTFeed](https://bblake.info/doc/class/src/index.js~CEvntFeed.html) object based on the specified symbol name 
 - ```gEvntPane.MakeDraw(gPaneFeed)``` | Returns a new [CEVNTDraw](https://bblake.info/doc/class/src/index.js~CEVNTDraw.html) object
+
+![click run](asset/click_run.png)
 
 ## Step 5: Understanding onOpen
 
@@ -87,8 +87,6 @@ function onEvent (pFeed, pSequ)
 The built in onStop function is called when the user clicks the stop button shown below. 
 For now, we won't make use of this function, but it is important to know what it does for the future.
 
-![click stop](asset/click_stop.png)
-
 [//]: # "//TODO add image"
 
 ```js
@@ -98,9 +96,11 @@ function onStop ()
 }
 ```
 
+![click stop](asset/click_stop.png)
+
 ## Results
 
-###### Congratulations
+#### Congratulations
 
 At this point, you should see a chart based off of your selected Symbol for the most recent exchange period like the one shown below! 
 Feel free to zoom in and out and scroll through your newly created chart.
@@ -109,7 +109,7 @@ Feel free to zoom in and out and scroll through your newly created chart.
 
 [//]: # "//TODO add image"
 
-###### Troubleshooting
+#### Troubleshooting
 
 For certain periods throughout the day, EVNTScript will not be able to generate charts. 
 This is because the vNine platform makes use of the time in which the exchange is down to process and archive data. 
@@ -121,7 +121,7 @@ Below is a chart containing weekly hours of downtime.
 
 Also, please note that some contracts also stop the exchange from 3:15pm-3:30pm on weekdays.
 
-###### Contact
+#### Contact
 
 If you come across any major issue/bugs, please let us know by sending an email with an explanation of what occured to 
 [contact@vertex-analytics.com](mailto:contact@vertex-analytics.com).
