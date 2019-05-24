@@ -3,8 +3,9 @@
     "",
     "\\css",
     "\\src",
-    "\\src\\manual"
+    "\\src\\manual",
+    "\\src\\manual\\asset"
   ],
-  "SelectedNode": "\\src\\index.js",
+  "SelectedNode": "\\src\\manual\\tutorial1.md",
   "PreviewInSolutionExplorer": false
 }
