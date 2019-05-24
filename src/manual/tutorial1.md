@@ -124,7 +124,7 @@ Also, please note that some contracts also stop the exchange from 3:15pm-3:30pm 
 #### Contact
 
 If you come across any major issue/bugs, please let us know by sending an email with an explanation of what occured to 
-[contact@vertex-analytics.com](mailto:support@vertex-analytics.com).
+[support@vertex-analytics.com](mailto:support@vertex-analytics.com).
 
 Additionally, if there is something that you think we could improve about this documentation, 
 please create a new issue at our repository's [issues page](https://github.com/PlGGS/xva-doc/issues).
