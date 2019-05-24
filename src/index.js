@@ -207,14 +207,14 @@ export class CEvntTrig
         this.strokeStyle = strokeStyle;
 
         /**
-         * Stroke width in pixels
+         * Text corresponding to the trigger's purpose
          * @type {string}
          * @public
          */
         this.title = title;
 
         /**
-         * Stroke width in pixels
+         * Length of time to display the trigger on screen in milliseconds
          * @type {int}
          * @public
          */
