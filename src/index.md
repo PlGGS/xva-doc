@@ -2,9 +2,9 @@
 # Vertex Analytics | EVNTScript
 
 Production: [vnine.vertex-analytics.com](https://vnine.vertex-analytics.com)  
-Contact: contact@vertex-analytics.com
+Contact: support@vertex-analytics.com
 
-General product description  
+EVNTScript is a Javascript-based parsing tool that allows for easy tracking, _, and _ of futures symbols.
 
 List of features with links to their documentation
 

@@ -43,7 +43,7 @@ The built in onLoad function is called when the user clicks the run button shown
 ```js
 function onLoad ()
 {
-	gEvntPane = MakePane();
+    gEvntPane = MakePane();
     gPaneFeed = gEvntPane.MakeFeed(gSymbolName);
     gDrawFeed = gEvntPane.MakeDraw(gPaneFeed);	
 }

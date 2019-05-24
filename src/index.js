@@ -12,7 +12,7 @@ export class CEvntPane
 {
     /**
      * Makes a CEvntFeed object.
-     * @param {string} pSymb - Name of the symbol
+     * @param {String} pSymb - Name of the symbol
      * @returns {CEvntFeed} a calculation object.
      */
     MakeFeed(pSymb)
@@ -25,7 +25,7 @@ export class CEvntPane
      * @param {CEvntCalc} pItem - Calc object for your status object to read from
      * @returns {CEvntStat} a status object.
      */
-    MakeStat()
+    MakeStat(pItem)
     {
 
     }
@@ -35,14 +35,14 @@ export class CEvntPane
      * @param {CEvntCalc} pItem - Calc object for your draw object to read from
      * @returns {CEvntDraw} a draw object.
      */
-    MakeDraw(pSequ)
+    MakeDraw(pItem)
     {
 
     }
 
     /**
      * Assigns a step at the given position, pSequ.
-     * @param {int} pWave - Enumerated wave files in CEvntPane.Wave (See manual for enumerated constants)
+     * @param {Number} pWave - Enumerated wave files in CEvntPane.Wave (See manual for enumerated constants)
      */
     PlayWave(pWave)
     {
@@ -75,7 +75,7 @@ export class CEvntFeed
 
     /**
      * Reads an Event from position pSequ.
-     * @param {int} pSequ - Amount of events within this sequence
+     * @param {Number} pSequ - Amount of events within this sequence
      * @returns {Event} an event object.
      */
     FeedRead(pSequ)
@@ -85,8 +85,8 @@ export class CEvntFeed
 
     /**
      * Assigns a step at the given position, pSequ.
-     * @param {int} pSequ - Event position to set step
-     * @param {int} pStep - Enumerated CEvntFeed FeedStep values in CEvntFeed.FeedStep (See manual for enumerated constants)
+     * @param {Number} pSequ - Event position to set step
+     * @param {Number} pStep - Enumerated CEvntFeed FeedStep values in CEvntFeed.FeedStep (See manual for enumerated constants)
      */
     FeedStep(pSequ, pStep)
     {
@@ -95,8 +95,8 @@ export class CEvntFeed
 
     /**
      * Assign a trigger at the given position, pSequ.
-     * @param {int} pSequ - Event position to set step
-     * @param {int} pTrig - Trigger you want to initialize
+     * @param {Number} pSequ - Event position to set step
+     * @param {Number} pTrig - Trigger you want to initialize
      */
     FeedTrig(pSequ, pTrig)
     {
@@ -111,21 +111,21 @@ export class CEvntStat
 {
     /**
      * Creates an CEvntStat object.
-     * @param {string} fillStyle - Text color in hexadecimal
-     * @param {string} title - Text corresponding to what the status is tracking
+     * @param {String} fillStyle - Text color in hexadecimal
+     * @param {String} title - Text corresponding to what the status is tracking
      */
     constructor(fillStyle, title)
     {
         /**
          * Text color in hexadecimal
-         * @type {string}
+         * @type {String}
          * @public
          */
         this.fillStyle = fillStyle;
 
         /**
          * Text corresponding to what the status is tracking
-         * @type {string}
+         * @type {String}
          * @public
          */
         this.title = title;
@@ -139,21 +139,21 @@ export class CEvntDraw
 {
     /**
      * Creates an CEvntStat object.
-     * @param {double} lineWidth - Stroke width in pixels
-     * @param {string} strokeStyle - Stroke color in hexadecimal
+     * @param {Number} lineWidth - Stroke width in pixels
+     * @param {String} strokeStyle - Stroke color in hexadecimal
      */
     constructor(fillStyle, title)
     {
         /**
          * Stroke width in pixels
-         * @type {double}
+         * @type {Number}
          * @public
          */
         this.lineWidth = lineWidth;
 
         /**
          * Stroke color in hexadecimal
-         * @type {string}
+         * @type {String}
          * @public
          */
         this.strokeStyle = strokeStyle;
@@ -167,8 +167,8 @@ export class CEvntCalc
 {
     /**
      * Reads a calculated value at position pSequ.
-     * @param {int} pSequ - Event position to get data
-     * @returns {int} a calculated data.
+     * @param {Number} pSequ - Event position to get data
+     * @returns {Number} a calculated data.
      */
     CalcRead(pSequ)
     {
@@ -177,8 +177,8 @@ export class CEvntCalc
 
     /**
      * Saves a calculated value at position pSequ.
-     * @param {int} pSequ - Event position to set data
-     * @param {string} pData - Data to store
+     * @param {Number} pSequ - Event position to set data
+     * @param {String} pData - Data to store
      */
     CalcSave(pSequ, pData)
     {
@@ -193,29 +193,29 @@ export class CEvntTrig
 {
     /**
      * Creates an CEvntStat object.
-     * @param {string} fillStyle - Stroke color in hexadecimal
-     * @param {string} title - Stroke width in pixels
-     * @param {int} duration - Stroke width in pixels
+     * @param {String} fillStyle - Stroke color in hexadecimal
+     * @param {String} title - Stroke width in pixels
+     * @param {Number} duration - Stroke width in pixels
      */
     constructor(fillStyle, title)
     {
         /**
          * Stroke color in hexadecimal
-         * @type {string}
+         * @type {String}
          * @public
          */
         this.strokeStyle = strokeStyle;
 
         /**
          * Text corresponding to the trigger's purpose
-         * @type {string}
+         * @type {String}
          * @public
          */
         this.title = title;
 
         /**
          * Length of time to display the trigger on screen in milliseconds
-         * @type {int}
+         * @type {Number}
          * @public
          */
         this.duration = duration;
@@ -231,21 +231,21 @@ export class Event
     {
         /**
          * Time in nanosecond with 56 bit precision
-         * @type {int}
+         * @type {Number}
          * @private
          */
         this.Time = 0;
 
         /**
          * Instrument ID
-         * @type {int}
+         * @type {Number}
          * @private
          */
         this.Instrument = 0;
 
         /**
          * Enumerated event type in kEvent.Type (See manual for event types)
-         * @type {int}
+         * @type {Number}
          * @public
          */
         this.Type =
@@ -269,21 +269,21 @@ export class Trade extends Event
     {
         /**
          * Price of the trade
-         * @type {int}
+         * @type {Number}
          * @private
          */
         this.Price = -1;
 
         /**
          * Quantity of the trade
-         * @type {int}
+         * @type {Number}
          * @private
          */
         this.Quantity = -1;
 
         /**
          * Enumerated event type in kEvent.Type (See manual for event types)
-         * @type {int}
+         * @type {Number}
          * @public
          */
         this.Aggressor =
@@ -302,21 +302,21 @@ export class Bid extends Event
     {
         /**
          * Price of the bid
-         * @type {int}
+         * @type {Number}
          * @private
          */
         this.Price = -1;
 
         /**
          * Quantity of the bid
-         * @type {int}
+         * @type {Number}
          * @private
          */
         this.Quantity = -1;
 
         /**
          * Enumerated bid type in kEvent.Bid.Type (See manual for event types)
-         * @type {int}
+         * @type {Number}
          * @public
          */
         this.Type =
@@ -341,21 +341,21 @@ export class Ask extends Event
     {
         /**
          * Price of the bid
-         * @type {int}
+         * @type {Number}
          * @private
          */
         this.Price = -1;
 
         /**
          * Quantity of the bid
-         * @type {int}
+         * @type {Number}
          * @private
          */
         this.Quantity = -1;
 
         /**
          * Enumerated ask type in kEvent.Ask.Type (See manual for event types)
-         * @type {int}
+         * @type {Number}
          * @public
          */
         this.Type =
@@ -398,7 +398,7 @@ export function MakePane()
 /**
  * This is a built in function which triggers for each event in the pFeed stream.
  * @param {CEvntFeed} pFeed - A CEVNTFeed object with timestamps measured in nanoseconds with 56 bit precision
- * @param {int} pSequ - Amount of events to read within this sequence
+ * @param {Number} pSequ - Amount of events to read within this sequence
  */
 export function onEvent(pFeed, pSequ)
 {

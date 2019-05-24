@@ -120,3 +120,62 @@ Enumerated values for playing different audio files
 ```js
 CEvntPane.PlayWave(0); //Plays a bang!
 ```
+
+## Built-in Functions
+
+### onLoad()
+
+The built in onLoad function is called when the user clicks the run button shown below.
+
+```js
+function onLoad ()
+{
+    gEvntPane = MakePane();
+    gPaneFeed = gEvntPane.MakeFeed(gSymbolName);
+    gDrawFeed = gEvntPane.MakeDraw(gPaneFeed);	
+}
+```
+
+- ```MakePane()``` | Returns a new [CEVNTPane](https://bblake.info/doc/class/src/index.js~CEvntPane.html) object
+- ```gEvntPane.MakeFeed(gSymbolName)``` | Returns a new [CEVNTFeed](https://bblake.info/doc/class/src/index.js~CEvntFeed.html) object based on the specified symbol name 
+- ```gEvntPane.MakeDraw(gPaneFeed)``` | Returns a new [CEVNTDraw](https://bblake.info/doc/class/src/index.js~CEVNTDraw.html) object
+
+![click run](asset/click_run.png)
+
+### onOpen()
+
+The built in onOpen function is called once the pane has properly loaded and rendered the Symbol information.
+
+```js
+function onOpen ()
+{
+	
+}
+```
+
+### onEvent()
+
+The built in onEvent function is called once for each timestamp you play back.
+
+```js
+function onEvent (pFeed, pSequ)
+{
+	
+}
+```
+
+- ```pFeed``` | Parameter: Your [CEVNTFeed](https://bblake.info/doc/class/src/index.js~CEvntPane.html) object with timestamps measured in nanoseconds with 56 bit precision
+- ```pSequ``` | Parameter: An integer that defaults to 0 that is used for Amount of events within this sequence
+
+### onStop()
+
+The built in onStop function is called when the user clicks the stop button shown below.
+
+```js
+function onStop ()
+{
+	
+}
+```
+
+![click stop](asset/click_stop.png)
