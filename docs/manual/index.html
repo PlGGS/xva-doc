@@ -51,7 +51,7 @@
 <div data-ice="manual">
     <ul class="manual-toc">
       
-    <li data-ice="manualNav" class="indent-h1" data-link="manual/tutorial1.html"><a href="manual/tutorial1.html" data-ice="link">Tutorial: The Basics</a></li>
+    <li data-ice="manualNav" class="indent-h1" data-link="manual/tutorial1.html"><a href="manual/tutorial1.html" data-ice="link">Tutorial: The Basics | Necessary</a></li>
 <li data-ice="manualNav" class="indent-h2" data-link="manual/tutorial1.html"><a href="manual/tutorial1.html#step-1--pane-creation" data-ice="link">Step 1: Pane creation</a></li>
 <li data-ice="manualNav" class="indent-h2" data-link="manual/tutorial1.html"><a href="manual/tutorial1.html#step-2--opening-the-editor" data-ice="link">Step 2: Opening the editor</a></li>
 <li data-ice="manualNav" class="indent-h2" data-link="manual/tutorial1.html"><a href="manual/tutorial1.html#step-3--declaring-your-variables" data-ice="link">Step 3: Declaring your variables</a></li>
@@ -63,6 +63,21 @@
 <li data-ice="manualNav" class="indent-h4" data-link="manual/tutorial1.html"><a href="manual/tutorial1.html#congratulations" data-ice="link">Congratulations</a></li>
 <li data-ice="manualNav" class="indent-h4" data-link="manual/tutorial1.html"><a href="manual/tutorial1.html#troubleshooting" data-ice="link">Troubleshooting</a></li>
 <li data-ice="manualNav" class="indent-h4" data-link="manual/tutorial1.html"><a href="manual/tutorial1.html#contact" data-ice="link">Contact</a></li>
+</ul>
+  </div>
+<div data-ice="manual">
+    <ul class="manual-toc">
+      
+    <li data-ice="manualNav" class="indent-h1" data-link="manual/tutorial2.html"><a href="manual/tutorial2.html" data-ice="link">Tutorial: Tracking Prices | Beginner</a></li>
+<li data-ice="manualNav" class="indent-h2" data-link="manual/tutorial2.html"><a href="manual/tutorial2.html#step-1--declaring-your-variables" data-ice="link">Step 1: Declaring your variables</a></li>
+<li data-ice="manualNav" class="indent-h2" data-link="manual/tutorial2.html"><a href="manual/tutorial2.html#step-2--variable-initialization" data-ice="link">Step 2: Variable initialization</a></li>
+<li data-ice="manualNav" class="indent-h2" data-link="manual/tutorial2.html"><a href="manual/tutorial2.html#step-3-----" data-ice="link">Step 3: ...</a></li>
+<li data-ice="manualNav" class="indent-h2" data-link="manual/tutorial2.html"><a href="manual/tutorial2.html#step-4-----" data-ice="link">Step 4: ...</a></li>
+<li data-ice="manualNav" class="indent-h2" data-link="manual/tutorial2.html"><a href="manual/tutorial2.html#step-5-----" data-ice="link">Step 5: ...</a></li>
+<li data-ice="manualNav" class="indent-h2" data-link="manual/tutorial2.html"><a href="manual/tutorial2.html#results" data-ice="link">Results</a></li>
+<li data-ice="manualNav" class="indent-h4" data-link="manual/tutorial2.html"><a href="manual/tutorial2.html#congratulations" data-ice="link">Congratulations</a></li>
+<li data-ice="manualNav" class="indent-h4" data-link="manual/tutorial2.html"><a href="manual/tutorial2.html#troubleshooting" data-ice="link">Troubleshooting</a></li>
+<li data-ice="manualNav" class="indent-h4" data-link="manual/tutorial2.html"><a href="manual/tutorial2.html#contact" data-ice="link">Contact</a></li>
 </ul>
   </div>
 </div>
@@ -181,7 +196,7 @@ var kSymbolName = &quot;ESM9&quot;;</code>
     </div>
 <div class="manual-card-wrap" data-ice="cards">
       <div class="manual-card">
-        <div data-ice="card"><h1>Tutorial: The Basics</h1><h2>Step 1: Pane creation</h2><p>Drag a new pane into your vNine dashboard</p><p><img src="./manual/asset/drag_pane.png" alt="drag pane"></p><h2>Step 2: Opening the editor</h2><p>Click the JS button to open up the Javascript-esc editor. 
+        <div data-ice="card"><h1>Tutorial: The Basics | Necessary</h1><h2>Step 1: Pane creation</h2><p>Drag a new pane into your vNine dashboard</p><p><img src="./manual/asset/drag_pane.png" alt="drag pane"></p><h2>Step 2: Opening the editor</h2><p>Click the JS button to open up the Javascript-esc editor. 
 You should be presented with an empty sample script corresponding to your new pane</p><p><img src="./manual/asset/click_js.png" alt="click js"></p><h2>Step 3: Declaring your variables</h2><p>Once you&apos;ve opened your Javascript editor, you should see your main CEVNTPane and CEVNTFeed variables. 
 These are most commonly defined as gEvntPane and gPaneFeed.  </p><pre><code class="lang-js"><code class="source-code prettyprint">var gEvntPane;
 var gPaneFeed;
@@ -193,7 +208,7 @@ to make use of your script.</li>
 <li><a href="https://bblake.info/doc/class/src/index.js~CEvntFeed.html">CEVNTFeed</a> <code>gPaneFeed</code> | 
 Your feed variable will be used to track and make use of every single <a href="https://bblake.info/doc/class/src/index.js~Event.html">Event</a> 
 that has occured since the exchange last opened.</li>
-<li><a href="//TODO link to string type">string</a> <code>kSymbolName</code> | 
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a> <code>kSymbolName</code> | 
 The symbol name is the technical name of the symbol we want to interpret. 
 A list of symbol names can be found at ____.</li>
 </ul><h2>Step 4: Understanding onLoad</h2><p>The built in onLoad function is called when the user clicks the run button shown below.</p><pre><code class="lang-js"><code class="source-code prettyprint">function onLoad ()
@@ -254,6 +269,66 @@ Below is a chart containing weekly hours of downtime.</p><table>
 <a href="./manual/mailto:support@vertex-analytics.com">support@vertex-analytics.com</a>.</p><p>Additionally, if there is something that you think we could improve about this documentation, 
 please create a new issue at our repository&apos;s <a href="https://github.com/PlGGS/xva-doc/issues">issues page</a>.</p></div>
         <a data-ice="link" href="manual/tutorial1.html"></a>
+      </div>
+    </div>
+<div class="manual-card-wrap" data-ice="cards">
+      <div class="manual-card">
+        <div data-ice="card"><h1>Tutorial: Tracking Prices | Beginner</h1><p>In this tutorial, you&apos;ll learn how to track event values and test </p><h2>Step 1: Declaring your variables</h2><p>Once you&apos;ve opened your Javascript editor, you should see your default CEVNTPane and CEVNTFeed variables along with some new ones. 
+These are most commonly defined as gEvntPane and gPaneFeed.  </p><pre><code class="lang-js"><code class="source-code prettyprint">var gEvntPane;
+var gPaneFeed;
+var gFeedDraw;
+var kSymbolName = &quot;&quot;;
+
+var gCalcTop, gCalcBot;
+var gStatTop, gStatBot;
+var gDrawTop, gDrawBot;
+
+var gOnFirstEvent = true; //tracks whether or not our initial value has been set
+var gTopPrice = 0.0; //tracks the top price value
+var gBotPrice = 0.0; //tracks the bottom price value</code>
+</code></pre><ul>
+<li><a href="https://bblake.info/doc/class/src/index.js~CEvntCalc.html">CEVNTCalc</a> <code>gCalcTop, gCalcBot</code> | 
+Make sure to create two variables to save our top and bottom-most prices.</li>
+<li><a href="https://bblake.info/doc/class/src/index.js~CEvntStat.html">CEVNTStat</a> <code>gStatTop, gStatBot</code> | 
+You&apos;ll also need to create two variables to display your top and bottom-most prices in your pane</li>
+<li><a href="https://bblake.info/doc/class/src/index.js~CEvntDraw.html">CEVNTDraw</a> <code>gDrawTop, gDrawBot</code> | 
+Finally, you&apos;ll need to create two variables to draw lines corresponding to your top and bottom-most prices</li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a> <code>gOnFirstEvent</code> | 
+Since we&apos;ll be starting each symbol time period at an undetermined price, we&apos;ll need the first 
+price as a starting point to base the rest of our conditional statements on</li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a> <code>gTopPrice, gBotPrice</code> | 
+Finally, we&apos;ll need two simple variables to hold the number value corresponding to the highest and lowest prices of the period</li>
+</ul><h2>Step 2: Variable initialization</h2><h2>Step 3: ...</h2><h2>Step 4: ...</h2><h2>Step 5: ...</h2><h2>Results</h2><h4>Congratulations</h4><p>At this point, you should now be able to test, save, and display aspects of events, and 
+you should see a chart based off of your selected Symbol for the most recent exchange period like 
+the one shown below! Feel free to zoom in and out and scroll through your newly created chart.</p><p><img src="./manual/asset/view_chart.png" alt="view chart"></p><h4>Troubleshooting</h4><p>For certain periods throughout the day, EVNTScript will not be able to generate charts. 
+This is because the vNine platform makes use of the time in which the exchange is down to process and archive data. 
+Below is a chart containing weekly hours of downtime.</p><table>
+<thead>
+<tr>
+<th>Monday</th>
+<th>Tuesday</th>
+<th>Wednesday</th>
+<th>Thursday</th>
+<th>Friday</th>
+<th>Saturday</th>
+<th>Sunday</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>4:00pm-5:00pm</td>
+<td>4:00pm-5:00pm</td>
+<td>4:00pm-5:00pm</td>
+<td>4:00pm-5:00pm</td>
+<td>4:00pm-</td>
+<td>-</td>
+<td>-5:00pm</td>
+</tr>
+</tbody>
+</table><p>Also, please note that some contracts also stop the exchange from 3:15pm-3:30pm on weekdays.</p><h4>Contact</h4><p>If you come across any major issue/bugs, please let us know by sending an email with an explanation of what occured to 
+<a href="./manual/mailto:support@vertex-analytics.com">support@vertex-analytics.com</a>.</p><p>Additionally, if there is something that you think we could improve about this documentation, 
+please create a new issue at our repository&apos;s <a href="https://github.com/PlGGS/xva-doc/issues">issues page</a>.</p></div>
+        <a data-ice="link" href="manual/tutorial2.html"></a>
       </div>
     </div>
 </div>
