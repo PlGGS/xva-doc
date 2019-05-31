@@ -1,8 +1,8 @@
-# Tutorial: Tracking Prices | Beginner
+# Tracking Prices | Beginner
 
 In this tutorial, you'll learn how to track event values and test 
 
-## Step 1: Declaring your variables
+## Declaring your variables
 
 Once you've opened your Javascript editor, you should see your default CEVNTPane and CEVNTFeed variables along with some new ones. 
 These are most commonly defined as gEvntPane and gPaneFeed.  
@@ -34,13 +34,13 @@ price as a starting point to base the rest of our conditional statements on
 - [Number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) ```gTopPrice, gBotPrice``` | 
 Finally, we'll need two simple variables to hold the number value corresponding to the highest and lowest prices of the period
 
-## Step 2: Variable initialization
+## initialization
 
-## Step 3: ...
+## ...
 
-## Step 4: ...
+## ...
 
-## Step 5: ...
+## ...
 
 ## Results
 
@@ -50,7 +50,7 @@ At this point, you should now be able to test, save, and display aspects of even
 you should see a chart based off of your selected Symbol for the most recent exchange period like 
 the one shown below! Feel free to zoom in and out and scroll through your newly created chart.
 
-[//]: # "Your script should now provide functionality similar to [this](https://github.com/PlGGS/Vertex-Analytics/blob/master/sample%20scripts/sampleTopBottomPrices.js)"
+Your script should now provide functionality similar to [this](https://github.com/PlGGS/Vertex-Analytics/blob/master/sample%20scripts/sampleTopBottomPrices.js)
 
 ![view chart](asset/view_chart.png)
 

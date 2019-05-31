@@ -1,19 +1,19 @@
-# Tutorial: The Basics | Necessary
+# Getting Started
 
-## Step 1: Pane creation
+## Pane creation
 
 Drag a new pane into your vNine dashboard
 
 ![drag pane](asset/drag_pane.png)
 
-## Step 2: Opening the editor
+## Opening the editor
 
 Click the JS button to open up the Javascript-esc editor. 
 You should be presented with an empty sample script corresponding to your new pane
 
 ![click js](asset/click_js.png)
 
-## Step 3: Declaring your variables
+## Declaring your variables
 
 Once you've opened your Javascript editor, you should see your main CEVNTPane and CEVNTFeed variables. 
 These are most commonly defined as gEvntPane and gPaneFeed.  
@@ -36,7 +36,7 @@ A list of symbol names can be found at ____.
 
 [//]: # "[symbols](link to symbol names)"
 
-## Step 4: Understanding onLoad
+## Understanding onLoad
 
 The built in onLoad function is called when the user clicks the run button shown below.
 
@@ -55,7 +55,7 @@ function onLoad ()
 
 ![click run](asset/click_run.png)
 
-## Step 5: Understanding onOpen
+## Understanding onOpen
 
 The built in onOpen function is called once the pane has properly loaded and rendered the Symbol information. 
 For now, we won't make use of this function, but it is important to know what it does for the future.
@@ -67,7 +67,7 @@ function onOpen ()
 }
 ```
 
-## Step 6: Understanding onEvent
+## Understanding onEvent
 
 The built in onEvent function is called once for each timestamp you play back. 
 For now, we won't make use of this function, but it is important to know what it does for the future.
@@ -82,7 +82,7 @@ function onEvent (pFeed, pSequ)
 - ```pFeed``` | Parameter: Your [CEVNTFeed](https://bblake.info/doc/class/src/index.js~CEvntPane.html) object with timestamps measured in nanoseconds with 56 bit precision
 - ```pSequ``` | Parameter: An integer that defaults to 0 that is used for Amount of events within this sequence
 
-## Step 7: Understanding onStop
+## Understanding onStop
 
 The built in onStop function is called when the user clicks the stop button shown below. 
 For now, we won't make use of this function, but it is important to know what it does for the future.
@@ -103,7 +103,7 @@ function onStop ()
 At this point, you should see a chart based off of your selected Symbol for the most recent exchange period like the one shown below! 
 Feel free to zoom in and out and scroll through your newly created chart.
 
-[//]: # "Your script should now provide functionality similar to [this](https://github.com/PlGGS/Vertex-Analytics/blob/master/sample%20scripts/sampleBaseScript.js)"
+Your script should now provide functionality similar to [this](https://github.com/PlGGS/Vertex-Analytics/blob/master/sample%20scripts/sampleBaseScript.js)
 
 ![view chart](asset/view_chart.png)
 
