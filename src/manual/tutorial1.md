@@ -1,4 +1,4 @@
-# Tutorial: The Basics
+# Tutorial: The Basics | Necessary
 
 ## Step 1: Pane creation
 
@@ -30,7 +30,7 @@ to make use of your script.
 - [CEVNTFeed](https://bblake.info/doc/class/src/index.js~CEvntFeed.html) ```gPaneFeed``` | 
 Your feed variable will be used to track and make use of every single [Event](https://bblake.info/doc/class/src/index.js~Event.html) 
 that has occured since the exchange last opened.
-- [string](//TODO link to string type) ```kSymbolName``` | 
+- [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) ```kSymbolName``` | 
 The symbol name is the technical name of the symbol we want to interpret. 
 A list of symbol names can be found at ____.
 
@@ -87,8 +87,6 @@ function onEvent (pFeed, pSequ)
 The built in onStop function is called when the user clicks the stop button shown below. 
 For now, we won't make use of this function, but it is important to know what it does for the future.
 
-[//]: # "//TODO add image"
-
 ```js
 function onStop ()
 {
@@ -105,9 +103,9 @@ function onStop ()
 At this point, you should see a chart based off of your selected Symbol for the most recent exchange period like the one shown below! 
 Feel free to zoom in and out and scroll through your newly created chart.
 
-![view chart](asset/view_chart.png)
+[//]: # "Your script should now provide functionality similar to [this](https://github.com/PlGGS/Vertex-Analytics/blob/master/sample%20scripts/sampleBaseScript.js)"
 
-[//]: # "//TODO add image"
+![view chart](asset/view_chart.png)
 
 #### Troubleshooting
 
