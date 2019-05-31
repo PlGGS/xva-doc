@@ -1,6 +1,570 @@
 [
   {
-    "__docId__": 0,
+    "__docId__": 1,
+    "kind": "external",
+    "name": "Infinity",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Infinity",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Infinity",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 2,
+    "kind": "external",
+    "name": "NaN",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/NaN",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~NaN",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 3,
+    "kind": "external",
+    "name": "undefined",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~undefined",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 4,
+    "kind": "external",
+    "name": "null",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~null",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 5,
+    "kind": "external",
+    "name": "Object",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Object",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 6,
+    "kind": "external",
+    "name": "object",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~object",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 7,
+    "kind": "external",
+    "name": "Function",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Function",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 8,
+    "kind": "external",
+    "name": "function",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~function",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 9,
+    "kind": "external",
+    "name": "Boolean",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Boolean",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 10,
+    "kind": "external",
+    "name": "boolean",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~boolean",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 11,
+    "kind": "external",
+    "name": "Symbol",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Symbol",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 12,
+    "kind": "external",
+    "name": "Error",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Error",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 13,
+    "kind": "external",
+    "name": "EvalError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/EvalError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~EvalError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 14,
+    "kind": "external",
+    "name": "InternalError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/InternalError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~InternalError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 15,
+    "kind": "external",
+    "name": "RangeError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RangeError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~RangeError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 16,
+    "kind": "external",
+    "name": "ReferenceError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ReferenceError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~ReferenceError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 17,
+    "kind": "external",
+    "name": "SyntaxError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/SyntaxError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~SyntaxError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 18,
+    "kind": "external",
+    "name": "TypeError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypeError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~TypeError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 19,
+    "kind": "external",
+    "name": "URIError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/URIError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~URIError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 20,
+    "kind": "external",
+    "name": "Number",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Number",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 21,
+    "kind": "external",
+    "name": "number",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~number",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 22,
+    "kind": "external",
+    "name": "Date",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Date",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 23,
+    "kind": "external",
+    "name": "String",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~String",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 24,
+    "kind": "external",
+    "name": "string",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~string",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 25,
+    "kind": "external",
+    "name": "RegExp",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~RegExp",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 26,
+    "kind": "external",
+    "name": "Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 27,
+    "kind": "external",
+    "name": "Int8Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int8Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Int8Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 28,
+    "kind": "external",
+    "name": "Uint8Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Uint8Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 29,
+    "kind": "external",
+    "name": "Uint8ClampedArray",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8ClampedArray",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Uint8ClampedArray",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 30,
+    "kind": "external",
+    "name": "Int16Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int16Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Int16Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 31,
+    "kind": "external",
+    "name": "Uint16Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint16Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Uint16Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 32,
+    "kind": "external",
+    "name": "Int32Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int32Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Int32Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 33,
+    "kind": "external",
+    "name": "Uint32Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint32Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Uint32Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 34,
+    "kind": "external",
+    "name": "Float32Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Float32Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Float32Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 35,
+    "kind": "external",
+    "name": "Float64Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Float64Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Float64Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 36,
+    "kind": "external",
+    "name": "Map",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Map",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 37,
+    "kind": "external",
+    "name": "Set",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Set",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 38,
+    "kind": "external",
+    "name": "WeakMap",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakMap",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~WeakMap",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 39,
+    "kind": "external",
+    "name": "WeakSet",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakSet",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~WeakSet",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 40,
+    "kind": "external",
+    "name": "ArrayBuffer",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~ArrayBuffer",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 41,
+    "kind": "external",
+    "name": "DataView",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~DataView",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 42,
+    "kind": "external",
+    "name": "JSON",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~JSON",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 43,
+    "kind": "external",
+    "name": "Promise",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Promise",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 44,
+    "kind": "external",
+    "name": "Generator",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Generator",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Generator",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 45,
+    "kind": "external",
+    "name": "GeneratorFunction",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/GeneratorFunction",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~GeneratorFunction",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 46,
+    "kind": "external",
+    "name": "Reflect",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Reflect",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Reflect",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 47,
+    "kind": "external",
+    "name": "Proxy",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Proxy",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 48,
     "kind": "file",
     "name": "src/index.js",
     "content": "/**\r\n * Class representing the a primary chart.\r\n * @example\r\n * var gEvntPane;\r\n * function onLoad()\r\n * {\r\n *     gEvntPane = MakePane();\r\n *     //...\r\n * }\r\n */\r\nexport class CEvntPane\r\n{\r\n    /**\r\n     * Makes a CEvntFeed object.\r\n     * @param {String} pSymb - Name of the symbol\r\n     * @returns {CEvntFeed} a calculation object.\r\n     */\r\n    MakeFeed(pSymb)\r\n    {\r\n\r\n    }\r\n\r\n    /**\r\n     * Makes a CEvntTrig object.\r\n     * @param {CEvntCalc} pItem - Calc object for your status object to read from\r\n     * @returns {CEvntStat} a status object.\r\n     */\r\n    MakeStat(pItem)\r\n    {\r\n\r\n    }\r\n\r\n    /**\r\n     * Make a CEvntDraw object.\r\n     * @param {CEvntCalc} pItem - Calc object for your draw object to read from\r\n     * @returns {CEvntDraw} a draw object.\r\n     */\r\n    MakeDraw(pItem)\r\n    {\r\n\r\n    }\r\n\r\n    /**\r\n     * Assigns a step at the given position, pSequ.\r\n     * @param {Number} pWave - Enumerated wave files in CEvntPane.Wave (See manual for enumerated constants)\r\n     */\r\n    PlayWave(pWave)\r\n    {\r\n\r\n    }\r\n}\r\n\r\n/**\r\n * Class representing an event feed.\r\n */\r\nexport class CEvntFeed\r\n{\r\n    /**\r\n     * Makes a CEvntCalc object.\r\n     * @returns {CEvntCalc} a calculation object.\r\n     */\r\n    MakeCalc()\r\n    {\r\n\r\n    }\r\n\r\n    /**\r\n     * Makes a CEvntTrig object.\r\n     * @returns {CEvntTrig} a trigger object.\r\n     */\r\n    MakeTrig()\r\n    {\r\n\r\n    }\r\n\r\n    /**\r\n     * Reads an Event from position pSequ.\r\n     * @param {Number} pSequ - Amount of events within this sequence\r\n     * @returns {Event} an event object.\r\n     */\r\n    FeedRead(pSequ)\r\n    {\r\n\r\n    }\r\n\r\n    /**\r\n     * Assigns a step at the given position, pSequ.\r\n     * @param {Number} pSequ - Event position to set step\r\n     * @param {Number} pStep - Enumerated CEvntFeed FeedStep values in CEvntFeed.FeedStep (See manual for enumerated constants)\r\n     */\r\n    FeedStep(pSequ, pStep)\r\n    {\r\n\r\n    }\r\n\r\n    /**\r\n     * Assign a trigger at the given position, pSequ.\r\n     * @param {Number} pSequ - Event position to set step\r\n     * @param {Number} pTrig - Trigger you want to initialize\r\n     */\r\n    FeedTrig(pSequ, pTrig)\r\n    {\r\n\r\n    }\r\n}\r\n\r\n/**\r\n * Class representing a status indicator in the top left of a chart.\r\n */\r\nexport class CEvntStat\r\n{\r\n    /**\r\n     * Creates an CEvntStat object.\r\n     * @param {String} fillStyle - Text color in hexadecimal\r\n     * @param {String} title - Text corresponding to what the status is tracking\r\n     */\r\n    constructor(fillStyle, title)\r\n    {\r\n        /**\r\n         * Text color in hexadecimal\r\n         * @type {String}\r\n         * @public\r\n         */\r\n        this.fillStyle = fillStyle;\r\n\r\n        /**\r\n         * Text corresponding to what the status is tracking\r\n         * @type {String}\r\n         * @public\r\n         */\r\n        this.title = title;\r\n    }\r\n}\r\n\r\n/**\r\n * Class representing the drawing element of a chart.\r\n */\r\nexport class CEvntDraw\r\n{\r\n    /**\r\n     * Creates an CEvntStat object.\r\n     * @param {Number} lineWidth - Stroke width in pixels\r\n     * @param {String} strokeStyle - Stroke color in hexadecimal\r\n     */\r\n    constructor(fillStyle, title)\r\n    {\r\n        /**\r\n         * Stroke width in pixels\r\n         * @type {Number}\r\n         * @public\r\n         */\r\n        this.lineWidth = lineWidth;\r\n\r\n        /**\r\n         * Stroke color in hexadecimal\r\n         * @type {String}\r\n         * @public\r\n         */\r\n        this.strokeStyle = strokeStyle;\r\n    }\r\n}\r\n\r\n/**\r\n * Class representing a custom calculated element of a chart.\r\n */\r\nexport class CEvntCalc\r\n{\r\n    /**\r\n     * Reads a calculated value at position pSequ.\r\n     * @param {Number} pSequ - Event position to get data\r\n     * @returns {Number} a calculated data.\r\n     */\r\n    CalcRead(pSequ)\r\n    {\r\n\r\n    }\r\n\r\n    /**\r\n     * Saves a calculated value at position pSequ.\r\n     * @param {Number} pSequ - Event position to set data\r\n     * @param {String} pData - Data to store\r\n     */\r\n    CalcSave(pSequ, pData)\r\n    {\r\n\r\n    }\r\n}\r\n\r\n/**\r\n * Class representing an event trigger.\r\n */\r\nexport class CEvntTrig\r\n{\r\n    /**\r\n     * Creates an CEvntStat object.\r\n     * @param {String} fillStyle - Stroke color in hexadecimal\r\n     * @param {String} title - Stroke width in pixels\r\n     * @param {Number} duration - Stroke width in pixels\r\n     */\r\n    constructor(fillStyle, title)\r\n    {\r\n        /**\r\n         * Stroke color in hexadecimal\r\n         * @type {String}\r\n         * @public\r\n         */\r\n        this.strokeStyle = strokeStyle;\r\n\r\n        /**\r\n         * Text corresponding to the trigger's purpose\r\n         * @type {String}\r\n         * @public\r\n         */\r\n        this.title = title;\r\n\r\n        /**\r\n         * Length of time to display the trigger on screen in milliseconds\r\n         * @type {Number}\r\n         * @public\r\n         */\r\n        this.duration = duration;\r\n    }\r\n}\r\n\r\n/**\r\n * Base Event class that all event types are based off of. (See manual for enumerated types of events)\r\n */\r\nexport class Event\r\n{\r\n    constructor()\r\n    {\r\n        /**\r\n         * Time in nanosecond with 56 bit precision\r\n         * @type {Number}\r\n         * @private\r\n         */\r\n        this.Time = 0;\r\n\r\n        /**\r\n         * Instrument ID\r\n         * @type {Number}\r\n         * @private\r\n         */\r\n        this.Instrument = 0;\r\n\r\n        /**\r\n         * Enumerated event type in kEvent.Type (See manual for event types)\r\n         * @type {Number}\r\n         * @public\r\n         */\r\n        this.Type =\r\n        {\r\n            Trade: 0,\r\n            Bid: 1,\r\n            Ask: 2,\r\n            ImpliedBid: 3,\r\n            ImpliedAsk: 4,\r\n            BookReset: 5,\r\n        };\r\n    }\r\n}\r\n\r\n/**\r\n * Class representing an event with Type trade. (Trade is not technically its own class. It is simply an Event with a selected Type field)\r\n */\r\nexport class Trade extends Event\r\n{\r\n    constructor()\r\n    {\r\n        /**\r\n         * Price of the trade\r\n         * @type {Number}\r\n         * @private\r\n         */\r\n        this.Price = -1;\r\n\r\n        /**\r\n         * Quantity of the trade\r\n         * @type {Number}\r\n         * @private\r\n         */\r\n        this.Quantity = -1;\r\n\r\n        /**\r\n         * Enumerated event type in kEvent.Type (See manual for event types)\r\n         * @type {Number}\r\n         * @public\r\n         */\r\n        this.Aggressor =\r\n        {\r\n            Buy: 0,\r\n            Sell: 1,\r\n        };\r\n    }\r\n}\r\n/**\r\n * Class representing an event with Type bid. (Bid is not technically its own class. It is simply an Event with a selected Type field)\r\n */\r\nexport class Bid extends Event\r\n{\r\n    constructor()\r\n    {\r\n        /**\r\n         * Price of the bid\r\n         * @type {Number}\r\n         * @private\r\n         */\r\n        this.Price = -1;\r\n\r\n        /**\r\n         * Quantity of the bid\r\n         * @type {Number}\r\n         * @private\r\n         */\r\n        this.Quantity = -1;\r\n\r\n        /**\r\n         * Enumerated bid type in kEvent.Bid.Type (See manual for event types)\r\n         * @type {Number}\r\n         * @public\r\n         */\r\n        this.Type =\r\n        {\r\n            New: 0,\r\n            Change: 1,\r\n            Delete: 2,\r\n            DeleteThru: 3,\r\n            DeleteFrom: 4,\r\n            Overlay: 5,\r\n            Replace: 6,\r\n        };\r\n    }\r\n}\r\n\r\n/**\r\n * Class representing an event with Type ask. (Ask is not technically its own class. It is simply an Event with a selected Type field)\r\n */\r\nexport class Ask extends Event\r\n{\r\n    constructor()\r\n    {\r\n        /**\r\n         * Price of the bid\r\n         * @type {Number}\r\n         * @private\r\n         */\r\n        this.Price = -1;\r\n\r\n        /**\r\n         * Quantity of the bid\r\n         * @type {Number}\r\n         * @private\r\n         */\r\n        this.Quantity = -1;\r\n\r\n        /**\r\n         * Enumerated ask type in kEvent.Ask.Type (See manual for event types)\r\n         * @type {Number}\r\n         * @public\r\n         */\r\n        this.Type =\r\n        {\r\n            New: 0,\r\n            Change: 1,\r\n            Delete: 2,\r\n            DeleteThru: 3,\r\n            DeleteFrom: 4,\r\n        };\r\n    }\r\n}\r\n\r\n/**\r\n * This is a built in function which triggers when the script starts to get general script parameters, including the primary script symbol.\r\n */\r\nexport function onLoad()\r\n{\r\n    \r\n}\r\n\r\n/**\r\n * This is a built in function which triggers when the symbol is successfully loaded and the EOS and instrument data is ready.\r\n */\r\nexport function onOpen()\r\n{\r\n\r\n}\r\n\r\n/**\r\n * This public function is critical to creating your main pane.\r\n * @example\r\n * gEvntPane = MakePane();\r\n */\r\nexport function MakePane()\r\n{\r\n\r\n}\r\n\r\n/**\r\n * This is a built in function which triggers for each event in the pFeed stream.\r\n * @param {CEvntFeed} pFeed - A CEVNTFeed object with timestamps measured in nanoseconds with 56 bit precision\r\n * @param {Number} pSequ - Amount of events to read within this sequence\r\n */\r\nexport function onEvent(pFeed, pSequ)\r\n{\r\n\r\n}\r\n",
@@ -11,7 +575,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 1,
+    "__docId__": 49,
     "kind": "class",
     "name": "CEvntPane",
     "memberof": "src/index.js",
@@ -29,7 +593,7 @@
     "interface": false
   },
   {
-    "__docId__": 2,
+    "__docId__": 50,
     "kind": "method",
     "name": "MakeFeed",
     "memberof": "src/index.js~CEvntPane",
@@ -68,7 +632,7 @@
     }
   },
   {
-    "__docId__": 3,
+    "__docId__": 51,
     "kind": "method",
     "name": "MakeStat",
     "memberof": "src/index.js~CEvntPane",
@@ -107,7 +671,7 @@
     }
   },
   {
-    "__docId__": 4,
+    "__docId__": 52,
     "kind": "method",
     "name": "MakeDraw",
     "memberof": "src/index.js~CEvntPane",
@@ -146,7 +710,7 @@
     }
   },
   {
-    "__docId__": 5,
+    "__docId__": 53,
     "kind": "method",
     "name": "PlayWave",
     "memberof": "src/index.js~CEvntPane",
@@ -172,7 +736,7 @@
     "return": null
   },
   {
-    "__docId__": 6,
+    "__docId__": 54,
     "kind": "class",
     "name": "CEvntFeed",
     "memberof": "src/index.js",
@@ -187,7 +751,7 @@
     "interface": false
   },
   {
-    "__docId__": 7,
+    "__docId__": 55,
     "kind": "method",
     "name": "MakeCalc",
     "memberof": "src/index.js~CEvntFeed",
@@ -215,7 +779,7 @@
     "params": []
   },
   {
-    "__docId__": 8,
+    "__docId__": 56,
     "kind": "method",
     "name": "MakeTrig",
     "memberof": "src/index.js~CEvntFeed",
@@ -243,7 +807,7 @@
     "params": []
   },
   {
-    "__docId__": 9,
+    "__docId__": 57,
     "kind": "method",
     "name": "FeedRead",
     "memberof": "src/index.js~CEvntFeed",
@@ -282,7 +846,7 @@
     }
   },
   {
-    "__docId__": 10,
+    "__docId__": 58,
     "kind": "method",
     "name": "FeedStep",
     "memberof": "src/index.js~CEvntFeed",
@@ -318,7 +882,7 @@
     "return": null
   },
   {
-    "__docId__": 11,
+    "__docId__": 59,
     "kind": "method",
     "name": "FeedTrig",
     "memberof": "src/index.js~CEvntFeed",
@@ -354,7 +918,7 @@
     "return": null
   },
   {
-    "__docId__": 12,
+    "__docId__": 60,
     "kind": "class",
     "name": "CEvntStat",
     "memberof": "src/index.js",
@@ -369,7 +933,7 @@
     "interface": false
   },
   {
-    "__docId__": 13,
+    "__docId__": 61,
     "kind": "constructor",
     "name": "constructor",
     "memberof": "src/index.js~CEvntStat",
@@ -404,7 +968,7 @@
     ]
   },
   {
-    "__docId__": 14,
+    "__docId__": 62,
     "kind": "member",
     "name": "fillStyle",
     "memberof": "src/index.js~CEvntStat",
@@ -423,7 +987,7 @@
     }
   },
   {
-    "__docId__": 15,
+    "__docId__": 63,
     "kind": "member",
     "name": "title",
     "memberof": "src/index.js~CEvntStat",
@@ -442,7 +1006,7 @@
     }
   },
   {
-    "__docId__": 16,
+    "__docId__": 64,
     "kind": "class",
     "name": "CEvntDraw",
     "memberof": "src/index.js",
@@ -457,7 +1021,7 @@
     "interface": false
   },
   {
-    "__docId__": 17,
+    "__docId__": 65,
     "kind": "constructor",
     "name": "constructor",
     "memberof": "src/index.js~CEvntDraw",
@@ -492,7 +1056,7 @@
     ]
   },
   {
-    "__docId__": 18,
+    "__docId__": 66,
     "kind": "member",
     "name": "lineWidth",
     "memberof": "src/index.js~CEvntDraw",
@@ -511,7 +1075,7 @@
     }
   },
   {
-    "__docId__": 19,
+    "__docId__": 67,
     "kind": "member",
     "name": "strokeStyle",
     "memberof": "src/index.js~CEvntDraw",
@@ -530,7 +1094,7 @@
     }
   },
   {
-    "__docId__": 20,
+    "__docId__": 68,
     "kind": "class",
     "name": "CEvntCalc",
     "memberof": "src/index.js",
@@ -545,7 +1109,7 @@
     "interface": false
   },
   {
-    "__docId__": 21,
+    "__docId__": 69,
     "kind": "method",
     "name": "CalcRead",
     "memberof": "src/index.js~CEvntCalc",
@@ -584,7 +1148,7 @@
     }
   },
   {
-    "__docId__": 22,
+    "__docId__": 70,
     "kind": "method",
     "name": "CalcSave",
     "memberof": "src/index.js~CEvntCalc",
@@ -620,7 +1184,7 @@
     "return": null
   },
   {
-    "__docId__": 23,
+    "__docId__": 71,
     "kind": "class",
     "name": "CEvntTrig",
     "memberof": "src/index.js",
@@ -635,7 +1199,7 @@
     "interface": false
   },
   {
-    "__docId__": 24,
+    "__docId__": 72,
     "kind": "constructor",
     "name": "constructor",
     "memberof": "src/index.js~CEvntTrig",
@@ -680,7 +1244,7 @@
     ]
   },
   {
-    "__docId__": 25,
+    "__docId__": 73,
     "kind": "member",
     "name": "strokeStyle",
     "memberof": "src/index.js~CEvntTrig",
@@ -699,7 +1263,7 @@
     }
   },
   {
-    "__docId__": 26,
+    "__docId__": 74,
     "kind": "member",
     "name": "title",
     "memberof": "src/index.js~CEvntTrig",
@@ -718,7 +1282,7 @@
     }
   },
   {
-    "__docId__": 27,
+    "__docId__": 75,
     "kind": "member",
     "name": "duration",
     "memberof": "src/index.js~CEvntTrig",
@@ -737,7 +1301,7 @@
     }
   },
   {
-    "__docId__": 28,
+    "__docId__": 76,
     "kind": "class",
     "name": "Event",
     "memberof": "src/index.js",
@@ -752,7 +1316,7 @@
     "interface": false
   },
   {
-    "__docId__": 29,
+    "__docId__": 77,
     "kind": "constructor",
     "name": "constructor",
     "memberof": "src/index.js~Event",
@@ -766,7 +1330,7 @@
     "undocument": true
   },
   {
-    "__docId__": 30,
+    "__docId__": 78,
     "kind": "member",
     "name": "Time",
     "memberof": "src/index.js~Event",
@@ -785,7 +1349,7 @@
     }
   },
   {
-    "__docId__": 31,
+    "__docId__": 79,
     "kind": "member",
     "name": "Instrument",
     "memberof": "src/index.js~Event",
@@ -804,7 +1368,7 @@
     }
   },
   {
-    "__docId__": 32,
+    "__docId__": 80,
     "kind": "member",
     "name": "Type",
     "memberof": "src/index.js~Event",
@@ -823,7 +1387,7 @@
     }
   },
   {
-    "__docId__": 33,
+    "__docId__": 81,
     "kind": "class",
     "name": "Trade",
     "memberof": "src/index.js",
@@ -841,7 +1405,7 @@
     ]
   },
   {
-    "__docId__": 34,
+    "__docId__": 82,
     "kind": "constructor",
     "name": "constructor",
     "memberof": "src/index.js~Trade",
@@ -855,7 +1419,7 @@
     "undocument": true
   },
   {
-    "__docId__": 35,
+    "__docId__": 83,
     "kind": "member",
     "name": "Price",
     "memberof": "src/index.js~Trade",
@@ -874,7 +1438,7 @@
     }
   },
   {
-    "__docId__": 36,
+    "__docId__": 84,
     "kind": "member",
     "name": "Quantity",
     "memberof": "src/index.js~Trade",
@@ -893,7 +1457,7 @@
     }
   },
   {
-    "__docId__": 37,
+    "__docId__": 85,
     "kind": "member",
     "name": "Aggressor",
     "memberof": "src/index.js~Trade",
@@ -912,7 +1476,7 @@
     }
   },
   {
-    "__docId__": 38,
+    "__docId__": 86,
     "kind": "class",
     "name": "Bid",
     "memberof": "src/index.js",
@@ -930,7 +1494,7 @@
     ]
   },
   {
-    "__docId__": 39,
+    "__docId__": 87,
     "kind": "constructor",
     "name": "constructor",
     "memberof": "src/index.js~Bid",
@@ -944,7 +1508,7 @@
     "undocument": true
   },
   {
-    "__docId__": 40,
+    "__docId__": 88,
     "kind": "member",
     "name": "Price",
     "memberof": "src/index.js~Bid",
@@ -963,7 +1527,7 @@
     }
   },
   {
-    "__docId__": 41,
+    "__docId__": 89,
     "kind": "member",
     "name": "Quantity",
     "memberof": "src/index.js~Bid",
@@ -982,7 +1546,7 @@
     }
   },
   {
-    "__docId__": 42,
+    "__docId__": 90,
     "kind": "member",
     "name": "Type",
     "memberof": "src/index.js~Bid",
@@ -1001,7 +1565,7 @@
     }
   },
   {
-    "__docId__": 43,
+    "__docId__": 91,
     "kind": "class",
     "name": "Ask",
     "memberof": "src/index.js",
@@ -1019,7 +1583,7 @@
     ]
   },
   {
-    "__docId__": 44,
+    "__docId__": 92,
     "kind": "constructor",
     "name": "constructor",
     "memberof": "src/index.js~Ask",
@@ -1033,7 +1597,7 @@
     "undocument": true
   },
   {
-    "__docId__": 45,
+    "__docId__": 93,
     "kind": "member",
     "name": "Price",
     "memberof": "src/index.js~Ask",
@@ -1052,7 +1616,7 @@
     }
   },
   {
-    "__docId__": 46,
+    "__docId__": 94,
     "kind": "member",
     "name": "Quantity",
     "memberof": "src/index.js~Ask",
@@ -1071,7 +1635,7 @@
     }
   },
   {
-    "__docId__": 47,
+    "__docId__": 95,
     "kind": "member",
     "name": "Type",
     "memberof": "src/index.js~Ask",
@@ -1090,7 +1654,7 @@
     }
   },
   {
-    "__docId__": 48,
+    "__docId__": 96,
     "kind": "function",
     "name": "onLoad",
     "memberof": "src/index.js",
@@ -1108,7 +1672,7 @@
     "return": null
   },
   {
-    "__docId__": 49,
+    "__docId__": 97,
     "kind": "function",
     "name": "onOpen",
     "memberof": "src/index.js",
@@ -1126,7 +1690,7 @@
     "return": null
   },
   {
-    "__docId__": 50,
+    "__docId__": 98,
     "kind": "function",
     "name": "MakePane",
     "memberof": "src/index.js",
@@ -1147,7 +1711,7 @@
     "return": null
   },
   {
-    "__docId__": 51,
+    "__docId__": 99,
     "kind": "function",
     "name": "onEvent",
     "memberof": "src/index.js",
@@ -1186,572 +1750,8 @@
     "return": null
   },
   {
-    "__docId__": 53,
-    "kind": "external",
-    "name": "Infinity",
-    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Infinity",
-    "memberof": "src/.external-ecmascript.js",
-    "static": true,
-    "longname": "src/.external-ecmascript.js~Infinity",
-    "access": "public",
-    "description": "",
-    "builtinExternal": true
-  },
-  {
-    "__docId__": 54,
-    "kind": "external",
-    "name": "NaN",
-    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/NaN",
-    "memberof": "src/.external-ecmascript.js",
-    "static": true,
-    "longname": "src/.external-ecmascript.js~NaN",
-    "access": "public",
-    "description": "",
-    "builtinExternal": true
-  },
-  {
-    "__docId__": 55,
-    "kind": "external",
-    "name": "undefined",
-    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined",
-    "memberof": "src/.external-ecmascript.js",
-    "static": true,
-    "longname": "src/.external-ecmascript.js~undefined",
-    "access": "public",
-    "description": "",
-    "builtinExternal": true
-  },
-  {
-    "__docId__": 56,
-    "kind": "external",
-    "name": "null",
-    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null",
-    "memberof": "src/.external-ecmascript.js",
-    "static": true,
-    "longname": "src/.external-ecmascript.js~null",
-    "access": "public",
-    "description": "",
-    "builtinExternal": true
-  },
-  {
-    "__docId__": 57,
-    "kind": "external",
-    "name": "Object",
-    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object",
-    "memberof": "src/.external-ecmascript.js",
-    "static": true,
-    "longname": "src/.external-ecmascript.js~Object",
-    "access": "public",
-    "description": "",
-    "builtinExternal": true
-  },
-  {
-    "__docId__": 58,
-    "kind": "external",
-    "name": "object",
-    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object",
-    "memberof": "src/.external-ecmascript.js",
-    "static": true,
-    "longname": "src/.external-ecmascript.js~object",
-    "access": "public",
-    "description": "",
-    "builtinExternal": true
-  },
-  {
-    "__docId__": 59,
-    "kind": "external",
-    "name": "Function",
-    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function",
-    "memberof": "src/.external-ecmascript.js",
-    "static": true,
-    "longname": "src/.external-ecmascript.js~Function",
-    "access": "public",
-    "description": "",
-    "builtinExternal": true
-  },
-  {
-    "__docId__": 60,
-    "kind": "external",
-    "name": "function",
-    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function",
-    "memberof": "src/.external-ecmascript.js",
-    "static": true,
-    "longname": "src/.external-ecmascript.js~function",
-    "access": "public",
-    "description": "",
-    "builtinExternal": true
-  },
-  {
-    "__docId__": 61,
-    "kind": "external",
-    "name": "Boolean",
-    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean",
-    "memberof": "src/.external-ecmascript.js",
-    "static": true,
-    "longname": "src/.external-ecmascript.js~Boolean",
-    "access": "public",
-    "description": "",
-    "builtinExternal": true
-  },
-  {
-    "__docId__": 62,
-    "kind": "external",
-    "name": "boolean",
-    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean",
-    "memberof": "src/.external-ecmascript.js",
-    "static": true,
-    "longname": "src/.external-ecmascript.js~boolean",
-    "access": "public",
-    "description": "",
-    "builtinExternal": true
-  },
-  {
-    "__docId__": 63,
-    "kind": "external",
-    "name": "Symbol",
-    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol",
-    "memberof": "src/.external-ecmascript.js",
-    "static": true,
-    "longname": "src/.external-ecmascript.js~Symbol",
-    "access": "public",
-    "description": "",
-    "builtinExternal": true
-  },
-  {
-    "__docId__": 64,
-    "kind": "external",
-    "name": "Error",
-    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error",
-    "memberof": "src/.external-ecmascript.js",
-    "static": true,
-    "longname": "src/.external-ecmascript.js~Error",
-    "access": "public",
-    "description": "",
-    "builtinExternal": true
-  },
-  {
-    "__docId__": 65,
-    "kind": "external",
-    "name": "EvalError",
-    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/EvalError",
-    "memberof": "src/.external-ecmascript.js",
-    "static": true,
-    "longname": "src/.external-ecmascript.js~EvalError",
-    "access": "public",
-    "description": "",
-    "builtinExternal": true
-  },
-  {
-    "__docId__": 66,
-    "kind": "external",
-    "name": "InternalError",
-    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/InternalError",
-    "memberof": "src/.external-ecmascript.js",
-    "static": true,
-    "longname": "src/.external-ecmascript.js~InternalError",
-    "access": "public",
-    "description": "",
-    "builtinExternal": true
-  },
-  {
-    "__docId__": 67,
-    "kind": "external",
-    "name": "RangeError",
-    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RangeError",
-    "memberof": "src/.external-ecmascript.js",
-    "static": true,
-    "longname": "src/.external-ecmascript.js~RangeError",
-    "access": "public",
-    "description": "",
-    "builtinExternal": true
-  },
-  {
-    "__docId__": 68,
-    "kind": "external",
-    "name": "ReferenceError",
-    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ReferenceError",
-    "memberof": "src/.external-ecmascript.js",
-    "static": true,
-    "longname": "src/.external-ecmascript.js~ReferenceError",
-    "access": "public",
-    "description": "",
-    "builtinExternal": true
-  },
-  {
-    "__docId__": 69,
-    "kind": "external",
-    "name": "SyntaxError",
-    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/SyntaxError",
-    "memberof": "src/.external-ecmascript.js",
-    "static": true,
-    "longname": "src/.external-ecmascript.js~SyntaxError",
-    "access": "public",
-    "description": "",
-    "builtinExternal": true
-  },
-  {
-    "__docId__": 70,
-    "kind": "external",
-    "name": "TypeError",
-    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypeError",
-    "memberof": "src/.external-ecmascript.js",
-    "static": true,
-    "longname": "src/.external-ecmascript.js~TypeError",
-    "access": "public",
-    "description": "",
-    "builtinExternal": true
-  },
-  {
-    "__docId__": 71,
-    "kind": "external",
-    "name": "URIError",
-    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/URIError",
-    "memberof": "src/.external-ecmascript.js",
-    "static": true,
-    "longname": "src/.external-ecmascript.js~URIError",
-    "access": "public",
-    "description": "",
-    "builtinExternal": true
-  },
-  {
-    "__docId__": 72,
-    "kind": "external",
-    "name": "Number",
-    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number",
-    "memberof": "src/.external-ecmascript.js",
-    "static": true,
-    "longname": "src/.external-ecmascript.js~Number",
-    "access": "public",
-    "description": "",
-    "builtinExternal": true
-  },
-  {
-    "__docId__": 73,
-    "kind": "external",
-    "name": "number",
-    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number",
-    "memberof": "src/.external-ecmascript.js",
-    "static": true,
-    "longname": "src/.external-ecmascript.js~number",
-    "access": "public",
-    "description": "",
-    "builtinExternal": true
-  },
-  {
-    "__docId__": 74,
-    "kind": "external",
-    "name": "Date",
-    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date",
-    "memberof": "src/.external-ecmascript.js",
-    "static": true,
-    "longname": "src/.external-ecmascript.js~Date",
-    "access": "public",
-    "description": "",
-    "builtinExternal": true
-  },
-  {
-    "__docId__": 75,
-    "kind": "external",
-    "name": "String",
-    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String",
-    "memberof": "src/.external-ecmascript.js",
-    "static": true,
-    "longname": "src/.external-ecmascript.js~String",
-    "access": "public",
-    "description": "",
-    "builtinExternal": true
-  },
-  {
-    "__docId__": 76,
-    "kind": "external",
-    "name": "string",
-    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String",
-    "memberof": "src/.external-ecmascript.js",
-    "static": true,
-    "longname": "src/.external-ecmascript.js~string",
-    "access": "public",
-    "description": "",
-    "builtinExternal": true
-  },
-  {
-    "__docId__": 77,
-    "kind": "external",
-    "name": "RegExp",
-    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp",
-    "memberof": "src/.external-ecmascript.js",
-    "static": true,
-    "longname": "src/.external-ecmascript.js~RegExp",
-    "access": "public",
-    "description": "",
-    "builtinExternal": true
-  },
-  {
-    "__docId__": 78,
-    "kind": "external",
-    "name": "Array",
-    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array",
-    "memberof": "src/.external-ecmascript.js",
-    "static": true,
-    "longname": "src/.external-ecmascript.js~Array",
-    "access": "public",
-    "description": "",
-    "builtinExternal": true
-  },
-  {
-    "__docId__": 79,
-    "kind": "external",
-    "name": "Int8Array",
-    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int8Array",
-    "memberof": "src/.external-ecmascript.js",
-    "static": true,
-    "longname": "src/.external-ecmascript.js~Int8Array",
-    "access": "public",
-    "description": "",
-    "builtinExternal": true
-  },
-  {
-    "__docId__": 80,
-    "kind": "external",
-    "name": "Uint8Array",
-    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8Array",
-    "memberof": "src/.external-ecmascript.js",
-    "static": true,
-    "longname": "src/.external-ecmascript.js~Uint8Array",
-    "access": "public",
-    "description": "",
-    "builtinExternal": true
-  },
-  {
-    "__docId__": 81,
-    "kind": "external",
-    "name": "Uint8ClampedArray",
-    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8ClampedArray",
-    "memberof": "src/.external-ecmascript.js",
-    "static": true,
-    "longname": "src/.external-ecmascript.js~Uint8ClampedArray",
-    "access": "public",
-    "description": "",
-    "builtinExternal": true
-  },
-  {
-    "__docId__": 82,
-    "kind": "external",
-    "name": "Int16Array",
-    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int16Array",
-    "memberof": "src/.external-ecmascript.js",
-    "static": true,
-    "longname": "src/.external-ecmascript.js~Int16Array",
-    "access": "public",
-    "description": "",
-    "builtinExternal": true
-  },
-  {
-    "__docId__": 83,
-    "kind": "external",
-    "name": "Uint16Array",
-    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint16Array",
-    "memberof": "src/.external-ecmascript.js",
-    "static": true,
-    "longname": "src/.external-ecmascript.js~Uint16Array",
-    "access": "public",
-    "description": "",
-    "builtinExternal": true
-  },
-  {
-    "__docId__": 84,
-    "kind": "external",
-    "name": "Int32Array",
-    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int32Array",
-    "memberof": "src/.external-ecmascript.js",
-    "static": true,
-    "longname": "src/.external-ecmascript.js~Int32Array",
-    "access": "public",
-    "description": "",
-    "builtinExternal": true
-  },
-  {
-    "__docId__": 85,
-    "kind": "external",
-    "name": "Uint32Array",
-    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint32Array",
-    "memberof": "src/.external-ecmascript.js",
-    "static": true,
-    "longname": "src/.external-ecmascript.js~Uint32Array",
-    "access": "public",
-    "description": "",
-    "builtinExternal": true
-  },
-  {
-    "__docId__": 86,
-    "kind": "external",
-    "name": "Float32Array",
-    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Float32Array",
-    "memberof": "src/.external-ecmascript.js",
-    "static": true,
-    "longname": "src/.external-ecmascript.js~Float32Array",
-    "access": "public",
-    "description": "",
-    "builtinExternal": true
-  },
-  {
-    "__docId__": 87,
-    "kind": "external",
-    "name": "Float64Array",
-    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Float64Array",
-    "memberof": "src/.external-ecmascript.js",
-    "static": true,
-    "longname": "src/.external-ecmascript.js~Float64Array",
-    "access": "public",
-    "description": "",
-    "builtinExternal": true
-  },
-  {
-    "__docId__": 88,
-    "kind": "external",
-    "name": "Map",
-    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map",
-    "memberof": "src/.external-ecmascript.js",
-    "static": true,
-    "longname": "src/.external-ecmascript.js~Map",
-    "access": "public",
-    "description": "",
-    "builtinExternal": true
-  },
-  {
-    "__docId__": 89,
-    "kind": "external",
-    "name": "Set",
-    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set",
-    "memberof": "src/.external-ecmascript.js",
-    "static": true,
-    "longname": "src/.external-ecmascript.js~Set",
-    "access": "public",
-    "description": "",
-    "builtinExternal": true
-  },
-  {
-    "__docId__": 90,
-    "kind": "external",
-    "name": "WeakMap",
-    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakMap",
-    "memberof": "src/.external-ecmascript.js",
-    "static": true,
-    "longname": "src/.external-ecmascript.js~WeakMap",
-    "access": "public",
-    "description": "",
-    "builtinExternal": true
-  },
-  {
-    "__docId__": 91,
-    "kind": "external",
-    "name": "WeakSet",
-    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakSet",
-    "memberof": "src/.external-ecmascript.js",
-    "static": true,
-    "longname": "src/.external-ecmascript.js~WeakSet",
-    "access": "public",
-    "description": "",
-    "builtinExternal": true
-  },
-  {
-    "__docId__": 92,
-    "kind": "external",
-    "name": "ArrayBuffer",
-    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer",
-    "memberof": "src/.external-ecmascript.js",
-    "static": true,
-    "longname": "src/.external-ecmascript.js~ArrayBuffer",
-    "access": "public",
-    "description": "",
-    "builtinExternal": true
-  },
-  {
-    "__docId__": 93,
-    "kind": "external",
-    "name": "DataView",
-    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView",
-    "memberof": "src/.external-ecmascript.js",
-    "static": true,
-    "longname": "src/.external-ecmascript.js~DataView",
-    "access": "public",
-    "description": "",
-    "builtinExternal": true
-  },
-  {
-    "__docId__": 94,
-    "kind": "external",
-    "name": "JSON",
-    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON",
-    "memberof": "src/.external-ecmascript.js",
-    "static": true,
-    "longname": "src/.external-ecmascript.js~JSON",
-    "access": "public",
-    "description": "",
-    "builtinExternal": true
-  },
-  {
-    "__docId__": 95,
-    "kind": "external",
-    "name": "Promise",
-    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise",
-    "memberof": "src/.external-ecmascript.js",
-    "static": true,
-    "longname": "src/.external-ecmascript.js~Promise",
-    "access": "public",
-    "description": "",
-    "builtinExternal": true
-  },
-  {
-    "__docId__": 96,
-    "kind": "external",
-    "name": "Generator",
-    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Generator",
-    "memberof": "src/.external-ecmascript.js",
-    "static": true,
-    "longname": "src/.external-ecmascript.js~Generator",
-    "access": "public",
-    "description": "",
-    "builtinExternal": true
-  },
-  {
-    "__docId__": 97,
-    "kind": "external",
-    "name": "GeneratorFunction",
-    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/GeneratorFunction",
-    "memberof": "src/.external-ecmascript.js",
-    "static": true,
-    "longname": "src/.external-ecmascript.js~GeneratorFunction",
-    "access": "public",
-    "description": "",
-    "builtinExternal": true
-  },
-  {
-    "__docId__": 98,
-    "kind": "external",
-    "name": "Reflect",
-    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Reflect",
-    "memberof": "src/.external-ecmascript.js",
-    "static": true,
-    "longname": "src/.external-ecmascript.js~Reflect",
-    "access": "public",
-    "description": "",
-    "builtinExternal": true
-  },
-  {
-    "__docId__": 99,
-    "kind": "external",
-    "name": "Proxy",
-    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy",
-    "memberof": "src/.external-ecmascript.js",
-    "static": true,
-    "longname": "src/.external-ecmascript.js~Proxy",
-    "access": "public",
-    "description": "",
-    "builtinExternal": true
-  },
-  {
     "kind": "index",
-    "content": "![possibly use other image](https://c.smartrecruiters.com/sr-company-logo-prod/59b85cbfe4b0081548fcf4d6/huge?r=s3&_1507067621421)\r\n# Vertex Analytics | EVNTScript\r\n\r\nProduction: [vnine.vertex-analytics.com](https://vnine.vertex-analytics.com)  \r\nContact: contact@vertex-analytics.com\r\n\r\nGeneral product description  \r\n\r\nList of features with links to their documentation\r\n\r\nOther resources\r\n\r\n###### Documentation by Blake Boris\r\n",
+    "content": "![logo](https://c.smartrecruiters.com/sr-company-logo-prod/59b85cbfe4b0081548fcf4d6/huge?r=s3&_1507067621421)\r\n# Vertex Analytics | EVNTScript\r\n\r\nEVNTScript is a Javascript-based parser that allows for easy \r\nunderstanding, calculating, and tracking of futures symbols in more \r\nthan just real-time using vNine at [vnine.vertex-analytics.com](https://vnine.vertex-analytics.com).\r\n\r\nContact: [support@vertex-analytics.com](mailto:support@vertex-analytics.com)\r\n\r\n###### Documentation by [Blake Boris](https://blakeboris.com)\r\n",
     "longname": "V:\\Repositories\\PlGGS\\vxa-doc\\README.md",
     "name": "./README.md",
     "static": true,
@@ -1783,17 +1783,9 @@
   },
   {
     "kind": "manual",
-    "longname": "V:\\Repositories\\PlGGS\\vxa-doc\\src\\manual\\formatting.md",
-    "name": "./src/manual/formatting.md",
-    "content": "# Manual\r\n\r\n## General Formatting\r\n\r\n### Notation\r\n\r\nConstants used for distinguishing variable roles\r\n\r\n- `k` | K denotes a constant variable\r\n- `g` | G denotes a global variable\r\n\r\n```js\r\nvar gEvntPane;\r\nvar gPaneFeed;\r\nvar kSymbolName = \"ESM9\";\r\n```\r\n\r\n## Enumerated Constants\r\n\r\n### CEvntFeed.FeedStep\r\n\r\nConstants used for CEvntFeed.FeedStep\r\n\r\n- `kStepShow` | Shows the event aggregating by time\r\n- `kStepHide` | Withholds the even from the Symbol viewport\r\n- `kStepHalt` | Shows the previous event\r\n- `kStepNext` | Advances the step position\r\n\r\n```js\r\ngPaneFeed.FeedStep = kStepHide; //This will hide the current event in the feed\r\n```\r\n\r\n### kEvent.Type\r\n\r\nEnumerated types of events\r\n\r\n- `kEvent.Type.Trade`\r\n- `kEvent.Type.Bid`\r\n- `kEvent.Type.Ask`\r\n- `kEvent.Type.ImpliedBid`\r\n- `kEvent.Type.ImpliedAsk`\r\n- `kEvent.Type.BookReset`\r\n\r\n```js\r\nif (tTick.Type == kEvent.Type.Trade)\r\n{\r\n\t//Do something based on event being a trade\r\n}\r\n```\r\n\r\n### kEvent.Trade.Aggressor\r\n\r\nEnumerated values for getting the type of aggressor of a trade event\r\n\r\n- `kEvent.Trade.Aggressor.Buy`\r\n- `kEvent.Trade.Aggressor.Sell`\r\n\r\n```js\r\nif (tTick.Type == kEvent.Type.Trade)\r\n{\r\n\tif (tTick.Trade.Aggressor == kEvent.Trade.Aggressor.Buy)\r\n\t{\r\n\t\t//Do something based on trade's aggressor being a buyer\r\n\t}\r\n}\r\n```\r\n\r\n### kEvent.Bid.Type\r\n\r\nEnumerated values for getting the type of a bid event\r\n\r\n- `kEvent.Bid.Type.New`\r\n- `kEvent.Bid.Type.Change`\r\n- `kEvent.Bid.Type.Delete`\r\n- `kEvent.Bid.Type.DeleteThru`\r\n- `kEvent.Bid.Type.DeleteFrom`\r\n- `kEvent.Bid.Type.Overlay`\r\n- `kEvent.Bid.Type.Replace`\r\n\r\n```js\r\nif (tTick.Bid.Type == kEvent.Bid.Type.New)\r\n{\r\n\t//Do something based on bid's type being new\r\n}\r\n```\r\n\r\n### kEvent.Ask.Type\r\n\r\nEnumerated values for getting the type of an ask event\r\n\r\n- `kEvent.Ask.Type.New`\r\n- `kEvent.Ask.Type.Change`\r\n- `kEvent.Ask.Type.Delete`\r\n- `kEvent.Ask.Type.DeleteThru`\r\n- `kEvent.Ask.Type.DeleteFrom`\r\n\r\n```js\r\nif (tTick.Ask.Type == kEvent.Ask.Type.New)\r\n{\r\n\t//Do something based on ask's type being new\r\n}\r\n```\r\n\r\n### CEvntPane.Wave\r\n\r\nEnumerated values for playing different audio files\r\n\r\n- `Bang` | 0\r\n- `Clang` | 1\r\n- `Punch` | 2\r\n- `Ring_1` | 3\r\n- `Ring_2` | 4\r\n- `Ring_3` | 5\r\n- `Ring_4` | 6\r\n- `Ring_5` | 7\r\n- `Ring_6` | 8\r\n- `Ring_7` | 9\r\n- `Slap` | 10\r\n\r\n```js\r\nCEvntPane.PlayWave(0); //Plays a bang!\r\n```\r\n\r\n## Built-in Functions\r\n\r\n### onLoad()\r\n\r\nThe built in onLoad function is called when the user clicks the run button shown below.\r\n\r\n```js\r\nfunction onLoad ()\r\n{\r\n    gEvntPane = MakePane();\r\n    gPaneFeed = gEvntPane.MakeFeed(gSymbolName);\r\n    gDrawFeed = gEvntPane.MakeDraw(gPaneFeed);\t\r\n}\r\n```\r\n\r\n- ```MakePane()``` | Returns a new [CEVNTPane](https://bblake.info/doc/class/src/index.js~CEvntPane.html) object\r\n- ```gEvntPane.MakeFeed(gSymbolName)``` | Returns a new [CEVNTFeed](https://bblake.info/doc/class/src/index.js~CEvntFeed.html) object based on the specified symbol name \r\n- ```gEvntPane.MakeDraw(gPaneFeed)``` | Returns a new [CEVNTDraw](https://bblake.info/doc/class/src/index.js~CEVNTDraw.html) object\r\n\r\n![click run](asset/click_run.png)\r\n\r\n### onOpen()\r\n\r\nThe built in onOpen function is called once the pane has properly loaded and rendered the Symbol information.\r\n\r\n```js\r\nfunction onOpen ()\r\n{\r\n\t\r\n}\r\n```\r\n\r\n### onEvent()\r\n\r\nThe built in onEvent function is called once for each timestamp you play back.\r\n\r\n```js\r\nfunction onEvent (pFeed, pSequ)\r\n{\r\n\t\r\n}\r\n```\r\n\r\n- ```pFeed``` | Parameter: Your [CEVNTFeed](https://bblake.info/doc/class/src/index.js~CEvntPane.html) object with timestamps measured in nanoseconds with 56 bit precision\r\n- ```pSequ``` | Parameter: An integer that defaults to 0 that is used for Amount of events within this sequence\r\n\r\n### onStop()\r\n\r\nThe built in onStop function is called when the user clicks the stop button shown below.\r\n\r\n```js\r\nfunction onStop ()\r\n{\r\n\t\r\n}\r\n```\r\n\r\n![click stop](asset/click_stop.png)",
-    "static": true,
-    "access": "public"
-  },
-  {
-    "kind": "manual",
     "longname": "V:\\Repositories\\PlGGS\\vxa-doc\\src\\manual\\tutorial1.md",
     "name": "./src/manual/tutorial1.md",
-    "content": "# Tutorial: The Basics | Necessary\r\n\r\n## Step 1: Pane creation\r\n\r\nDrag a new pane into your vNine dashboard\r\n\r\n![drag pane](asset/drag_pane.png)\r\n\r\n## Step 2: Opening the editor\r\n\r\nClick the JS button to open up the Javascript-esc editor. \r\nYou should be presented with an empty sample script corresponding to your new pane\r\n\r\n![click js](asset/click_js.png)\r\n\r\n## Step 3: Declaring your variables\r\n\r\nOnce you've opened your Javascript editor, you should see your main CEVNTPane and CEVNTFeed variables. \r\nThese are most commonly defined as gEvntPane and gPaneFeed.  \r\n\r\n```js\r\nvar gEvntPane;\r\nvar gPaneFeed;\r\nvar kSymbolName = \"ESM9\";\r\n```\r\n\r\n- [CEVNTPane](https://bblake.info/doc/class/src/index.js~CEvntPane.html) ```gEvntPane``` | \r\nYour pane variable allows you to create just about everything else we're going to need \r\nto make use of your script.\r\n- [CEVNTFeed](https://bblake.info/doc/class/src/index.js~CEvntFeed.html) ```gPaneFeed``` | \r\nYour feed variable will be used to track and make use of every single [Event](https://bblake.info/doc/class/src/index.js~Event.html) \r\nthat has occured since the exchange last opened.\r\n- [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) ```kSymbolName``` | \r\nThe symbol name is the technical name of the symbol we want to interpret. \r\nA list of symbol names can be found at ____.\r\n\r\n[//]: # \"[symbols](link to symbol names)\"\r\n\r\n## Step 4: Understanding onLoad\r\n\r\nThe built in onLoad function is called when the user clicks the run button shown below.\r\n\r\n```js\r\nfunction onLoad ()\r\n{\r\n    gEvntPane = MakePane();\r\n    gPaneFeed = gEvntPane.MakeFeed(gSymbolName);\r\n    gDrawFeed = gEvntPane.MakeDraw(gPaneFeed);\t\r\n}\r\n```\r\n\r\n- ```MakePane()``` | Returns a new [CEVNTPane](https://bblake.info/doc/class/src/index.js~CEvntPane.html) object\r\n- ```gEvntPane.MakeFeed(gSymbolName)``` | Returns a new [CEVNTFeed](https://bblake.info/doc/class/src/index.js~CEvntFeed.html) object based on the specified symbol name \r\n- ```gEvntPane.MakeDraw(gPaneFeed)``` | Returns a new [CEVNTDraw](https://bblake.info/doc/class/src/index.js~CEVNTDraw.html) object\r\n\r\n![click run](asset/click_run.png)\r\n\r\n## Step 5: Understanding onOpen\r\n\r\nThe built in onOpen function is called once the pane has properly loaded and rendered the Symbol information. \r\nFor now, we won't make use of this function, but it is important to know what it does for the future.\r\n\r\n```js\r\nfunction onOpen ()\r\n{\r\n\t\r\n}\r\n```\r\n\r\n## Step 6: Understanding onEvent\r\n\r\nThe built in onEvent function is called once for each timestamp you play back. \r\nFor now, we won't make use of this function, but it is important to know what it does for the future.\r\n\r\n```js\r\nfunction onEvent (pFeed, pSequ)\r\n{\r\n\t\r\n}\r\n```\r\n\r\n- ```pFeed``` | Parameter: Your [CEVNTFeed](https://bblake.info/doc/class/src/index.js~CEvntPane.html) object with timestamps measured in nanoseconds with 56 bit precision\r\n- ```pSequ``` | Parameter: An integer that defaults to 0 that is used for Amount of events within this sequence\r\n\r\n## Step 7: Understanding onStop\r\n\r\nThe built in onStop function is called when the user clicks the stop button shown below. \r\nFor now, we won't make use of this function, but it is important to know what it does for the future.\r\n\r\n```js\r\nfunction onStop ()\r\n{\r\n\t\r\n}\r\n```\r\n\r\n![click stop](asset/click_stop.png)\r\n\r\n## Results\r\n\r\n#### Congratulations\r\n\r\nAt this point, you should see a chart based off of your selected Symbol for the most recent exchange period like the one shown below! \r\nFeel free to zoom in and out and scroll through your newly created chart.\r\n\r\n[//]: # \"Your script should now provide functionality similar to [this](https://github.com/PlGGS/Vertex-Analytics/blob/master/sample%20scripts/sampleBaseScript.js)\"\r\n\r\n![view chart](asset/view_chart.png)\r\n\r\n#### Troubleshooting\r\n\r\nFor certain periods throughout the day, EVNTScript will not be able to generate charts. \r\nThis is because the vNine platform makes use of the time in which the exchange is down to process and archive data. \r\nBelow is a chart containing weekly hours of downtime.\r\n\r\n| Monday        | Tuesday       | Wednesday     | Thursday      | Friday  | Saturday | Sunday  |\r\n|---------------|---------------|---------------|---------------|---------|----------|---------|\r\n| 4:00pm-5:00pm | 4:00pm-5:00pm | 4:00pm-5:00pm | 4:00pm-5:00pm | 4:00pm- | -        | -5:00pm |\r\n\r\nAlso, please note that some contracts also stop the exchange from 3:15pm-3:30pm on weekdays.\r\n\r\n#### Contact\r\n\r\nIf you come across any major issue/bugs, please let us know by sending an email with an explanation of what occured to \r\n[support@vertex-analytics.com](mailto:support@vertex-analytics.com).\r\n\r\nAdditionally, if there is something that you think we could improve about this documentation, \r\nplease create a new issue at our repository's [issues page](https://github.com/PlGGS/xva-doc/issues).\r\n",
+    "content": "# Tutorial: The Basics | Necessary\r\n\r\n## Step 1: Pane creation\r\n\r\nDrag a new pane into your vNine dashboard\r\n\r\n![drag pane](asset/drag_pane.png)\r\n\r\n## Step 2: Opening the editor\r\n\r\nClick the JS button to open up the Javascript-esc editor. \r\nYou should be presented with an empty sample script corresponding to your new pane\r\n\r\n![click js](asset/click_js.png)\r\n\r\n## Step 3: Declaring your variables\r\n\r\nOnce you've opened your Javascript editor, you should see your main CEVNTPane and CEVNTFeed variables. \r\nThese are most commonly defined as gEvntPane and gPaneFeed.  \r\n\r\n```js\r\nvar gEvntPane;\r\nvar gPaneFeed;\r\nvar kSymbolName = \"ESM9\";\r\n```\r\n\r\n- [CEVNTPane](https://bblake.info/doc/class/src/index.js~CEvntPane.html) ```gEvntPane``` | \r\nYour pane variable allows you to create just about everything else we're going to need \r\nto make use of your script.\r\n- [CEVNTFeed](https://bblake.info/doc/class/src/index.js~CEvntFeed.html) ```gPaneFeed``` | \r\nYour feed variable will be used to track and make use of every single [Event](https://bblake.info/doc/class/src/index.js~Event.html) \r\nthat has occured since the exchange last opened.\r\n- [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) ```kSymbolName``` | \r\nThe symbol name is the technical name of the symbol we want to interpret. \r\nA list of symbol names can be found at ____.\r\n\r\n[//]: # \"[symbols](link to symbol names)\"\r\n\r\n## Step 4: Understanding onLoad\r\n\r\nThe built in onLoad function is called when the user clicks the run button shown below.\r\n\r\n```js\r\nfunction onLoad ()\r\n{\r\n    gEvntPane = MakePane();\r\n    gPaneFeed = gEvntPane.MakeFeed(gSymbolName);\r\n    gDrawFeed = gEvntPane.MakeDraw(gPaneFeed);\t\r\n}\r\n```\r\n\r\n- ```MakePane()``` | Returns a new [CEVNTPane](https://bblake.info/doc/class/src/index.js~CEvntPane.html) object\r\n- ```gEvntPane.MakeFeed(gSymbolName)``` | Returns a new [CEVNTFeed](https://bblake.info/doc/class/src/index.js~CEvntFeed.html) object based on the specified symbol name \r\n- ```gEvntPane.MakeDraw(gPaneFeed)``` | Returns a new [CEVNTDraw](https://bblake.info/doc/class/src/index.js~CEVNTDraw.html) object\r\n\r\n![click run](asset/click_run.png)\r\n\r\n## Step 5: Understanding onOpen\r\n\r\nThe built in onOpen function is called once the pane has properly loaded and rendered the Symbol information. \r\nFor now, we won't make use of this function, but it is important to know what it does for the future.\r\n\r\n```js\r\nfunction onOpen ()\r\n{\r\n\t\r\n}\r\n```\r\n\r\n## Step 6: Understanding onEvent\r\n\r\nThe built in onEvent function is called once for each timestamp you play back. \r\nFor now, we won't make use of this function, but it is important to know what it does for the future.\r\n\r\n```js\r\nfunction onEvent (pFeed, pSequ)\r\n{\r\n\t\r\n}\r\n```\r\n\r\n- ```pFeed``` | Parameter: Your [CEVNTFeed](https://bblake.info/doc/class/src/index.js~CEvntPane.html) object with timestamps measured in nanoseconds with 56 bit precision\r\n- ```pSequ``` | Parameter: An integer that defaults to 0 that is used for Amount of events within this sequence\r\n\r\n## Step 7: Understanding onStop\r\n\r\nThe built in onStop function is called when the user clicks the stop button shown below. \r\nFor now, we won't make use of this function, but it is important to know what it does for the future.\r\n\r\n```js\r\nfunction onStop ()\r\n{\r\n\t\r\n}\r\n```\r\n\r\n![click stop](asset/click_stop.png)\r\n\r\n## Results\r\n\r\n#### Congratulations\r\n\r\nAt this point, you should see a chart based off of your selected Symbol for the most recent exchange period like the one shown below! \r\nFeel free to zoom in and out and scroll through your newly created chart.\r\n\r\nYour script should now provide functionality similar to [this](https://github.com/PlGGS/Vertex-Analytics/blob/master/sample%20scripts/sampleBaseScript.js)\r\n\r\n![view chart](asset/view_chart.png)\r\n\r\n#### Troubleshooting\r\n\r\nFor certain periods throughout the day, EVNTScript will not be able to generate charts. \r\nThis is because the vNine platform makes use of the time in which the exchange is down to process and archive data. \r\nBelow is a chart containing weekly hours of downtime.\r\n\r\n| Monday        | Tuesday       | Wednesday     | Thursday      | Friday  | Saturday | Sunday  |\r\n|---------------|---------------|---------------|---------------|---------|----------|---------|\r\n| 4:00pm-5:00pm | 4:00pm-5:00pm | 4:00pm-5:00pm | 4:00pm-5:00pm | 4:00pm- | -        | -5:00pm |\r\n\r\nAlso, please note that some contracts also stop the exchange from 3:15pm-3:30pm on weekdays.\r\n\r\n#### Contact\r\n\r\nIf you come across any major issue/bugs, please let us know by sending an email with an explanation of what occured to \r\n[support@vertex-analytics.com](mailto:support@vertex-analytics.com).\r\n\r\nAdditionally, if there is something that you think we could improve about this documentation, \r\nplease create a new issue at our repository's [issues page](https://github.com/PlGGS/xva-doc/issues).\r\n",
     "static": true,
     "access": "public"
   },
@@ -1801,7 +1793,15 @@
     "kind": "manual",
     "longname": "V:\\Repositories\\PlGGS\\vxa-doc\\src\\manual\\tutorial2.md",
     "name": "./src/manual/tutorial2.md",
-    "content": "# Tutorial: Tracking Prices | Beginner\r\n\r\nIn this tutorial, you'll learn how to track event values and test \r\n\r\n## Step 1: Declaring your variables\r\n\r\nOnce you've opened your Javascript editor, you should see your default CEVNTPane and CEVNTFeed variables along with some new ones. \r\nThese are most commonly defined as gEvntPane and gPaneFeed.  \r\n\r\n```js\r\nvar gEvntPane;\r\nvar gPaneFeed;\r\nvar gFeedDraw;\r\nvar kSymbolName = \"\";\r\n\r\nvar gCalcTop, gCalcBot;\r\nvar gStatTop, gStatBot;\r\nvar gDrawTop, gDrawBot;\r\n\r\nvar gOnFirstEvent = true; //tracks whether or not our initial value has been set\r\nvar gTopPrice = 0.0; //tracks the top price value\r\nvar gBotPrice = 0.0; //tracks the bottom price value\r\n```\r\n\r\n- [CEVNTCalc](https://bblake.info/doc/class/src/index.js~CEvntCalc.html) ```gCalcTop, gCalcBot``` | \r\nMake sure to create two variables to save our top and bottom-most prices.\r\n- [CEVNTStat](https://bblake.info/doc/class/src/index.js~CEvntStat.html) ```gStatTop, gStatBot``` | \r\nYou'll also need to create two variables to display your top and bottom-most prices in your pane\r\n- [CEVNTDraw](https://bblake.info/doc/class/src/index.js~CEvntDraw.html) ```gDrawTop, gDrawBot``` | \r\nFinally, you'll need to create two variables to draw lines corresponding to your top and bottom-most prices\r\n- [Boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean) ```gOnFirstEvent``` | \r\nSince we'll be starting each symbol time period at an undetermined price, we'll need the first \r\nprice as a starting point to base the rest of our conditional statements on\r\n- [Number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) ```gTopPrice, gBotPrice``` | \r\nFinally, we'll need two simple variables to hold the number value corresponding to the highest and lowest prices of the period\r\n\r\n## Step 2: Variable initialization\r\n\r\n## Step 3: ...\r\n\r\n## Step 4: ...\r\n\r\n## Step 5: ...\r\n\r\n## Results\r\n\r\n#### Congratulations\r\n\r\nAt this point, you should now be able to test, save, and display aspects of events, and \r\nyou should see a chart based off of your selected Symbol for the most recent exchange period like \r\nthe one shown below! Feel free to zoom in and out and scroll through your newly created chart.\r\n\r\n[//]: # \"Your script should now provide functionality similar to [this](https://github.com/PlGGS/Vertex-Analytics/blob/master/sample%20scripts/sampleTopBottomPrices.js)\"\r\n\r\n![view chart](asset/view_chart.png)\r\n\r\n#### Troubleshooting\r\n\r\nFor certain periods throughout the day, EVNTScript will not be able to generate charts. \r\nThis is because the vNine platform makes use of the time in which the exchange is down to process and archive data. \r\nBelow is a chart containing weekly hours of downtime.\r\n\r\n| Monday        | Tuesday       | Wednesday     | Thursday      | Friday  | Saturday | Sunday  |\r\n|---------------|---------------|---------------|---------------|---------|----------|---------|\r\n| 4:00pm-5:00pm | 4:00pm-5:00pm | 4:00pm-5:00pm | 4:00pm-5:00pm | 4:00pm- | -        | -5:00pm |\r\n\r\nAlso, please note that some contracts also stop the exchange from 3:15pm-3:30pm on weekdays.\r\n\r\n#### Contact\r\n\r\nIf you come across any major issue/bugs, please let us know by sending an email with an explanation of what occured to \r\n[support@vertex-analytics.com](mailto:support@vertex-analytics.com).\r\n\r\nAdditionally, if there is something that you think we could improve about this documentation, \r\nplease create a new issue at our repository's [issues page](https://github.com/PlGGS/xva-doc/issues).\r\n",
+    "content": "# Tutorial: Tracking Prices | Beginner\r\n\r\nIn this tutorial, you'll learn how to track event values and test \r\n\r\n## Step 1: Declaring your variables\r\n\r\nOnce you've opened your Javascript editor, you should see your default CEVNTPane and CEVNTFeed variables along with some new ones. \r\nThese are most commonly defined as gEvntPane and gPaneFeed.  \r\n\r\n```js\r\nvar gEvntPane;\r\nvar gPaneFeed;\r\nvar gFeedDraw;\r\nvar kSymbolName = \"\";\r\n\r\nvar gCalcTop, gCalcBot;\r\nvar gStatTop, gStatBot;\r\nvar gDrawTop, gDrawBot;\r\n\r\nvar gOnFirstEvent = true; //tracks whether or not our initial value has been set\r\nvar gTopPrice = 0.0; //tracks the top price value\r\nvar gBotPrice = 0.0; //tracks the bottom price value\r\n```\r\n\r\n- [CEVNTCalc](https://bblake.info/doc/class/src/index.js~CEvntCalc.html) ```gCalcTop, gCalcBot``` | \r\nMake sure to create two variables to save our top and bottom-most prices.\r\n- [CEVNTStat](https://bblake.info/doc/class/src/index.js~CEvntStat.html) ```gStatTop, gStatBot``` | \r\nYou'll also need to create two variables to display your top and bottom-most prices in your pane\r\n- [CEVNTDraw](https://bblake.info/doc/class/src/index.js~CEvntDraw.html) ```gDrawTop, gDrawBot``` | \r\nFinally, you'll need to create two variables to draw lines corresponding to your top and bottom-most prices\r\n- [Boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean) ```gOnFirstEvent``` | \r\nSince we'll be starting each symbol time period at an undetermined price, we'll need the first \r\nprice as a starting point to base the rest of our conditional statements on\r\n- [Number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) ```gTopPrice, gBotPrice``` | \r\nFinally, we'll need two simple variables to hold the number value corresponding to the highest and lowest prices of the period\r\n\r\n## Step 2: Variable initialization\r\n\r\n## Step 3: ...\r\n\r\n## Step 4: ...\r\n\r\n## Step 5: ...\r\n\r\n## Results\r\n\r\n#### Congratulations\r\n\r\nAt this point, you should now be able to test, save, and display aspects of events, and \r\nyou should see a chart based off of your selected Symbol for the most recent exchange period like \r\nthe one shown below! Feel free to zoom in and out and scroll through your newly created chart.\r\n\r\nYour script should now provide functionality similar to [this](https://github.com/PlGGS/Vertex-Analytics/blob/master/sample%20scripts/sampleTopBottomPrices.js)\r\n\r\n![view chart](asset/view_chart.png)\r\n\r\n#### Troubleshooting\r\n\r\nFor certain periods throughout the day, EVNTScript will not be able to generate charts. \r\nThis is because the vNine platform makes use of the time in which the exchange is down to process and archive data. \r\nBelow is a chart containing weekly hours of downtime.\r\n\r\n| Monday        | Tuesday       | Wednesday     | Thursday      | Friday  | Saturday | Sunday  |\r\n|---------------|---------------|---------------|---------------|---------|----------|---------|\r\n| 4:00pm-5:00pm | 4:00pm-5:00pm | 4:00pm-5:00pm | 4:00pm-5:00pm | 4:00pm- | -        | -5:00pm |\r\n\r\nAlso, please note that some contracts also stop the exchange from 3:15pm-3:30pm on weekdays.\r\n\r\n#### Contact\r\n\r\nIf you come across any major issue/bugs, please let us know by sending an email with an explanation of what occured to \r\n[support@vertex-analytics.com](mailto:support@vertex-analytics.com).\r\n\r\nAdditionally, if there is something that you think we could improve about this documentation, \r\nplease create a new issue at our repository's [issues page](https://github.com/PlGGS/xva-doc/issues).\r\n",
+    "static": true,
+    "access": "public"
+  },
+  {
+    "kind": "manual",
+    "longname": "V:\\Repositories\\PlGGS\\vxa-doc\\src\\manual\\formatting.md",
+    "name": "./src/manual/formatting.md",
+    "content": "# Manual\r\n\r\n## General Formatting\r\n\r\n### Notation\r\n\r\nConstants used for distinguishing variable roles\r\n\r\n- `k` | K denotes a constant variable\r\n- `g` | G denotes a global variable\r\n\r\n```js\r\nvar gEvntPane;\r\nvar gPaneFeed;\r\nvar kSymbolName = \"ESM9\";\r\n```\r\n\r\n## Enumerated Constants\r\n\r\n### CEvntFeed.FeedStep\r\n\r\nConstants used for CEvntFeed.FeedStep\r\n\r\n- `kStepShow` | Shows the event aggregating by time\r\n- `kStepHide` | Withholds the even from the Symbol viewport\r\n- `kStepHalt` | Shows the previous event\r\n- `kStepNext` | Advances the step position\r\n\r\n```js\r\ngPaneFeed.FeedStep = kStepHide; //This will hide the current event in the feed\r\n```\r\n\r\n### kEvent.Type\r\n\r\nEnumerated types of events\r\n\r\n- `kEvent.Type.Trade`\r\n- `kEvent.Type.Bid`\r\n- `kEvent.Type.Ask`\r\n- `kEvent.Type.ImpliedBid`\r\n- `kEvent.Type.ImpliedAsk`\r\n- `kEvent.Type.BookReset`\r\n\r\n```js\r\nif (tTick.Type == kEvent.Type.Trade)\r\n{\r\n\t//Do something based on event being a trade\r\n}\r\n```\r\n\r\n### kEvent.Trade.Aggressor\r\n\r\nEnumerated values for getting the type of aggressor of a trade event\r\n\r\n- `kEvent.Trade.Aggressor.Buy`\r\n- `kEvent.Trade.Aggressor.Sell`\r\n\r\n```js\r\nif (tTick.Type == kEvent.Type.Trade)\r\n{\r\n\tif (tTick.Trade.Aggressor == kEvent.Trade.Aggressor.Buy)\r\n\t{\r\n\t\t//Do something based on trade's aggressor being a buyer\r\n\t}\r\n}\r\n```\r\n\r\n### kEvent.Bid.Type\r\n\r\nEnumerated values for getting the type of a bid event\r\n\r\n- `kEvent.Bid.Type.New`\r\n- `kEvent.Bid.Type.Change`\r\n- `kEvent.Bid.Type.Delete`\r\n- `kEvent.Bid.Type.DeleteThru`\r\n- `kEvent.Bid.Type.DeleteFrom`\r\n- `kEvent.Bid.Type.Overlay`\r\n- `kEvent.Bid.Type.Replace`\r\n\r\n```js\r\nif (tTick.Bid.Type == kEvent.Bid.Type.New)\r\n{\r\n\t//Do something based on bid's type being new\r\n}\r\n```\r\n\r\n### kEvent.Ask.Type\r\n\r\nEnumerated values for getting the type of an ask event\r\n\r\n- `kEvent.Ask.Type.New`\r\n- `kEvent.Ask.Type.Change`\r\n- `kEvent.Ask.Type.Delete`\r\n- `kEvent.Ask.Type.DeleteThru`\r\n- `kEvent.Ask.Type.DeleteFrom`\r\n\r\n```js\r\nif (tTick.Ask.Type == kEvent.Ask.Type.New)\r\n{\r\n\t//Do something based on ask's type being new\r\n}\r\n```\r\n\r\n### CEvntPane.Wave\r\n\r\nEnumerated values for playing different audio files\r\n\r\n- `Bang` | 0\r\n- `Clang` | 1\r\n- `Punch` | 2\r\n- `Ring_1` | 3\r\n- `Ring_2` | 4\r\n- `Ring_3` | 5\r\n- `Ring_4` | 6\r\n- `Ring_5` | 7\r\n- `Ring_6` | 8\r\n- `Ring_7` | 9\r\n- `Slap` | 10\r\n\r\n```js\r\nCEvntPane.PlayWave(0); //Plays a bang!\r\n```\r\n\r\n## Built-in Functions\r\n\r\n### onLoad()\r\n\r\nThe built in onLoad function is called when the user clicks the run button shown below.\r\n\r\n```js\r\nfunction onLoad ()\r\n{\r\n    gEvntPane = MakePane();\r\n    gPaneFeed = gEvntPane.MakeFeed(gSymbolName);\r\n    gDrawFeed = gEvntPane.MakeDraw(gPaneFeed);\t\r\n}\r\n```\r\n\r\n- ```MakePane()``` | Returns a new [CEVNTPane](https://bblake.info/doc/class/src/index.js~CEvntPane.html) object\r\n- ```gEvntPane.MakeFeed(gSymbolName)``` | Returns a new [CEVNTFeed](https://bblake.info/doc/class/src/index.js~CEvntFeed.html) object based on the specified symbol name \r\n- ```gEvntPane.MakeDraw(gPaneFeed)``` | Returns a new [CEVNTDraw](https://bblake.info/doc/class/src/index.js~CEVNTDraw.html) object\r\n\r\n![click run](asset/click_run.png)\r\n\r\n### onOpen()\r\n\r\nThe built in onOpen function is called once the pane has properly loaded and rendered the Symbol information.\r\n\r\n```js\r\nfunction onOpen ()\r\n{\r\n\t\r\n}\r\n```\r\n\r\n### onEvent()\r\n\r\nThe built in onEvent function is called once for each timestamp you play back.\r\n\r\n```js\r\nfunction onEvent (pFeed, pSequ)\r\n{\r\n\t\r\n}\r\n```\r\n\r\n- ```pFeed``` | Parameter: Your [CEVNTFeed](https://bblake.info/doc/class/src/index.js~CEvntPane.html) object with timestamps measured in nanoseconds with 56 bit precision\r\n- ```pSequ``` | Parameter: An integer that defaults to 0 that is used for Amount of events within this sequence\r\n\r\n### onStop()\r\n\r\nThe built in onStop function is called when the user clicks the stop button shown below.\r\n\r\n```js\r\nfunction onStop ()\r\n{\r\n\t\r\n}\r\n```\r\n\r\n![click stop](asset/click_stop.png)",
     "static": true,
     "access": "public"
   }
