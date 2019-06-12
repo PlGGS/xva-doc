@@ -1,29 +1,29 @@
 {
   "type": "File",
   "start": 0,
-  "end": 8907,
+  "end": 9038,
   "loc": {
     "start": {
       "line": 1,
       "column": 0
     },
     "end": {
-      "line": 407,
-      "column": 0
+      "line": 414,
+      "column": 1
     }
   },
   "program": {
     "type": "Program",
     "start": 0,
-    "end": 8907,
+    "end": 9038,
     "loc": {
       "start": {
         "line": 1,
         "column": 0
       },
       "end": {
-        "line": 407,
-        "column": 0
+        "line": 414,
+        "column": 1
       }
     },
     "sourceType": "module",
@@ -6893,16 +6893,16 @@
           "trailingComments": [
             {
               "type": "CommentBlock",
-              "value": "*\r\n * This is a built in function which triggers when the script starts to get general script parameters, including the primary script symbol.\r\n ",
+              "value": "*\r\n * This public function is critical to creating your main pane.\r\n * @example\r\n * gEvntPane = MakePane();\r\n ",
               "start": 8062,
-              "end": 8211,
+              "end": 8176,
               "loc": {
                 "start": {
                   "line": 372,
                   "column": 0
                 },
                 "end": {
-                  "line": 374,
+                  "line": 376,
                   "column": 3
                 }
               }
@@ -6930,306 +6930,16 @@
         "trailingComments": [
           {
             "type": "CommentBlock",
-            "value": "*\r\n * This is a built in function which triggers when the script starts to get general script parameters, including the primary script symbol.\r\n ",
-            "start": 8062,
-            "end": 8211,
-            "loc": {
-              "start": {
-                "line": 372,
-                "column": 0
-              },
-              "end": {
-                "line": 374,
-                "column": 3
-              }
-            }
-          }
-        ]
-      },
-      {
-        "type": "ExportNamedDeclaration",
-        "start": 8213,
-        "end": 8249,
-        "loc": {
-          "start": {
-            "line": 375,
-            "column": 0
-          },
-          "end": {
-            "line": 378,
-            "column": 1
-          }
-        },
-        "specifiers": [],
-        "source": null,
-        "declaration": {
-          "type": "FunctionDeclaration",
-          "start": 8220,
-          "end": 8249,
-          "loc": {
-            "start": {
-              "line": 375,
-              "column": 7
-            },
-            "end": {
-              "line": 378,
-              "column": 1
-            }
-          },
-          "id": {
-            "type": "Identifier",
-            "start": 8229,
-            "end": 8235,
-            "loc": {
-              "start": {
-                "line": 375,
-                "column": 16
-              },
-              "end": {
-                "line": 375,
-                "column": 22
-              },
-              "identifierName": "onLoad"
-            },
-            "name": "onLoad",
-            "leadingComments": null
-          },
-          "generator": false,
-          "expression": false,
-          "async": false,
-          "params": [],
-          "body": {
-            "type": "BlockStatement",
-            "start": 8239,
-            "end": 8249,
-            "loc": {
-              "start": {
-                "line": 376,
-                "column": 0
-              },
-              "end": {
-                "line": 378,
-                "column": 1
-              }
-            },
-            "body": [],
-            "directives": [],
-            "leadingComments": null,
-            "trailingComments": null
-          },
-          "leadingComments": [
-            {
-              "type": "CommentBlock",
-              "value": "*\r\n * This is a built in function which triggers when the script starts to get general script parameters, including the primary script symbol.\r\n ",
-              "start": 8062,
-              "end": 8211,
-              "loc": {
-                "start": {
-                  "line": 372,
-                  "column": 0
-                },
-                "end": {
-                  "line": 374,
-                  "column": 3
-                }
-              }
-            }
-          ],
-          "trailingComments": [
-            {
-              "type": "CommentBlock",
-              "value": "*\r\n * This is a built in function which triggers when the symbol is successfully loaded and the EOS and instrument data is ready.\r\n ",
-              "start": 8253,
-              "end": 8389,
-              "loc": {
-                "start": {
-                  "line": 380,
-                  "column": 0
-                },
-                "end": {
-                  "line": 382,
-                  "column": 3
-                }
-              }
-            }
-          ]
-        },
-        "leadingComments": [
-          {
-            "type": "CommentBlock",
-            "value": "*\r\n * This is a built in function which triggers when the script starts to get general script parameters, including the primary script symbol.\r\n ",
-            "start": 8062,
-            "end": 8211,
-            "loc": {
-              "start": {
-                "line": 372,
-                "column": 0
-              },
-              "end": {
-                "line": 374,
-                "column": 3
-              }
-            }
-          }
-        ],
-        "trailingComments": [
-          {
-            "type": "CommentBlock",
-            "value": "*\r\n * This is a built in function which triggers when the symbol is successfully loaded and the EOS and instrument data is ready.\r\n ",
-            "start": 8253,
-            "end": 8389,
-            "loc": {
-              "start": {
-                "line": 380,
-                "column": 0
-              },
-              "end": {
-                "line": 382,
-                "column": 3
-              }
-            }
-          }
-        ]
-      },
-      {
-        "type": "ExportNamedDeclaration",
-        "start": 8391,
-        "end": 8423,
-        "loc": {
-          "start": {
-            "line": 383,
-            "column": 0
-          },
-          "end": {
-            "line": 386,
-            "column": 1
-          }
-        },
-        "specifiers": [],
-        "source": null,
-        "declaration": {
-          "type": "FunctionDeclaration",
-          "start": 8398,
-          "end": 8423,
-          "loc": {
-            "start": {
-              "line": 383,
-              "column": 7
-            },
-            "end": {
-              "line": 386,
-              "column": 1
-            }
-          },
-          "id": {
-            "type": "Identifier",
-            "start": 8407,
-            "end": 8413,
-            "loc": {
-              "start": {
-                "line": 383,
-                "column": 16
-              },
-              "end": {
-                "line": 383,
-                "column": 22
-              },
-              "identifierName": "onOpen"
-            },
-            "name": "onOpen",
-            "leadingComments": null
-          },
-          "generator": false,
-          "expression": false,
-          "async": false,
-          "params": [],
-          "body": {
-            "type": "BlockStatement",
-            "start": 8417,
-            "end": 8423,
-            "loc": {
-              "start": {
-                "line": 384,
-                "column": 0
-              },
-              "end": {
-                "line": 386,
-                "column": 1
-              }
-            },
-            "body": [],
-            "directives": [],
-            "leadingComments": null,
-            "trailingComments": null
-          },
-          "leadingComments": [
-            {
-              "type": "CommentBlock",
-              "value": "*\r\n * This is a built in function which triggers when the symbol is successfully loaded and the EOS and instrument data is ready.\r\n ",
-              "start": 8253,
-              "end": 8389,
-              "loc": {
-                "start": {
-                  "line": 380,
-                  "column": 0
-                },
-                "end": {
-                  "line": 382,
-                  "column": 3
-                }
-              }
-            }
-          ],
-          "trailingComments": [
-            {
-              "type": "CommentBlock",
-              "value": "*\r\n * This public function is critical to creating your main pane.\r\n * @example\r\n * gEvntPane = MakePane();\r\n ",
-              "start": 8427,
-              "end": 8541,
-              "loc": {
-                "start": {
-                  "line": 388,
-                  "column": 0
-                },
-                "end": {
-                  "line": 392,
-                  "column": 3
-                }
-              }
-            }
-          ]
-        },
-        "leadingComments": [
-          {
-            "type": "CommentBlock",
-            "value": "*\r\n * This is a built in function which triggers when the symbol is successfully loaded and the EOS and instrument data is ready.\r\n ",
-            "start": 8253,
-            "end": 8389,
-            "loc": {
-              "start": {
-                "line": 380,
-                "column": 0
-              },
-              "end": {
-                "line": 382,
-                "column": 3
-              }
-            }
-          }
-        ],
-        "trailingComments": [
-          {
-            "type": "CommentBlock",
             "value": "*\r\n * This public function is critical to creating your main pane.\r\n * @example\r\n * gEvntPane = MakePane();\r\n ",
-            "start": 8427,
-            "end": 8541,
+            "start": 8062,
+            "end": 8176,
             "loc": {
               "start": {
-                "line": 388,
+                "line": 372,
                 "column": 0
               },
               "end": {
-                "line": 392,
+                "line": 376,
                 "column": 3
               }
             }
@@ -7238,15 +6948,15 @@
       },
       {
         "type": "ExportNamedDeclaration",
-        "start": 8543,
-        "end": 8577,
+        "start": 8178,
+        "end": 8212,
         "loc": {
           "start": {
-            "line": 393,
+            "line": 377,
             "column": 0
           },
           "end": {
-            "line": 396,
+            "line": 380,
             "column": 1
           }
         },
@@ -7254,29 +6964,29 @@
         "source": null,
         "declaration": {
           "type": "FunctionDeclaration",
-          "start": 8550,
-          "end": 8577,
+          "start": 8185,
+          "end": 8212,
           "loc": {
             "start": {
-              "line": 393,
+              "line": 377,
               "column": 7
             },
             "end": {
-              "line": 396,
+              "line": 380,
               "column": 1
             }
           },
           "id": {
             "type": "Identifier",
-            "start": 8559,
-            "end": 8567,
+            "start": 8194,
+            "end": 8202,
             "loc": {
               "start": {
-                "line": 393,
+                "line": 377,
                 "column": 16
               },
               "end": {
-                "line": 393,
+                "line": 377,
                 "column": 24
               },
               "identifierName": "MakePane"
@@ -7290,15 +7000,15 @@
           "params": [],
           "body": {
             "type": "BlockStatement",
-            "start": 8571,
-            "end": 8577,
+            "start": 8206,
+            "end": 8212,
             "loc": {
               "start": {
-                "line": 394,
+                "line": 378,
                 "column": 0
               },
               "end": {
-                "line": 396,
+                "line": 380,
                 "column": 1
               }
             },
@@ -7311,15 +7021,160 @@
             {
               "type": "CommentBlock",
               "value": "*\r\n * This public function is critical to creating your main pane.\r\n * @example\r\n * gEvntPane = MakePane();\r\n ",
-              "start": 8427,
-              "end": 8541,
+              "start": 8062,
+              "end": 8176,
               "loc": {
                 "start": {
-                  "line": 388,
+                  "line": 372,
                   "column": 0
                 },
                 "end": {
-                  "line": 392,
+                  "line": 376,
+                  "column": 3
+                }
+              }
+            }
+          ],
+          "trailingComments": [
+            {
+              "type": "CommentBlock",
+              "value": "*\r\n * This is a built in function which triggers when the script starts to get general script parameters, including the primary script symbol.\r\n ",
+              "start": 8216,
+              "end": 8365,
+              "loc": {
+                "start": {
+                  "line": 382,
+                  "column": 0
+                },
+                "end": {
+                  "line": 384,
+                  "column": 3
+                }
+              }
+            }
+          ]
+        },
+        "leadingComments": [
+          {
+            "type": "CommentBlock",
+            "value": "*\r\n * This public function is critical to creating your main pane.\r\n * @example\r\n * gEvntPane = MakePane();\r\n ",
+            "start": 8062,
+            "end": 8176,
+            "loc": {
+              "start": {
+                "line": 372,
+                "column": 0
+              },
+              "end": {
+                "line": 376,
+                "column": 3
+              }
+            }
+          }
+        ],
+        "trailingComments": [
+          {
+            "type": "CommentBlock",
+            "value": "*\r\n * This is a built in function which triggers when the script starts to get general script parameters, including the primary script symbol.\r\n ",
+            "start": 8216,
+            "end": 8365,
+            "loc": {
+              "start": {
+                "line": 382,
+                "column": 0
+              },
+              "end": {
+                "line": 384,
+                "column": 3
+              }
+            }
+          }
+        ]
+      },
+      {
+        "type": "ExportNamedDeclaration",
+        "start": 8367,
+        "end": 8403,
+        "loc": {
+          "start": {
+            "line": 385,
+            "column": 0
+          },
+          "end": {
+            "line": 388,
+            "column": 1
+          }
+        },
+        "specifiers": [],
+        "source": null,
+        "declaration": {
+          "type": "FunctionDeclaration",
+          "start": 8374,
+          "end": 8403,
+          "loc": {
+            "start": {
+              "line": 385,
+              "column": 7
+            },
+            "end": {
+              "line": 388,
+              "column": 1
+            }
+          },
+          "id": {
+            "type": "Identifier",
+            "start": 8383,
+            "end": 8389,
+            "loc": {
+              "start": {
+                "line": 385,
+                "column": 16
+              },
+              "end": {
+                "line": 385,
+                "column": 22
+              },
+              "identifierName": "onLoad"
+            },
+            "name": "onLoad",
+            "leadingComments": null
+          },
+          "generator": false,
+          "expression": false,
+          "async": false,
+          "params": [],
+          "body": {
+            "type": "BlockStatement",
+            "start": 8393,
+            "end": 8403,
+            "loc": {
+              "start": {
+                "line": 386,
+                "column": 0
+              },
+              "end": {
+                "line": 388,
+                "column": 1
+              }
+            },
+            "body": [],
+            "directives": [],
+            "leadingComments": null,
+            "trailingComments": null
+          },
+          "leadingComments": [
+            {
+              "type": "CommentBlock",
+              "value": "*\r\n * This is a built in function which triggers when the script starts to get general script parameters, including the primary script symbol.\r\n ",
+              "start": 8216,
+              "end": 8365,
+              "loc": {
+                "start": {
+                  "line": 382,
+                  "column": 0
+                },
+                "end": {
+                  "line": 384,
                   "column": 3
                 }
               }
@@ -7329,11 +7184,191 @@
             {
               "type": "CommentBlock",
               "value": "*\r\n * This is a built in function which triggers for each event in the pFeed stream.\r\n * @param {CEvntFeed} pFeed - A CEVNTFeed object with timestamps measured in nanoseconds with 56 bit precision\r\n * @param {Number} pSequ - Amount of events to read within this sequence\r\n ",
-              "start": 8581,
-              "end": 8858,
+              "start": 8407,
+              "end": 8684,
               "loc": {
                 "start": {
-                  "line": 398,
+                  "line": 390,
+                  "column": 0
+                },
+                "end": {
+                  "line": 394,
+                  "column": 3
+                }
+              }
+            }
+          ]
+        },
+        "leadingComments": [
+          {
+            "type": "CommentBlock",
+            "value": "*\r\n * This is a built in function which triggers when the script starts to get general script parameters, including the primary script symbol.\r\n ",
+            "start": 8216,
+            "end": 8365,
+            "loc": {
+              "start": {
+                "line": 382,
+                "column": 0
+              },
+              "end": {
+                "line": 384,
+                "column": 3
+              }
+            }
+          }
+        ],
+        "trailingComments": [
+          {
+            "type": "CommentBlock",
+            "value": "*\r\n * This is a built in function which triggers for each event in the pFeed stream.\r\n * @param {CEvntFeed} pFeed - A CEVNTFeed object with timestamps measured in nanoseconds with 56 bit precision\r\n * @param {Number} pSequ - Amount of events to read within this sequence\r\n ",
+            "start": 8407,
+            "end": 8684,
+            "loc": {
+              "start": {
+                "line": 390,
+                "column": 0
+              },
+              "end": {
+                "line": 394,
+                "column": 3
+              }
+            }
+          }
+        ]
+      },
+      {
+        "type": "ExportNamedDeclaration",
+        "start": 8686,
+        "end": 8731,
+        "loc": {
+          "start": {
+            "line": 395,
+            "column": 0
+          },
+          "end": {
+            "line": 398,
+            "column": 1
+          }
+        },
+        "specifiers": [],
+        "source": null,
+        "declaration": {
+          "type": "FunctionDeclaration",
+          "start": 8693,
+          "end": 8731,
+          "loc": {
+            "start": {
+              "line": 395,
+              "column": 7
+            },
+            "end": {
+              "line": 398,
+              "column": 1
+            }
+          },
+          "id": {
+            "type": "Identifier",
+            "start": 8702,
+            "end": 8709,
+            "loc": {
+              "start": {
+                "line": 395,
+                "column": 16
+              },
+              "end": {
+                "line": 395,
+                "column": 23
+              },
+              "identifierName": "onEvent"
+            },
+            "name": "onEvent",
+            "leadingComments": null
+          },
+          "generator": false,
+          "expression": false,
+          "async": false,
+          "params": [
+            {
+              "type": "Identifier",
+              "start": 8710,
+              "end": 8715,
+              "loc": {
+                "start": {
+                  "line": 395,
+                  "column": 24
+                },
+                "end": {
+                  "line": 395,
+                  "column": 29
+                },
+                "identifierName": "pFeed"
+              },
+              "name": "pFeed"
+            },
+            {
+              "type": "Identifier",
+              "start": 8717,
+              "end": 8722,
+              "loc": {
+                "start": {
+                  "line": 395,
+                  "column": 31
+                },
+                "end": {
+                  "line": 395,
+                  "column": 36
+                },
+                "identifierName": "pSequ"
+              },
+              "name": "pSequ"
+            }
+          ],
+          "body": {
+            "type": "BlockStatement",
+            "start": 8725,
+            "end": 8731,
+            "loc": {
+              "start": {
+                "line": 396,
+                "column": 0
+              },
+              "end": {
+                "line": 398,
+                "column": 1
+              }
+            },
+            "body": [],
+            "directives": [],
+            "leadingComments": null,
+            "trailingComments": null
+          },
+          "leadingComments": [
+            {
+              "type": "CommentBlock",
+              "value": "*\r\n * This is a built in function which triggers for each event in the pFeed stream.\r\n * @param {CEvntFeed} pFeed - A CEVNTFeed object with timestamps measured in nanoseconds with 56 bit precision\r\n * @param {Number} pSequ - Amount of events to read within this sequence\r\n ",
+              "start": 8407,
+              "end": 8684,
+              "loc": {
+                "start": {
+                  "line": 390,
+                  "column": 0
+                },
+                "end": {
+                  "line": 394,
+                  "column": 3
+                }
+              }
+            }
+          ],
+          "trailingComments": [
+            {
+              "type": "CommentBlock",
+              "value": "*\r\n * This is a built in function which triggers when the symbol is successfully loaded and the EOS and instrument data is ready.\r\n ",
+              "start": 8735,
+              "end": 8871,
+              "loc": {
+                "start": {
+                  "line": 400,
                   "column": 0
                 },
                 "end": {
@@ -7347,16 +7382,16 @@
         "leadingComments": [
           {
             "type": "CommentBlock",
-            "value": "*\r\n * This public function is critical to creating your main pane.\r\n * @example\r\n * gEvntPane = MakePane();\r\n ",
-            "start": 8427,
-            "end": 8541,
+            "value": "*\r\n * This is a built in function which triggers for each event in the pFeed stream.\r\n * @param {CEvntFeed} pFeed - A CEVNTFeed object with timestamps measured in nanoseconds with 56 bit precision\r\n * @param {Number} pSequ - Amount of events to read within this sequence\r\n ",
+            "start": 8407,
+            "end": 8684,
             "loc": {
               "start": {
-                "line": 388,
+                "line": 390,
                 "column": 0
               },
               "end": {
-                "line": 392,
+                "line": 394,
                 "column": 3
               }
             }
@@ -7365,12 +7400,12 @@
         "trailingComments": [
           {
             "type": "CommentBlock",
-            "value": "*\r\n * This is a built in function which triggers for each event in the pFeed stream.\r\n * @param {CEvntFeed} pFeed - A CEVNTFeed object with timestamps measured in nanoseconds with 56 bit precision\r\n * @param {Number} pSequ - Amount of events to read within this sequence\r\n ",
-            "start": 8581,
-            "end": 8858,
+            "value": "*\r\n * This is a built in function which triggers when the symbol is successfully loaded and the EOS and instrument data is ready.\r\n ",
+            "start": 8735,
+            "end": 8871,
             "loc": {
               "start": {
-                "line": 398,
+                "line": 400,
                 "column": 0
               },
               "end": {
@@ -7383,7 +7418,7 @@
       },
       {
         "type": "ExportNamedDeclaration",
-        "start": 8860,
+        "start": 8873,
         "end": 8905,
         "loc": {
           "start": {
@@ -7399,7 +7434,7 @@
         "source": null,
         "declaration": {
           "type": "FunctionDeclaration",
-          "start": 8867,
+          "start": 8880,
           "end": 8905,
           "loc": {
             "start": {
@@ -7413,8 +7448,8 @@
           },
           "id": {
             "type": "Identifier",
-            "start": 8876,
-            "end": 8883,
+            "start": 8889,
+            "end": 8895,
             "loc": {
               "start": {
                 "line": 403,
@@ -7422,52 +7457,17 @@
               },
               "end": {
                 "line": 403,
-                "column": 23
+                "column": 22
               },
-              "identifierName": "onEvent"
+              "identifierName": "onOpen"
             },
-            "name": "onEvent",
+            "name": "onOpen",
             "leadingComments": null
           },
           "generator": false,
           "expression": false,
           "async": false,
-          "params": [
-            {
-              "type": "Identifier",
-              "start": 8884,
-              "end": 8889,
-              "loc": {
-                "start": {
-                  "line": 403,
-                  "column": 24
-                },
-                "end": {
-                  "line": 403,
-                  "column": 29
-                },
-                "identifierName": "pFeed"
-              },
-              "name": "pFeed"
-            },
-            {
-              "type": "Identifier",
-              "start": 8891,
-              "end": 8896,
-              "loc": {
-                "start": {
-                  "line": 403,
-                  "column": 31
-                },
-                "end": {
-                  "line": 403,
-                  "column": 36
-                },
-                "identifierName": "pSequ"
-              },
-              "name": "pSequ"
-            }
-          ],
+          "params": [],
           "body": {
             "type": "BlockStatement",
             "start": 8899,
@@ -7483,21 +7483,166 @@
               }
             },
             "body": [],
+            "directives": [],
+            "leadingComments": null,
+            "trailingComments": null
+          },
+          "leadingComments": [
+            {
+              "type": "CommentBlock",
+              "value": "*\r\n * This is a built in function which triggers when the symbol is successfully loaded and the EOS and instrument data is ready.\r\n ",
+              "start": 8735,
+              "end": 8871,
+              "loc": {
+                "start": {
+                  "line": 400,
+                  "column": 0
+                },
+                "end": {
+                  "line": 402,
+                  "column": 3
+                }
+              }
+            }
+          ],
+          "trailingComments": [
+            {
+              "type": "CommentBlock",
+              "value": "*\r\n * This is a built in function which triggers when the symbol is stopped by the user.\r\n ",
+              "start": 8909,
+              "end": 9004,
+              "loc": {
+                "start": {
+                  "line": 408,
+                  "column": 0
+                },
+                "end": {
+                  "line": 410,
+                  "column": 3
+                }
+              }
+            }
+          ]
+        },
+        "leadingComments": [
+          {
+            "type": "CommentBlock",
+            "value": "*\r\n * This is a built in function which triggers when the symbol is successfully loaded and the EOS and instrument data is ready.\r\n ",
+            "start": 8735,
+            "end": 8871,
+            "loc": {
+              "start": {
+                "line": 400,
+                "column": 0
+              },
+              "end": {
+                "line": 402,
+                "column": 3
+              }
+            }
+          }
+        ],
+        "trailingComments": [
+          {
+            "type": "CommentBlock",
+            "value": "*\r\n * This is a built in function which triggers when the symbol is stopped by the user.\r\n ",
+            "start": 8909,
+            "end": 9004,
+            "loc": {
+              "start": {
+                "line": 408,
+                "column": 0
+              },
+              "end": {
+                "line": 410,
+                "column": 3
+              }
+            }
+          }
+        ]
+      },
+      {
+        "type": "ExportNamedDeclaration",
+        "start": 9006,
+        "end": 9038,
+        "loc": {
+          "start": {
+            "line": 411,
+            "column": 0
+          },
+          "end": {
+            "line": 414,
+            "column": 1
+          }
+        },
+        "specifiers": [],
+        "source": null,
+        "declaration": {
+          "type": "FunctionDeclaration",
+          "start": 9013,
+          "end": 9038,
+          "loc": {
+            "start": {
+              "line": 411,
+              "column": 7
+            },
+            "end": {
+              "line": 414,
+              "column": 1
+            }
+          },
+          "id": {
+            "type": "Identifier",
+            "start": 9022,
+            "end": 9028,
+            "loc": {
+              "start": {
+                "line": 411,
+                "column": 16
+              },
+              "end": {
+                "line": 411,
+                "column": 22
+              },
+              "identifierName": "onStop"
+            },
+            "name": "onStop",
+            "leadingComments": null
+          },
+          "generator": false,
+          "expression": false,
+          "async": false,
+          "params": [],
+          "body": {
+            "type": "BlockStatement",
+            "start": 9032,
+            "end": 9038,
+            "loc": {
+              "start": {
+                "line": 412,
+                "column": 0
+              },
+              "end": {
+                "line": 414,
+                "column": 1
+              }
+            },
+            "body": [],
             "directives": []
           },
           "leadingComments": [
             {
               "type": "CommentBlock",
-              "value": "*\r\n * This is a built in function which triggers for each event in the pFeed stream.\r\n * @param {CEvntFeed} pFeed - A CEVNTFeed object with timestamps measured in nanoseconds with 56 bit precision\r\n * @param {Number} pSequ - Amount of events to read within this sequence\r\n ",
-              "start": 8581,
-              "end": 8858,
+              "value": "*\r\n * This is a built in function which triggers when the symbol is stopped by the user.\r\n ",
+              "start": 8909,
+              "end": 9004,
               "loc": {
                 "start": {
-                  "line": 398,
+                  "line": 408,
                   "column": 0
                 },
                 "end": {
-                  "line": 402,
+                  "line": 410,
                   "column": 3
                 }
               }
@@ -7508,16 +7653,16 @@
         "leadingComments": [
           {
             "type": "CommentBlock",
-            "value": "*\r\n * This is a built in function which triggers for each event in the pFeed stream.\r\n * @param {CEvntFeed} pFeed - A CEVNTFeed object with timestamps measured in nanoseconds with 56 bit precision\r\n * @param {Number} pSequ - Amount of events to read within this sequence\r\n ",
-            "start": 8581,
-            "end": 8858,
+            "value": "*\r\n * This is a built in function which triggers when the symbol is stopped by the user.\r\n ",
+            "start": 8909,
+            "end": 9004,
             "loc": {
               "start": {
-                "line": 398,
+                "line": 408,
                 "column": 0
               },
               "end": {
-                "line": 402,
+                "line": 410,
                 "column": 3
               }
             }
@@ -8218,48 +8363,32 @@
     },
     {
       "type": "CommentBlock",
-      "value": "*\r\n * This is a built in function which triggers when the script starts to get general script parameters, including the primary script symbol.\r\n ",
+      "value": "*\r\n * This public function is critical to creating your main pane.\r\n * @example\r\n * gEvntPane = MakePane();\r\n ",
       "start": 8062,
-      "end": 8211,
+      "end": 8176,
       "loc": {
         "start": {
           "line": 372,
           "column": 0
         },
         "end": {
-          "line": 374,
+          "line": 376,
           "column": 3
         }
       }
     },
     {
       "type": "CommentBlock",
-      "value": "*\r\n * This is a built in function which triggers when the symbol is successfully loaded and the EOS and instrument data is ready.\r\n ",
-      "start": 8253,
-      "end": 8389,
+      "value": "*\r\n * This is a built in function which triggers when the script starts to get general script parameters, including the primary script symbol.\r\n ",
+      "start": 8216,
+      "end": 8365,
       "loc": {
         "start": {
-          "line": 380,
-          "column": 0
-        },
-        "end": {
           "line": 382,
-          "column": 3
-        }
-      }
-    },
-    {
-      "type": "CommentBlock",
-      "value": "*\r\n * This public function is critical to creating your main pane.\r\n * @example\r\n * gEvntPane = MakePane();\r\n ",
-      "start": 8427,
-      "end": 8541,
-      "loc": {
-        "start": {
-          "line": 388,
           "column": 0
         },
         "end": {
-          "line": 392,
+          "line": 384,
           "column": 3
         }
       }
@@ -8267,15 +8396,47 @@
     {
       "type": "CommentBlock",
       "value": "*\r\n * This is a built in function which triggers for each event in the pFeed stream.\r\n * @param {CEvntFeed} pFeed - A CEVNTFeed object with timestamps measured in nanoseconds with 56 bit precision\r\n * @param {Number} pSequ - Amount of events to read within this sequence\r\n ",
-      "start": 8581,
-      "end": 8858,
+      "start": 8407,
+      "end": 8684,
       "loc": {
         "start": {
-          "line": 398,
+          "line": 390,
+          "column": 0
+        },
+        "end": {
+          "line": 394,
+          "column": 3
+        }
+      }
+    },
+    {
+      "type": "CommentBlock",
+      "value": "*\r\n * This is a built in function which triggers when the symbol is successfully loaded and the EOS and instrument data is ready.\r\n ",
+      "start": 8735,
+      "end": 8871,
+      "loc": {
+        "start": {
+          "line": 400,
           "column": 0
         },
         "end": {
           "line": 402,
+          "column": 3
+        }
+      }
+    },
+    {
+      "type": "CommentBlock",
+      "value": "*\r\n * This is a built in function which triggers when the symbol is stopped by the user.\r\n ",
+      "start": 8909,
+      "end": 9004,
+      "loc": {
+        "start": {
+          "line": 408,
+          "column": 0
+        },
+        "end": {
+          "line": 410,
           "column": 3
         }
       }
@@ -18733,213 +18894,16 @@
     },
     {
       "type": "CommentBlock",
-      "value": "*\r\n * This is a built in function which triggers when the script starts to get general script parameters, including the primary script symbol.\r\n ",
+      "value": "*\r\n * This public function is critical to creating your main pane.\r\n * @example\r\n * gEvntPane = MakePane();\r\n ",
       "start": 8062,
-      "end": 8211,
+      "end": 8176,
       "loc": {
         "start": {
           "line": 372,
           "column": 0
         },
         "end": {
-          "line": 374,
-          "column": 3
-        }
-      }
-    },
-    {
-      "type": {
-        "label": "export",
-        "keyword": "export",
-        "beforeExpr": false,
-        "startsExpr": false,
-        "rightAssociative": false,
-        "isLoop": false,
-        "isAssign": false,
-        "prefix": false,
-        "postfix": false,
-        "binop": null,
-        "updateContext": null
-      },
-      "value": "export",
-      "start": 8213,
-      "end": 8219,
-      "loc": {
-        "start": {
-          "line": 375,
-          "column": 0
-        },
-        "end": {
-          "line": 375,
-          "column": 6
-        }
-      }
-    },
-    {
-      "type": {
-        "label": "function",
-        "keyword": "function",
-        "beforeExpr": false,
-        "startsExpr": true,
-        "rightAssociative": false,
-        "isLoop": false,
-        "isAssign": false,
-        "prefix": false,
-        "postfix": false,
-        "binop": null
-      },
-      "value": "function",
-      "start": 8220,
-      "end": 8228,
-      "loc": {
-        "start": {
-          "line": 375,
-          "column": 7
-        },
-        "end": {
-          "line": 375,
-          "column": 15
-        }
-      }
-    },
-    {
-      "type": {
-        "label": "name",
-        "beforeExpr": false,
-        "startsExpr": true,
-        "rightAssociative": false,
-        "isLoop": false,
-        "isAssign": false,
-        "prefix": false,
-        "postfix": false,
-        "binop": null
-      },
-      "value": "onLoad",
-      "start": 8229,
-      "end": 8235,
-      "loc": {
-        "start": {
-          "line": 375,
-          "column": 16
-        },
-        "end": {
-          "line": 375,
-          "column": 22
-        }
-      }
-    },
-    {
-      "type": {
-        "label": "(",
-        "beforeExpr": true,
-        "startsExpr": true,
-        "rightAssociative": false,
-        "isLoop": false,
-        "isAssign": false,
-        "prefix": false,
-        "postfix": false,
-        "binop": null
-      },
-      "start": 8235,
-      "end": 8236,
-      "loc": {
-        "start": {
-          "line": 375,
-          "column": 22
-        },
-        "end": {
-          "line": 375,
-          "column": 23
-        }
-      }
-    },
-    {
-      "type": {
-        "label": ")",
-        "beforeExpr": false,
-        "startsExpr": false,
-        "rightAssociative": false,
-        "isLoop": false,
-        "isAssign": false,
-        "prefix": false,
-        "postfix": false,
-        "binop": null
-      },
-      "start": 8236,
-      "end": 8237,
-      "loc": {
-        "start": {
-          "line": 375,
-          "column": 23
-        },
-        "end": {
-          "line": 375,
-          "column": 24
-        }
-      }
-    },
-    {
-      "type": {
-        "label": "{",
-        "beforeExpr": true,
-        "startsExpr": true,
-        "rightAssociative": false,
-        "isLoop": false,
-        "isAssign": false,
-        "prefix": false,
-        "postfix": false,
-        "binop": null
-      },
-      "start": 8239,
-      "end": 8240,
-      "loc": {
-        "start": {
           "line": 376,
-          "column": 0
-        },
-        "end": {
-          "line": 376,
-          "column": 1
-        }
-      }
-    },
-    {
-      "type": {
-        "label": "}",
-        "beforeExpr": false,
-        "startsExpr": false,
-        "rightAssociative": false,
-        "isLoop": false,
-        "isAssign": false,
-        "prefix": false,
-        "postfix": false,
-        "binop": null
-      },
-      "start": 8248,
-      "end": 8249,
-      "loc": {
-        "start": {
-          "line": 378,
-          "column": 0
-        },
-        "end": {
-          "line": 378,
-          "column": 1
-        }
-      }
-    },
-    {
-      "type": "CommentBlock",
-      "value": "*\r\n * This is a built in function which triggers when the symbol is successfully loaded and the EOS and instrument data is ready.\r\n ",
-      "start": 8253,
-      "end": 8389,
-      "loc": {
-        "start": {
-          "line": 380,
-          "column": 0
-        },
-        "end": {
-          "line": 382,
           "column": 3
         }
       }
@@ -18959,15 +18923,15 @@
         "updateContext": null
       },
       "value": "export",
-      "start": 8391,
-      "end": 8397,
+      "start": 8178,
+      "end": 8184,
       "loc": {
         "start": {
-          "line": 383,
+          "line": 377,
           "column": 0
         },
         "end": {
-          "line": 383,
+          "line": 377,
           "column": 6
         }
       }
@@ -18986,212 +18950,15 @@
         "binop": null
       },
       "value": "function",
-      "start": 8398,
-      "end": 8406,
+      "start": 8185,
+      "end": 8193,
       "loc": {
         "start": {
-          "line": 383,
+          "line": 377,
           "column": 7
         },
         "end": {
-          "line": 383,
-          "column": 15
-        }
-      }
-    },
-    {
-      "type": {
-        "label": "name",
-        "beforeExpr": false,
-        "startsExpr": true,
-        "rightAssociative": false,
-        "isLoop": false,
-        "isAssign": false,
-        "prefix": false,
-        "postfix": false,
-        "binop": null
-      },
-      "value": "onOpen",
-      "start": 8407,
-      "end": 8413,
-      "loc": {
-        "start": {
-          "line": 383,
-          "column": 16
-        },
-        "end": {
-          "line": 383,
-          "column": 22
-        }
-      }
-    },
-    {
-      "type": {
-        "label": "(",
-        "beforeExpr": true,
-        "startsExpr": true,
-        "rightAssociative": false,
-        "isLoop": false,
-        "isAssign": false,
-        "prefix": false,
-        "postfix": false,
-        "binop": null
-      },
-      "start": 8413,
-      "end": 8414,
-      "loc": {
-        "start": {
-          "line": 383,
-          "column": 22
-        },
-        "end": {
-          "line": 383,
-          "column": 23
-        }
-      }
-    },
-    {
-      "type": {
-        "label": ")",
-        "beforeExpr": false,
-        "startsExpr": false,
-        "rightAssociative": false,
-        "isLoop": false,
-        "isAssign": false,
-        "prefix": false,
-        "postfix": false,
-        "binop": null
-      },
-      "start": 8414,
-      "end": 8415,
-      "loc": {
-        "start": {
-          "line": 383,
-          "column": 23
-        },
-        "end": {
-          "line": 383,
-          "column": 24
-        }
-      }
-    },
-    {
-      "type": {
-        "label": "{",
-        "beforeExpr": true,
-        "startsExpr": true,
-        "rightAssociative": false,
-        "isLoop": false,
-        "isAssign": false,
-        "prefix": false,
-        "postfix": false,
-        "binop": null
-      },
-      "start": 8417,
-      "end": 8418,
-      "loc": {
-        "start": {
-          "line": 384,
-          "column": 0
-        },
-        "end": {
-          "line": 384,
-          "column": 1
-        }
-      }
-    },
-    {
-      "type": {
-        "label": "}",
-        "beforeExpr": false,
-        "startsExpr": false,
-        "rightAssociative": false,
-        "isLoop": false,
-        "isAssign": false,
-        "prefix": false,
-        "postfix": false,
-        "binop": null
-      },
-      "start": 8422,
-      "end": 8423,
-      "loc": {
-        "start": {
-          "line": 386,
-          "column": 0
-        },
-        "end": {
-          "line": 386,
-          "column": 1
-        }
-      }
-    },
-    {
-      "type": "CommentBlock",
-      "value": "*\r\n * This public function is critical to creating your main pane.\r\n * @example\r\n * gEvntPane = MakePane();\r\n ",
-      "start": 8427,
-      "end": 8541,
-      "loc": {
-        "start": {
-          "line": 388,
-          "column": 0
-        },
-        "end": {
-          "line": 392,
-          "column": 3
-        }
-      }
-    },
-    {
-      "type": {
-        "label": "export",
-        "keyword": "export",
-        "beforeExpr": false,
-        "startsExpr": false,
-        "rightAssociative": false,
-        "isLoop": false,
-        "isAssign": false,
-        "prefix": false,
-        "postfix": false,
-        "binop": null,
-        "updateContext": null
-      },
-      "value": "export",
-      "start": 8543,
-      "end": 8549,
-      "loc": {
-        "start": {
-          "line": 393,
-          "column": 0
-        },
-        "end": {
-          "line": 393,
-          "column": 6
-        }
-      }
-    },
-    {
-      "type": {
-        "label": "function",
-        "keyword": "function",
-        "beforeExpr": false,
-        "startsExpr": true,
-        "rightAssociative": false,
-        "isLoop": false,
-        "isAssign": false,
-        "prefix": false,
-        "postfix": false,
-        "binop": null
-      },
-      "value": "function",
-      "start": 8550,
-      "end": 8558,
-      "loc": {
-        "start": {
-          "line": 393,
-          "column": 7
-        },
-        "end": {
-          "line": 393,
+          "line": 377,
           "column": 15
         }
       }
@@ -19209,15 +18976,15 @@
         "binop": null
       },
       "value": "MakePane",
-      "start": 8559,
-      "end": 8567,
+      "start": 8194,
+      "end": 8202,
       "loc": {
         "start": {
-          "line": 393,
+          "line": 377,
           "column": 16
         },
         "end": {
-          "line": 393,
+          "line": 377,
           "column": 24
         }
       }
@@ -19234,15 +19001,15 @@
         "postfix": false,
         "binop": null
       },
-      "start": 8567,
-      "end": 8568,
+      "start": 8202,
+      "end": 8203,
       "loc": {
         "start": {
-          "line": 393,
+          "line": 377,
           "column": 24
         },
         "end": {
-          "line": 393,
+          "line": 377,
           "column": 25
         }
       }
@@ -19259,15 +19026,15 @@
         "postfix": false,
         "binop": null
       },
-      "start": 8568,
-      "end": 8569,
+      "start": 8203,
+      "end": 8204,
       "loc": {
         "start": {
-          "line": 393,
+          "line": 377,
           "column": 25
         },
         "end": {
-          "line": 393,
+          "line": 377,
           "column": 26
         }
       }
@@ -19284,15 +19051,15 @@
         "postfix": false,
         "binop": null
       },
-      "start": 8571,
-      "end": 8572,
+      "start": 8206,
+      "end": 8207,
       "loc": {
         "start": {
-          "line": 394,
+          "line": 378,
           "column": 0
         },
         "end": {
-          "line": 394,
+          "line": 378,
           "column": 1
         }
       }
@@ -19309,8 +19076,455 @@
         "postfix": false,
         "binop": null
       },
-      "start": 8576,
-      "end": 8577,
+      "start": 8211,
+      "end": 8212,
+      "loc": {
+        "start": {
+          "line": 380,
+          "column": 0
+        },
+        "end": {
+          "line": 380,
+          "column": 1
+        }
+      }
+    },
+    {
+      "type": "CommentBlock",
+      "value": "*\r\n * This is a built in function which triggers when the script starts to get general script parameters, including the primary script symbol.\r\n ",
+      "start": 8216,
+      "end": 8365,
+      "loc": {
+        "start": {
+          "line": 382,
+          "column": 0
+        },
+        "end": {
+          "line": 384,
+          "column": 3
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "export",
+        "keyword": "export",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "export",
+      "start": 8367,
+      "end": 8373,
+      "loc": {
+        "start": {
+          "line": 385,
+          "column": 0
+        },
+        "end": {
+          "line": 385,
+          "column": 6
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "function",
+        "keyword": "function",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "function",
+      "start": 8374,
+      "end": 8382,
+      "loc": {
+        "start": {
+          "line": 385,
+          "column": 7
+        },
+        "end": {
+          "line": 385,
+          "column": 15
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "onLoad",
+      "start": 8383,
+      "end": 8389,
+      "loc": {
+        "start": {
+          "line": 385,
+          "column": 16
+        },
+        "end": {
+          "line": 385,
+          "column": 22
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "(",
+        "beforeExpr": true,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 8389,
+      "end": 8390,
+      "loc": {
+        "start": {
+          "line": 385,
+          "column": 22
+        },
+        "end": {
+          "line": 385,
+          "column": 23
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ")",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 8390,
+      "end": 8391,
+      "loc": {
+        "start": {
+          "line": 385,
+          "column": 23
+        },
+        "end": {
+          "line": 385,
+          "column": 24
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "{",
+        "beforeExpr": true,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 8393,
+      "end": 8394,
+      "loc": {
+        "start": {
+          "line": 386,
+          "column": 0
+        },
+        "end": {
+          "line": 386,
+          "column": 1
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "}",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 8402,
+      "end": 8403,
+      "loc": {
+        "start": {
+          "line": 388,
+          "column": 0
+        },
+        "end": {
+          "line": 388,
+          "column": 1
+        }
+      }
+    },
+    {
+      "type": "CommentBlock",
+      "value": "*\r\n * This is a built in function which triggers for each event in the pFeed stream.\r\n * @param {CEvntFeed} pFeed - A CEVNTFeed object with timestamps measured in nanoseconds with 56 bit precision\r\n * @param {Number} pSequ - Amount of events to read within this sequence\r\n ",
+      "start": 8407,
+      "end": 8684,
+      "loc": {
+        "start": {
+          "line": 390,
+          "column": 0
+        },
+        "end": {
+          "line": 394,
+          "column": 3
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "export",
+        "keyword": "export",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "export",
+      "start": 8686,
+      "end": 8692,
+      "loc": {
+        "start": {
+          "line": 395,
+          "column": 0
+        },
+        "end": {
+          "line": 395,
+          "column": 6
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "function",
+        "keyword": "function",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "function",
+      "start": 8693,
+      "end": 8701,
+      "loc": {
+        "start": {
+          "line": 395,
+          "column": 7
+        },
+        "end": {
+          "line": 395,
+          "column": 15
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "onEvent",
+      "start": 8702,
+      "end": 8709,
+      "loc": {
+        "start": {
+          "line": 395,
+          "column": 16
+        },
+        "end": {
+          "line": 395,
+          "column": 23
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "(",
+        "beforeExpr": true,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 8709,
+      "end": 8710,
+      "loc": {
+        "start": {
+          "line": 395,
+          "column": 23
+        },
+        "end": {
+          "line": 395,
+          "column": 24
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "pFeed",
+      "start": 8710,
+      "end": 8715,
+      "loc": {
+        "start": {
+          "line": 395,
+          "column": 24
+        },
+        "end": {
+          "line": 395,
+          "column": 29
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ",",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 8715,
+      "end": 8716,
+      "loc": {
+        "start": {
+          "line": 395,
+          "column": 29
+        },
+        "end": {
+          "line": 395,
+          "column": 30
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "pSequ",
+      "start": 8717,
+      "end": 8722,
+      "loc": {
+        "start": {
+          "line": 395,
+          "column": 31
+        },
+        "end": {
+          "line": 395,
+          "column": 36
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ")",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 8722,
+      "end": 8723,
+      "loc": {
+        "start": {
+          "line": 395,
+          "column": 36
+        },
+        "end": {
+          "line": 395,
+          "column": 37
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "{",
+        "beforeExpr": true,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 8725,
+      "end": 8726,
       "loc": {
         "start": {
           "line": 396,
@@ -19323,13 +19537,38 @@
       }
     },
     {
-      "type": "CommentBlock",
-      "value": "*\r\n * This is a built in function which triggers for each event in the pFeed stream.\r\n * @param {CEvntFeed} pFeed - A CEVNTFeed object with timestamps measured in nanoseconds with 56 bit precision\r\n * @param {Number} pSequ - Amount of events to read within this sequence\r\n ",
-      "start": 8581,
-      "end": 8858,
+      "type": {
+        "label": "}",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 8730,
+      "end": 8731,
       "loc": {
         "start": {
           "line": 398,
+          "column": 0
+        },
+        "end": {
+          "line": 398,
+          "column": 1
+        }
+      }
+    },
+    {
+      "type": "CommentBlock",
+      "value": "*\r\n * This is a built in function which triggers when the symbol is successfully loaded and the EOS and instrument data is ready.\r\n ",
+      "start": 8735,
+      "end": 8871,
+      "loc": {
+        "start": {
+          "line": 400,
           "column": 0
         },
         "end": {
@@ -19353,8 +19592,8 @@
         "updateContext": null
       },
       "value": "export",
-      "start": 8860,
-      "end": 8866,
+      "start": 8873,
+      "end": 8879,
       "loc": {
         "start": {
           "line": 403,
@@ -19380,8 +19619,8 @@
         "binop": null
       },
       "value": "function",
-      "start": 8867,
-      "end": 8875,
+      "start": 8880,
+      "end": 8888,
       "loc": {
         "start": {
           "line": 403,
@@ -19405,9 +19644,9 @@
         "postfix": false,
         "binop": null
       },
-      "value": "onEvent",
-      "start": 8876,
-      "end": 8883,
+      "value": "onOpen",
+      "start": 8889,
+      "end": 8895,
       "loc": {
         "start": {
           "line": 403,
@@ -19415,7 +19654,7 @@
         },
         "end": {
           "line": 403,
-          "column": 23
+          "column": 22
         }
       }
     },
@@ -19431,94 +19670,16 @@
         "postfix": false,
         "binop": null
       },
-      "start": 8883,
-      "end": 8884,
-      "loc": {
-        "start": {
-          "line": 403,
-          "column": 23
-        },
-        "end": {
-          "line": 403,
-          "column": 24
-        }
-      }
-    },
-    {
-      "type": {
-        "label": "name",
-        "beforeExpr": false,
-        "startsExpr": true,
-        "rightAssociative": false,
-        "isLoop": false,
-        "isAssign": false,
-        "prefix": false,
-        "postfix": false,
-        "binop": null
-      },
-      "value": "pFeed",
-      "start": 8884,
-      "end": 8889,
-      "loc": {
-        "start": {
-          "line": 403,
-          "column": 24
-        },
-        "end": {
-          "line": 403,
-          "column": 29
-        }
-      }
-    },
-    {
-      "type": {
-        "label": ",",
-        "beforeExpr": true,
-        "startsExpr": false,
-        "rightAssociative": false,
-        "isLoop": false,
-        "isAssign": false,
-        "prefix": false,
-        "postfix": false,
-        "binop": null,
-        "updateContext": null
-      },
-      "start": 8889,
-      "end": 8890,
-      "loc": {
-        "start": {
-          "line": 403,
-          "column": 29
-        },
-        "end": {
-          "line": 403,
-          "column": 30
-        }
-      }
-    },
-    {
-      "type": {
-        "label": "name",
-        "beforeExpr": false,
-        "startsExpr": true,
-        "rightAssociative": false,
-        "isLoop": false,
-        "isAssign": false,
-        "prefix": false,
-        "postfix": false,
-        "binop": null
-      },
-      "value": "pSequ",
-      "start": 8891,
+      "start": 8895,
       "end": 8896,
       "loc": {
         "start": {
           "line": 403,
-          "column": 31
+          "column": 22
         },
         "end": {
           "line": 403,
-          "column": 36
+          "column": 23
         }
       }
     },
@@ -19539,11 +19700,11 @@
       "loc": {
         "start": {
           "line": 403,
-          "column": 36
+          "column": 23
         },
         "end": {
           "line": 403,
-          "column": 37
+          "column": 24
         }
       }
     },
@@ -19598,6 +19759,203 @@
       }
     },
     {
+      "type": "CommentBlock",
+      "value": "*\r\n * This is a built in function which triggers when the symbol is stopped by the user.\r\n ",
+      "start": 8909,
+      "end": 9004,
+      "loc": {
+        "start": {
+          "line": 408,
+          "column": 0
+        },
+        "end": {
+          "line": 410,
+          "column": 3
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "export",
+        "keyword": "export",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "export",
+      "start": 9006,
+      "end": 9012,
+      "loc": {
+        "start": {
+          "line": 411,
+          "column": 0
+        },
+        "end": {
+          "line": 411,
+          "column": 6
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "function",
+        "keyword": "function",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "function",
+      "start": 9013,
+      "end": 9021,
+      "loc": {
+        "start": {
+          "line": 411,
+          "column": 7
+        },
+        "end": {
+          "line": 411,
+          "column": 15
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "onStop",
+      "start": 9022,
+      "end": 9028,
+      "loc": {
+        "start": {
+          "line": 411,
+          "column": 16
+        },
+        "end": {
+          "line": 411,
+          "column": 22
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "(",
+        "beforeExpr": true,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 9028,
+      "end": 9029,
+      "loc": {
+        "start": {
+          "line": 411,
+          "column": 22
+        },
+        "end": {
+          "line": 411,
+          "column": 23
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ")",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 9029,
+      "end": 9030,
+      "loc": {
+        "start": {
+          "line": 411,
+          "column": 23
+        },
+        "end": {
+          "line": 411,
+          "column": 24
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "{",
+        "beforeExpr": true,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 9032,
+      "end": 9033,
+      "loc": {
+        "start": {
+          "line": 412,
+          "column": 0
+        },
+        "end": {
+          "line": 412,
+          "column": 1
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "}",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 9037,
+      "end": 9038,
+      "loc": {
+        "start": {
+          "line": 414,
+          "column": 0
+        },
+        "end": {
+          "line": 414,
+          "column": 1
+        }
+      }
+    },
+    {
       "type": {
         "label": "eof",
         "beforeExpr": false,
@@ -19610,16 +19968,16 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 8907,
-      "end": 8907,
+      "start": 9038,
+      "end": 9038,
       "loc": {
         "start": {
-          "line": 407,
-          "column": 0
+          "line": 414,
+          "column": 1
         },
         "end": {
-          "line": 407,
-          "column": 0
+          "line": 414,
+          "column": 1
         }
       }
     }

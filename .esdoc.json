@@ -33,9 +33,8 @@
         "globalIndex": true,
         "asset": "./src/manual/asset",
         "files": [
-          "./src/manual/tutorial1.md",
-          "./src/manual/tutorial2.md",
-          "./src/manual/manual.md"
+          "./src/manual/manual.md",
+          "./src/manual/tutorial1.md"
         ]
       }
     }

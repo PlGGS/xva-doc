@@ -84,6 +84,12 @@ window.esdocSearchIndex = [
     "function"
   ],
   [
+    "evntscript/src/index.js~onstop",
+    "function/index.html#static-function-onStop",
+    "<span>onStop</span> <span class=\"search-result-import-path\">evntscript/src/index.js</span>",
+    "function"
+  ],
+  [
     "src/.external-ecmascript.js~array",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array",
     "src/.external-ecmascript.js~Array",

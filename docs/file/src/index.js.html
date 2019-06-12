@@ -43,6 +43,7 @@
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-onEvent">onEvent</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-onLoad">onLoad</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-onOpen">onOpen</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-onStop">onStop</a></span></span></li>
 </ul>
 </div>
 </nav>
@@ -420,22 +421,6 @@ export class Ask extends Event
 }
 
 /**
- * This is a built in function which triggers when the script starts to get general script parameters, including the primary script symbol.
- */
-export function onLoad()
-{
-    
-}
-
-/**
- * This is a built in function which triggers when the symbol is successfully loaded and the EOS and instrument data is ready.
- */
-export function onOpen()
-{
-
-}
-
-/**
  * This public function is critical to creating your main pane.
  * @example
  * gEvntPane = MakePane();
@@ -443,6 +428,14 @@ export function onOpen()
 export function MakePane()
 {
 
+}
+
+/**
+ * This is a built in function which triggers when the script starts to get general script parameters, including the primary script symbol.
+ */
+export function onLoad()
+{
+    
 }
 
 /**
@@ -454,7 +447,22 @@ export function onEvent(pFeed, pSequ)
 {
 
 }
-</code></pre>
+
+/**
+ * This is a built in function which triggers when the symbol is successfully loaded and the EOS and instrument data is ready.
+ */
+export function onOpen()
+{
+
+}
+
+/**
+ * This is a built in function which triggers when the symbol is stopped by the user.
+ */
+export function onStop()
+{
+
+}</code></pre>
 
 </div>
 

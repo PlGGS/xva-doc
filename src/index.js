@@ -370,11 +370,31 @@ export class Ask extends Event
 }
 
 /**
+ * This public function is critical to creating your main pane.
+ * @example
+ * gEvntPane = MakePane();
+ */
+export function MakePane()
+{
+
+}
+
+/**
  * This is a built in function which triggers when the script starts to get general script parameters, including the primary script symbol.
  */
 export function onLoad()
 {
     
+}
+
+/**
+ * This is a built in function which triggers for each event in the pFeed stream.
+ * @param {CEvntFeed} pFeed - A CEVNTFeed object with timestamps measured in nanoseconds with 56 bit precision
+ * @param {Number} pSequ - Amount of events to read within this sequence
+ */
+export function onEvent(pFeed, pSequ)
+{
+
 }
 
 /**
@@ -386,21 +406,9 @@ export function onOpen()
 }
 
 /**
- * This public function is critical to creating your main pane.
- * @example
- * gEvntPane = MakePane();
+ * This is a built in function which triggers when the symbol is stopped by the user.
  */
-export function MakePane()
-{
-
-}
-
-/**
- * This is a built in function which triggers for each event in the pFeed stream.
- * @param {CEvntFeed} pFeed - A CEVNTFeed object with timestamps measured in nanoseconds with 56 bit precision
- * @param {Number} pSequ - Amount of events to read within this sequence
- */
-export function onEvent(pFeed, pSequ)
+export function onStop()
 {
 
 }
