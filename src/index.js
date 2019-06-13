@@ -11,6 +11,20 @@
 export class CEvntPane
 {
     /**
+    * Text that appears at the top of the pane
+    * @type {String}
+    * @private
+    */
+    this.title = "";
+
+    /**
+    * String representing the pane's background color in hexidecimal (Make sure to include a # at the beginning)
+    * @type {Number}
+    * @private
+    */
+    this.fillStyle = "#000000";
+    
+    /**
      * Makes a CEvntFeed object.
      * @param {String} pSymb - Name of the symbol
      * @returns {CEvntFeed} a calculation object.
@@ -138,7 +152,7 @@ export class CEvntStat
 export class CEvntDraw
 {
     /**
-     * Creates an CEvntStat object.
+     * Creates an CEvntDraw object.
      * @param {Number} lineWidth - Stroke width in pixels
      * @param {String} strokeStyle - Stroke color in hexadecimal
      */
@@ -389,7 +403,7 @@ export function onLoad()
 
 /**
  * This is a built in function which triggers for each event in the pFeed stream.
- * @param {CEvntFeed} pFeed - A CEVNTFeed object with timestamps measured in nanoseconds with 56 bit precision
+ * @param {CEvntFeed} pFeed - A CEvntFeed object with timestamps measured in nanoseconds with 56 bit precision
  * @param {Number} pSequ - Amount of events to read within this sequence
  */
 export function onEvent(pFeed, pSequ)

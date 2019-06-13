@@ -1,11 +1,12 @@
 # Tracking Prices | Beginner
 
-In this tutorial, you'll learn how to track event values and test 
+In this tutorial, you'll learn how to track [Event](../class/src/index.js~Event.html) values and 
+test for the highest and lowest price values.
 
 ## Declaring your variables
 
-Once you've opened your Javascript editor, you should see your default CEVNTPane and CEVNTFeed variables along with some new ones. 
-These are most commonly defined as gEvntPane and gPaneFeed.  
+Once you've opened your Javascript editor, you should see your default CEVNTPane and CEVNTFeed 
+variables along with some new ones. These are most commonly defined as gEvntPane and gPaneFeed.  
 
 ```js
 var gEvntPane;
@@ -37,13 +38,57 @@ price as a starting point to base the rest of our conditional statements on
 - [Number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) ```gTopPrice, gBotPrice```  
 Finally, we'll need two simple variables to hold the number value corresponding to the highest and lowest prices of the period
 
-## initialization
+## Initialization
 
-## ...
+Next, you'll need to initialize your variables. In a way, this step is very similar to the 
+[onLoad](manual.html#onload) section of the manual's introduction to the built in [onLoad](../function/index.html#static-function-onLoad) 
+function, but this time, you're going to need to prepare, or *initialize*, a few more variables.
 
-## ...
+### Your Pane
 
-## ...
+When initializing your [Pane](../class/src/index.js~CEvntPane.html), there are two additional 
+attributes that you're able to apply to it. 
+
+```js
+gEvntPane = MakePane();
+
+gEvntPane.title = "Top & Bottom Prices"; //text at the top of pane
+gEvntPane.fillStyle = "#030308"; //background color in hexidecimal
+```
+
+
+
+### Your Feed
+
+
+
+### Top price
+
+
+
+### Bottom price
+
+
+
+## Event handling
+
+
+
+### Your *tTick* Event
+
+
+
+### Your first Event
+
+
+
+### Other Events
+
+
+
+### Saving values
+
+
 
 ## Results
 
@@ -55,7 +100,7 @@ the one shown below! Feel free to zoom in and out and scroll through your newly 
 
 Your script should now provide functionality similar to [this](https://github.com/PlGGS/Vertex-Analytics/blob/master/sample%20scripts/sampleTopBottomPrices.js)
 
-![view chart](asset/view_chart.png)
+[//]: # "Add finished script image ![view chart](asset/view_chart.png)"
 
 #### Troubleshooting
 
