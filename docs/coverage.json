@@ -1,17 +1,16 @@
 {
-  "coverage": "90.9%",
+  "coverage": "92.72%",
   "expectCount": 55,
-  "actualCount": 50,
+  "actualCount": 51,
   "files": {
     "src/index.js": {
       "expectCount": 55,
-      "actualCount": 50,
+      "actualCount": 51,
       "undocumentLines": [
-        13,
-        244,
-        282,
-        315,
-        354
+        250,
+        288,
+        321,
+        360
       ]
     }
   }

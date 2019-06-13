@@ -47,7 +47,7 @@ function, but this time, you're going to need to prepare, or *initialize*, a few
 ### Your Pane
 
 When initializing your [Pane](../class/src/index.js~CEvntPane.html), there are two additional 
-attributes that you're able to apply to it. 
+fields that allow yout to apply attributes to it. 
 
 ```js
 gEvntPane = MakePane();
@@ -56,39 +56,93 @@ gEvntPane.title = "Top & Bottom Prices"; //text at the top of pane
 gEvntPane.fillStyle = "#030308"; //background color in hexidecimal
 ```
 
+- [title](../class/src/index.js~CEvntPane.html#instance-member-title) ```gEvntPane.fillStyle```  
+The title is a simple [String]() that you can make use of to easily identify this pane from the 
+others on your dashboard.
 
+- [fillStyle](../class/src/index.js~CEvntPane.html#instance-member-fillStyle) ```gEvntPane.fillStyle```  
+The fillStyle fills the background of your pane with any color of your choosing. Just make sure 
+that you format your value as a hexidecimal color with a # in a string like: ```"#000000"```
 
 ### Your Feed
 
-
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
 
 ### Top price
 
-
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
 
 ### Bottom price
 
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
 
+### Complete intialization
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+
+```js
+function onLoad()
+{
+    //------------------------------------------------\
+    gEvntPane = MakePane();
+
+    gEvntPane.title = "Daily Top & Bottom | ESM9 Sample";
+    gEvntPane.fillStyle = "#030308";
+    //------------------------------------------------/
+
+    //------------------------------------------------\
+    gPaneFeed = gEvntPane.MakeFeed(kSymbolName);
+    gFeedDraw = gEvntPane.MakeDraw(gPaneFeed);
+
+    gCalcTop = gPaneFeed.MakeCalc();
+    gCalcBot = gPaneFeed.MakeCalc();
+    //------------------------------------------------/
+
+    //------------------------------------------------\
+    gDrawTop = gEvntPane.MakeDraw(gCalcTop);
+
+    gDrawTop.lineWidth = 3.0;
+    gDrawTop.strokeStyle = "#f4f427";
+
+    gDrawBot = gEvntPane.MakeDraw(gCalcBot);
+
+    gDrawBot.lineWidth = 3.0;
+    gDrawBot.strokeStyle = "#ff1c58";
+    //------------------------------------------------/
+
+    //------------------------------------------------\
+    gStatTop = gEvntPane.MakeStat(gCalcTop);
+
+    gStatTop.title = "Top Price";
+    gStatTop.fillStyle = "#f4f427";
+
+    gStatBot = gEvntPane.MakeStat(gCalcBot);
+
+    gStatBot.title = "Bot Price";
+    gStatBot.fillStyle = "#ff1c58";
+    //------------------------------------------------/
+}
+```
 
 ## Event handling
 
-
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
 
 ### Your *tTick* Event
 
-
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
 
 ### Your first Event
 
-
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
 
 ### Other Events
 
-
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
 
 ### Saving values
 
-
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
 
 ## Results
 

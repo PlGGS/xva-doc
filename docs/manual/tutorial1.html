@@ -64,6 +64,7 @@
 <li data-ice="manualNav" class="indent-h3" data-link="manual/tutorial1.html"><a href="manual/tutorial1.html#your-feed" data-ice="link">Your Feed</a></li>
 <li data-ice="manualNav" class="indent-h3" data-link="manual/tutorial1.html"><a href="manual/tutorial1.html#top-price" data-ice="link">Top price</a></li>
 <li data-ice="manualNav" class="indent-h3" data-link="manual/tutorial1.html"><a href="manual/tutorial1.html#bottom-price" data-ice="link">Bottom price</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/tutorial1.html"><a href="manual/tutorial1.html#complete-intialization" data-ice="link">Complete intialization</a></li>
 <li data-ice="manualNav" class="indent-h2" data-link="manual/tutorial1.html"><a href="manual/tutorial1.html#event-handling" data-ice="link">Event handling</a></li>
 <li data-ice="manualNav" class="indent-h3" data-link="manual/tutorial1.html"><a href="manual/tutorial1.html#your--em-ttick--em--event" data-ice="link">Your tTick Event</a></li>
 <li data-ice="manualNav" class="indent-h3" data-link="manual/tutorial1.html"><a href="manual/tutorial1.html#your-first-event" data-ice="link">Your first Event</a></li>
@@ -111,13 +112,72 @@ price as a starting point to base the rest of our conditional statements on</p>
 <a href="./manual/manual.html#onload">onLoad</a> section of the manual&apos;s introduction to the built in <a href="./manual/../function/index.html#static-function-onLoad">onLoad</a> 
 function, but this time, you&apos;re going to need to prepare, or <em>initialize</em>, a few more variables.</p>
 <h3 id="your-pane">Your Pane</h3><p>When initializing your <a href="./manual/../class/src/index.js~CEvntPane.html">Pane</a>, there are two additional 
-attributes that you&apos;re able to apply to it. </p>
+fields that allow yout to apply attributes to it. </p>
 <pre><code class="lang-js"><code class="source-code prettyprint">gEvntPane = MakePane();
 
 gEvntPane.title = &quot;Top &amp; Bottom Prices&quot;; //text at the top of pane
 gEvntPane.fillStyle = &quot;#030308&quot;; //background color in hexidecimal</code>
 </code></pre>
-<h3 id="your-feed">Your Feed</h3><h3 id="top-price">Top price</h3><h3 id="bottom-price">Bottom price</h3><h2 id="event-handling">Event handling</h2><h3 id="your--em-ttick--em--event">Your <em>tTick</em> Event</h3><h3 id="your-first-event">Your first Event</h3><h3 id="other-events">Other Events</h3><h3 id="saving-values">Saving values</h3><h2 id="results">Results</h2><h4 id="congratulations">Congratulations</h4><p>At this point, you should now be able to test, save, and display aspects of events, and 
+<ul>
+<li><p><a href="./manual/../class/src/index.js~CEvntPane.html#instance-member-title">title</a> <code>gEvntPane.fillStyle</code><br>The title is a simple <a href>String</a> that you can make use of to easily identify this pane from the 
+others on your dashboard.</p>
+</li>
+<li><p><a href="./manual/../class/src/index.js~CEvntPane.html#instance-member-fillStyle">fillStyle</a> <code>gEvntPane.fillStyle</code><br>The fillStyle fills the background of your pane with any color of your choosing. Just make sure 
+that you format your value as a hexidecimal color with a # in a string like: <code>&quot;#000000&quot;</code></p>
+</li>
+</ul>
+<h3 id="your-feed">Your Feed</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+<h3 id="top-price">Top price</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+<h3 id="bottom-price">Bottom price</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+<h3 id="complete-intialization">Complete intialization</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+<pre><code class="lang-js"><code class="source-code prettyprint">function onLoad()
+{
+    //------------------------------------------------\
+    gEvntPane = MakePane();
+
+    gEvntPane.title = &quot;Daily Top &amp; Bottom | ESM9 Sample&quot;;
+    gEvntPane.fillStyle = &quot;#030308&quot;;
+    //------------------------------------------------/
+
+    //------------------------------------------------\
+    gPaneFeed = gEvntPane.MakeFeed(kSymbolName);
+    gFeedDraw = gEvntPane.MakeDraw(gPaneFeed);
+
+    gCalcTop = gPaneFeed.MakeCalc();
+    gCalcBot = gPaneFeed.MakeCalc();
+    //------------------------------------------------/
+
+    //------------------------------------------------\
+    gDrawTop = gEvntPane.MakeDraw(gCalcTop);
+
+    gDrawTop.lineWidth = 3.0;
+    gDrawTop.strokeStyle = &quot;#f4f427&quot;;
+
+    gDrawBot = gEvntPane.MakeDraw(gCalcBot);
+
+    gDrawBot.lineWidth = 3.0;
+    gDrawBot.strokeStyle = &quot;#ff1c58&quot;;
+    //------------------------------------------------/
+
+    //------------------------------------------------\
+    gStatTop = gEvntPane.MakeStat(gCalcTop);
+
+    gStatTop.title = &quot;Top Price&quot;;
+    gStatTop.fillStyle = &quot;#f4f427&quot;;
+
+    gStatBot = gEvntPane.MakeStat(gCalcBot);
+
+    gStatBot.title = &quot;Bot Price&quot;;
+    gStatBot.fillStyle = &quot;#ff1c58&quot;;
+    //------------------------------------------------/
+}</code>
+</code></pre>
+<h2 id="event-handling">Event handling</h2><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+<h3 id="your--em-ttick--em--event">Your <em>tTick</em> Event</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+<h3 id="your-first-event">Your first Event</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+<h3 id="other-events">Other Events</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+<h3 id="saving-values">Saving values</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+<h2 id="results">Results</h2><h4 id="congratulations">Congratulations</h4><p>At this point, you should now be able to test, save, and display aspects of events, and 
 you should see a chart based off of your selected Symbol for the most recent exchange period like 
 the one shown below! Feel free to zoom in and out and scroll through your newly created chart.</p>
 <p>Your script should now provide functionality similar to <a href="https://github.com/PlGGS/Vertex-Analytics/blob/master/sample%20scripts/sampleTopBottomPrices.js">this</a></p>

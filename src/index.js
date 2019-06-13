@@ -10,6 +10,9 @@
  */
 export class CEvntPane
 {
+    /**
+     * Creates an CEvntPane object
+     */
     constructor()
     {
         /**
@@ -21,7 +24,7 @@ export class CEvntPane
 
         /**
         * String representing the pane's background color in hexidecimal (Make sure to include a # at the beginning)
-        * @type {Number}
+        * @type {String}
         * @public
         */
         this.fillStyle = "#000000";
@@ -127,6 +130,7 @@ export class CEvntFeed
 export class CEvntStat
 {
     /**
+     * Creates an CEvntStat object.
      * @param {String} fillStyle - Text color in hexadecimal
      * @param {String} title - Text corresponding to what the status is tracking
      */
@@ -154,6 +158,7 @@ export class CEvntStat
 export class CEvntDraw
 {
     /**
+     * Creates an CEvntDraw object.
      * @param {Number} lineWidth - Stroke width in pixels
      * @param {String} strokeStyle - Stroke color in hexadecimal
      */
@@ -207,6 +212,7 @@ export class CEvntCalc
 export class CEvntTrig
 {
     /**
+     * Creates an CEvntStat object.
      * @param {String} fillStyle - Stroke color in hexadecimal
      * @param {String} title - Stroke width in pixels
      * @param {Number} duration - Stroke width in pixels
