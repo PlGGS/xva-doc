@@ -75,7 +75,7 @@ The symbol name is the technical name of the symbol we want to interpret.
 The built in onLoad function is called when the user clicks the run button shown below.  
 
 It is extremely useful for setting up all of your variables perfectly before your script 
-begins running through each and every event in the [onEvent](manual.html#onevent) method.
+begins running through each and every event in the [onEvent](../class/src/index.js~CEvntFeed.html) method.
 
 [//]: # "Test whether or not this reference syntax works"
 
@@ -101,7 +101,7 @@ the feed that will be tracked in your
 [onEvent](../function/index.html#static-function-onEvent) method.
 
 - [MakeDraw](../class/src/index.js~CEvntPane.html#instance-method-MakeDraw) ```gEvntPane.MakeDraw(gPaneFeed)```  
-Returns a new [CEvntDraw](../class/src/index.js~CEVNTDraw.html) object 
+Returns a new [CEvntDraw](../class/src/index.js~CEvntDraw.html) object 
 based on your newly created feed. This will render your feed in your pane.
 
 ![click run](asset/click_run.png)

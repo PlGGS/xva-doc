@@ -22,11 +22,11 @@ var gTopPrice = 0.0; //tracks the top price value
 var gBotPrice = 0.0; //tracks the bottom price value
 ```
 
-- [CEVNTCalc](https://bblake.info/doc/class/src/index.js~CEvntCalc.html) ```gCalcTop, gCalcBot``` | 
+- [CEVNTCalc](../class/src/index.js~CEvntCalc.html) ```gCalcTop, gCalcBot``` | 
 Make sure to create two variables to save our top and bottom-most prices.
-- [CEVNTStat](https://bblake.info/doc/class/src/index.js~CEvntStat.html) ```gStatTop, gStatBot``` | 
+- [CEVNTStat](../class/src/index.js~CEvntStat.html) ```gStatTop, gStatBot``` | 
 You'll also need to create two variables to display your top and bottom-most prices in your pane
-- [CEVNTDraw](https://bblake.info/doc/class/src/index.js~CEvntDraw.html) ```gDrawTop, gDrawBot``` | 
+- [CEVNTDraw](../class/src/index.js~CEvntDraw.html) ```gDrawTop, gDrawBot``` | 
 Finally, you'll need to create two variables to draw lines corresponding to your top and bottom-most prices
 - [Boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean) ```gOnFirstEvent``` | 
 Since we'll be starting each symbol time period at an undetermined price, we'll need the first 
