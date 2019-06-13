@@ -75,7 +75,7 @@ The symbol name is the technical name of the symbol we want to interpret.
 The built in onLoad function is called when the user clicks the run button shown below.  
 
 It is extremely useful for setting up all of your variables perfectly before your script 
-begins running through each and every event in the [onEvent](../class/src/index.js~CEvntFeed.html) method.
+begins running through each and every event in the [onEvent](../function/index.html#static-function-onEvent) method.
 
 [//]: # "Test whether or not this reference syntax works"
 
