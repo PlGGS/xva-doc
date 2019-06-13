@@ -61,6 +61,23 @@
  */
 export class CEvntPane
 {
+    constructor()
+    {
+        /**
+        * Text that appears at the top of the pane
+        * @type {String}
+        * @public
+        */
+        this.title = &quot;&quot;;
+
+        /**
+        * String representing the pane&apos;s background color in hexidecimal (Make sure to include a # at the beginning)
+        * @type {Number}
+        * @public
+        */
+        this.fillStyle = &quot;#000000&quot;;
+    }
+    
     /**
      * Makes a CEvntFeed object.
      * @param {String} pSymb - Name of the symbol
@@ -161,7 +178,6 @@ export class CEvntFeed
 export class CEvntStat
 {
     /**
-     * Creates an CEvntStat object.
      * @param {String} fillStyle - Text color in hexadecimal
      * @param {String} title - Text corresponding to what the status is tracking
      */
@@ -189,7 +205,6 @@ export class CEvntStat
 export class CEvntDraw
 {
     /**
-     * Creates an CEvntStat object.
      * @param {Number} lineWidth - Stroke width in pixels
      * @param {String} strokeStyle - Stroke color in hexadecimal
      */
@@ -243,7 +258,6 @@ export class CEvntCalc
 export class CEvntTrig
 {
     /**
-     * Creates an CEvntStat object.
      * @param {String} fillStyle - Stroke color in hexadecimal
      * @param {String} title - Stroke width in pixels
      * @param {Number} duration - Stroke width in pixels
@@ -440,7 +454,7 @@ export function onLoad()
 
 /**
  * This is a built in function which triggers for each event in the pFeed stream.
- * @param {CEvntFeed} pFeed - A CEVNTFeed object with timestamps measured in nanoseconds with 56 bit precision
+ * @param {CEvntFeed} pFeed - A CEvntFeed object with timestamps measured in nanoseconds with 56 bit precision
  * @param {Number} pSequ - Amount of events to read within this sequence
  */
 export function onEvent(pFeed, pSequ)
