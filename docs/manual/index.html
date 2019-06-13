@@ -39,10 +39,10 @@
 <li data-ice="manualNav" class="indent-h4" data-link="manual/manual.html"><a href="manual/manual.html#---" data-ice="link">...</a></li>
 <li data-ice="manualNav" class="indent-h2" data-link="manual/manual.html"><a href="manual/manual.html#declaring-your-variables" data-ice="link">Declaring your variables</a></li>
 <li data-ice="manualNav" class="indent-h3" data-link="manual/manual.html"><a href="manual/manual.html#built-in-functions" data-ice="link">Built-in Functions</a></li>
-<li data-ice="manualNav" class="indent-h4" data-link="manual/manual.html"><a href="manual/manual.html#onload--" data-ice="link">onLoad()</a></li>
-<li data-ice="manualNav" class="indent-h4" data-link="manual/manual.html"><a href="manual/manual.html#onevent--" data-ice="link">onEvent()</a></li>
-<li data-ice="manualNav" class="indent-h4" data-link="manual/manual.html"><a href="manual/manual.html#onopen--" data-ice="link">onOpen()</a></li>
-<li data-ice="manualNav" class="indent-h4" data-link="manual/manual.html"><a href="manual/manual.html#onstop--" data-ice="link">onStop()</a></li>
+<li data-ice="manualNav" class="indent-h4" data-link="manual/manual.html"><a href="manual/manual.html#onload" data-ice="link">onLoad</a></li>
+<li data-ice="manualNav" class="indent-h4" data-link="manual/manual.html"><a href="manual/manual.html#onevent" data-ice="link">onEvent</a></li>
+<li data-ice="manualNav" class="indent-h4" data-link="manual/manual.html"><a href="manual/manual.html#onopen" data-ice="link">onOpen</a></li>
+<li data-ice="manualNav" class="indent-h4" data-link="manual/manual.html"><a href="manual/manual.html#onstop" data-ice="link">onStop</a></li>
 <li data-ice="manualNav" class="indent-h2" data-link="manual/manual.html"><a href="manual/manual.html#general-formatting" data-ice="link">General Formatting</a></li>
 <li data-ice="manualNav" class="indent-h3" data-link="manual/manual.html"><a href="manual/manual.html#notation" data-ice="link">Notation</a></li>
 <li data-ice="manualNav" class="indent-h2" data-link="manual/manual.html"><a href="manual/manual.html#enumerated-constants" data-ice="link">Enumerated Constants</a></li>
@@ -99,56 +99,56 @@ var gPaneFeed;
 var gFeedDraw;
 var gSymbolName = &quot;&quot;;</code>
 </code></pre><ul>
-<li><a href="./manual/class/src/index.js~CEvntPane">CEVNTPane</a> <code>gEvntPane</code><br>Your pane variable allows you to create just about everything else we&apos;re going to need 
+<li><a href="./manual/../class/src/index.js~CEvntPane">CEVNTPane</a> <code>gEvntPane</code><br>Your pane variable allows you to create just about everything else we&apos;re going to need 
 to make use of your script.</li>
 </ul><ul>
-<li><p><a href="https://bblake.info/vxa-doc/class/src/index.js~CEvntFeed.html">CEVNTFeed</a> <code>gPaneFeed</code><br>Your feed variable will be used to track and make use of every single <a href="https://bblake.info/doc/class/src/index.js~Event.html">Event</a> 
+<li><p><a href="./manual/../class/src/index.js~CEvntFeed.html">CEVNTFeed</a> <code>gPaneFeed</code><br>Your feed variable will be used to track and make use of every single <a href="./manual/../class/src/index.js~Event.html">Event</a> 
 that has occured since the exchange last opened.</p>
 </li>
-<li><p><a href="https://bblake.info/vxa-doc/class/src/index.js~CEvntDraw.html">CEVNTDraw</a> <code>gEvntDraw</code><br>Your draw variable will let you draw the feed you&apos;re tracking to your pane. This is useful 
+<li><p><a href="./manual/../class/src/index.js~CEvntDraw.html">CEVNTDraw</a> <code>gEvntDraw</code><br>Your draw variable will let you draw the feed you&apos;re tracking to your pane. This is useful 
 for determining for yourself whether or not your script is properly handling the data it is 
 receiving from your symbol.</p>
 </li>
 <li><p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a> <code>kSymbolName</code><br>The symbol name is the technical name of the symbol we want to interpret.</p>
 </li>
-</ul><h3>Built-in Functions</h3><h4>onLoad()</h4><p>The built in onLoad function is called when the user clicks the run button shown below.  </p><p>It is extremely useful for setting up all of your variables perfectly before your script 
-begins running through each and every event in the <a href="./manual/manual/manual.html#onevent--">onEvent</a> method.</p><pre><code class="lang-js"><code class="source-code prettyprint">function onLoad ()
+</ul><h3>Built-in Functions</h3><h4>onLoad</h4><p>The built in onLoad function is called when the user clicks the run button shown below.  </p><p>It is extremely useful for setting up all of your variables perfectly before your script 
+begins running through each and every event in the <a href="./manual/manual.html#onevent">onEvent</a> method.</p><pre><code class="lang-js"><code class="source-code prettyprint">function onLoad ()
 {
     gEvntPane = MakePane();
     gPaneFeed = gEvntPane.MakeFeed(gSymbolName);
     gDrawFeed = gEvntPane.MakeDraw(gPaneFeed);    
 }</code>
 </code></pre><ul>
-<li><p><a href="https://bblake.info/vxa-doc/function/index.html#static-function-MakePane">MakePane</a> <code>MakePane()</code><br>The built in function <a href="https://bblake.info/vxa-doc/function/index.html#static-function-MakePane">MakePane</a> 
-returns a new <a href="https://bblake.info/vxa-doc/class/src/index.js~CEvntPane.html">CEvntPane</a> object. 
+<li><p><a href="./manual/../function/index.html#static-function-MakePane">MakePane</a> <code>MakePane()</code><br>The built in function <a href="./manual/../function/index.html#static-function-MakePane">MakePane</a> 
+returns a new <a href="./manual/../class/src/index.js~CEvntPane.html">CEvntPane</a> object. 
 Most of the time, the above snippet included, it is used to set your <code>gEvntPane</code> variable 
 to a new pane in the initialization of your script.</p>
 </li>
-<li><p><a href="https://bblake.info/vxa-doc/class/src/index.js~CEvntPane.html#instance-method-MakeFeed">MakeFeed</a> <code>gEvntPane.MakeFeed(gSymbolName)</code><br>Returns a new <a href="https://bblake.info/vxa-doc/class/src/index.js~CEvntFeed.html">CEvntFeed</a> object 
+<li><p><a href="./manual/../class/src/index.js~CEvntPane.html#instance-method-MakeFeed">MakeFeed</a> <code>gEvntPane.MakeFeed(gSymbolName)</code><br>Returns a new <a href="./manual/../class/src/index.js~CEvntFeed.html">CEvntFeed</a> object 
 based on your specified symbol name. If you pass in the same symbol name, this is equivilent to 
 the feed that will be tracked in your 
-<a href="https://bblake.info/vxa-doc/function/index.html#static-function-onEvent">onEvent</a> method.</p>
+<a href="./manual/../function/index.html#static-function-onEvent">onEvent</a> method.</p>
 </li>
-<li><p><a href="https://bblake.info/vxa-doc/class/src/index.js~CEvntPane.html#instance-method-MakeDraw">MakeDraw</a> <code>gEvntPane.MakeDraw(gPaneFeed)</code><br>Returns a new <a href="https://bblake.info/vxa-doc/class/src/index.js~CEVNTDraw.html">CEvntDraw</a> object 
+<li><p><a href="./manual/../class/src/index.js~CEvntPane.html#instance-method-MakeDraw">MakeDraw</a> <code>gEvntPane.MakeDraw(gPaneFeed)</code><br>Returns a new <a href="./manual/../class/src/index.js~CEVNTDraw.html">CEvntDraw</a> object 
 based on your newly created feed. This will render your feed in your pane.</p>
 </li>
-</ul><p><img src="./manual/asset/click_run.png" alt="click run"></p><h4>onEvent()</h4><p>The built in onEvent function is called once for each timestamp tracked in your symbol.  </p><p>This is where you&apos;ll be doing most of your calculations on the specific things you&apos;re 
+</ul><p><img src="./manual/asset/click_run.png" alt="click run"></p><h4>onEvent</h4><p>The built in onEvent function is called once for each timestamp tracked in your symbol.  </p><p>This is where you&apos;ll be doing most of your calculations on the specific things you&apos;re 
 looking for in your symbol. It allows your script to perform different tasks depending 
 on the current event&apos;s conditions.</p><pre><code class="lang-js"><code class="source-code prettyprint">function onEvent (pFeed, pSequ)
 {
 
 }</code>
 </code></pre><ul>
-<li><p><a href="https://bblake.info/vxa-doc/class/src/index.js~CEvntFeed.html">CEVNTFeed</a> <code>pFeed</code><br>A feed  with timestamps measured in nanoseconds with 56 bit precision.</p>
+<li><p><a href="./manual/../class/src/index.js~CEvntFeed.html">CEVNTFeed</a> <code>pFeed</code><br>A feed  with timestamps measured in nanoseconds with 56 bit precision.</p>
 </li>
 <li><p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a> <code>pSequ</code><br>A number that is used for Amount of events within this sequence. It defaults to 0.</p>
 </li>
-</ul><h4>onOpen()</h4><p>The built in onOpen function is called once the pane has properly loaded and rendered the Symbol information.</p><p>It allows you to make any last minute changes once your script has successfully tracked each and every 
+</ul><h4>onOpen</h4><p>The built in onOpen function is called once the pane has properly loaded and rendered the Symbol information.</p><p>It allows you to make any last minute changes once your script has successfully tracked each and every 
 event in your symbol&apos;s feed.</p><pre><code class="lang-js"><code class="source-code prettyprint">function onOpen ()
 {
 
 }</code>
-</code></pre><h4>onStop()</h4><p>The built in onStop function is called when the user clicks the stop button shown below.</p><pre><code class="lang-js"><code class="source-code prettyprint">function onStop ()
+</code></pre><h4>onStop</h4><p>The built in onStop function is called when the user clicks the stop button shown below.</p><pre><code class="lang-js"><code class="source-code prettyprint">function onStop ()
 {
 
 }</code>

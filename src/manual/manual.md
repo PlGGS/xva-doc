@@ -48,17 +48,17 @@ var gFeedDraw;
 var gSymbolName = "";
 ```
 
-- [CEVNTPane](class/src/index.js~CEvntPane) ```gEvntPane```  
+- [CEVNTPane](../class/src/index.js~CEvntPane) ```gEvntPane```  
 Your pane variable allows you to create just about everything else we're going to need 
 to make use of your script.
 
 [//]: # "Test whether or not this reference syntax works"
 
-- [CEVNTFeed](https://bblake.info/vxa-doc/class/src/index.js~CEvntFeed.html) ```gPaneFeed```  
-Your feed variable will be used to track and make use of every single [Event](https://bblake.info/doc/class/src/index.js~Event.html) 
+- [CEVNTFeed](../class/src/index.js~CEvntFeed.html) ```gPaneFeed```  
+Your feed variable will be used to track and make use of every single [Event](../class/src/index.js~Event.html) 
 that has occured since the exchange last opened.
 
-- [CEVNTDraw](https://bblake.info/vxa-doc/class/src/index.js~CEvntDraw.html) ```gEvntDraw```  
+- [CEVNTDraw](../class/src/index.js~CEvntDraw.html) ```gEvntDraw```  
 Your draw variable will let you draw the feed you're tracking to your pane. This is useful 
 for determining for yourself whether or not your script is properly handling the data it is 
 receiving from your symbol.
@@ -70,12 +70,12 @@ The symbol name is the technical name of the symbol we want to interpret.
 
 ### Built-in Functions
 
-#### onLoad()
+#### onLoad
 
 The built in onLoad function is called when the user clicks the run button shown below.  
 
 It is extremely useful for setting up all of your variables perfectly before your script 
-begins running through each and every event in the [onEvent](manual/manual.html#onevent--) method.
+begins running through each and every event in the [onEvent](manual.html#onevent) method.
 
 [//]: # "Test whether or not this reference syntax works"
 
@@ -88,25 +88,25 @@ function onLoad ()
 }
 ```
 
-- [MakePane](https://bblake.info/vxa-doc/function/index.html#static-function-MakePane) ```MakePane()```  
-The built in function [MakePane](https://bblake.info/vxa-doc/function/index.html#static-function-MakePane) 
-returns a new [CEvntPane](https://bblake.info/vxa-doc/class/src/index.js~CEvntPane.html) object. 
+- [MakePane](../function/index.html#static-function-MakePane) ```MakePane()```  
+The built in function [MakePane](../function/index.html#static-function-MakePane) 
+returns a new [CEvntPane](../class/src/index.js~CEvntPane.html) object. 
 Most of the time, the above snippet included, it is used to set your ```gEvntPane``` variable 
 to a new pane in the initialization of your script.
 
-- [MakeFeed](https://bblake.info/vxa-doc/class/src/index.js~CEvntPane.html#instance-method-MakeFeed) ```gEvntPane.MakeFeed(gSymbolName)```  
-Returns a new [CEvntFeed](https://bblake.info/vxa-doc/class/src/index.js~CEvntFeed.html) object 
+- [MakeFeed](../class/src/index.js~CEvntPane.html#instance-method-MakeFeed) ```gEvntPane.MakeFeed(gSymbolName)```  
+Returns a new [CEvntFeed](../class/src/index.js~CEvntFeed.html) object 
 based on your specified symbol name. If you pass in the same symbol name, this is equivilent to 
 the feed that will be tracked in your 
-[onEvent](https://bblake.info/vxa-doc/function/index.html#static-function-onEvent) method.
+[onEvent](../function/index.html#static-function-onEvent) method.
 
-- [MakeDraw](https://bblake.info/vxa-doc/class/src/index.js~CEvntPane.html#instance-method-MakeDraw) ```gEvntPane.MakeDraw(gPaneFeed)```  
-Returns a new [CEvntDraw](https://bblake.info/vxa-doc/class/src/index.js~CEVNTDraw.html) object 
+- [MakeDraw](../class/src/index.js~CEvntPane.html#instance-method-MakeDraw) ```gEvntPane.MakeDraw(gPaneFeed)```  
+Returns a new [CEvntDraw](../class/src/index.js~CEVNTDraw.html) object 
 based on your newly created feed. This will render your feed in your pane.
 
 ![click run](asset/click_run.png)
 
-#### onEvent()
+#### onEvent
 
 The built in onEvent function is called once for each timestamp tracked in your symbol.  
 
@@ -121,13 +121,13 @@ function onEvent (pFeed, pSequ)
 }
 ```
 
-- [CEVNTFeed](https://bblake.info/vxa-doc/class/src/index.js~CEvntFeed.html) ```pFeed```  
+- [CEVNTFeed](../class/src/index.js~CEvntFeed.html) ```pFeed```  
 A feed  with timestamps measured in nanoseconds with 56 bit precision.
 
 - [Number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) ```pSequ```  
 A number that is used for Amount of events within this sequence. It defaults to 0.
 
-#### onOpen()
+#### onOpen
 
 The built in onOpen function is called once the pane has properly loaded and rendered the Symbol information.
 
@@ -141,7 +141,7 @@ function onOpen ()
 }
 ```
 
-#### onStop()
+#### onStop
 
 The built in onStop function is called when the user clicks the stop button shown below.
 
