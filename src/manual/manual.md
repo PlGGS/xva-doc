@@ -48,17 +48,17 @@ var gFeedDraw;
 var gSymbolName = "";
 ```
 
-- [CEVNTPane](../class/src/index.js~CEvntPane) ```gEvntPane```  
+- [CEvntPane](../class/src/index.js~CEvntPane) ```gEvntPane```  
 Your pane variable allows you to create just about everything else we're going to need 
 to make use of your script.
 
 [//]: # "Test whether or not this reference syntax works"
 
-- [CEVNTFeed](../class/src/index.js~CEvntFeed.html) ```gPaneFeed```  
+- [CEvntFeed](../class/src/index.js~CEvntFeed.html) ```gPaneFeed```  
 Your feed variable will be used to track and make use of every single [Event](../class/src/index.js~Event.html) 
 that has occured since the exchange last opened.
 
-- [CEVNTDraw](../class/src/index.js~CEvntDraw.html) ```gEvntDraw```  
+- [CEvntDraw](../class/src/index.js~CEvntDraw.html) ```gEvntDraw```  
 Your draw variable will let you draw the feed you're tracking to your pane. This is useful 
 for determining for yourself whether or not your script is properly handling the data it is 
 receiving from your symbol.
@@ -121,7 +121,7 @@ function onEvent (pFeed, pSequ)
 }
 ```
 
-- [CEVNTFeed](../class/src/index.js~CEvntFeed.html) ```pFeed```  
+- [CEvntFeed](../class/src/index.js~CEvntFeed.html) ```pFeed```  
 A feed  with timestamps measured in nanoseconds with 56 bit precision.
 
 - [Number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) ```pSequ```  

@@ -22,9 +22,9 @@ var gTopPrice = 0.0; //tracks the top price value
 var gBotPrice = 0.0; //tracks the bottom price value
 ```
 
-- [CEVNTCalc](../class/src/index.js~CEvntCalc.html) ```gCalcTop, gCalcBot``` | 
+- [CEvntCalc](../class/src/index.js~CEvntCalc.html) ```gCalcTop, gCalcBot``` | 
 Make sure to create two variables to save our top and bottom-most prices.
-- [CEVNTStat](../class/src/index.js~CEvntStat.html) ```gStatTop, gStatBot``` | 
+- [CEvntStat](../class/src/index.js~CEvntStat.html) ```gStatTop, gStatBot``` | 
 You'll also need to create two variables to display your top and bottom-most prices in your pane
 - [CEVNTDraw](../class/src/index.js~CEvntDraw.html) ```gDrawTop, gDrawBot``` | 
 Finally, you'll need to create two variables to draw lines corresponding to your top and bottom-most prices
