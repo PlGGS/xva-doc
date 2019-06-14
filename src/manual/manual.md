@@ -84,7 +84,7 @@ function onLoad ()
 {
     gEvntPane = MakePane();
     gPaneFeed = gEvntPane.MakeFeed(gSymbolName);
-    gDrawFeed = gEvntPane.MakeDraw(gPaneFeed);	
+    gFeedDraw = gEvntPane.MakeDraw(gPaneFeed);	
 }
 ```
 

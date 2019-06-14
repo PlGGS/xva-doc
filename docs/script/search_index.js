@@ -558,9 +558,9 @@ window.esdocSearchIndex = [
     "member"
   ],
   [
-    "src/index.js~cevnttrig#strokestyle",
-    "class/src/index.js~CEvntTrig.html#instance-member-strokeStyle",
-    "src/index.js~CEvntTrig#strokeStyle",
+    "src/index.js~cevnttrig#fillstyle",
+    "class/src/index.js~CEvntTrig.html#instance-member-fillStyle",
+    "src/index.js~CEvntTrig#fillStyle",
     "member"
   ],
   [

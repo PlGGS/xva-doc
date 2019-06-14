@@ -131,10 +131,8 @@ export class CEvntStat
 {
     /**
      * Creates an CEvntStat object.
-     * @param {String} fillStyle - Text color in hexadecimal
-     * @param {String} title - Text corresponding to what the status is tracking
      */
-    constructor(fillStyle, title)
+    constructor()
     {
         /**
          * Text color in hexadecimal
@@ -159,10 +157,8 @@ export class CEvntDraw
 {
     /**
      * Creates an CEvntDraw object.
-     * @param {Number} lineWidth - Stroke width in pixels
-     * @param {String} strokeStyle - Stroke color in hexadecimal
      */
-    constructor(fillStyle, title)
+    constructor()
     {
         /**
          * Stroke width in pixels
@@ -213,32 +209,29 @@ export class CEvntTrig
 {
     /**
      * Creates an CEvntStat object.
-     * @param {String} fillStyle - Stroke color in hexadecimal
-     * @param {String} title - Stroke width in pixels
-     * @param {Number} duration - Stroke width in pixels
      */
-    constructor(fillStyle, title)
+    constructor()
     {
         /**
-         * Stroke color in hexadecimal
+         * Text color in hexadecimal
          * @type {String}
          * @public
          */
-        this.strokeStyle = strokeStyle;
+        this.fillStyle = "#ffa43d";
 
         /**
          * Text corresponding to the trigger's purpose
          * @type {String}
          * @public
          */
-        this.title = title;
+        this.title = "";
 
         /**
          * Length of time to display the trigger on screen in milliseconds
          * @type {Number}
          * @public
          */
-        this.duration = duration;
+        this.duration = 5000;
     }
 }
 

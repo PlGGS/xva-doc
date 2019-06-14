@@ -63,10 +63,16 @@
 <li data-ice="manualNav" class="indent-h3" data-link="manual/tutorial1.html"><a href="manual/tutorial1.html#your-pane" data-ice="link">Your Pane</a></li>
 <li data-ice="manualNav" class="indent-h3" data-link="manual/tutorial1.html"><a href="manual/tutorial1.html#your-feed" data-ice="link">Your Feed</a></li>
 <li data-ice="manualNav" class="indent-h3" data-link="manual/tutorial1.html"><a href="manual/tutorial1.html#top-price" data-ice="link">Top price</a></li>
+<li data-ice="manualNav" class="indent-h4" data-link="manual/tutorial1.html"><a href="manual/tutorial1.html#makecalc" data-ice="link">MakeCalc</a></li>
+<li data-ice="manualNav" class="indent-h4" data-link="manual/tutorial1.html"><a href="manual/tutorial1.html#makedraw" data-ice="link">MakeDraw</a></li>
+<li data-ice="manualNav" class="indent-h4" data-link="manual/tutorial1.html"><a href="manual/tutorial1.html#makestat" data-ice="link">MakeStat</a></li>
 <li data-ice="manualNav" class="indent-h3" data-link="manual/tutorial1.html"><a href="manual/tutorial1.html#bottom-price" data-ice="link">Bottom price</a></li>
+<li data-ice="manualNav" class="indent-h4" data-link="manual/tutorial1.html"><a href="manual/tutorial1.html#makecalc" data-ice="link">MakeCalc</a></li>
+<li data-ice="manualNav" class="indent-h4" data-link="manual/tutorial1.html"><a href="manual/tutorial1.html#makedraw" data-ice="link">MakeDraw</a></li>
+<li data-ice="manualNav" class="indent-h4" data-link="manual/tutorial1.html"><a href="manual/tutorial1.html#makestat" data-ice="link">MakeStat</a></li>
 <li data-ice="manualNav" class="indent-h3" data-link="manual/tutorial1.html"><a href="manual/tutorial1.html#complete-intialization" data-ice="link">Complete intialization</a></li>
 <li data-ice="manualNav" class="indent-h2" data-link="manual/tutorial1.html"><a href="manual/tutorial1.html#event-handling" data-ice="link">Event handling</a></li>
-<li data-ice="manualNav" class="indent-h3" data-link="manual/tutorial1.html"><a href="manual/tutorial1.html#your--em-ttick--em--event" data-ice="link">Your tTick Event</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/tutorial1.html"><a href="manual/tutorial1.html#reading-your-feed" data-ice="link">Reading your Feed</a></li>
 <li data-ice="manualNav" class="indent-h3" data-link="manual/tutorial1.html"><a href="manual/tutorial1.html#your-first-event" data-ice="link">Your first Event</a></li>
 <li data-ice="manualNav" class="indent-h3" data-link="manual/tutorial1.html"><a href="manual/tutorial1.html#other-events" data-ice="link">Other Events</a></li>
 <li data-ice="manualNav" class="indent-h3" data-link="manual/tutorial1.html"><a href="manual/tutorial1.html#saving-values" data-ice="link">Saving values</a></li>
@@ -79,8 +85,8 @@
 </div>
 </nav>
 
-<div class="content" data-ice="content"><div class="github-markdown" data-ice="content"><h1 id="tracking-prices---beginner">Tracking Prices | Beginner</h1><p>In this tutorial, you&apos;ll learn how to track <a href="./manual/../class/src/index.js~Event.html">Event</a> values and 
-test for the highest and lowest price values.</p>
+<div class="content" data-ice="content"><div class="github-markdown" data-ice="content"><h1 id="tracking-prices---beginner">Tracking Prices | Beginner</h1><p>This sample prepares you to track <a href="./manual/../class/src/index.js~Event.html">Event</a> values and 
+test for the highest and lowest prices.</p>
 <h2 id="declaring-your-variables">Declaring your variables</h2><p>Once you&apos;ve opened your Javascript editor, you should see your default CEVNTPane and CEVNTFeed 
 variables along with some new ones. These are most commonly defined as gEvntPane and gPaneFeed.  </p>
 <pre><code class="lang-js"><code class="source-code prettyprint">var gEvntPane;
@@ -97,7 +103,7 @@ var gTopPrice = 0.0; //tracks the top price value
 var gBotPrice = 0.0; //tracks the bottom price value</code>
 </code></pre>
 <ul>
-<li><p><a href="./manual/../class/src/index.js~CEvntCalc.html">CEvntCalc</a> <code>gCalcTop, gCalcBot</code><br>Make sure to create two variables to save our top and bottom-most prices.</p>
+<li><p><a href="./manual/../class/src/index.js~CEvntCalc.html">CEvntCalc</a> <code>gCalcTop, gCalcBot</code><br>Make sure to create two variables to save your top and bottom-most prices.</p>
 </li>
 <li><p><a href="./manual/../class/src/index.js~CEvntStat.html">CEvntStat</a> <code>gStatTop, gStatBot</code><br>You&apos;ll also need to create two variables to display your top and bottom-most prices in your pane</p>
 </li>
@@ -119,17 +125,140 @@ gEvntPane.title = &quot;Top &amp; Bottom Prices&quot;; //text at the top of pane
 gEvntPane.fillStyle = &quot;#030308&quot;; //background color in hexidecimal</code>
 </code></pre>
 <ul>
-<li><p><a href="./manual/../class/src/index.js~CEvntPane.html#instance-member-title">title</a> <code>gEvntPane.fillStyle</code><br>The title is a simple <a href>String</a> that you can make use of to easily identify this pane from the 
-others on your dashboard.</p>
+<li><p><a href="./manual/../class/src/index.js~CEvntPane.html#instance-member-title">title</a> <code>gEvntPane.fillStyle</code><br>The title is a simple <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a> 
+that you can make use of to easily identify this pane from the others on your dashboard.</p>
 </li>
-<li><p><a href="./manual/../class/src/index.js~CEvntPane.html#instance-member-fillStyle">fillStyle</a> <code>gEvntPane.fillStyle</code><br>The fillStyle fills the background of your pane with any color of your choosing. Just make sure 
-that you format your value as a hexidecimal color with a # in a string like: <code>&quot;#000000&quot;</code></p>
+<li><p><a href="./manual/../class/src/index.js~CEvntPane.html#instance-member-fillStyle">fillStyle</a> <code>gEvntPane.fillStyle</code><br>The fill style fills the background of your <a href="./manual/../class/src/index.js~CEvntPane.html">Pane</a> with any 
+color of your choosing. Just make sure that you format your value as a hexidecimal color with a # 
+in a string like: <code>&quot;#000000&quot;</code></p>
 </li>
 </ul>
-<h3 id="your-feed">Your Feed</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-<h3 id="top-price">Top price</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-<h3 id="bottom-price">Bottom price</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-<h3 id="complete-intialization">Complete intialization</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+<h3 id="your-feed">Your Feed</h3><p>Just like in the manual&apos;s <a href="./manual/manual.html#onLoad">onLoad</a> section, you&apos;ll need to make sure your 
+<a href="./manual/../class/src/index.js~CEvntFeed.html">Feed</a> is properly initialized in order to see your 
+symbol&apos;s events.</p>
+<pre><code class="lang-js"><code class="source-code prettyprint">gPaneFeed = gEvntPane.MakeFeed(kSymbolName);
+gFeedDraw = gEvntPane.MakeDraw(gPaneFeed);</code>
+</code></pre>
+<h3 id="top-price">Top price</h3><p>Now that you&apos;ve created your <a href="./manual/../class/src/index.js~CEvntCalc.html">Calc</a>, 
+<a href="./manual/../class/src/index.js~CEvntStat.html">Stat</a>, and <a href="./manual/../class/src/index.js~CEvntDraw.html">Draw </a> 
+variables to track and draw your top and bottom prices, it&apos;s time to give them a purpose.</p>
+<h4 id="makecalc">MakeCalc</h4><p>The first of your variables is the easiest to initialize, because it doesn&apos;t have any optional 
+attributes. More importantly, it&apos;s also the easiest to understand. The 
+<a href="./manual/../class/src/index.js~CEvntFeed.html#instance-method-MakeCalc">MakeCalc</a> function returns a 
+new <a href="./manual/../class/src/index.js~CEvntCalc.html">Calc</a> object, and we can make use of that by 
+setting our <code>gCalcTop</code> variable equal to the function.</p>
+<pre><code class="lang-js"><code class="source-code prettyprint">gCalcTop = gPaneFeed.MakeCalc();</code>
+</code></pre>
+<ul>
+<li><a href="./manual/class/src/index.js~CEvntFeed.html#instance-method-MakeCalc">MakeCalc</a> <code>gPaneFeed.MakeCalc()</code><br>Creates a <a href="./manual/../class/src/index.js~CEvntCalc.html">Calc</a> object that is able to store calculated 
+values.</li>
+</ul>
+<h4 id="makedraw">MakeDraw</h4><p>While not integral to tracking <a href="./manual/../class/src/index.js~Event.html">Event</a> values in your symbol, 
+drawing a line representing the value you&apos;re tracking can be helpful for a number of different 
+reasons. Before you&apos;re sure your value tracking is working properly, 
+<a href="./manual/../class/src/index.js~CEvntDraw.html">Draw</a> objects are extremely useful for troubleshooting, 
+and after everything&apos;s working, they make it easy to track how the value you&apos;re tracking has 
+been changing over time.</p>
+<pre><code class="lang-js"><code class="source-code prettyprint">gDrawTop = gEvntPane.MakeDraw(gCalcTop);
+
+gDrawTop.lineWidth = 3.0;
+gDrawTop.strokeStyle = &quot;#f4f427&quot;;</code>
+</code></pre>
+<ul>
+<li><p><a href="./manual/../class/src/index.js~CEvntPane.html#instance-method-MakeDraw">MakeDraw</a> <code>gEvntPane.MakeDraw(gCalcTop)</code><br>Creates a new <a href="./manual/../class/src/index.js~CEvntDraw.html">Draw</a> object that renders lines on your 
+<a href="./manual/../class/src/index.js~CEvntPane.html">Pane</a> to represent the state of the values you&apos;re 
+tracking with the <a href="./manual/../class/src/index.js~CEvntCalc.html">Calc</a> object you pass into it.</p>
+</li>
+<li><p><a href="./manual/../class/src/index.js~CEvntDraw.html#instance-member-lineWidth">lineWidth</a> <code>gDrawTop.lineWidth</code><br>The line width is a <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a> 
+that represents the width of the line in pixels.</p>
+</li>
+<li><p><a href="./manual/../class/src/index.js~CEvntDraw.html#instance-member-strokeStyle">strokeStyle</a> <code>gDrawTop.strokeStyle</code><br>The stroke style fills the line representing the values you&apos;re tracking with any color of your 
+choosing. Just make sure that you format your value as a hexidecimal color with a # in a 
+string like: <code>&quot;#000000&quot;</code></p>
+</li>
+</ul>
+<h4 id="makestat">MakeStat</h4><p>The last variable you need to initialize in order to track your top price is your <a href="./manual/../class/src/index.js~CEvntFeed.html">Stat</a> 
+variable. This variable is used to display the status of whatever it is that you&apos;re tracking 
+in a box that appears in the top left of your <a href="./manual/class/src/index.js~CEvntPane.html">pane</a>.</p>
+<pre><code class="lang-js"><code class="source-code prettyprint">gStatTop = gEvntPane.MakeStat(gCalcTop);
+
+gStatTop.title = &quot;Top Price&quot;;
+gStatTop.fillStyle = &quot;#f4f427&quot;;</code>
+</code></pre>
+<ul>
+<li><p><a href="./manual/class/src/index.js~CEvntPane.html#instance-method-MakeStat">MakeStat</a> <code>gEvntPane.MakeStat(gCalcTop)</code><br>Creates a <a href="./manual/../class/src/index.js~CEvntStat.html">Stat</a> object that is used to display any value 
+provided by the <a href="./manual/../class/src/index.js~CEvntCalc.html">Calc</a> object that you pass into it in the 
+top left corner of your <a href="./manual/../class/src/index.js~CEvntPane.html">Pane</a>.</p>
+</li>
+<li><p><a href="./manual/../class/src/index.js~CEvntStat.html#instance-member-title">title</a> <code>gDrawTop.lineWidth</code><br>The title represents the text that will be displayed before the value your <a href="./manual/../class/src/index.js~CEvntStat.html">Stat</a> 
+is tracking.</p>
+</li>
+<li><p><a href="./manual/../class/src/index.js~CEvntStat.html#instance-member-fillStyle">fillStyle</a> <code>gDrawTop.strokeStyle</code><br>The fill style fills the background of your <a href="./manual/../class/src/index.js~CEvntStat.html">Stat</a> with any 
+color of your choosing. Just make sure that you format your value as a hexidecimal color with a # 
+in a string like: <code>&quot;#000000&quot;</code></p>
+</li>
+</ul>
+<h3 id="bottom-price">Bottom price</h3><p>In order to track the lowest price of your symbol period in the same way as the highest, you&apos;ll 
+also need to initialize your three bottom price tracking variables.</p>
+<h4 id="makecalc">MakeCalc</h4><p>Again, the 
+<a href="./manual/../class/src/index.js~CEvntFeed.html#instance-method-MakeCalc">MakeCalc</a> function is used to return a 
+new <a href="./manual/../class/src/index.js~CEvntCalc.html">Calc</a> object to our <code>gCalcTop</code> variable equal to the 
+function.</p>
+<pre><code class="lang-js"><code class="source-code prettyprint">gCalcBot = gPaneFeed.MakeCalc();</code>
+</code></pre>
+<ul>
+<li><a href="./manual/class/src/index.js~CEvntFeed.html#instance-method-MakeCalc">MakeCalc</a> <code>gPaneFeed.MakeCalc()</code><br>Creates a <a href="./manual/../class/src/index.js~CEvntCalc.html">Calc</a> object that is able to store calculated 
+values.</li>
+</ul>
+<h4 id="makedraw">MakeDraw</h4><p>Then, you can initialize </p>
+<p>While not integral to tracking <a href="./manual/../class/src/index.js~Event.html">Event</a> values in your symbol, 
+drawing a line representing the value you&apos;re tracking can be helpful for a number of different 
+reasons. Before you&apos;re sure your value tracking is working properly, <a href="./manual/../class/src/index.js~CEvntDraw.html">Draw</a> 
+objects are extremely useful for troubleshooting, and after everything&apos;s working, they make it 
+easy to track how the value you&apos;re tracking has been changing over time.</p>
+<pre><code class="lang-js"><code class="source-code prettyprint">gDrawTop = gEvntPane.MakeDraw(gCalcTop);
+
+gDrawTop.lineWidth = 3.0;
+gDrawTop.strokeStyle = &quot;#f4f427&quot;;</code>
+</code></pre>
+<ul>
+<li><p><a href="./manual/../class/src/index.js~CEvntPane.html#instance-method-MakeDraw">MakeDraw</a> <code>gEvntPane.MakeDraw(gCalcTop)</code><br>Creates a new <a href="./manual/../class/src/index.js~CEvntDraw.html">Draw</a> object that renders lines on your 
+<a href="./manual/../class/src/index.js~CEvntPane.html">Pane</a> to represent the state of the values you&apos;re 
+tracking with the <a href="./manual/../class/src/index.js~CEvntCalc.html">Calc</a> object you pass into it.</p>
+</li>
+<li><p><a href="./manual/../class/src/index.js~CEvntDraw.html#instance-member-lineWidth">lineWidth</a> <code>gDrawTop.lineWidth</code><br>The line width is a <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a> 
+that represents the width of the line in pixels.</p>
+</li>
+<li><p><a href="./manual/../class/src/index.js~CEvntDraw.html#instance-member-strokeStyle">strokeStyle</a> <code>gDrawTop.strokeStyle</code><br>The stroke style fills the line representing the values you&apos;re tracking with any color of your 
+choosing. Just make sure that you format your value as a hexidecimal color with a # in a 
+string like: <code>&quot;#000000&quot;</code></p>
+</li>
+</ul>
+<h4 id="makestat">MakeStat</h4><p>The last variable you need to initialize in order to track your top price is your <a href="./manual/../class/src/index.js~CEvntFeed.html">Stat</a> 
+variable. This variable is used to display the status of whatever it is that you&apos;re tracking 
+in a box that appears in the top left of your <a href="./manual/class/src/index.js~CEvntPane.html">pane</a>.</p>
+<pre><code class="lang-js"><code class="source-code prettyprint">gStatTop = gEvntPane.MakeStat(gCalcTop);
+
+gStatTop.title = &quot;Top Price&quot;;
+gStatTop.fillStyle = &quot;#f4f427&quot;;</code>
+</code></pre>
+<ul>
+<li><p><a href="./manual/class/src/index.js~CEvntPane.html#instance-method-MakeStat">MakeStat</a> <code>gEvntPane.MakeStat(gCalcTop)</code><br>Creates a <a href="./manual/../class/src/index.js~CEvntStat.html">Stat</a> object that is used to display any value 
+provided by the <a href="./manual/../class/src/index.js~CEvntCalc.html">Calc</a> object that you pass into it in the 
+top left corner of your <a href="./manual/../class/src/index.js~CEvntPane.html">Pane</a>.</p>
+</li>
+<li><p><a href="./manual/../class/src/index.js~CEvntStat.html#instance-member-title">title</a> <code>gDrawTop.lineWidth</code><br>The title represents the text that will be displayed before the value your <a href="./manual/../class/src/index.js~CEvntStat.html">Stat</a> 
+is tracking.</p>
+</li>
+<li><p><a href="./manual/../class/src/index.js~CEvntStat.html#instance-member-fillStyle">fillStyle</a> <code>gDrawTop.strokeStyle</code><br>The fill style fills the background of your <a href="./manual/../class/src/index.js~CEvntStat.html">Stat</a> with any 
+color of your choosing. Just make sure that you format your value as a hexidecimal color with a # 
+in a string like: <code>&quot;#000000&quot;</code></p>
+</li>
+</ul>
+<h3 id="complete-intialization">Complete intialization</h3><p>Once you&apos;ve prepared everything above, your onLoad function should accomplish the same thing 
+as the one below. You will probably have arranged your code differently, but as long as 
+everything is initialized, you&apos;re ready to begin working on your 
+<a href="./manual/../function/index.html#static-function-onEvent">onEvent</a> function.</p>
 <pre><code class="lang-js"><code class="source-code prettyprint">function onLoad()
 {
     //------------------------------------------------\
@@ -172,9 +301,39 @@ that you format your value as a hexidecimal color with a # in a string like: <co
     //------------------------------------------------/
 }</code>
 </code></pre>
-<h2 id="event-handling">Event handling</h2><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-<h3 id="your--em-ttick--em--event">Your <em>tTick</em> Event</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-<h3 id="your-first-event">Your first Event</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+<h2 id="event-handling">Event handling</h2><p>Now, it&apos;s time to start working on your <a href="./manual/../function/index.html#static-function-onEvent">onEvent</a> 
+function. If you want a refresher on the purpose of the <a href="./manual/../function/index.html#static-function-onEvent">onEvent</a> 
+function, head over to the <a href="./manual/manual.html">manual</a> and catch up on the <a href="./manual/manual.html#onevent">onEvent</a> 
+section.</p>
+<h3 id="reading-your-feed">Reading your Feed</h3><p>Whenever you&apos;re dealing with events in your <a href="./manual/../function/index.html#static-function-onEvent">onEvent</a> 
+method, you&apos;re going to need to make use of your <a href="./manual/class/src/index.js~CEvntFeed.html">Feed</a>&apos;s 
+<a href="./manual/../class/src/index.js~CEvntFeed.html#instance-method-FeedRead">FeedRead</a> method to get information 
+about each specific <a href="./manual/../class/src/index.js~Event.html">Event</a> within the current timestamp.</p>
+<p>This is because the <a href="./manual/../function/index.html#static-function-onEvent">onEvent</a> method actually runs 
+once per timestamp rather than once per <a href="./manual/../class/src/index.js~Event.html">Event</a>.</p>
+<pre><code class="lang-js"><code class="source-code prettyprint">var tTick = pFeed.FeedRead(pSequ);</code>
+</code></pre>
+<h3 id="your-first-event">Your first Event</h3><p>This will <strong>not</strong> be the case in every sample you right, as you will certainly be tracking more 
+than just prices, but for this example, our first <a href="./manual/../class/src/index.js~Event.html">Event</a> is a 
+special case. </p>
+<p>If you don&apos;t take the time to designate the first <a href="./manual/../class/src/index.js~Event.html">Event</a> 
+as a special case, your <code>gTopPrice</code> and <code>gBotPrice</code> variables will still be set to 
+their default to a value of zero, and that means your <code>gBotPrice</code> variable will most 
+likely never be tracked properly.</p>
+<p>To check for whether or not your script has just come across the first <a href="./manual/../class/src/index.js~Event.html">Event</a>, 
+you need to use an <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else">if...else statement</a>. 
+If statements allow you to execute different lines of code depending on whether or not a 
+condition you set ends up being true or false.</p>
+<p>Now, in order to designate your first <a href="./manual/../class/src/index.js~Event.html">Event</a> as a special 
+case, use an <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else">if...else statement</a> 
+with your <code>gOnFirstEvent</code> variable you created earlier to create a condition.</p>
+<pre><code class="lang-js"><code class="source-code prettyprint">if (gOnFirstEvent)
+{
+    gTopPrice = tTick.Trade.Price;
+    gBotPrice = tTick.Trade.Price;
+    gOnFirstEvent = false;
+}</code>
+</code></pre>
 <h3 id="other-events">Other Events</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
 <h3 id="saving-values">Saving values</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
 <h2 id="results">Results</h2><h4 id="congratulations">Congratulations</h4><p>At this point, you should now be able to test, save, and display aspects of events, and 

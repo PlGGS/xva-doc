@@ -1,7 +1,7 @@
 # Tracking Prices | Beginner
 
-In this tutorial, you'll learn how to track [Event](../class/src/index.js~Event.html) values and 
-test for the highest and lowest price values.
+This sample prepares you to track [Event](../class/src/index.js~Event.html) values and 
+test for the highest and lowest prices.
 
 ## Declaring your variables
 
@@ -24,7 +24,7 @@ var gBotPrice = 0.0; //tracks the bottom price value
 ```
 
 - [CEvntCalc](../class/src/index.js~CEvntCalc.html) ```gCalcTop, gCalcBot```  
-Make sure to create two variables to save our top and bottom-most prices.
+Make sure to create two variables to save your top and bottom-most prices.
 
 - [CEvntStat](../class/src/index.js~CEvntStat.html) ```gStatTop, gStatBot```  
 You'll also need to create two variables to display your top and bottom-most prices in your pane
@@ -57,28 +57,190 @@ gEvntPane.fillStyle = "#030308"; //background color in hexidecimal
 ```
 
 - [title](../class/src/index.js~CEvntPane.html#instance-member-title) ```gEvntPane.fillStyle```  
-The title is a simple [String]() that you can make use of to easily identify this pane from the 
-others on your dashboard.
+The title is a simple [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) 
+that you can make use of to easily identify this pane from the others on your dashboard.
 
 - [fillStyle](../class/src/index.js~CEvntPane.html#instance-member-fillStyle) ```gEvntPane.fillStyle```  
-The fillStyle fills the background of your pane with any color of your choosing. Just make sure 
-that you format your value as a hexidecimal color with a # in a string like: ```"#000000"```
+The fill style fills the background of your [Pane](../class/src/index.js~CEvntPane.html) with any 
+color of your choosing. Just make sure that you format your value as a hexidecimal color with a # 
+in a string like: ```"#000000"```
 
 ### Your Feed
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Just like in the manual's [onLoad](manual.html#onLoad) section, you'll need to make sure your 
+[Feed](../class/src/index.js~CEvntFeed.html) is properly initialized in order to see your 
+symbol's events.
+
+```js
+gPaneFeed = gEvntPane.MakeFeed(kSymbolName);
+gFeedDraw = gEvntPane.MakeDraw(gPaneFeed);
+```
+
+[//]: # "Ask about reintroducing these two methods or just referring back to the manual again"
 
 ### Top price
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Now that you've created your [Calc](../class/src/index.js~CEvntCalc.html), 
+[Stat](../class/src/index.js~CEvntStat.html), and [Draw ](../class/src/index.js~CEvntDraw.html) 
+variables to track and draw your top and bottom prices, it's time to give them a purpose.
+
+#### MakeCalc
+
+The first of your variables is the easiest to initialize, because it doesn't have any optional 
+attributes. More importantly, it's also the easiest to understand. The 
+[MakeCalc](../class/src/index.js~CEvntFeed.html#instance-method-MakeCalc) function returns a 
+new [Calc](../class/src/index.js~CEvntCalc.html) object, and we can make use of that by 
+setting our ```gCalcTop``` variable equal to the function.
+
+```js
+gCalcTop = gPaneFeed.MakeCalc();
+```
+
+- [MakeCalc](class/src/index.js~CEvntFeed.html#instance-method-MakeCalc) ```gPaneFeed.MakeCalc()```  
+Creates a [Calc](../class/src/index.js~CEvntCalc.html) object that is able to store calculated 
+values.
+
+#### MakeDraw
+
+While not integral to tracking [Event](../class/src/index.js~Event.html) values in your symbol, 
+drawing a line representing the value you're tracking can be helpful for a number of different 
+reasons. Before you're sure your value tracking is working properly, 
+[Draw](../class/src/index.js~CEvntDraw.html) objects are extremely useful for troubleshooting, 
+and after everything's working, they make it easy to track how the value you're tracking has 
+been changing over time.
+
+```js
+gDrawTop = gEvntPane.MakeDraw(gCalcTop);
+
+gDrawTop.lineWidth = 3.0;
+gDrawTop.strokeStyle = "#f4f427";
+```
+
+- [MakeDraw](../class/src/index.js~CEvntPane.html#instance-method-MakeDraw) ```gEvntPane.MakeDraw(gCalcTop)```  
+Creates a new [Draw](../class/src/index.js~CEvntDraw.html) object that renders lines on your 
+[Pane](../class/src/index.js~CEvntPane.html) to represent the state of the values you're 
+tracking with the [Calc](../class/src/index.js~CEvntCalc.html) object you pass into it.
+
+- [lineWidth](../class/src/index.js~CEvntDraw.html#instance-member-lineWidth) ```gDrawTop.lineWidth```  
+The line width is a [Number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) 
+that represents the width of the line in pixels.
+
+- [strokeStyle](../class/src/index.js~CEvntDraw.html#instance-member-strokeStyle) ```gDrawTop.strokeStyle```  
+The stroke style fills the line representing the values you're tracking with any color of your 
+choosing. Just make sure that you format your value as a hexidecimal color with a # in a 
+string like: ```"#000000"```
+
+#### MakeStat
+
+The last variable you need to initialize in order to track your top price is your [Stat](../class/src/index.js~CEvntFeed.html) 
+variable. This variable is used to display the status of whatever it is that you're tracking 
+in a box that appears in the top left of your [pane](class/src/index.js~CEvntPane.html).
+
+```js
+gStatTop = gEvntPane.MakeStat(gCalcTop);
+
+gStatTop.title = "Top Price";
+gStatTop.fillStyle = "#f4f427";
+```
+
+- [MakeStat](class/src/index.js~CEvntPane.html#instance-method-MakeStat) ```gEvntPane.MakeStat(gCalcTop)```  
+Creates a [Stat](../class/src/index.js~CEvntStat.html) object that is used to display any value 
+provided by the [Calc](../class/src/index.js~CEvntCalc.html) object that you pass into it in the 
+top left corner of your [Pane](../class/src/index.js~CEvntPane.html).
+
+- [title](../class/src/index.js~CEvntStat.html#instance-member-title) ```gDrawTop.lineWidth```  
+The title represents the text that will be displayed before the value your [Stat](../class/src/index.js~CEvntStat.html) 
+is tracking.
+
+- [fillStyle](../class/src/index.js~CEvntStat.html#instance-member-fillStyle) ```gDrawTop.strokeStyle```  
+The fill style fills the background of your [Stat](../class/src/index.js~CEvntStat.html) with any 
+color of your choosing. Just make sure that you format your value as a hexidecimal color with a # 
+in a string like: ```"#000000"```
 
 ### Bottom price
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+In order to track the lowest price of your symbol period in the same way as the highest, you'll 
+also need to initialize your three bottom price tracking variables.
+
+#### MakeCalc
+
+Again, the 
+[MakeCalc](../class/src/index.js~CEvntFeed.html#instance-method-MakeCalc) function is used to return a 
+new [Calc](../class/src/index.js~CEvntCalc.html) object to our ```gCalcTop``` variable equal to the 
+function.
+
+```js
+gCalcBot = gPaneFeed.MakeCalc();
+```
+
+- [MakeCalc](class/src/index.js~CEvntFeed.html#instance-method-MakeCalc) ```gPaneFeed.MakeCalc()```  
+Creates a [Calc](../class/src/index.js~CEvntCalc.html) object that is able to store calculated 
+values.
+
+#### MakeDraw
+
+Then, you can initialize 
+
+While not integral to tracking [Event](../class/src/index.js~Event.html) values in your symbol, 
+drawing a line representing the value you're tracking can be helpful for a number of different 
+reasons. Before you're sure your value tracking is working properly, [Draw](../class/src/index.js~CEvntDraw.html) 
+objects are extremely useful for troubleshooting, and after everything's working, they make it 
+easy to track how the value you're tracking has been changing over time.
+
+```js
+gDrawTop = gEvntPane.MakeDraw(gCalcTop);
+
+gDrawTop.lineWidth = 3.0;
+gDrawTop.strokeStyle = "#f4f427";
+```
+
+- [MakeDraw](../class/src/index.js~CEvntPane.html#instance-method-MakeDraw) ```gEvntPane.MakeDraw(gCalcTop)```  
+Creates a new [Draw](../class/src/index.js~CEvntDraw.html) object that renders lines on your 
+[Pane](../class/src/index.js~CEvntPane.html) to represent the state of the values you're 
+tracking with the [Calc](../class/src/index.js~CEvntCalc.html) object you pass into it.
+
+- [lineWidth](../class/src/index.js~CEvntDraw.html#instance-member-lineWidth) ```gDrawTop.lineWidth```  
+The line width is a [Number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) 
+that represents the width of the line in pixels.
+
+- [strokeStyle](../class/src/index.js~CEvntDraw.html#instance-member-strokeStyle) ```gDrawTop.strokeStyle```  
+The stroke style fills the line representing the values you're tracking with any color of your 
+choosing. Just make sure that you format your value as a hexidecimal color with a # in a 
+string like: ```"#000000"```
+
+#### MakeStat
+
+The last variable you need to initialize in order to track your top price is your [Stat](../class/src/index.js~CEvntFeed.html) 
+variable. This variable is used to display the status of whatever it is that you're tracking 
+in a box that appears in the top left of your [pane](class/src/index.js~CEvntPane.html).
+
+```js
+gStatTop = gEvntPane.MakeStat(gCalcTop);
+
+gStatTop.title = "Top Price";
+gStatTop.fillStyle = "#f4f427";
+```
+
+- [MakeStat](class/src/index.js~CEvntPane.html#instance-method-MakeStat) ```gEvntPane.MakeStat(gCalcTop)```  
+Creates a [Stat](../class/src/index.js~CEvntStat.html) object that is used to display any value 
+provided by the [Calc](../class/src/index.js~CEvntCalc.html) object that you pass into it in the 
+top left corner of your [Pane](../class/src/index.js~CEvntPane.html).
+
+- [title](../class/src/index.js~CEvntStat.html#instance-member-title) ```gDrawTop.lineWidth```  
+The title represents the text that will be displayed before the value your [Stat](../class/src/index.js~CEvntStat.html) 
+is tracking.
+
+- [fillStyle](../class/src/index.js~CEvntStat.html#instance-member-fillStyle) ```gDrawTop.strokeStyle```  
+The fill style fills the background of your [Stat](../class/src/index.js~CEvntStat.html) with any 
+color of your choosing. Just make sure that you format your value as a hexidecimal color with a # 
+in a string like: ```"#000000"```
 
 ### Complete intialization
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Once you've prepared everything above, your onLoad function should accomplish the same thing 
+as the one below. You will probably have arranged your code differently, but as long as 
+everything is initialized, you're ready to begin working on your 
+[onEvent](../function/index.html#static-function-onEvent) function.
 
 ```js
 function onLoad()
@@ -126,15 +288,57 @@ function onLoad()
 
 ## Event handling
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Now, it's time to start working on your [onEvent](../function/index.html#static-function-onEvent) 
+function. If you want a refresher on the purpose of the [onEvent](../function/index.html#static-function-onEvent) 
+function, head over to the [manual](manual.html) and catch up on the [onEvent](manual.html#onevent) 
+section.
 
-### Your *tTick* Event
+### Reading your Feed
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Whenever you're dealing with events in your [onEvent](../function/index.html#static-function-onEvent) 
+method, you're going to need to make use of your [Feed](class/src/index.js~CEvntFeed.html)'s 
+[FeedRead](../class/src/index.js~CEvntFeed.html#instance-method-FeedRead) method to get information 
+about each specific [Event](../class/src/index.js~Event.html) within the current timestamp.
+
+This is because the [onEvent](../function/index.html#static-function-onEvent) method actually runs 
+once per timestamp rather than once per [Event](../class/src/index.js~Event.html).
+
+```js
+var tTick = pFeed.FeedRead(pSequ);
+```
+
+[//]: # "TODO Explain this more..."
 
 ### Your first Event
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+This will **not** be the case in every sample you right, as you will certainly be tracking more 
+than just prices, but for this example, our first [Event](../class/src/index.js~Event.html) is a 
+special case. 
+
+If you don't take the time to designate the first [Event](../class/src/index.js~Event.html) 
+as a special case, your ```gTopPrice``` and ```gBotPrice``` variables will still be set to 
+their default to a value of zero, and that means your ```gBotPrice``` variable will most 
+likely never be tracked properly.
+
+To check for whether or not your script has just come across the first [Event](../class/src/index.js~Event.html), 
+you need to use an [if...else statement](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else). 
+If statements allow you to execute different lines of code depending on whether or not a 
+condition you set ends up being true or false.
+
+Now, in order to designate your first [Event](../class/src/index.js~Event.html) as a special 
+case, use an [if...else statement](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else) 
+with your ```gOnFirstEvent``` variable you created earlier to create a condition.
+
+```js
+if (gOnFirstEvent)
+{
+    gTopPrice = tTick.Trade.Price;
+    gBotPrice = tTick.Trade.Price;
+    gOnFirstEvent = false;
+}
+```
+
+[//]: # "TODO Explain something about code within the if statement to wrap up this section"
 
 ### Other Events
 
