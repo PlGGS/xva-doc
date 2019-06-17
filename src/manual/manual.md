@@ -31,11 +31,11 @@ everything in this sample script is crucial for contructing your own.
 
 [//]: # "Replace this image when 'scripted stopped' is fixed"
 
-## Declaring your Variables
+### Declaring your Variables
 
-Once you've opened your Javascript editor, you should see your main CEVNTPane and CEVNTFeed variables. 
-These are foundational objects you're going to use most to maintain the feed of the symbol you're 
-tracking.
+Once you've opened your Javascript editor, you should see your main CEVNTPane and 
+CEVNTFeed variables. These are foundational objects you're going to use most to 
+maintain the feed of the symbol you're tracking.
 
 ```js
 var gEvntPane;
@@ -64,9 +64,9 @@ The symbol name is the technical name of the symbol we want to interpret.
 
 [//]: # "[symbols](link to symbol names)"
 
-### Built-in Functions
+#### Built-in Functions
 
-#### onLoad
+##### onLoad
 
 The built in onLoad function is called when the user clicks the run button shown below.  
 
@@ -102,7 +102,7 @@ based on your newly created feed. This will render your feed in your pane.
 
 <img src="asset/click_run.png" width="50%" height="50%">
 
-#### onEvent
+##### onEvent
 
 The built in onEvent function is called once for each timestamp tracked in your symbol.  
 
@@ -123,7 +123,7 @@ A feed  with timestamps measured in nanoseconds with 56 bit precision.
 - [Number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) ```pSequ```  
 A number that is used for Amount of events within this sequence. It defaults to 0.
 
-#### onOpen
+##### onOpen
 
 The built in onOpen function is called once the pane has properly loaded and rendered the Symbol information.
 
@@ -137,7 +137,7 @@ function onOpen ()
 }
 ```
 
-#### onStop
+##### onStop
 
 The built in onStop function is called when the user clicks the stop button shown below.
 
@@ -152,9 +152,17 @@ function onStop ()
 
 <img src="asset/click_stop.png" width="50%" height="50%">
 
-## Adding Overlays
+### Adding Overlays
 
-## Customizing Visuals
+#### Drawing Price Changes
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+
+### Customizing Visuals
+
+#### Drawing Other Values
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
 
 ## General Formatting
 
