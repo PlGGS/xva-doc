@@ -428,9 +428,15 @@ function, head over to the <a href="./manual/manual.html">manual</a> and catch u
 section.</p><h3>Reading your Feed</h3><p>Whenever you&apos;re dealing with events in your <a href="./manual/../function/index.html#static-function-onEvent">onEvent</a> 
 method, you&apos;re going to need to make use of your <a href="./manual/class/src/index.js~CEvntFeed.html">Feed</a>&apos;s 
 <a href="./manual/../class/src/index.js~CEvntFeed.html#instance-method-FeedRead">FeedRead</a> method to get information 
-about each specific <a href="./manual/../class/src/index.js~Event.html">Event</a> within the current timestamp.</p><p>This is because the <a href="./manual/../function/index.html#static-function-onEvent">onEvent</a> method actually runs 
-once per timestamp rather than once per <a href="./manual/../class/src/index.js~Event.html">Event</a>.</p><pre><code class="lang-js"><code class="source-code prettyprint">var tTick = pFeed.FeedRead(pSequ);</code>
-</code></pre><h3>Your first Event</h3><p>This will <strong>not</strong> be the case in every sample you right, as you will certainly be tracking more 
+about each <a href="./manual/../class/src/index.js~Event.html">Event</a> your function handles.</p><p>Below, you can see an easy way to capture this <a href="./manual/../class/src/index.js~Event.html">Event</a>. You can 
+create a new variable to store the current <a href="./manual/../class/src/index.js~Event.html">Event</a> being read in 
+from your <a href="./manual/class/src/index.js~CEvntFeed.html">Feed</a>. We&apos;ll continue to refer to this event as tTick, 
+but you can call it whatever is most memorable for you.</p><pre><code class="lang-js"><code class="source-code prettyprint">var tTick = pFeed.FeedRead(pSequ);</code>
+</code></pre><ul>
+<li><a href="./manual/../class/src/index.js~CEvntFeed.html#instance-method-FeedRead">FeedRead</a> <code>pFeed.FeedRead(pSequ)</code><br>Each event has a sequence value for indexing its position among all of the other <a href="./manual/../class/src/index.js~Event.html">Events</a>
+Using this sequence value, <code>pSequ</code>, <a href="./manual/../class/src/index.js~CEvntFeed.html#instance-method-FeedRead">FeedRead</a> 
+returns the <a href="./manual/../class/src/index.js~Event.html">Event</a> at that spot in your symbol&apos;s <a href="./manual/class/src/index.js~CEvntFeed.html">Feed</a>.</li>
+</ul><h3>Your first Event</h3><p>This will <strong>not</strong> be the case in every sample you right, as you will certainly be tracking more 
 than just prices, but for this example, our first <a href="./manual/../class/src/index.js~Event.html">Event</a> is a 
 special case. </p><p>If you don&apos;t take the time to designate the first <a href="./manual/../class/src/index.js~Event.html">Event</a> 
 as a special case, your <code>gTopPrice</code> and <code>gBotPrice</code> variables will still be set to 

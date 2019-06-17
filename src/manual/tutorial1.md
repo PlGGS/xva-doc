@@ -298,16 +298,21 @@ section.
 Whenever you're dealing with events in your [onEvent](../function/index.html#static-function-onEvent) 
 method, you're going to need to make use of your [Feed](class/src/index.js~CEvntFeed.html)'s 
 [FeedRead](../class/src/index.js~CEvntFeed.html#instance-method-FeedRead) method to get information 
-about each specific [Event](../class/src/index.js~Event.html) within the current timestamp.
+about each [Event](../class/src/index.js~Event.html) your function handles.
 
-This is because the [onEvent](../function/index.html#static-function-onEvent) method actually runs 
-once per timestamp rather than once per [Event](../class/src/index.js~Event.html).
+Below, you can see an easy way to capture this [Event](../class/src/index.js~Event.html). You can 
+create a new variable to store the current [Event](../class/src/index.js~Event.html) being read in 
+from your [Feed](class/src/index.js~CEvntFeed.html). We'll continue to refer to this event as tTick, 
+but you can call it whatever is most memorable for you.
 
 ```js
 var tTick = pFeed.FeedRead(pSequ);
 ```
 
-[//]: # "TODO Explain this more..."
+- [FeedRead](../class/src/index.js~CEvntFeed.html#instance-method-FeedRead) ```pFeed.FeedRead(pSequ)```  
+Each event has a sequence value for indexing its position among all of the other [Events](../class/src/index.js~Event.html)
+Using this sequence value, ```pSequ```, [FeedRead](../class/src/index.js~CEvntFeed.html#instance-method-FeedRead) 
+returns the [Event](../class/src/index.js~Event.html) at that spot in your symbol's [Feed](class/src/index.js~CEvntFeed.html).
 
 ### Your first Event
 
