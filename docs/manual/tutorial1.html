@@ -186,7 +186,7 @@ gStatTop.title = &quot;Top Price&quot;;
 gStatTop.fillStyle = &quot;#f4f427&quot;;</code>
 </code></pre>
 <ul>
-<li><p><a href="./manual/class/src/index.js~CEvntPane.html#instance-method-MakeStat">MakeStat</a> <code>gEvntPane.MakeStat(gCalcTop)</code><br>Creates a <a href="./manual/../class/src/index.js~CEvntStat.html">Stat</a> object that is used to display any value 
+<li><p><a href="./manual/../class/src/index.js~CEvntPane.html#instance-method-MakeStat">MakeStat</a> <code>gEvntPane.MakeStat(gCalcTop)</code><br>Creates a <a href="./manual/../class/src/index.js~CEvntStat.html">Stat</a> object that is used to display any value 
 provided by the <a href="./manual/../class/src/index.js~CEvntCalc.html">Calc</a> object that you pass into it in the 
 top left corner of your <a href="./manual/../class/src/index.js~CEvntPane.html">Pane</a>.</p>
 </li>
@@ -243,7 +243,7 @@ gStatTop.title = &quot;Top Price&quot;;
 gStatTop.fillStyle = &quot;#f4f427&quot;;</code>
 </code></pre>
 <ul>
-<li><p><a href="./manual/class/src/index.js~CEvntPane.html#instance-method-MakeStat">MakeStat</a> <code>gEvntPane.MakeStat(gCalcTop)</code><br>Creates a <a href="./manual/../class/src/index.js~CEvntStat.html">Stat</a> object that is used to display any value 
+<li><p><a href="./manual/../class/src/index.js~CEvntPane.html#instance-method-MakeStat">MakeStat</a> <code>gEvntPane.MakeStat(gCalcTop)</code><br>Creates a <a href="./manual/../class/src/index.js~CEvntStat.html">Stat</a> object that is used to display any value 
 provided by the <a href="./manual/../class/src/index.js~CEvntCalc.html">Calc</a> object that you pass into it in the 
 top left corner of your <a href="./manual/../class/src/index.js~CEvntPane.html">Pane</a>.</p>
 </li>
@@ -327,15 +327,58 @@ condition you set ends up being true or false.</p>
 <p>Now, in order to designate your first <a href="./manual/../class/src/index.js~Event.html">Event</a> as a special 
 case, use an <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else">if...else statement</a> 
 with your <code>gOnFirstEvent</code> variable you created earlier to create a condition.</p>
-<pre><code class="lang-js"><code class="source-code prettyprint">if (gOnFirstEvent)
+<pre><code class="lang-js"><code class="source-code prettyprint">if (gOnFirstEvent == true)
 {
     gTopPrice = tTick.Trade.Price;
     gBotPrice = tTick.Trade.Price;
     gOnFirstEvent = false;
 }</code>
 </code></pre>
-<h3 id="other-events">Other Events</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-<h3 id="saving-values">Saving values</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+<p>The statement above checks whether or not your condition, gOnFirstEvent, evaluates to true. If 
+so, it sets our top and bottom prices to the first price value recorded in your symbol and sets 
+your gOnFirstEvent variable to false, so you don&apos;t run the code within this if statement again.</p>
+<p>One thing to note is that the above if statement is logically equivalent to:</p>
+<pre><code class="lang-js"><code class="source-code prettyprint">if (gOnFirstEvent)</code>
+</code></pre>
+<p>Omitting the <code>== true</code> portion of the statement is just shorthand. It works well for 
+descriptive variables like gOnFirstEvent, because it lets the statement almost read like a 
+sentence. <code>If on first event, do ...</code></p>
+<h3 id="other-events">Other Events</h3><p>For all other events, you&apos;re finally going to perform the two major checks to track the top and 
+bottom prices of your symbol&apos;s period. To accomplish this, you can again make use of an <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else">if...else statement</a>. </p>
+<pre><code class="lang-js"><code class="source-code prettyprint">if (tTick.Trade.Price &gt; gTopPrice)
+{
+    gTopPrice = tTick.Trade.Price;
+}
+else if (tTick.Trade.Price &lt; gBotPrice)
+{
+    gBotPrice = tTick.Trade.Price;
+}</code>
+</code></pre>
+<p>Here, you&apos;re first going to check whether or not the current trade price is greater than your 
+top price variable, and if so, you simply set your top price variable to the current trade price.</p>
+<p>Otherwise, you&apos;re going to need to make use of the <code>else if</code> portion of the statement to 
+only perform another check if the last one wasn&apos;t true. </p>
+<p>So if the current price wasn&apos;t greater than your top price variable, then your first if statement 
+will fail, and you&apos;ll need to check whether or not the current trade price is less than your 
+bottom price variable, and if so, you just set your bottom price variable to the current trade 
+price instead.</p>
+<h3 id="saving-values">Saving values</h3><p>Once you&apos;ve checked whether or not the current trade price is of any significance, you&apos;ll need to 
+save your top and bottom price values to your <a href>Calc</a> objects.</p>
+<p>Your <a href="./manual/../class/src/index.js~CEvntStat.html">Calc</a> variables will then relay the prices you saved 
+to their corresponding <a href="./manual/../class/src/index.js~CEvntStat.html">Stat</a> variables to display their 
+values to the top left corner of your symbol <a href="./manual/../class/src/index.js~CEvntPane.html">Pane</a>.</p>
+<p>This way, no matter how your <a href="./manual/../function/index.html#static-function-onEvent">onEvent</a> function executes, you make sure to save both your top 
+and bottom prices. Yes, you only actually need to save both of them once, but you we were to save 
+them both individually based on the different cases of your function, you would have to repeat 
+these lines a rediculous amount of times. This way, you can make sure that everything gets saved 
+every single time through the function.</p>
+<pre><code class="lang-js"><code class="source-code prettyprint">gCalcTop.CalcSave(pSequ, gTopPrice);
+gCalcBot.CalcSave(pSequ, gBotPrice);</code>
+</code></pre>
+<ul>
+<li><a href="./manual/../class/src/index.js~CEvntCalc.html#instance-method-CalcSave">CalcSave</a> <code>gCalcTop.CalcSave(pSequ, gTopPrice/gBotPrice);</code><br>Saves a given value to your <a href="./manual/../class/src/index.js~CEvntStat.html">Calc</a> object in order to display 
+it through your <a href="./manual/../class/src/index.js~CEvntStat.html">Stat</a> object to the left of your <a href="./manual/../class/src/index.js~CEvntPane.html">Pane</a>.</li>
+</ul>
 <h2 id="results">Results</h2><h4 id="congratulations">Congratulations</h4><p>At this point, you should now be able to test, save, and display aspects of events, and 
 you should see a chart based off of your selected Symbol for the most recent exchange period like 
 the one shown below! Feel free to zoom in and out and scroll through your newly created chart.</p>

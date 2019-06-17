@@ -143,7 +143,7 @@ gStatTop.title = "Top Price";
 gStatTop.fillStyle = "#f4f427";
 ```
 
-- [MakeStat](class/src/index.js~CEvntPane.html#instance-method-MakeStat) ```gEvntPane.MakeStat(gCalcTop)```  
+- [MakeStat](../class/src/index.js~CEvntPane.html#instance-method-MakeStat) ```gEvntPane.MakeStat(gCalcTop)```  
 Creates a [Stat](../class/src/index.js~CEvntStat.html) object that is used to display any value 
 provided by the [Calc](../class/src/index.js~CEvntCalc.html) object that you pass into it in the 
 top left corner of your [Pane](../class/src/index.js~CEvntPane.html).
@@ -221,7 +221,7 @@ gStatTop.title = "Top Price";
 gStatTop.fillStyle = "#f4f427";
 ```
 
-- [MakeStat](class/src/index.js~CEvntPane.html#instance-method-MakeStat) ```gEvntPane.MakeStat(gCalcTop)```  
+- [MakeStat](../class/src/index.js~CEvntPane.html#instance-method-MakeStat) ```gEvntPane.MakeStat(gCalcTop)```  
 Creates a [Stat](../class/src/index.js~CEvntStat.html) object that is used to display any value 
 provided by the [Calc](../class/src/index.js~CEvntCalc.html) object that you pass into it in the 
 top left corner of your [Pane](../class/src/index.js~CEvntPane.html).
@@ -330,7 +330,7 @@ case, use an [if...else statement](https://developer.mozilla.org/en-US/docs/Web/
 with your ```gOnFirstEvent``` variable you created earlier to create a condition.
 
 ```js
-if (gOnFirstEvent)
+if (gOnFirstEvent == true)
 {
     gTopPrice = tTick.Trade.Price;
     gBotPrice = tTick.Trade.Price;
@@ -338,15 +338,70 @@ if (gOnFirstEvent)
 }
 ```
 
-[//]: # "TODO Explain something about code within the if statement to wrap up this section"
+The statement above checks whether or not your condition, gOnFirstEvent, evaluates to true. If 
+so, it sets our top and bottom prices to the first price value recorded in your symbol and sets 
+your gOnFirstEvent variable to false, so you don't run the code within this if statement again.
+
+One thing to note is that the above if statement is logically equivalent to:
+
+```js
+if (gOnFirstEvent)
+```
+
+Omitting the ```== true``` portion of the statement is just shorthand. It works well for 
+descriptive variables like gOnFirstEvent, because it lets the statement almost read like a 
+sentence. ```If on first event, do ...```
 
 ### Other Events
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+For all other events, you're finally going to perform the two major checks to track the top and 
+bottom prices of your symbol's period. To accomplish this, you can again make use of an [if...else statement](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else). 
+
+```js
+if (tTick.Trade.Price > gTopPrice)
+{
+    gTopPrice = tTick.Trade.Price;
+}
+else if (tTick.Trade.Price < gBotPrice)
+{
+    gBotPrice = tTick.Trade.Price;
+}
+```
+
+Here, you're first going to check whether or not the current trade price is greater than your 
+top price variable, and if so, you simply set your top price variable to the current trade price.
+
+Otherwise, you're going to need to make use of the ```else if``` portion of the statement to 
+only perform another check if the last one wasn't true. 
+
+So if the current price wasn't greater than your top price variable, then your first if statement 
+will fail, and you'll need to check whether or not the current trade price is less than your 
+bottom price variable, and if so, you just set your bottom price variable to the current trade 
+price instead.
 
 ### Saving values
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Once you've checked whether or not the current trade price is of any significance, you'll need to 
+save your top and bottom price values to your [Calc]() objects.
+
+Your [Calc](../class/src/index.js~CEvntStat.html) variables will then relay the prices you saved 
+to their corresponding [Stat](../class/src/index.js~CEvntStat.html) variables to display their 
+values to the top left corner of your symbol [Pane](../class/src/index.js~CEvntPane.html).
+
+This way, no matter how your [onEvent](../function/index.html#static-function-onEvent) function executes, you make sure to save both your top 
+and bottom prices. Yes, you only actually need to save both of them once, but you we were to save 
+them both individually based on the different cases of your function, you would have to repeat 
+these lines a rediculous amount of times. This way, you can make sure that everything gets saved 
+every single time through the function.
+
+```js
+gCalcTop.CalcSave(pSequ, gTopPrice);
+gCalcBot.CalcSave(pSequ, gBotPrice);
+```
+
+- [CalcSave](../class/src/index.js~CEvntCalc.html#instance-method-CalcSave) ```gCalcTop.CalcSave(pSequ, gTopPrice/gBotPrice);```  
+Saves a given value to your [Calc](../class/src/index.js~CEvntStat.html) object in order to display 
+it through your [Stat](../class/src/index.js~CEvntStat.html) object to the left of your [Pane](../class/src/index.js~CEvntPane.html).
 
 ## Results
 
