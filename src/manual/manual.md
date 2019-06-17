@@ -17,7 +17,7 @@ knowledge that will help you translate your predictions into code.
 To get started, simply drag a new pane into your vNine dashboard from the context menu 
 on the left.
 
-![drag pane](asset/drag_pane.png)
+<img src="asset/drag_pane.png" width="50%" height="50%">
 
 #### Opening the editor
 
@@ -27,7 +27,7 @@ You should be presented with an empty sample script corresponding to your new pa
 It may seem daunting at first glance, but soon you'll come to find that nearly 
 everything in this sample script is crucial for contructing your own.
 
-![click js](asset/click_js.png)
+<img src="asset/click_js.png" width="50%" height="50%">
 
 [//]: # "Replace this image when 'scripted stopped' is fixed"
 
@@ -104,7 +104,7 @@ the feed that will be tracked in your
 Returns a new [CEvntDraw](../class/src/index.js~CEvntDraw.html) object 
 based on your newly created feed. This will render your feed in your pane.
 
-![click run](asset/click_run.png)
+<img src="asset/click_run.png" width="50%" height="50%">
 
 #### onEvent
 
@@ -154,7 +154,7 @@ function onStop ()
 }
 ```
 
-![click stop](asset/click_stop.png)
+<img src="asset/click_stop.png" width="50%" height="50%">
 
 ## General Formatting
 

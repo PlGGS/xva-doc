@@ -103,9 +103,9 @@ than just real-time using vNine at <a href="https://vnine.vertex-analytics.com">
 efficiently manage and gain insight into your symbol over time.</p><p>If you&apos;re worried about the programming aspect of EVNTScript, fear not, because 
 throughout this documentation, you&apos;ll find many different bits of programming 
 knowledge that will help you translate your predictions into code.</p><h4>Pane Creation</h4><p>To get started, simply drag a new pane into your vNine dashboard from the context menu 
-on the left.</p><p><img src="./manual/asset/drag_pane.png" alt="drag pane"></p><h4>Opening the editor</h4><p>Click the JS button to open up the Javascript style editor. 
+on the left.</p><p><img src="./manual/asset/drag_pane.png" width="50%" height="50%"></p><h4>Opening the editor</h4><p>Click the JS button to open up the Javascript style editor. 
 You should be presented with an empty sample script corresponding to your new pane.  </p><p>It may seem daunting at first glance, but soon you&apos;ll come to find that nearly 
-everything in this sample script is crucial for contructing your own.</p><p><img src="./manual/asset/click_js.png" alt="click js"></p><h4>...</h4><h2>Declaring your variables</h2><p>Once you&apos;ve opened your Javascript editor, you should see your main CEVNTPane and CEVNTFeed variables. 
+everything in this sample script is crucial for contructing your own.</p><p><img src="./manual/asset/click_js.png" width="50%" height="50%"></p><h4>...</h4><h2>Declaring your variables</h2><p>Once you&apos;ve opened your Javascript editor, you should see your main CEVNTPane and CEVNTFeed variables. 
 These are foundational objects you&apos;re going to use most to maintain the feed of the symbol you&apos;re 
 tracking.</p><pre><code class="lang-js"><code class="source-code prettyprint">var gEvntPane;
 var gPaneFeed;
@@ -145,7 +145,7 @@ the feed that will be tracked in your
 <li><p><a href="./manual/../class/src/index.js~CEvntPane.html#instance-method-MakeDraw">MakeDraw</a> <code>gEvntPane.MakeDraw(gPaneFeed)</code><br>Returns a new <a href="./manual/../class/src/index.js~CEvntDraw.html">CEvntDraw</a> object 
 based on your newly created feed. This will render your feed in your pane.</p>
 </li>
-</ul><p><img src="./manual/asset/click_run.png" alt="click run"></p><h4>onEvent</h4><p>The built in onEvent function is called once for each timestamp tracked in your symbol.  </p><p>This is where you&apos;ll be doing most of your calculations on the specific things you&apos;re 
+</ul><p><img src="./manual/asset/click_run.png" width="50%" height="50%"></p><h4>onEvent</h4><p>The built in onEvent function is called once for each timestamp tracked in your symbol.  </p><p>This is where you&apos;ll be doing most of your calculations on the specific things you&apos;re 
 looking for in your symbol. It allows your script to perform different tasks depending 
 on the current event&apos;s conditions.</p><pre><code class="lang-js"><code class="source-code prettyprint">function onEvent (pFeed, pSequ)
 {
@@ -165,7 +165,7 @@ event in your symbol&apos;s feed.</p><pre><code class="lang-js"><code class="sou
 {
 
 }</code>
-</code></pre><p><img src="./manual/asset/click_stop.png" alt="click stop"></p><h2>General Formatting</h2><h3>Notation</h3><p>Constants used for distinguishing variable roles</p><ul>
+</code></pre><p><img src="./manual/asset/click_stop.png" width="50%" height="50%"></p><h2>General Formatting</h2><h3>Notation</h3><p>Constants used for distinguishing variable roles</p><ul>
 <li><code>k</code> | K denotes a constant variable</li>
 <li><code>g</code> | G denotes a global variable</li>
 </ul><pre><code class="lang-js"><code class="source-code prettyprint">var gEvntPane;
