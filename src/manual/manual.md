@@ -31,11 +31,7 @@ everything in this sample script is crucial for contructing your own.
 
 [//]: # "Replace this image when 'scripted stopped' is fixed"
 
-#### ...
-
-[//]: # "Maybe add another section here for resetting to default scripts or basic early troubleshooting advice"
-
-## Declaring your variables
+## Declaring your Variables
 
 Once you've opened your Javascript editor, you should see your main CEVNTPane and CEVNTFeed variables. 
 These are foundational objects you're going to use most to maintain the feed of the symbol you're 
@@ -155,6 +151,10 @@ function onStop ()
 ```
 
 <img src="asset/click_stop.png" width="50%" height="50%">
+
+## Adding Overlays
+
+## Customizing Visuals
 
 ## General Formatting
 
