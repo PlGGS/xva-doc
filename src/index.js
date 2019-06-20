@@ -1,5 +1,5 @@
 /**
- * Class representing the a primary chart.
+ * Class representing the the pane that draws your symbol's Feed of Events.
  * @example
  * var gEvntPane;
  * function onLoad()
@@ -11,7 +11,7 @@
 export class CEvntPane
 {
     /**
-     * Creates an CEvntPane object
+     * Creates a CEvntPane object
      */
     constructor()
     {
@@ -71,7 +71,7 @@ export class CEvntPane
 }
 
 /**
- * Class representing an event feed.
+ * Class representing an event feed. A CEvntFeed contains every single Event within a CEvntPane's provided symbol.
  */
 export class CEvntFeed
 {
@@ -125,7 +125,7 @@ export class CEvntFeed
 }
 
 /**
- * Class representing a status indicator in the top left of a chart.
+ * Class representing a status indicator that displays the status of a stored variable in the top left of your Pane.
  */
 export class CEvntStat
 {
@@ -151,7 +151,7 @@ export class CEvntStat
 }
 
 /**
- * Class representing the drawing element of a chart.
+ * Class that renders Events from a Feed object or lines between calculated values from a Calc object.
  */
 export class CEvntDraw
 {
@@ -177,7 +177,7 @@ export class CEvntDraw
 }
 
 /**
- * Class representing a custom calculated element of a chart.
+ * Class that stores values at specfic locations in your Pane.
  */
 export class CEvntCalc
 {
@@ -203,7 +203,7 @@ export class CEvntCalc
 }
 
 /**
- * Class representing an event trigger.
+ * Class representing an event trigger that notifies the user when something important occurs.
  */
 export class CEvntTrig
 {
@@ -236,7 +236,7 @@ export class CEvntTrig
 }
 
 /**
- * Base Event class that all event types are based off of. (See manual for enumerated types of events)
+ * Class representing all other event types. (See manual for enumerated types of events)
  */
 export class Event
 {
@@ -274,7 +274,7 @@ export class Event
 }
 
 /**
- * Class representing an event with Type trade. (Trade is not technically its own class. It is simply an Event with a selected Type field)
+ * Class representing an event with Type trade. (Trade is not technically its own class. See manual for enumerated types of events)
  */
 export class Trade extends Event
 {
@@ -307,7 +307,7 @@ export class Trade extends Event
     }
 }
 /**
- * Class representing an event with Type bid. (Bid is not technically its own class. It is simply an Event with a selected Type field)
+ * Class representing an event with Type bid. (Bid is not technically its own class. See manual for enumerated types of events)
  */
 export class Bid extends Event
 {
@@ -346,7 +346,7 @@ export class Bid extends Event
 }
 
 /**
- * Class representing an event with Type ask. (Ask is not technically its own class. It is simply an Event with a selected Type field)
+ * Class representing an event with Type ask. (Ask is not technically its own class. See manual for enumerated types of events)
  */
 export class Ask extends Event
 {
@@ -383,7 +383,7 @@ export class Ask extends Event
 }
 
 /**
- * This public function is critical to creating your main pane.
+ * Public function used to return a new Pane object. (All other object creation methods are inside CEvnt classes)
  * @example
  * gEvntPane = MakePane();
  */
@@ -393,15 +393,15 @@ export function MakePane()
 }
 
 /**
- * This is a built in function which triggers when the script starts to get general script parameters, including the primary script symbol.
+ * Built in function that is called when the start button is pressed in order to initialize variables.
  */
 export function onLoad()
 {
-    
+
 }
 
 /**
- * This is a built in function which triggers for each event in the pFeed stream.
+ * Built in function that is called once for each event in the symbol Feed.
  * @param {CEvntFeed} pFeed - A CEvntFeed object with timestamps measured in nanoseconds with 56 bit precision
  * @param {Number} pSequ - Amount of events to read within this sequence
  */
@@ -411,7 +411,7 @@ export function onEvent(pFeed, pSequ)
 }
 
 /**
- * This is a built in function which triggers when the symbol is successfully loaded and the EOS and instrument data is ready.
+ * Built in function that is called once the script has read every previous event in the symbol Feed.
  */
 export function onOpen()
 {
@@ -419,7 +419,7 @@ export function onOpen()
 }
 
 /**
- * This is a built in function which triggers when the symbol is stopped by the user.
+ * Built in function that is called when the stop button is pressed.
  */
 export function onStop()
 {
