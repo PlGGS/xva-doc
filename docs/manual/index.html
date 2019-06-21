@@ -127,7 +127,7 @@ receiving from your symbol.</p>
 </li>
 <li><p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a> <code>kSymbolName</code><br>The symbol name is the technical name of the symbol we want to interpret.</p>
 </li>
-</ul><h4>Built-in Functions</h4><h5>onLoad</h5><p>The built in onLoad function is called when the user clicks the run button shown below.  </p><p>It is extremely useful for setting up all of your variables perfectly before your script 
+</ul><h4>Built-in Functions</h4><h5>onLoad</h5><p>The built in onLoad function is called when the user clicks the run button shown below.  </p><p><img src="./manual/asset/click_run.png" width="50%" height="50%"></p><p>It is extremely useful for setting up all of your variables perfectly before your script 
 begins running through each and every event in the <a href="./manual/../function/index.html#static-function-onEvent">onEvent</a> method.</p><pre><code class="lang-js"><code class="source-code prettyprint">function onLoad ()
 {
     gEvntPane = MakePane();
@@ -148,7 +148,7 @@ the feed that will be tracked in your
 <li><p><a href="./manual/../class/src/index.js~CEvntPane.html#instance-method-MakeDraw">MakeDraw</a> <code>gEvntPane.MakeDraw(gPaneFeed)</code><br>Returns a new <a href="./manual/../class/src/index.js~CEvntDraw.html">CEvntDraw</a> object 
 based on your newly created feed. This will render your feed in your pane.</p>
 </li>
-</ul><p><img src="./manual/asset/click_run.png" width="50%" height="50%"></p><h5>onEvent</h5><p>The built in onEvent function is called once for each timestamp tracked in your symbol.  </p><p>This is where you&apos;ll be doing most of your calculations on the specific things you&apos;re 
+</ul><h5>onEvent</h5><p>The built in onEvent function is called once for each timestamp tracked in your symbol.  </p><p>This is where you&apos;ll be doing most of your calculations on the specific things you&apos;re 
 looking for in your symbol. It allows your script to perform different tasks depending 
 on the current event&apos;s conditions.</p><pre><code class="lang-js"><code class="source-code prettyprint">function onEvent (pFeed, pSequ)
 {
@@ -164,11 +164,11 @@ event in your symbol&apos;s feed.</p><pre><code class="lang-js"><code class="sou
 {
 
 }</code>
-</code></pre><h5>onStop</h5><p>The built in onStop function is called when the user clicks the stop button shown below.</p><pre><code class="lang-js"><code class="source-code prettyprint">function onStop ()
+</code></pre><h5>onStop</h5><p>The built in onStop function is called when the user clicks the stop button shown below.</p><p><img src="./manual/asset/click_stop.png" width="50%" height="50%"></p><p>This function can be useful for logging data gathered while the symbol was running.</p><pre><code class="lang-js"><code class="source-code prettyprint">function onStop ()
 {
 
 }</code>
-</code></pre><p><img src="./manual/asset/click_stop.png" width="50%" height="50%"></p><h3>Adding Overlays</h3><h4>Drawing Price Changes</h4><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p><h3>Customizing Visuals</h3><h4>Drawing Other Values</h4><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p><h2>General Formatting</h2><h3>Notation</h3><p>Constants used for distinguishing variable roles</p><ul>
+</code></pre><h3>Adding Overlays</h3><h4>Drawing Price Changes</h4><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p><h3>Customizing Visuals</h3><h4>Drawing Other Values</h4><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p><h2>General Formatting</h2><h3>Notation</h3><p>Constants used for distinguishing variable roles</p><ul>
 <li><code>k</code> | K denotes a constant variable</li>
 <li><code>g</code> | G denotes a global variable</li>
 </ul><pre><code class="lang-js"><code class="source-code prettyprint">var gEvntPane;
