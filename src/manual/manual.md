@@ -162,7 +162,14 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 #### Drawing Other Values
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Scripts can track more than just prices though. In some cases, it might be useful to track 
+the [Quantities](https://bblake.info/vxa-doc/class/src/index.js~Trade.html#instance-member-Quantity) 
+of [Trades](https://bblake.info/vxa-doc/class/src/index.js~Trade.html). 
+
+In the example below, the highest [Quantity](https://bblake.info/vxa-doc/class/src/index.js~Trade.html#instance-member-Quantity) 
+trade is tracked and drawn to the [Pane](https://bblake.info/vxa-doc/class/src/index.js~CEvntPane.html).
+
+[//]: # "<img src="asset/max_quantity.png" width="50%" height="50%">"
 
 ## General Formatting
 
