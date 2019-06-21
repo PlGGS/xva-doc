@@ -70,6 +70,8 @@ The symbol name is the technical name of the symbol we want to interpret.
 
 The built in onLoad function is called when the user clicks the run button shown below.  
 
+<img src="asset/click_run.png" width="50%" height="50%">
+
 It is extremely useful for setting up all of your variables perfectly before your script 
 begins running through each and every event in the [onEvent](../function/index.html#static-function-onEvent) method.
 
@@ -99,8 +101,6 @@ the feed that will be tracked in your
 - [MakeDraw](../class/src/index.js~CEvntPane.html#instance-method-MakeDraw) ```gEvntPane.MakeDraw(gPaneFeed)```  
 Returns a new [CEvntDraw](../class/src/index.js~CEvntDraw.html) object 
 based on your newly created feed. This will render your feed in your pane.
-
-<img src="asset/click_run.png" width="50%" height="50%">
 
 ##### onEvent
 
@@ -141,7 +141,9 @@ function onOpen ()
 
 The built in onStop function is called when the user clicks the stop button shown below.
 
-[//]: # "Maybe add some useful info about the onStop function here"
+<img src="asset/click_stop.png" width="50%" height="50%">
+
+This function can be useful for logging data gathered while the symbol was running.
 
 ```js
 function onStop ()
@@ -149,8 +151,6 @@ function onStop ()
 	
 }
 ```
-
-<img src="asset/click_stop.png" width="50%" height="50%">
 
 ### Adding Overlays
 
