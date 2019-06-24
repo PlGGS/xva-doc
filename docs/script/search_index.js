@@ -30,6 +30,12 @@ window.esdocSearchIndex = [
     "class"
   ],
   [
+    "evntscript/src/index.js~cevntfill",
+    "class/src/index.js~CEvntFill.html",
+    "<span>CEvntFill</span> <span class=\"search-result-import-path\">evntscript/src/index.js</span>",
+    "class"
+  ],
+  [
     "evntscript/src/index.js~cevntpane",
     "class/src/index.js~CEvntPane.html",
     "<span>CEvntPane</span> <span class=\"search-result-import-path\">evntscript/src/index.js</span>",
@@ -480,10 +486,34 @@ window.esdocSearchIndex = [
     "method"
   ],
   [
+    "src/index.js~cevntfeed#makefill",
+    "class/src/index.js~CEvntFeed.html#instance-method-MakeFill",
+    "src/index.js~CEvntFeed#MakeFill",
+    "method"
+  ],
+  [
     "src/index.js~cevntfeed#maketrig",
     "class/src/index.js~CEvntFeed.html#instance-method-MakeTrig",
     "src/index.js~CEvntFeed#MakeTrig",
     "method"
+  ],
+  [
+    "src/index.js~cevntfill#constructor",
+    "class/src/index.js~CEvntFill.html#instance-constructor-constructor",
+    "src/index.js~CEvntFill#constructor",
+    "method"
+  ],
+  [
+    "src/index.js~cevntfill#fillstyle",
+    "class/src/index.js~CEvntFill.html#instance-member-fillStyle",
+    "src/index.js~CEvntFill#fillStyle",
+    "member"
+  ],
+  [
+    "src/index.js~cevntfill#textstyle",
+    "class/src/index.js~CEvntFill.html#instance-member-textStyle",
+    "src/index.js~CEvntFill#textStyle",
+    "member"
   ],
   [
     "src/index.js~cevntpane#makedraw",
@@ -534,9 +564,9 @@ window.esdocSearchIndex = [
     "method"
   ],
   [
-    "src/index.js~cevntstat#fillstyle",
-    "class/src/index.js~CEvntStat.html#instance-member-fillStyle",
-    "src/index.js~CEvntStat#fillStyle",
+    "src/index.js~cevntstat#textstyle",
+    "class/src/index.js~CEvntStat.html#instance-member-textStyle",
+    "src/index.js~CEvntStat#textStyle",
     "member"
   ],
   [

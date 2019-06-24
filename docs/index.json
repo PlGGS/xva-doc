@@ -567,7 +567,7 @@
     "__docId__": 48,
     "kind": "file",
     "name": "src/index.js",
-    "content": "/**\r\n * Class representing the the pane that draws your symbol's Feed of Events.\r\n * @example\r\n * var gEvntPane;\r\n * function onLoad()\r\n * {\r\n *     gEvntPane = MakePane();\r\n *     //...\r\n * }\r\n */\r\nexport class CEvntPane\r\n{\r\n    /**\r\n     * Creates a CEvntPane object\r\n     */\r\n    constructor()\r\n    {\r\n        /**\r\n        * Text that appears at the top of the pane\r\n        * @type {String}\r\n        * @public\r\n        */\r\n        this.title = \"\";\r\n\r\n        /**\r\n        * String representing the pane's background color in hexidecimal (Make sure to include a # at the beginning)\r\n        * @type {String}\r\n        * @public\r\n        */\r\n        this.fillStyle = \"#000000\";\r\n    }\r\n    \r\n    /**\r\n     * Makes a CEvntFeed object.\r\n     * @param {String} pSymb - Name of the symbol\r\n     * @returns {CEvntFeed} a calculation object.\r\n     */\r\n    MakeFeed(pSymb)\r\n    {\r\n\r\n    }\r\n\r\n    /**\r\n     * Makes a CEvntTrig object.\r\n     * @param {CEvntCalc} pItem - Calc object for your status object to read from\r\n     * @returns {CEvntStat} a status object.\r\n     */\r\n    MakeStat(pItem)\r\n    {\r\n\r\n    }\r\n\r\n    /**\r\n     * Make a CEvntDraw object.\r\n     * @param {CEvntCalc} pItem - Calc object for your draw object to read from\r\n     * @returns {CEvntDraw} a draw object.\r\n     */\r\n    MakeDraw(pItem)\r\n    {\r\n\r\n    }\r\n\r\n    /**\r\n     * Plays a selected sound from a set of available pre-existing files. (See manual for enumerated sound options)\r\n     * @param {Number} pWave - Enumerated wave files in CEvntPane.Wave (See manual for enumerated sound options)\r\n     */\r\n    PlayWave(pWave)\r\n    {\r\n\r\n    }\r\n}\r\n\r\n/**\r\n * Class representing an event feed. A CEvntFeed contains every single Event within a CEvntPane's provided symbol.\r\n */\r\nexport class CEvntFeed\r\n{\r\n    /**\r\n     * Makes a CEvntCalc object.\r\n     * @returns {CEvntCalc} a calculation object.\r\n     */\r\n    MakeCalc()\r\n    {\r\n\r\n    }\r\n\r\n    /**\r\n     * Makes a CEvntTrig object.\r\n     * @returns {CEvntTrig} a trigger object.\r\n     */\r\n    MakeTrig()\r\n    {\r\n\r\n    }\r\n\r\n    /**\r\n     * Reads an Event from position pSequ.\r\n     * @param {Number} pSequ - Amount of events within this sequence\r\n     * @returns {Event} an event object.\r\n     */\r\n    FeedRead(pSequ)\r\n    {\r\n\r\n    }\r\n\r\n    /**\r\n     * Assigns a step at the given position, pSequ.\r\n     * @param {Number} pSequ - Event position to set step\r\n     * @param {Number} pStep - Enumerated CEvntFeed FeedStep values in CEvntFeed.FeedStep (See manual for enumerated constants)\r\n     */\r\n    FeedStep(pSequ, pStep)\r\n    {\r\n\r\n    }\r\n\r\n    /**\r\n     * Assign a trigger at the given position, pSequ.\r\n     * @param {Number} pSequ - Event position to set step\r\n     * @param {Number} pTrig - Trigger you want to initialize\r\n     */\r\n    FeedTrig(pSequ, pTrig)\r\n    {\r\n\r\n    }\r\n}\r\n\r\n/**\r\n * Class representing a status indicator that displays the status of a stored variable in the top left of your Pane.\r\n */\r\nexport class CEvntStat\r\n{\r\n    /**\r\n     * Creates an CEvntStat object.\r\n     */\r\n    constructor()\r\n    {\r\n        /**\r\n         * Text color in hexadecimal\r\n         * @type {String}\r\n         * @public\r\n         */\r\n        this.fillStyle = fillStyle;\r\n\r\n        /**\r\n         * Text corresponding to what the status is tracking\r\n         * @type {String}\r\n         * @public\r\n         */\r\n        this.title = title;\r\n    }\r\n}\r\n\r\n/**\r\n * Class that renders Events from a Feed object or lines between calculated values from a Calc object.\r\n */\r\nexport class CEvntDraw\r\n{\r\n    /**\r\n     * Creates an CEvntDraw object.\r\n     */\r\n    constructor()\r\n    {\r\n        /**\r\n         * Stroke width in pixels\r\n         * @type {Number}\r\n         * @public\r\n         */\r\n        this.lineWidth = lineWidth;\r\n\r\n        /**\r\n         * Stroke color in hexadecimal\r\n         * @type {String}\r\n         * @public\r\n         */\r\n        this.strokeStyle = strokeStyle;\r\n    }\r\n}\r\n\r\n/**\r\n * Class that stores values at specfic locations in your Pane.\r\n */\r\nexport class CEvntCalc\r\n{\r\n    /**\r\n     * Reads a calculated value at position pSequ.\r\n     * @param {Number} pSequ - Event position to get data\r\n     * @returns {Number} a calculated data.\r\n     */\r\n    CalcRead(pSequ)\r\n    {\r\n\r\n    }\r\n\r\n    /**\r\n     * Saves a calculated value at position pSequ.\r\n     * @param {Number} pSequ - Event position to set data\r\n     * @param {String} pData - Data to store\r\n     */\r\n    CalcSave(pSequ, pData)\r\n    {\r\n\r\n    }\r\n}\r\n\r\n/**\r\n * Class representing an event trigger that notifies the user when something important occurs.\r\n */\r\nexport class CEvntTrig\r\n{\r\n    /**\r\n     * Creates an CEvntStat object.\r\n     */\r\n    constructor()\r\n    {\r\n        /**\r\n         * Text color in hexadecimal\r\n         * @type {String}\r\n         * @public\r\n         */\r\n        this.fillStyle = \"#ffa43d\";\r\n\r\n        /**\r\n         * Text corresponding to the trigger's purpose\r\n         * @type {String}\r\n         * @public\r\n         */\r\n        this.title = \"\";\r\n\r\n        /**\r\n         * Length of time to display the trigger on screen in milliseconds\r\n         * @type {Number}\r\n         * @public\r\n         */\r\n        this.duration = 5000;\r\n    }\r\n}\r\n\r\n/**\r\n * Class representing all other event types. (See manual for enumerated types of events)\r\n */\r\nexport class Event\r\n{\r\n    constructor()\r\n    {\r\n        /**\r\n         * Time in nanosecond with 56 bit precision\r\n         * @type {Number}\r\n         * @private\r\n         */\r\n        this.Time = 0;\r\n\r\n        /**\r\n         * Instrument ID\r\n         * @type {Number}\r\n         * @private\r\n         */\r\n        this.Instrument = 0;\r\n\r\n        /**\r\n         * Enumerated event type in kEvent.Type (See manual for event types)\r\n         * @type {Number}\r\n         * @public\r\n         */\r\n        this.Type =\r\n        {\r\n            Trade: 0,\r\n            Bid: 1,\r\n            Ask: 2,\r\n            ImpliedBid: 3,\r\n            ImpliedAsk: 4,\r\n            BookReset: 5,\r\n        };\r\n    }\r\n}\r\n\r\n/**\r\n * Class representing an event with Type trade. (Trade is not technically its own class. See manual for enumerated types of events)\r\n */\r\nexport class Trade extends Event\r\n{\r\n    constructor()\r\n    {\r\n        /**\r\n         * Price of the trade\r\n         * @type {Number}\r\n         * @private\r\n         */\r\n        this.Price = -1;\r\n\r\n        /**\r\n         * Quantity of the trade\r\n         * @type {Number}\r\n         * @private\r\n         */\r\n        this.Quantity = -1;\r\n\r\n        /**\r\n         * Enumerated event type in kEvent.Type (See manual for event types)\r\n         * @type {Number}\r\n         * @public\r\n         */\r\n        this.Aggressor =\r\n        {\r\n            Buy: 0,\r\n            Sell: 1,\r\n        };\r\n    }\r\n}\r\n/**\r\n * Class representing an event with Type bid. (Bid is not technically its own class. See manual for enumerated types of events)\r\n */\r\nexport class Bid extends Event\r\n{\r\n    constructor()\r\n    {\r\n        /**\r\n         * Price of the bid\r\n         * @type {Number}\r\n         * @private\r\n         */\r\n        this.Price = -1;\r\n\r\n        /**\r\n         * Quantity of the bid\r\n         * @type {Number}\r\n         * @private\r\n         */\r\n        this.Quantity = -1;\r\n\r\n        /**\r\n         * Enumerated bid type in kEvent.Bid.Type (See manual for event types)\r\n         * @type {Number}\r\n         * @public\r\n         */\r\n        this.Type =\r\n        {\r\n            New: 0,\r\n            Change: 1,\r\n            Delete: 2,\r\n            DeleteThru: 3,\r\n            DeleteFrom: 4,\r\n            Overlay: 5,\r\n            Replace: 6,\r\n        };\r\n    }\r\n}\r\n\r\n/**\r\n * Class representing an event with Type ask. (Ask is not technically its own class. See manual for enumerated types of events)\r\n */\r\nexport class Ask extends Event\r\n{\r\n    constructor()\r\n    {\r\n        /**\r\n         * Price of the bid\r\n         * @type {Number}\r\n         * @private\r\n         */\r\n        this.Price = -1;\r\n\r\n        /**\r\n         * Quantity of the bid\r\n         * @type {Number}\r\n         * @private\r\n         */\r\n        this.Quantity = -1;\r\n\r\n        /**\r\n         * Enumerated ask type in kEvent.Ask.Type (See manual for event types)\r\n         * @type {Number}\r\n         * @public\r\n         */\r\n        this.Type =\r\n        {\r\n            New: 0,\r\n            Change: 1,\r\n            Delete: 2,\r\n            DeleteThru: 3,\r\n            DeleteFrom: 4,\r\n        };\r\n    }\r\n}\r\n\r\n/**\r\n * Public function used to return a new Pane object. (All other object creation methods are inside CEvnt classes)\r\n * @example\r\n * gEvntPane = MakePane();\r\n */\r\nexport function MakePane()\r\n{\r\n\r\n}\r\n\r\n/**\r\n * Built in function that is called when the start button is pressed in order to initialize variables.\r\n */\r\nexport function onLoad()\r\n{\r\n\r\n}\r\n\r\n/**\r\n * Built in function that is called once for each event in the symbol Feed.\r\n * @param {CEvntFeed} pFeed - A CEvntFeed object with timestamps measured in nanoseconds with 56 bit precision\r\n * @param {Number} pSequ - Amount of events to read within this sequence\r\n */\r\nexport function onEvent(pFeed, pSequ)\r\n{\r\n\r\n}\r\n\r\n/**\r\n * Built in function that is called once the script has read every previous event in the symbol Feed.\r\n */\r\nexport function onOpen()\r\n{\r\n\r\n}\r\n\r\n/**\r\n * Built in function that is called when the stop button is pressed.\r\n */\r\nexport function onStop()\r\n{\r\n\r\n}",
+    "content": "/**\r\n * Class representing the the pane that draws your symbol's Feed of Events.\r\n * @example\r\n * var gEvntPane;\r\n * function onLoad()\r\n * {\r\n *     gEvntPane = MakePane();\r\n *     //...\r\n * }\r\n */\r\nexport class CEvntPane\r\n{\r\n    /**\r\n     * Creates a CEvntPane object\r\n     */\r\n    constructor()\r\n    {\r\n        /**\r\n        * Text that appears at the top of the pane\r\n        * @type {String}\r\n        * @public\r\n        */\r\n        this.title = \"\";\r\n\r\n        /**\r\n        * String representing the pane's background color in hexidecimal (Make sure to include a # at the beginning)\r\n        * @type {String}\r\n        * @public\r\n        */\r\n        this.fillStyle = \"#000000\";\r\n    }\r\n    \r\n    /**\r\n     * Makes a CEvntFeed object.\r\n     * @param {String} pSymb - Name of the symbol\r\n     * @returns {CEvntFeed} a calculation object.\r\n     */\r\n    MakeFeed(pSymb)\r\n    {\r\n\r\n    }\r\n\r\n    /**\r\n     * Makes a CEvntTrig object.\r\n     * @param {CEvntCalc} pItem - Calc object for your status object to read from\r\n     * @returns {CEvntStat} a status object.\r\n     */\r\n    MakeStat(pItem)\r\n    {\r\n\r\n    }\r\n\r\n    /**\r\n     * Make a CEvntDraw object.\r\n     * @param {CEvntCalc} pItem - Calc object for your draw object to read from\r\n     * @returns {CEvntDraw} a draw object.\r\n     */\r\n    MakeDraw(pItem)\r\n    {\r\n\r\n    }\r\n\r\n    /**\r\n     * Plays a selected sound from a set of available pre-existing files. (See manual for enumerated sound options)\r\n     * @param {Number} pWave - Enumerated wave files in CEvntPane.Wave (See manual for enumerated sound options)\r\n     */\r\n    PlayWave(pWave)\r\n    {\r\n\r\n    }\r\n}\r\n\r\n/**\r\n * Class representing an event feed. A CEvntFeed contains every single Event within a CEvntPane's provided symbol.\r\n */\r\nexport class CEvntFeed\r\n{\r\n    /**\r\n     * Makes a CEvntCalc object.\r\n     * @returns {CEvntCalc} a calculation object.\r\n     */\r\n    MakeCalc()\r\n    {\r\n\r\n    }\r\n\r\n    /**\r\n     * Makes a CEvntTrig object.\r\n     * @returns {CEvntTrig} a trigger object.\r\n     */\r\n    MakeTrig()\r\n    {\r\n\r\n    }\r\n\r\n    /**\r\n     * Makes a CEvntFill object. (Users can make up to 4 CEvntFill objects per Pane)\r\n     * @returns {CEvntFill} a trigger object.\r\n     */\r\n    MakeFill() {\r\n\r\n    }\r\n\r\n    /**\r\n     * Reads an Event from position pSequ.\r\n     * @param {Number} pSequ - Amount of events within this sequence\r\n     * @returns {Event} an event object.\r\n     */\r\n    FeedRead(pSequ)\r\n    {\r\n\r\n    }\r\n\r\n    /**\r\n     * Assigns a step at the given position, pSequ.\r\n     * @param {Number} pSequ - Event position to set step\r\n     * @param {Number} pStep - Enumerated CEvntFeed FeedStep values in CEvntFeed.FeedStep (See manual for enumerated constants)\r\n     */\r\n    FeedStep(pSequ, pStep)\r\n    {\r\n\r\n    }\r\n\r\n    /**\r\n     * Assign a trigger at the given position, pSequ.\r\n     * @param {Number} pSequ - Event position to set step\r\n     * @param {Number} pTrig - Trigger you want to initialize\r\n     */\r\n    FeedTrig(pSequ, pTrig)\r\n    {\r\n\r\n    }\r\n}\r\n\r\n/**\r\n * Class representing a status indicator that displays the status of a stored variable in the top left of your Pane.\r\n */\r\nexport class CEvntStat\r\n{\r\n    /**\r\n     * Creates an CEvntStat object.\r\n     */\r\n    constructor()\r\n    {\r\n        /**\r\n         * Text color in hexadecimal\r\n         * @type {String}\r\n         * @public\r\n         */\r\n        this.textStyle = textStyle;\r\n\r\n        /**\r\n         * Text corresponding to what the status is tracking\r\n         * @type {String}\r\n         * @public\r\n         */\r\n        this.title = title;\r\n    }\r\n}\r\n\r\n/**\r\n * Class that renders Events from a Feed object or lines between calculated values from a Calc object.\r\n */\r\nexport class CEvntDraw\r\n{\r\n    /**\r\n     * Creates an CEvntDraw object.\r\n     */\r\n    constructor()\r\n    {\r\n        /**\r\n         * Stroke width in pixels\r\n         * @type {Number}\r\n         * @public\r\n         */\r\n        this.lineWidth = lineWidth;\r\n\r\n        /**\r\n         * Stroke color in hexadecimal\r\n         * @type {String}\r\n         * @public\r\n         */\r\n        this.strokeStyle = strokeStyle;\r\n    }\r\n}\r\n\r\n/**\r\n * Class that stores values at specfic locations in your Pane.\r\n */\r\nexport class CEvntCalc\r\n{\r\n    /**\r\n     * Reads a calculated value at position pSequ.\r\n     * @param {Number} pSequ - Event position to get data\r\n     * @returns {Number} a calculated data.\r\n     */\r\n    CalcRead(pSequ)\r\n    {\r\n\r\n    }\r\n\r\n    /**\r\n     * Saves a calculated value at position pSequ.\r\n     * @param {Number} pSequ - Event position to set data\r\n     * @param {String} pData - Data to store\r\n     */\r\n    CalcSave(pSequ, pData)\r\n    {\r\n\r\n    }\r\n}\r\n\r\n/**\r\n * Class representing an event trigger that notifies the user when something important occurs.\r\n */\r\nexport class CEvntTrig\r\n{\r\n    /**\r\n     * Creates an CEvntStat object.\r\n     */\r\n    constructor()\r\n    {\r\n        /**\r\n         * Text color in hexadecimal\r\n         * @type {String}\r\n         * @public\r\n         */\r\n        this.fillStyle = \"#ffa43d\";\r\n\r\n        /**\r\n         * Text corresponding to the trigger's purpose\r\n         * @type {String}\r\n         * @public\r\n         */\r\n        this.title = \"\";\r\n\r\n        /**\r\n         * Length of time to display the trigger on screen in milliseconds\r\n         * @type {Number}\r\n         * @public\r\n         */\r\n        this.duration = 5000;\r\n    }\r\n}\r\n\r\n/**\r\n * Class representing a custom color scheme that may be used to apply its textStyle and fillStyle fields to events. (Users can make up to 4 CEvntFill objects per Pane)\r\n */\r\nexport class CEvntFill {\r\n    /**\r\n     * Creates an CEvntStat object.\r\n     */\r\n    constructor() {\r\n        /**\r\n         * Text fill color in hexadecimal\r\n         * @type {String}\r\n         * @public\r\n         */\r\n        this.textStyle = \"#b26f00\";\r\n\r\n        /**\r\n         * Polyogn fill color in hexadecimal\r\n         * @type {String}\r\n         * @public\r\n         */\r\n        this.fillStyle = \"#ffffff\";\r\n    }\r\n}\r\n\r\n/**\r\n * Class representing all other event types. (See manual for enumerated types of events)\r\n */\r\nexport class Event\r\n{\r\n    constructor()\r\n    {\r\n        /**\r\n         * Time in nanosecond with 56 bit precision\r\n         * @type {Number}\r\n         * @private\r\n         */\r\n        this.Time = 0;\r\n\r\n        /**\r\n         * Instrument ID\r\n         * @type {Number}\r\n         * @private\r\n         */\r\n        this.Instrument = 0;\r\n\r\n        /**\r\n         * Enumerated event type in kEvent.Type (See manual for event types)\r\n         * @type {Number}\r\n         * @public\r\n         */\r\n        this.Type =\r\n        {\r\n            Trade: 0,\r\n            Bid: 1,\r\n            Ask: 2,\r\n            ImpliedBid: 3,\r\n            ImpliedAsk: 4,\r\n            BookReset: 5,\r\n        };\r\n    }\r\n}\r\n\r\n/**\r\n * Class representing an event with Type trade. (Trade is not technically its own class. See manual for enumerated types of events)\r\n */\r\nexport class Trade extends Event\r\n{\r\n    constructor()\r\n    {\r\n        /**\r\n         * Price of the trade\r\n         * @type {Number}\r\n         * @private\r\n         */\r\n        this.Price = -1;\r\n\r\n        /**\r\n         * Quantity of the trade\r\n         * @type {Number}\r\n         * @private\r\n         */\r\n        this.Quantity = -1;\r\n\r\n        /**\r\n         * Enumerated event type in kEvent.Type (See manual for event types)\r\n         * @type {Number}\r\n         * @public\r\n         */\r\n        this.Aggressor =\r\n        {\r\n            Buy: 0,\r\n            Sell: 1,\r\n        };\r\n    }\r\n}\r\n/**\r\n * Class representing an event with Type bid. (Bid is not technically its own class. See manual for enumerated types of events)\r\n */\r\nexport class Bid extends Event\r\n{\r\n    constructor()\r\n    {\r\n        /**\r\n         * Price of the bid\r\n         * @type {Number}\r\n         * @private\r\n         */\r\n        this.Price = -1;\r\n\r\n        /**\r\n         * Quantity of the bid\r\n         * @type {Number}\r\n         * @private\r\n         */\r\n        this.Quantity = -1;\r\n\r\n        /**\r\n         * Enumerated bid type in kEvent.Bid.Type (See manual for event types)\r\n         * @type {Number}\r\n         * @public\r\n         */\r\n        this.Type =\r\n        {\r\n            New: 0,\r\n            Change: 1,\r\n            Delete: 2,\r\n            DeleteThru: 3,\r\n            DeleteFrom: 4,\r\n            Overlay: 5,\r\n            Replace: 6,\r\n        };\r\n    }\r\n}\r\n\r\n/**\r\n * Class representing an event with Type ask. (Ask is not technically its own class. See manual for enumerated types of events)\r\n */\r\nexport class Ask extends Event\r\n{\r\n    constructor()\r\n    {\r\n        /**\r\n         * Price of the bid\r\n         * @type {Number}\r\n         * @private\r\n         */\r\n        this.Price = -1;\r\n\r\n        /**\r\n         * Quantity of the bid\r\n         * @type {Number}\r\n         * @private\r\n         */\r\n        this.Quantity = -1;\r\n\r\n        /**\r\n         * Enumerated ask type in kEvent.Ask.Type (See manual for event types)\r\n         * @type {Number}\r\n         * @public\r\n         */\r\n        this.Type =\r\n        {\r\n            New: 0,\r\n            Change: 1,\r\n            Delete: 2,\r\n            DeleteThru: 3,\r\n            DeleteFrom: 4,\r\n        };\r\n    }\r\n}\r\n\r\n/**\r\n * Public function used to return a new Pane object. (All other object creation methods are inside CEvnt classes)\r\n * @example\r\n * gEvntPane = MakePane();\r\n */\r\nexport function MakePane()\r\n{\r\n\r\n}\r\n\r\n/**\r\n * Built in function that is called when the start button is pressed in order to initialize variables.\r\n */\r\nexport function onLoad()\r\n{\r\n\r\n}\r\n\r\n/**\r\n * Built in function that is called once for each event in the symbol Feed.\r\n * @param {CEvntFeed} pFeed - A CEvntFeed object with timestamps measured in nanoseconds with 56 bit precision\r\n * @param {Number} pSequ - Amount of events to read within this sequence\r\n */\r\nexport function onEvent(pFeed, pSequ)\r\n{\r\n\r\n}\r\n\r\n/**\r\n * Built in function that is called once the script has read every previous event in the symbol Feed.\r\n */\r\nexport function onOpen()\r\n{\r\n\r\n}\r\n\r\n/**\r\n * Built in function that is called when the stop button is pressed.\r\n */\r\nexport function onStop()\r\n{\r\n\r\n}",
     "static": true,
     "longname": "C:/Users/Blake Reset/source/repos/PlGGS/vxa-doc/src/index.js",
     "access": "public",
@@ -860,6 +860,34 @@
   {
     "__docId__": 60,
     "kind": "method",
+    "name": "MakeFill",
+    "memberof": "src/index.js~CEvntFeed",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/index.js~CEvntFeed#MakeFill",
+    "access": "public",
+    "description": "Makes a CEvntFill object. (Users can make up to 4 CEvntFill objects per Pane)",
+    "lineNumber": 100,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{CEvntFill} a trigger object."
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "CEvntFill"
+      ],
+      "spread": false,
+      "description": "a trigger object."
+    },
+    "params": []
+  },
+  {
+    "__docId__": 61,
+    "kind": "method",
     "name": "FeedRead",
     "memberof": "src/index.js~CEvntFeed",
     "generator": false,
@@ -868,7 +896,7 @@
     "longname": "src/index.js~CEvntFeed#FeedRead",
     "access": "public",
     "description": "Reads an Event from position pSequ.",
-    "lineNumber": 101,
+    "lineNumber": 109,
     "unknown": [
       {
         "tagName": "@returns",
@@ -897,7 +925,7 @@
     }
   },
   {
-    "__docId__": 61,
+    "__docId__": 62,
     "kind": "method",
     "name": "FeedStep",
     "memberof": "src/index.js~CEvntFeed",
@@ -907,7 +935,7 @@
     "longname": "src/index.js~CEvntFeed#FeedStep",
     "access": "public",
     "description": "Assigns a step at the given position, pSequ.",
-    "lineNumber": 111,
+    "lineNumber": 119,
     "params": [
       {
         "nullable": null,
@@ -933,7 +961,7 @@
     "return": null
   },
   {
-    "__docId__": 62,
+    "__docId__": 63,
     "kind": "method",
     "name": "FeedTrig",
     "memberof": "src/index.js~CEvntFeed",
@@ -943,7 +971,7 @@
     "longname": "src/index.js~CEvntFeed#FeedTrig",
     "access": "public",
     "description": "Assign a trigger at the given position, pSequ.",
-    "lineNumber": 121,
+    "lineNumber": 129,
     "params": [
       {
         "nullable": null,
@@ -969,7 +997,7 @@
     "return": null
   },
   {
-    "__docId__": 63,
+    "__docId__": 64,
     "kind": "class",
     "name": "CEvntStat",
     "memberof": "src/index.js",
@@ -980,11 +1008,11 @@
     "importPath": "evntscript/src/index.js",
     "importStyle": "{CEvntStat}",
     "description": "Class representing a status indicator that displays the status of a stored variable in the top left of your Pane.",
-    "lineNumber": 130,
+    "lineNumber": 138,
     "interface": false
   },
   {
-    "__docId__": 64,
+    "__docId__": 65,
     "kind": "constructor",
     "name": "constructor",
     "memberof": "src/index.js~CEvntStat",
@@ -994,37 +1022,18 @@
     "longname": "src/index.js~CEvntStat#constructor",
     "access": "public",
     "description": "Creates an CEvntStat object.",
-    "lineNumber": 135
-  },
-  {
-    "__docId__": 65,
-    "kind": "member",
-    "name": "fillStyle",
-    "memberof": "src/index.js~CEvntStat",
-    "static": false,
-    "longname": "src/index.js~CEvntStat#fillStyle",
-    "access": "public",
-    "description": "Text color in hexadecimal",
-    "lineNumber": 142,
-    "type": {
-      "nullable": null,
-      "types": [
-        "String"
-      ],
-      "spread": false,
-      "description": null
-    }
+    "lineNumber": 143
   },
   {
     "__docId__": 66,
     "kind": "member",
-    "name": "title",
+    "name": "textStyle",
     "memberof": "src/index.js~CEvntStat",
     "static": false,
-    "longname": "src/index.js~CEvntStat#title",
+    "longname": "src/index.js~CEvntStat#textStyle",
     "access": "public",
-    "description": "Text corresponding to what the status is tracking",
-    "lineNumber": 149,
+    "description": "Text color in hexadecimal",
+    "lineNumber": 150,
     "type": {
       "nullable": null,
       "types": [
@@ -1036,61 +1045,14 @@
   },
   {
     "__docId__": 67,
-    "kind": "class",
-    "name": "CEvntDraw",
-    "memberof": "src/index.js",
-    "static": true,
-    "longname": "src/index.js~CEvntDraw",
-    "access": "public",
-    "export": true,
-    "importPath": "evntscript/src/index.js",
-    "importStyle": "{CEvntDraw}",
-    "description": "Class that renders Events from a Feed object or lines between calculated values from a Calc object.",
-    "lineNumber": 156,
-    "interface": false
-  },
-  {
-    "__docId__": 68,
-    "kind": "constructor",
-    "name": "constructor",
-    "memberof": "src/index.js~CEvntDraw",
-    "generator": false,
-    "async": false,
-    "static": false,
-    "longname": "src/index.js~CEvntDraw#constructor",
-    "access": "public",
-    "description": "Creates an CEvntDraw object.",
-    "lineNumber": 161
-  },
-  {
-    "__docId__": 69,
     "kind": "member",
-    "name": "lineWidth",
-    "memberof": "src/index.js~CEvntDraw",
+    "name": "title",
+    "memberof": "src/index.js~CEvntStat",
     "static": false,
-    "longname": "src/index.js~CEvntDraw#lineWidth",
+    "longname": "src/index.js~CEvntStat#title",
     "access": "public",
-    "description": "Stroke width in pixels",
-    "lineNumber": 168,
-    "type": {
-      "nullable": null,
-      "types": [
-        "Number"
-      ],
-      "spread": false,
-      "description": null
-    }
-  },
-  {
-    "__docId__": 70,
-    "kind": "member",
-    "name": "strokeStyle",
-    "memberof": "src/index.js~CEvntDraw",
-    "static": false,
-    "longname": "src/index.js~CEvntDraw#strokeStyle",
-    "access": "public",
-    "description": "Stroke color in hexadecimal",
-    "lineNumber": 175,
+    "description": "Text corresponding to what the status is tracking",
+    "lineNumber": 157,
     "type": {
       "nullable": null,
       "types": [
@@ -1101,7 +1063,73 @@
     }
   },
   {
+    "__docId__": 68,
+    "kind": "class",
+    "name": "CEvntDraw",
+    "memberof": "src/index.js",
+    "static": true,
+    "longname": "src/index.js~CEvntDraw",
+    "access": "public",
+    "export": true,
+    "importPath": "evntscript/src/index.js",
+    "importStyle": "{CEvntDraw}",
+    "description": "Class that renders Events from a Feed object or lines between calculated values from a Calc object.",
+    "lineNumber": 164,
+    "interface": false
+  },
+  {
+    "__docId__": 69,
+    "kind": "constructor",
+    "name": "constructor",
+    "memberof": "src/index.js~CEvntDraw",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/index.js~CEvntDraw#constructor",
+    "access": "public",
+    "description": "Creates an CEvntDraw object.",
+    "lineNumber": 169
+  },
+  {
+    "__docId__": 70,
+    "kind": "member",
+    "name": "lineWidth",
+    "memberof": "src/index.js~CEvntDraw",
+    "static": false,
+    "longname": "src/index.js~CEvntDraw#lineWidth",
+    "access": "public",
+    "description": "Stroke width in pixels",
+    "lineNumber": 176,
+    "type": {
+      "nullable": null,
+      "types": [
+        "Number"
+      ],
+      "spread": false,
+      "description": null
+    }
+  },
+  {
     "__docId__": 71,
+    "kind": "member",
+    "name": "strokeStyle",
+    "memberof": "src/index.js~CEvntDraw",
+    "static": false,
+    "longname": "src/index.js~CEvntDraw#strokeStyle",
+    "access": "public",
+    "description": "Stroke color in hexadecimal",
+    "lineNumber": 183,
+    "type": {
+      "nullable": null,
+      "types": [
+        "String"
+      ],
+      "spread": false,
+      "description": null
+    }
+  },
+  {
+    "__docId__": 72,
     "kind": "class",
     "name": "CEvntCalc",
     "memberof": "src/index.js",
@@ -1112,11 +1140,11 @@
     "importPath": "evntscript/src/index.js",
     "importStyle": "{CEvntCalc}",
     "description": "Class that stores values at specfic locations in your Pane.",
-    "lineNumber": 182,
+    "lineNumber": 190,
     "interface": false
   },
   {
-    "__docId__": 72,
+    "__docId__": 73,
     "kind": "method",
     "name": "CalcRead",
     "memberof": "src/index.js~CEvntCalc",
@@ -1126,7 +1154,7 @@
     "longname": "src/index.js~CEvntCalc#CalcRead",
     "access": "public",
     "description": "Reads a calculated value at position pSequ.",
-    "lineNumber": 189,
+    "lineNumber": 197,
     "unknown": [
       {
         "tagName": "@returns",
@@ -1155,7 +1183,7 @@
     }
   },
   {
-    "__docId__": 73,
+    "__docId__": 74,
     "kind": "method",
     "name": "CalcSave",
     "memberof": "src/index.js~CEvntCalc",
@@ -1165,7 +1193,7 @@
     "longname": "src/index.js~CEvntCalc#CalcSave",
     "access": "public",
     "description": "Saves a calculated value at position pSequ.",
-    "lineNumber": 199,
+    "lineNumber": 207,
     "params": [
       {
         "nullable": null,
@@ -1191,7 +1219,7 @@
     "return": null
   },
   {
-    "__docId__": 74,
+    "__docId__": 75,
     "kind": "class",
     "name": "CEvntTrig",
     "memberof": "src/index.js",
@@ -1202,11 +1230,11 @@
     "importPath": "evntscript/src/index.js",
     "importStyle": "{CEvntTrig}",
     "description": "Class representing an event trigger that notifies the user when something important occurs.",
-    "lineNumber": 208,
+    "lineNumber": 216,
     "interface": false
   },
   {
-    "__docId__": 75,
+    "__docId__": 76,
     "kind": "constructor",
     "name": "constructor",
     "memberof": "src/index.js~CEvntTrig",
@@ -1216,10 +1244,10 @@
     "longname": "src/index.js~CEvntTrig#constructor",
     "access": "public",
     "description": "Creates an CEvntStat object.",
-    "lineNumber": 213
+    "lineNumber": 221
   },
   {
-    "__docId__": 76,
+    "__docId__": 77,
     "kind": "member",
     "name": "fillStyle",
     "memberof": "src/index.js~CEvntTrig",
@@ -1227,26 +1255,7 @@
     "longname": "src/index.js~CEvntTrig#fillStyle",
     "access": "public",
     "description": "Text color in hexadecimal",
-    "lineNumber": 220,
-    "type": {
-      "nullable": null,
-      "types": [
-        "String"
-      ],
-      "spread": false,
-      "description": null
-    }
-  },
-  {
-    "__docId__": 77,
-    "kind": "member",
-    "name": "title",
-    "memberof": "src/index.js~CEvntTrig",
-    "static": false,
-    "longname": "src/index.js~CEvntTrig#title",
-    "access": "public",
-    "description": "Text corresponding to the trigger's purpose",
-    "lineNumber": 227,
+    "lineNumber": 228,
     "type": {
       "nullable": null,
       "types": [
@@ -1259,13 +1268,32 @@
   {
     "__docId__": 78,
     "kind": "member",
+    "name": "title",
+    "memberof": "src/index.js~CEvntTrig",
+    "static": false,
+    "longname": "src/index.js~CEvntTrig#title",
+    "access": "public",
+    "description": "Text corresponding to the trigger's purpose",
+    "lineNumber": 235,
+    "type": {
+      "nullable": null,
+      "types": [
+        "String"
+      ],
+      "spread": false,
+      "description": null
+    }
+  },
+  {
+    "__docId__": 79,
+    "kind": "member",
     "name": "duration",
     "memberof": "src/index.js~CEvntTrig",
     "static": false,
     "longname": "src/index.js~CEvntTrig#duration",
     "access": "public",
     "description": "Length of time to display the trigger on screen in milliseconds",
-    "lineNumber": 234,
+    "lineNumber": 242,
     "type": {
       "nullable": null,
       "types": [
@@ -1276,7 +1304,73 @@
     }
   },
   {
-    "__docId__": 79,
+    "__docId__": 80,
+    "kind": "class",
+    "name": "CEvntFill",
+    "memberof": "src/index.js",
+    "static": true,
+    "longname": "src/index.js~CEvntFill",
+    "access": "public",
+    "export": true,
+    "importPath": "evntscript/src/index.js",
+    "importStyle": "{CEvntFill}",
+    "description": "Class representing a custom color scheme that may be used to apply its textStyle and fillStyle fields to events. (Users can make up to 4 CEvntFill objects per Pane)",
+    "lineNumber": 249,
+    "interface": false
+  },
+  {
+    "__docId__": 81,
+    "kind": "constructor",
+    "name": "constructor",
+    "memberof": "src/index.js~CEvntFill",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/index.js~CEvntFill#constructor",
+    "access": "public",
+    "description": "Creates an CEvntStat object.",
+    "lineNumber": 253
+  },
+  {
+    "__docId__": 82,
+    "kind": "member",
+    "name": "textStyle",
+    "memberof": "src/index.js~CEvntFill",
+    "static": false,
+    "longname": "src/index.js~CEvntFill#textStyle",
+    "access": "public",
+    "description": "Text fill color in hexadecimal",
+    "lineNumber": 259,
+    "type": {
+      "nullable": null,
+      "types": [
+        "String"
+      ],
+      "spread": false,
+      "description": null
+    }
+  },
+  {
+    "__docId__": 83,
+    "kind": "member",
+    "name": "fillStyle",
+    "memberof": "src/index.js~CEvntFill",
+    "static": false,
+    "longname": "src/index.js~CEvntFill#fillStyle",
+    "access": "public",
+    "description": "Polyogn fill color in hexadecimal",
+    "lineNumber": 266,
+    "type": {
+      "nullable": null,
+      "types": [
+        "String"
+      ],
+      "spread": false,
+      "description": null
+    }
+  },
+  {
+    "__docId__": 84,
     "kind": "class",
     "name": "Event",
     "memberof": "src/index.js",
@@ -1287,11 +1381,11 @@
     "importPath": "evntscript/src/index.js",
     "importStyle": "{Event}",
     "description": "Class representing all other event types. (See manual for enumerated types of events)",
-    "lineNumber": 241,
+    "lineNumber": 273,
     "interface": false
   },
   {
-    "__docId__": 80,
+    "__docId__": 85,
     "kind": "constructor",
     "name": "constructor",
     "memberof": "src/index.js~Event",
@@ -1301,11 +1395,11 @@
     "longname": "src/index.js~Event#constructor",
     "access": "public",
     "description": null,
-    "lineNumber": 243,
+    "lineNumber": 275,
     "undocument": true
   },
   {
-    "__docId__": 81,
+    "__docId__": 86,
     "kind": "member",
     "name": "Time",
     "memberof": "src/index.js~Event",
@@ -1313,96 +1407,7 @@
     "longname": "src/index.js~Event#Time",
     "access": "private",
     "description": "Time in nanosecond with 56 bit precision",
-    "lineNumber": 250,
-    "type": {
-      "nullable": null,
-      "types": [
-        "Number"
-      ],
-      "spread": false,
-      "description": null
-    }
-  },
-  {
-    "__docId__": 82,
-    "kind": "member",
-    "name": "Instrument",
-    "memberof": "src/index.js~Event",
-    "static": false,
-    "longname": "src/index.js~Event#Instrument",
-    "access": "private",
-    "description": "Instrument ID",
-    "lineNumber": 257,
-    "type": {
-      "nullable": null,
-      "types": [
-        "Number"
-      ],
-      "spread": false,
-      "description": null
-    }
-  },
-  {
-    "__docId__": 83,
-    "kind": "member",
-    "name": "Type",
-    "memberof": "src/index.js~Event",
-    "static": false,
-    "longname": "src/index.js~Event#Type",
-    "access": "public",
-    "description": "Enumerated event type in kEvent.Type (See manual for event types)",
-    "lineNumber": 264,
-    "type": {
-      "nullable": null,
-      "types": [
-        "Number"
-      ],
-      "spread": false,
-      "description": null
-    }
-  },
-  {
-    "__docId__": 84,
-    "kind": "class",
-    "name": "Trade",
-    "memberof": "src/index.js",
-    "static": true,
-    "longname": "src/index.js~Trade",
-    "access": "public",
-    "export": true,
-    "importPath": "evntscript/src/index.js",
-    "importStyle": "{Trade}",
-    "description": "Class representing an event with Type trade. (Trade is not technically its own class. See manual for enumerated types of events)",
-    "lineNumber": 279,
-    "interface": false,
-    "extends": [
-      "Event"
-    ]
-  },
-  {
-    "__docId__": 85,
-    "kind": "constructor",
-    "name": "constructor",
-    "memberof": "src/index.js~Trade",
-    "generator": false,
-    "async": false,
-    "static": false,
-    "longname": "src/index.js~Trade#constructor",
-    "access": "public",
-    "description": null,
-    "lineNumber": 281,
-    "undocument": true
-  },
-  {
-    "__docId__": 86,
-    "kind": "member",
-    "name": "Price",
-    "memberof": "src/index.js~Trade",
-    "static": false,
-    "longname": "src/index.js~Trade#Price",
-    "access": "private",
-    "description": "Price of the trade",
-    "lineNumber": 288,
+    "lineNumber": 282,
     "type": {
       "nullable": null,
       "types": [
@@ -1415,13 +1420,13 @@
   {
     "__docId__": 87,
     "kind": "member",
-    "name": "Quantity",
-    "memberof": "src/index.js~Trade",
+    "name": "Instrument",
+    "memberof": "src/index.js~Event",
     "static": false,
-    "longname": "src/index.js~Trade#Quantity",
+    "longname": "src/index.js~Event#Instrument",
     "access": "private",
-    "description": "Quantity of the trade",
-    "lineNumber": 295,
+    "description": "Instrument ID",
+    "lineNumber": 289,
     "type": {
       "nullable": null,
       "types": [
@@ -1434,13 +1439,13 @@
   {
     "__docId__": 88,
     "kind": "member",
-    "name": "Aggressor",
-    "memberof": "src/index.js~Trade",
+    "name": "Type",
+    "memberof": "src/index.js~Event",
     "static": false,
-    "longname": "src/index.js~Trade#Aggressor",
+    "longname": "src/index.js~Event#Type",
     "access": "public",
     "description": "Enumerated event type in kEvent.Type (See manual for event types)",
-    "lineNumber": 302,
+    "lineNumber": 296,
     "type": {
       "nullable": null,
       "types": [
@@ -1453,16 +1458,16 @@
   {
     "__docId__": 89,
     "kind": "class",
-    "name": "Bid",
+    "name": "Trade",
     "memberof": "src/index.js",
     "static": true,
-    "longname": "src/index.js~Bid",
+    "longname": "src/index.js~Trade",
     "access": "public",
     "export": true,
     "importPath": "evntscript/src/index.js",
-    "importStyle": "{Bid}",
-    "description": "Class representing an event with Type bid. (Bid is not technically its own class. See manual for enumerated types of events)",
-    "lineNumber": 312,
+    "importStyle": "{Trade}",
+    "description": "Class representing an event with Type trade. (Trade is not technically its own class. See manual for enumerated types of events)",
+    "lineNumber": 311,
     "interface": false,
     "extends": [
       "Event"
@@ -1472,26 +1477,26 @@
     "__docId__": 90,
     "kind": "constructor",
     "name": "constructor",
-    "memberof": "src/index.js~Bid",
+    "memberof": "src/index.js~Trade",
     "generator": false,
     "async": false,
     "static": false,
-    "longname": "src/index.js~Bid#constructor",
+    "longname": "src/index.js~Trade#constructor",
     "access": "public",
     "description": null,
-    "lineNumber": 314,
+    "lineNumber": 313,
     "undocument": true
   },
   {
     "__docId__": 91,
     "kind": "member",
     "name": "Price",
-    "memberof": "src/index.js~Bid",
+    "memberof": "src/index.js~Trade",
     "static": false,
-    "longname": "src/index.js~Bid#Price",
+    "longname": "src/index.js~Trade#Price",
     "access": "private",
-    "description": "Price of the bid",
-    "lineNumber": 321,
+    "description": "Price of the trade",
+    "lineNumber": 320,
     "type": {
       "nullable": null,
       "types": [
@@ -1505,12 +1510,12 @@
     "__docId__": 92,
     "kind": "member",
     "name": "Quantity",
-    "memberof": "src/index.js~Bid",
+    "memberof": "src/index.js~Trade",
     "static": false,
-    "longname": "src/index.js~Bid#Quantity",
+    "longname": "src/index.js~Trade#Quantity",
     "access": "private",
-    "description": "Quantity of the bid",
-    "lineNumber": 328,
+    "description": "Quantity of the trade",
+    "lineNumber": 327,
     "type": {
       "nullable": null,
       "types": [
@@ -1523,13 +1528,13 @@
   {
     "__docId__": 93,
     "kind": "member",
-    "name": "Type",
-    "memberof": "src/index.js~Bid",
+    "name": "Aggressor",
+    "memberof": "src/index.js~Trade",
     "static": false,
-    "longname": "src/index.js~Bid#Type",
+    "longname": "src/index.js~Trade#Aggressor",
     "access": "public",
-    "description": "Enumerated bid type in kEvent.Bid.Type (See manual for event types)",
-    "lineNumber": 335,
+    "description": "Enumerated event type in kEvent.Type (See manual for event types)",
+    "lineNumber": 334,
     "type": {
       "nullable": null,
       "types": [
@@ -1542,16 +1547,16 @@
   {
     "__docId__": 94,
     "kind": "class",
-    "name": "Ask",
+    "name": "Bid",
     "memberof": "src/index.js",
     "static": true,
-    "longname": "src/index.js~Ask",
+    "longname": "src/index.js~Bid",
     "access": "public",
     "export": true,
     "importPath": "evntscript/src/index.js",
-    "importStyle": "{Ask}",
-    "description": "Class representing an event with Type ask. (Ask is not technically its own class. See manual for enumerated types of events)",
-    "lineNumber": 351,
+    "importStyle": "{Bid}",
+    "description": "Class representing an event with Type bid. (Bid is not technically its own class. See manual for enumerated types of events)",
+    "lineNumber": 344,
     "interface": false,
     "extends": [
       "Event"
@@ -1561,26 +1566,26 @@
     "__docId__": 95,
     "kind": "constructor",
     "name": "constructor",
-    "memberof": "src/index.js~Ask",
+    "memberof": "src/index.js~Bid",
     "generator": false,
     "async": false,
     "static": false,
-    "longname": "src/index.js~Ask#constructor",
+    "longname": "src/index.js~Bid#constructor",
     "access": "public",
     "description": null,
-    "lineNumber": 353,
+    "lineNumber": 346,
     "undocument": true
   },
   {
     "__docId__": 96,
     "kind": "member",
     "name": "Price",
-    "memberof": "src/index.js~Ask",
+    "memberof": "src/index.js~Bid",
     "static": false,
-    "longname": "src/index.js~Ask#Price",
+    "longname": "src/index.js~Bid#Price",
     "access": "private",
     "description": "Price of the bid",
-    "lineNumber": 360,
+    "lineNumber": 353,
     "type": {
       "nullable": null,
       "types": [
@@ -1594,12 +1599,12 @@
     "__docId__": 97,
     "kind": "member",
     "name": "Quantity",
-    "memberof": "src/index.js~Ask",
+    "memberof": "src/index.js~Bid",
     "static": false,
-    "longname": "src/index.js~Ask#Quantity",
+    "longname": "src/index.js~Bid#Quantity",
     "access": "private",
     "description": "Quantity of the bid",
-    "lineNumber": 367,
+    "lineNumber": 360,
     "type": {
       "nullable": null,
       "types": [
@@ -1613,12 +1618,12 @@
     "__docId__": 98,
     "kind": "member",
     "name": "Type",
-    "memberof": "src/index.js~Ask",
+    "memberof": "src/index.js~Bid",
     "static": false,
-    "longname": "src/index.js~Ask#Type",
+    "longname": "src/index.js~Bid#Type",
     "access": "public",
-    "description": "Enumerated ask type in kEvent.Ask.Type (See manual for event types)",
-    "lineNumber": 374,
+    "description": "Enumerated bid type in kEvent.Bid.Type (See manual for event types)",
+    "lineNumber": 367,
     "type": {
       "nullable": null,
       "types": [
@@ -1630,6 +1635,95 @@
   },
   {
     "__docId__": 99,
+    "kind": "class",
+    "name": "Ask",
+    "memberof": "src/index.js",
+    "static": true,
+    "longname": "src/index.js~Ask",
+    "access": "public",
+    "export": true,
+    "importPath": "evntscript/src/index.js",
+    "importStyle": "{Ask}",
+    "description": "Class representing an event with Type ask. (Ask is not technically its own class. See manual for enumerated types of events)",
+    "lineNumber": 383,
+    "interface": false,
+    "extends": [
+      "Event"
+    ]
+  },
+  {
+    "__docId__": 100,
+    "kind": "constructor",
+    "name": "constructor",
+    "memberof": "src/index.js~Ask",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/index.js~Ask#constructor",
+    "access": "public",
+    "description": null,
+    "lineNumber": 385,
+    "undocument": true
+  },
+  {
+    "__docId__": 101,
+    "kind": "member",
+    "name": "Price",
+    "memberof": "src/index.js~Ask",
+    "static": false,
+    "longname": "src/index.js~Ask#Price",
+    "access": "private",
+    "description": "Price of the bid",
+    "lineNumber": 392,
+    "type": {
+      "nullable": null,
+      "types": [
+        "Number"
+      ],
+      "spread": false,
+      "description": null
+    }
+  },
+  {
+    "__docId__": 102,
+    "kind": "member",
+    "name": "Quantity",
+    "memberof": "src/index.js~Ask",
+    "static": false,
+    "longname": "src/index.js~Ask#Quantity",
+    "access": "private",
+    "description": "Quantity of the bid",
+    "lineNumber": 399,
+    "type": {
+      "nullable": null,
+      "types": [
+        "Number"
+      ],
+      "spread": false,
+      "description": null
+    }
+  },
+  {
+    "__docId__": 103,
+    "kind": "member",
+    "name": "Type",
+    "memberof": "src/index.js~Ask",
+    "static": false,
+    "longname": "src/index.js~Ask#Type",
+    "access": "public",
+    "description": "Enumerated ask type in kEvent.Ask.Type (See manual for event types)",
+    "lineNumber": 406,
+    "type": {
+      "nullable": null,
+      "types": [
+        "Number"
+      ],
+      "spread": false,
+      "description": null
+    }
+  },
+  {
+    "__docId__": 104,
     "kind": "function",
     "name": "MakePane",
     "memberof": "src/index.js",
@@ -1645,12 +1739,12 @@
     "examples": [
       "gEvntPane = MakePane();"
     ],
-    "lineNumber": 390,
+    "lineNumber": 422,
     "params": [],
     "return": null
   },
   {
-    "__docId__": 100,
+    "__docId__": 105,
     "kind": "function",
     "name": "onLoad",
     "memberof": "src/index.js",
@@ -1663,12 +1757,12 @@
     "importPath": "evntscript/src/index.js",
     "importStyle": "{onLoad}",
     "description": "Built in function that is called when the start button is pressed in order to initialize variables.",
-    "lineNumber": 398,
+    "lineNumber": 430,
     "params": [],
     "return": null
   },
   {
-    "__docId__": 101,
+    "__docId__": 106,
     "kind": "function",
     "name": "onEvent",
     "memberof": "src/index.js",
@@ -1681,7 +1775,7 @@
     "importPath": "evntscript/src/index.js",
     "importStyle": "{onEvent}",
     "description": "Built in function that is called once for each event in the symbol Feed.",
-    "lineNumber": 408,
+    "lineNumber": 440,
     "params": [
       {
         "nullable": null,
@@ -1707,7 +1801,7 @@
     "return": null
   },
   {
-    "__docId__": 102,
+    "__docId__": 107,
     "kind": "function",
     "name": "onOpen",
     "memberof": "src/index.js",
@@ -1720,12 +1814,12 @@
     "importPath": "evntscript/src/index.js",
     "importStyle": "{onOpen}",
     "description": "Built in function that is called once the script has read every previous event in the symbol Feed.",
-    "lineNumber": 416,
+    "lineNumber": 448,
     "params": [],
     "return": null
   },
   {
-    "__docId__": 103,
+    "__docId__": 108,
     "kind": "function",
     "name": "onStop",
     "memberof": "src/index.js",
@@ -1738,7 +1832,7 @@
     "importPath": "evntscript/src/index.js",
     "importStyle": "{onStop}",
     "description": "Built in function that is called when the stop button is pressed.",
-    "lineNumber": 424,
+    "lineNumber": 456,
     "params": [],
     "return": null
   },

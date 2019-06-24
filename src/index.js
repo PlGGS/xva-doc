@@ -94,6 +94,14 @@ export class CEvntFeed
     }
 
     /**
+     * Makes a CEvntFill object. (Users can make up to 4 CEvntFill objects per Pane)
+     * @returns {CEvntFill} a trigger object.
+     */
+    MakeFill() {
+
+    }
+
+    /**
      * Reads an Event from position pSequ.
      * @param {Number} pSequ - Amount of events within this sequence
      * @returns {Event} an event object.
@@ -139,7 +147,7 @@ export class CEvntStat
          * @type {String}
          * @public
          */
-        this.fillStyle = fillStyle;
+        this.textStyle = textStyle;
 
         /**
          * Text corresponding to what the status is tracking
@@ -232,6 +240,30 @@ export class CEvntTrig
          * @public
          */
         this.duration = 5000;
+    }
+}
+
+/**
+ * Class representing a custom color scheme that may be used to apply its textStyle and fillStyle fields to events. (Users can make up to 4 CEvntFill objects per Pane)
+ */
+export class CEvntFill {
+    /**
+     * Creates an CEvntStat object.
+     */
+    constructor() {
+        /**
+         * Text fill color in hexadecimal
+         * @type {String}
+         * @public
+         */
+        this.textStyle = "#b26f00";
+
+        /**
+         * Polyogn fill color in hexadecimal
+         * @type {String}
+         * @public
+         */
+        this.fillStyle = "#ffffff";
     }
 }
 
