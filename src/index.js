@@ -23,7 +23,7 @@ export class CEvntPane
         this.title = "";
 
         /**
-        * String representing the pane's background color in hexidecimal (Make sure to include a # at the beginning)
+        * String representing the pane's background color in hexadecimal as a String (Make sure to include a # at the beginning)
         * @type {String}
         * @public
         */
@@ -143,7 +143,7 @@ export class CEvntStat
     constructor()
     {
         /**
-         * Text color in hexadecimal
+         * Text color in hexadecimal as a String
          * @type {String}
          * @public
          */
@@ -176,7 +176,7 @@ export class CEvntDraw
         this.lineWidth = lineWidth;
 
         /**
-         * Stroke color in hexadecimal
+         * Stroke color in hexadecimal as a String
          * @type {String}
          * @public
          */
@@ -221,7 +221,7 @@ export class CEvntTrig
     constructor()
     {
         /**
-         * Text color in hexadecimal
+         * Text color in hexadecimal as a String
          * @type {String}
          * @public
          */
@@ -252,14 +252,14 @@ export class CEvntFill {
      */
     constructor() {
         /**
-         * Text fill color in hexadecimal
+         * Text fill color in hexadecimal as a String
          * @type {String}
          * @public
          */
         this.textStyle = "#b26f00";
 
         /**
-         * Polyogn fill color in hexadecimal
+         * Polyogn fill color in hexadecimal as a String
          * @type {String}
          * @public
          */
