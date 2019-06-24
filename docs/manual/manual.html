@@ -150,6 +150,24 @@ the feed that will be tracked in your
 based on your newly created feed. This will render your feed in your pane.</p>
 </li>
 </ul>
+<p>Additionally, you can add two more lines that allow yout to apply attributes to 
+a <a href="./manual/../class/src/index.js~CEvntPane.html">CEvntPane</a> object. </p>
+<pre><code class="lang-js"><code class="source-code prettyprint">gEvntPane = MakePane();
+gEvntPane.title = &quot;Placeholder Trade Events Title&quot;; //text at the top of pane
+gEvntPane.fillStyle = &quot;#030308&quot;; //background color in hexidecimal as a String
+
+gPaneFeed = gEvntPane.MakeFeed(gSymbolName);
+gFeedDraw = gEvntPane.MakeDraw(gPaneFeed);</code>
+</code></pre>
+<ul>
+<li><p><a href="./manual/../class/src/index.js~CEvntPane.html#instance-member-title">title</a> <code>gEvntPane.fillStyle</code><br>The title is a simple <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a> 
+that you can make use of to easily identify this pane from the others on your dashboard.</p>
+</li>
+<li><p><a href="./manual/../class/src/index.js~CEvntPane.html#instance-member-fillStyle">fillStyle</a> <code>gEvntPane.fillStyle</code><br>The fill style fills the background of your <a href="./manual/../class/src/index.js~CEvntPane.html">Pane</a> with any 
+color of your choosing. Just make sure that you format your value as a hexidecimal color with a # 
+in a string like: <code>&quot;#000000&quot;</code></p>
+</li>
+</ul>
 <h5 id="onevent">onEvent</h5><p>The built in onEvent function is called once for each timestamp tracked in your symbol.  </p>
 <p>This is where you&apos;ll be doing most of your calculations on the specific things you&apos;re 
 looking for in your symbol. It allows your script to perform different tasks depending 

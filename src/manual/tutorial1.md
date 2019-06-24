@@ -27,16 +27,19 @@ var gBotPrice = 0.0; //tracks the bottom price value
 Make sure to create two variables to save your top and bottom-most prices.
 
 - [CEvntStat](../class/src/index.js~CEvntStat.html) ```gStatTop, gStatBot```  
-You'll also need to create two variables to display your top and bottom-most prices in your pane
+You'll also need to create two variables to display your top and bottom-most prices in your pane.
 
 - [CEVNTDraw](../class/src/index.js~CEvntDraw.html) ```gDrawTop, gDrawBot```  
-Finally, you'll need to create two variables to draw lines corresponding to your top and bottom-most prices
+Finally, you'll need to create two variables to draw lines corresponding to your top and 
+bottom-most prices.
 
 - [Boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean) ```gOnFirstEvent```  
 Since we'll be starting each symbol time period at an undetermined price, we'll need the first 
-price as a starting point to base the rest of our conditional statements on
+price as a starting point to base the rest of our conditional statements on.
+
 - [Number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) ```gTopPrice, gBotPrice```  
-Finally, we'll need two simple variables to hold the number value corresponding to the highest and lowest prices of the period
+Finally, we'll need two simple variables to hold the number value corresponding to the highest 
+and lowest prices of the period.
 
 ## Initialization
 
@@ -53,7 +56,7 @@ fields that allow yout to apply attributes to it.
 gEvntPane = MakePane();
 
 gEvntPane.title = "Top & Bottom Prices"; //text at the top of pane
-gEvntPane.fillStyle = "#030308"; //background color in hexidecimal
+gEvntPane.fillStyle = "#030308"; //background color in hexidecimal as a String
 ```
 
 - [title](../class/src/index.js~CEvntPane.html#instance-member-title) ```gEvntPane.fillStyle```  
@@ -166,8 +169,8 @@ also need to initialize your three bottom price tracking variables.
 
 Again, the 
 [MakeCalc](../class/src/index.js~CEvntFeed.html#instance-method-MakeCalc) function is used to return a 
-new [Calc](../class/src/index.js~CEvntCalc.html) object to our ```gCalcTop``` variable equal to the 
-function.
+new [Calc](../class/src/index.js~CEvntCalc.html) object to our ```gCalcTop``` variable equal 
+to the function.
 
 ```js
 gCalcBot = gPaneFeed.MakeCalc();
@@ -297,13 +300,13 @@ section.
 
 Whenever you're dealing with events in your [onEvent](../function/index.html#static-function-onEvent) 
 method, you're going to need to make use of your [Feed](class/src/index.js~CEvntFeed.html)'s 
-[FeedRead](../class/src/index.js~CEvntFeed.html#instance-method-FeedRead) method to get information 
-about each [Event](../class/src/index.js~Event.html) your function handles.
+[FeedRead](../class/src/index.js~CEvntFeed.html#instance-method-FeedRead) method to get 
+information about each [Event](../class/src/index.js~Event.html) your function handles.
 
 Below, you can see an easy way to capture this [Event](../class/src/index.js~Event.html). You can 
-create a new variable to store the current [Event](../class/src/index.js~Event.html) being read in 
-from your [Feed](class/src/index.js~CEvntFeed.html). We'll continue to refer to this event as tTick, 
-but you can call it whatever is most memorable for you.
+create a new variable to store the current [Event](../class/src/index.js~Event.html) being read 
+in from your [Feed](class/src/index.js~CEvntFeed.html). We'll continue to refer to this event as 
+tTick, but you can call it whatever is most memorable for you.
 
 ```js
 var tTick = pFeed.FeedRead(pSequ);
