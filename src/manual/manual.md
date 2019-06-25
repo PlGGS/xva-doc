@@ -17,7 +17,7 @@ knowledge that will help you translate your predictions into code.
 To get started, simply drag a new pane into your vNine dashboard from the context menu 
 on the left.
 
-<img src="asset/drag_pane.png" width="50%" height="50%">
+<img src="asset/drag_pane.png" width="40%" height="40%">
 
 #### Opening the editor
 
@@ -27,7 +27,7 @@ You should be presented with an empty sample script corresponding to your new pa
 It may seem daunting at first glance, but soon you'll come to find that nearly 
 everything in this sample script is crucial for contructing your own.
 
-<img src="asset/click_js.png" width="50%" height="50%">
+<img src="asset/click_js.png" width="40%" height="40%">
 
 [//]: # "Replace this image when 'scripted stopped' is fixed"
 
@@ -70,7 +70,7 @@ The symbol name is the technical name of the symbol we want to interpret.
 
 The built in onLoad function is called when the user clicks the run button shown below.  
 
-<img src="asset/click_run.png" width="50%" height="50%">
+<img src="asset/click_run.png" width="40%" height="40%">
 
 It is extremely useful for setting up all of your variables perfectly before your script 
 begins running through each and every event in the [onEvent](../function/index.html#static-function-onEvent) method.
@@ -141,7 +141,7 @@ function onOpen ()
 
 The built in onStop function is called when the user clicks the stop button shown below.
 
-<img src="asset/click_stop.png" width="50%" height="50%">
+<img src="asset/click_stop.png" width="40%" height="40%">
 
 This function can be useful for logging data gathered while the symbol was running.
 
@@ -151,25 +151,6 @@ function onStop ()
 	
 }
 ```
-
-### Adding Overlays
-
-#### Drawing Price Changes
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-
-### Customizing Visuals
-
-#### Drawing Other Values
-
-Scripts can track more than just prices though. In some cases, it might be useful to track 
-the [Quantities](https://bblake.info/vxa-doc/class/src/index.js~Trade.html#instance-member-Quantity) 
-of [Trades](https://bblake.info/vxa-doc/class/src/index.js~Trade.html). 
-
-In the example below, the highest [Quantity](https://bblake.info/vxa-doc/class/src/index.js~Trade.html#instance-member-Quantity) 
-trade is tracked and drawn to the [Pane](https://bblake.info/vxa-doc/class/src/index.js~CEvntPane.html).
-
-[//]: # "<img src="asset/max_quantity.png" width="50%" height="50%">"
 
 ## General Formatting
 

@@ -107,193 +107,49 @@
 </div>
 </nav>
 
-<div class="content" data-ice="content"><div class="github-markdown" data-ice="content"><h1 id="manual">Manual</h1><h2 id="getting-started">Getting Started</h2><h3 id="the-basics">The Basics</h3><p>This introduction will help you get your vNine dashboard up and running in no time.<br>Once you&apos;ve gotten your first pane tracking a symbol, you&apos;ll see just how easy it is to 
-efficiently manage and gain insight into your symbol over time.</p>
-<p>If you&apos;re worried about the programming aspect of EVNTScript, fear not, because 
-throughout this documentation, you&apos;ll find many different bits of programming 
-knowledge that will help you translate your predictions into code.</p>
-<h4 id="pane-creation">Pane Creation</h4><p>To get started, simply drag a new pane into your vNine dashboard from the context menu 
-on the left.</p>
-<p><img src="./manual/asset/drag_pane.png" width="40%" height="40%"></p>
-<h4 id="opening-the-editor">Opening the editor</h4><p>Click the JS button to open up the Javascript style editor. 
-You should be presented with an empty sample script corresponding to your new pane.  </p>
-<p>It may seem daunting at first glance, but soon you&apos;ll come to find that nearly 
-everything in this sample script is crucial for contructing your own.</p>
-<p><img src="./manual/asset/click_js.png" width="40%" height="40%"></p>
-<h3 id="declaring-your-variables">Declaring your Variables</h3><p>Once you&apos;ve opened your Javascript editor, you should see your main CEVNTPane and 
-CEVNTFeed variables. These are foundational objects you&apos;re going to use most to 
-maintain the feed of the symbol you&apos;re tracking.</p>
-<pre><code class="lang-js"><code class="source-code prettyprint">var gEvntPane;
-var gPaneFeed;
-var gFeedDraw;
-var gSymbolName = &quot;&quot;;</code>
-</code></pre>
-<ul>
-<li><a href="./manual/../class/src/index.js~CEvntPane">CEvntPane</a> <code>gEvntPane</code><br>Your pane variable allows you to create just about everything else we&apos;re going to need 
-to make use of your script.</li>
-</ul>
-<ul>
-<li><p><a href="./manual/../class/src/index.js~CEvntFeed.html">CEvntFeed</a> <code>gPaneFeed</code><br>Your feed variable will be used to track and make use of every single <a href="./manual/../class/src/index.js~Event.html">Event</a> 
-that has occured since the exchange last opened.</p>
-</li>
-<li><p><a href="./manual/../class/src/index.js~CEvntDraw.html">CEvntDraw</a> <code>gEvntDraw</code><br>Your draw variable will let you draw the feed you&apos;re tracking to your pane. This is useful 
-for determining for yourself whether or not your script is properly handling the data it is 
-receiving from your symbol.</p>
-</li>
-<li><p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a> <code>kSymbolName</code><br>The symbol name is the technical name of the symbol we want to interpret.</p>
-</li>
-</ul>
-<h4 id="built-in-functions">Built-in Functions</h4><h5 id="onload">onLoad</h5><p>The built in onLoad function is called when the user clicks the run button shown below.  </p>
-<p><img src="./manual/asset/click_run.png" width="40%" height="40%"></p>
-<p>It is extremely useful for setting up all of your variables perfectly before your script 
-begins running through each and every event in the <a href="./manual/../function/index.html#static-function-onEvent">onEvent</a> method.</p>
-<pre><code class="lang-js"><code class="source-code prettyprint">function onLoad ()
-{
-    gEvntPane = MakePane();
-    gPaneFeed = gEvntPane.MakeFeed(gSymbolName);
-    gFeedDraw = gEvntPane.MakeDraw(gPaneFeed);    
-}</code>
-</code></pre>
-<ul>
-<li><p><a href="./manual/../function/index.html#static-function-MakePane">MakePane</a> <code>MakePane()</code><br>The built in function <a href="./manual/../function/index.html#static-function-MakePane">MakePane</a> 
-returns a new <a href="./manual/../class/src/index.js~CEvntPane.html">CEvntPane</a> object. 
-Most of the time, the above snippet included, it is used to set your <code>gEvntPane</code> variable 
-to a new pane in the initialization of your script.</p>
-</li>
-<li><p><a href="./manual/../class/src/index.js~CEvntPane.html#instance-method-MakeFeed">MakeFeed</a> <code>gEvntPane.MakeFeed(gSymbolName)</code><br>Returns a new <a href="./manual/../class/src/index.js~CEvntFeed.html">CEvntFeed</a> object 
-based on your specified symbol name. If you pass in the same symbol name, this is equivilent to 
-the feed that will be tracked in your 
-<a href="./manual/../function/index.html#static-function-onEvent">onEvent</a> method.</p>
-</li>
-<li><p><a href="./manual/../class/src/index.js~CEvntPane.html#instance-method-MakeDraw">MakeDraw</a> <code>gEvntPane.MakeDraw(gPaneFeed)</code><br>Returns a new <a href="./manual/../class/src/index.js~CEvntDraw.html">CEvntDraw</a> object 
-based on your newly created feed. This will render your feed in your pane.</p>
-</li>
-</ul>
-<h5 id="onevent">onEvent</h5><p>The built in onEvent function is called once for each timestamp tracked in your symbol.  </p>
-<p>This is where you&apos;ll be doing most of your calculations on the specific things you&apos;re 
-looking for in your symbol. It allows your script to perform different tasks depending 
-on the current event&apos;s conditions.</p>
-<pre><code class="lang-js"><code class="source-code prettyprint">function onEvent (pFeed, pSequ)
-{
-
-}</code>
-</code></pre>
-<ul>
-<li><p><a href="./manual/../class/src/index.js~CEvntFeed.html">CEvntFeed</a> <code>pFeed</code><br>A feed with timestamps measured in nanoseconds with 64 bit precision.</p>
-</li>
-<li><p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a> <code>pSequ</code><br>A number that is used for Amount of events within this sequence. It defaults to 0.</p>
-</li>
-</ul>
-<h5 id="onopen">onOpen</h5><p>The built in onOpen function is called once the pane has properly loaded and rendered the Symbol information.</p>
-<p>It allows you to make any last minute changes once your script has successfully tracked each and every 
-event in your symbol&apos;s feed.</p>
-<pre><code class="lang-js"><code class="source-code prettyprint">function onOpen ()
-{
-
-}</code>
-</code></pre>
-<h5 id="onstop">onStop</h5><p>The built in onStop function is called when the user clicks the stop button shown below.</p>
-<p><img src="./manual/asset/click_stop.png" width="40%" height="40%"></p>
-<p>This function can be useful for logging data gathered while the symbol was running.</p>
-<pre><code class="lang-js"><code class="source-code prettyprint">function onStop ()
-{
-
-}</code>
-</code></pre>
-<h3 id="customizing-visuals">Customizing Visuals</h3><h4 id="drawing-other-values">Drawing Other Values</h4><p>Scripts can track more than just prices though. In some cases, it might be useful to track 
-the <a href="https://bblake.info/vxa-doc/class/src/index.js~Trade.html#instance-member-Quantity">Quantities</a> 
+<div class="content" data-ice="content"><div class="github-markdown" data-ice="content"><h1 id="more-than-prices---beginner">More Than Prices | Beginner</h1><p>In the <a href="./manual/tutorial1.html">Prices</a> commentary, you learned how to track and graph <a href="./manual/../class/src/index.js~Event.html">Event</a> 
+values on a <a href="./manual/../class/src/index.js~CEvntPane.html">Pane</a>. Scripts can track more than just prices 
+though. In some cases, it might be useful to track the <a href="https://bblake.info/vxa-doc/class/src/index.js~Trade.html#instance-member-Quantity">Quantities</a> 
 of <a href="https://bblake.info/vxa-doc/class/src/index.js~Trade.html">Trades</a>. </p>
-<p>In the example below, the highest <a href="https://bblake.info/vxa-doc/class/src/index.js~Trade.html#instance-member-Quantity">Quantity</a> 
-trade is tracked and drawn to the <a href="https://bblake.info/vxa-doc/class/src/index.js~CEvntPane.html">Pane</a>.</p>
-<h2 id="general-formatting">General Formatting</h2><h3 id="notation">Notation</h3><p>Constants used for distinguishing variable roles</p>
-<ul>
-<li><code>k</code> | K denotes a constant variable</li>
-<li><code>g</code> | G denotes a global variable</li>
-</ul>
-<pre><code class="lang-js"><code class="source-code prettyprint">var gEvntPane;
-var gPaneFeed;
-var kSymbolName = &quot;ESM9&quot;;</code>
-</code></pre>
-<h2 id="enumerated-constants">Enumerated Constants</h2><h3 id="cevntfeed-feedstep">CEvntFeed.FeedStep</h3><p>Constants used for CEvntFeed.FeedStep</p>
-<ul>
-<li><code>kStepShow</code> | Shows the event aggregating by time</li>
-<li><code>kStepHide</code> | Withholds the even from the Symbol viewport</li>
-<li><code>kStepHalt</code> | Shows the previous event</li>
-<li><code>kStepNext</code> | Advances the step position</li>
-</ul>
-<pre><code class="lang-js"><code class="source-code prettyprint">gPaneFeed.FeedStep = kStepHide; //This will hide the current event in the feed</code>
-</code></pre>
-<h3 id="kevent-type">kEvent.Type</h3><p>Enumerated types of events</p>
-<ul>
-<li><code>kEvent.Type.Trade</code></li>
-<li><code>kEvent.Type.Bid</code></li>
-<li><code>kEvent.Type.Ask</code></li>
-<li><code>kEvent.Type.ImpliedBid</code></li>
-<li><code>kEvent.Type.ImpliedAsk</code></li>
-<li><code>kEvent.Type.BookReset</code></li>
-</ul>
-<pre><code class="lang-js"><code class="source-code prettyprint">if (tTick.Type == kEvent.Type.Trade)
-{
-    //Do something based on event being a trade
-}</code>
-</code></pre>
-<h3 id="kevent-trade-aggressor">kEvent.Trade.Aggressor</h3><p>Enumerated values for getting the type of aggressor of a trade event</p>
-<ul>
-<li><code>kEvent.Trade.Aggressor.Buy</code></li>
-<li><code>kEvent.Trade.Aggressor.Sell</code></li>
-</ul>
-<pre><code class="lang-js"><code class="source-code prettyprint">if (tTick.Type == kEvent.Type.Trade)
-{
-    if (tTick.Trade.Aggressor == kEvent.Trade.Aggressor.Buy)
-    {
-        //Do something based on trade&apos;s aggressor being a buyer
-    }
-}</code>
-</code></pre>
-<h3 id="kevent-bid-type">kEvent.Bid.Type</h3><p>Enumerated values for getting the type of a bid event</p>
-<ul>
-<li><code>kEvent.Bid.Type.New</code></li>
-<li><code>kEvent.Bid.Type.Change</code></li>
-<li><code>kEvent.Bid.Type.Delete</code></li>
-<li><code>kEvent.Bid.Type.DeleteThru</code></li>
-<li><code>kEvent.Bid.Type.DeleteFrom</code></li>
-<li><code>kEvent.Bid.Type.Overlay</code></li>
-<li><code>kEvent.Bid.Type.Replace</code></li>
-</ul>
-<pre><code class="lang-js"><code class="source-code prettyprint">if (tTick.Bid.Type == kEvent.Bid.Type.New)
-{
-    //Do something based on bid&apos;s type being new
-}</code>
-</code></pre>
-<h3 id="kevent-ask-type">kEvent.Ask.Type</h3><p>Enumerated values for getting the type of an ask event</p>
-<ul>
-<li><code>kEvent.Ask.Type.New</code></li>
-<li><code>kEvent.Ask.Type.Change</code></li>
-<li><code>kEvent.Ask.Type.Delete</code></li>
-<li><code>kEvent.Ask.Type.DeleteThru</code></li>
-<li><code>kEvent.Ask.Type.DeleteFrom</code></li>
-</ul>
-<pre><code class="lang-js"><code class="source-code prettyprint">if (tTick.Ask.Type == kEvent.Ask.Type.New)
-{
-    //Do something based on ask&apos;s type being new
-}</code>
-</code></pre>
-<h3 id="cevntpane-wave">CEvntPane.Wave</h3><p>Enumerated values for playing different audio files</p>
-<ul>
-<li><code>Bang</code> | 0</li>
-<li><code>Clang</code> | 1</li>
-<li><code>Punch</code> | 2</li>
-<li><code>Ring_1</code> | 3</li>
-<li><code>Ring_2</code> | 4</li>
-<li><code>Ring_3</code> | 5</li>
-<li><code>Ring_4</code> | 6</li>
-<li><code>Ring_5</code> | 7</li>
-<li><code>Ring_6</code> | 8</li>
-<li><code>Ring_7</code> | 9</li>
-<li><code>Slap</code> | 10</li>
-</ul>
-<pre><code class="lang-js"><code class="source-code prettyprint">CEvntPane.PlayWave(0); //Plays a bang!</code>
-</code></pre>
+<p>This sample prepares you to efficiently track and plot values other than prices. 
+Although, before doing so, there are some very important things to keep in mind.</p>
+<p>## </p>
+<h2 id="results">Results</h2><h4 id="congratulations">Congratulations</h4><p>At this point, you should now be able to test, save, and display aspects of events, and 
+you should see a chart based off of your selected Symbol for the most recent exchange period like 
+the one shown below! Feel free to zoom in and out and scroll through your newly created chart.</p>
+<p>Your script should now provide functionality similar to <a href="https://github.com/PlGGS/Vertex-Analytics/blob/master/sample%20scripts/sampleTopBottomPrices.js">this</a></p>
+<h4 id="troubleshooting">Troubleshooting</h4><p>For certain periods throughout the day, EVNTScript will not be able to generate charts. 
+This is because the vNine platform makes use of the time in which the exchange is down to process and archive data. 
+Below is a chart containing weekly hours of downtime.</p>
+<table>
+<thead>
+<tr>
+<th>Monday</th>
+<th>Tuesday</th>
+<th>Wednesday</th>
+<th>Thursday</th>
+<th>Friday</th>
+<th>Saturday</th>
+<th>Sunday</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>4:00pm-5:00pm</td>
+<td>4:00pm-5:00pm</td>
+<td>4:00pm-5:00pm</td>
+<td>4:00pm-5:00pm</td>
+<td>4:00pm-</td>
+<td>-</td>
+<td>-5:00pm</td>
+</tr>
+</tbody>
+</table>
+<p>Also, please note that some contracts also stop the exchange from 3:15pm-3:30pm on weekdays.</p>
+<h4 id="contact">Contact</h4><p>If you come across any major issue/bugs, please let us know by sending an email with an explanation of what occured to 
+<a href="./manual/mailto:support@vertex-analytics.com">support@vertex-analytics.com</a>.</p>
+<p>Additionally, if there is something that you think we could improve about this documentation, 
+please create a new issue at our repository&apos;s <a href="https://github.com/PlGGS/xva-doc/issues">issues page</a>.</p>
 </div>
 </div>
 

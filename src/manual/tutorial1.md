@@ -1,4 +1,4 @@
-# Tracking Prices | Beginner
+# Prices | Beginner
 
 This sample prepares you to track [Event](../class/src/index.js~Event.html) values and 
 test for the highest and lowest prices.

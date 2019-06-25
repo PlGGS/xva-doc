@@ -34,7 +34,9 @@
         "asset": "./src/manual/asset",
         "files": [
           "./src/manual/manual.md",
-          "./src/manual/tutorial1.md"
+          "./src/manual/tutorial1.md",
+          "./src/manual/tutorial2.md",
+          "./src/manual/tutorial3.md"
         ]
       }
     }
