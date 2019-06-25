@@ -140,7 +140,7 @@ function onEvent (pFeed, pSequ)
 ```
 
 - [CEvntFeed](../class/src/index.js~CEvntFeed.html) ```pFeed```  
-A feed  with timestamps measured in nanoseconds with 56 bit precision.
+A feed with timestamps measured in nanoseconds with 64 bit precision.
 
 - [Number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) ```pSequ```  
 A number that is used for Amount of events within this sequence. It defaults to 0.
