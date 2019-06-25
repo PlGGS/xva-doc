@@ -3241,9 +3241,9 @@
                                 "line": 228,
                                 "column": 22
                               },
-                              "identifierName": "fillStyle"
+                              "identifierName": "textStyle"
                             },
-                            "name": "fillStyle"
+                            "name": "textStyle"
                           },
                           "computed": false,
                           "leadingComments": null
@@ -14035,7 +14035,7 @@
         "postfix": false,
         "binop": null
       },
-      "value": "fillStyle",
+      "value": "textStyle",
       "start": 4998,
       "end": 5007,
       "loc": {
