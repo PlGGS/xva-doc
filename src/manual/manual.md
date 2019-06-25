@@ -102,28 +102,6 @@ the feed that will be tracked in your
 Returns a new [CEvntDraw](../class/src/index.js~CEvntDraw.html) object 
 based on your newly created feed. This will render your feed in your pane.
 
-Additionally, you can add two more lines that allow yout to apply attributes to 
-a [CEvntPane](../class/src/index.js~CEvntPane.html) object. 
-
-```js
-gEvntPane = MakePane();
-gEvntPane.title = "Placeholder Trade Events Title"; //text at the top of pane
-gEvntPane.fillStyle = "#030308"; //background color in hexidecimal as a String
-
-gPaneFeed = gEvntPane.MakeFeed(gSymbolName);
-gFeedDraw = gEvntPane.MakeDraw(gPaneFeed);
-```
-
-- [title](../class/src/index.js~CEvntPane.html#instance-member-title) ```gEvntPane.fillStyle```  
-The title is a simple [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) 
-that you can make use of to easily identify this pane from the others on your dashboard.
-
-- [fillStyle](../class/src/index.js~CEvntPane.html#instance-member-fillStyle) ```gEvntPane.fillStyle```  
-The fill style fills the background of your [Pane](../class/src/index.js~CEvntPane.html) with any 
-color of your choosing. Just make sure that you format your value as a hexidecimal color with a # 
-in a string like: ```"#000000"```
-
-
 ##### onEvent
 
 The built in onEvent function is called once for each timestamp tracked in your symbol.  
