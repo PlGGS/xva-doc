@@ -15,7 +15,7 @@ features vNine offers.
 ### Stat
 
 - title
-- fillStyle
+- textStyle
 
 ### Draw
 

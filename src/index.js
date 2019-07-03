@@ -225,7 +225,7 @@ export class CEvntTrig
          * @type {String}
          * @public
          */
-        this.textStyle = "#ffa43d";
+        this.fillStyle = "#ffa43d";
 
         /**
          * Text corresponding to the trigger's purpose

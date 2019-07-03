@@ -14,6 +14,10 @@ examples and tips. Although, before doing so, there are some very important thin
 
 ### Don't Draw Your Symbol's Feed
 
+More often than not, drawing your Symbol's [Event](../class/src/index.js~Event.html) [Feed](../class/src/index.js~CEvntFeed.html) 
+can be counterproductive, as it will default the left-hand side of your [Pane](../class/src/index.js~CEvntPane.html) 
+to be based on [Prices](../class/src/index.js~Trade.html#instance-member-Price).
+
 ### Price Tracking can Blind You
 
 ### Timestamps on the Horizontal

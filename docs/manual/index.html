@@ -558,7 +558,9 @@ please create a new issue at our repository&apos;s <a href="https://github.com/P
 values on a <a href="./manual/../class/src/index.js~CEvntPane.html">Pane</a>. Scripts can track more than just prices 
 though. In some cases, it might be useful to track the <a href="https://bblake.info/vxa-doc/class/src/index.js~Trade.html#instance-member-Quantity">Quantities</a> 
 of <a href="https://bblake.info/vxa-doc/class/src/index.js~Trade.html">Trades</a>. </p><p>This sample prepares you to efficiently track and plot values other than prices with a multitude of 
-examples and tips. Although, before doing so, there are some very important things to keep in mind.</p><h2>Things to Keep in Mind</h2><h3>Don&apos;t Draw Your Symbol&apos;s Feed</h3><h3>Price Tracking can Blind You</h3><h3>Timestamps on the Horizontal</h3><h2>Tracking Other Values</h2><h3>Event Quantities</h3><h3>Totals</h3><h3>Differences</h3><h2>Results</h2><h4>Congratulations</h4><p>...</p><h4>Troubleshooting</h4><p>For certain periods throughout the day, EVNTScript will not be able to generate charts. 
+examples and tips. Although, before doing so, there are some very important things to keep in mind.</p><h2>Things to Keep in Mind</h2><h3>Don&apos;t Draw Your Symbol&apos;s Feed</h3><p>More often than not, drawing your Symbol&apos;s <a href="./manual/../class/src/index.js~Event.html">Event</a> <a href="./manual/../class/src/index.js~CEvntFeed.html">Feed</a> 
+can be counterproductive, as it will default the left-hand side of your <a href="./manual/../class/src/index.js~CEvntPane.html">Pane</a> 
+to be based on <a href="./manual/../class/src/index.js~Trade.html#instance-member-Price">Prices</a>.</p><h3>Price Tracking can Blind You</h3><h3>Timestamps on the Horizontal</h3><h2>Tracking Other Values</h2><h3>Event Quantities</h3><h3>Totals</h3><h3>Differences</h3><h2>Results</h2><h4>Congratulations</h4><p>...</p><h4>Troubleshooting</h4><p>For certain periods throughout the day, EVNTScript will not be able to generate charts. 
 This is because the vNine platform makes use of the time in which the exchange is down to process and archive data. 
 Below is a chart containing weekly hours of downtime.</p><table>
 <thead>
@@ -597,7 +599,7 @@ features vNine offers. </p><h2>Object Attributes</h2><h3>Pane</h3><ul>
 <li>fillStyle</li>
 </ul><h3>Stat</h3><ul>
 <li>title</li>
-<li>fillStyle</li>
+<li>textStyle</li>
 </ul><h3>Draw</h3><ul>
 <li>lineWidth</li>
 <li>strokeStyle</li>
