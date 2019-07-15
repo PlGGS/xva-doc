@@ -2,11 +2,12 @@
   "ExpandedNodes": [
     "",
     "\\css",
+    "\\docs",
     "\\src",
     "\\src\\asset",
     "\\src\\manual",
     "\\src\\manual\\asset"
   ],
-  "SelectedNode": "\\src\\manual\\tutorial1.md",
+  "SelectedNode": "\\docs",
   "PreviewInSolutionExplorer": false
 }

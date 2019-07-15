@@ -174,7 +174,7 @@ var kSymbolName = "ESM9";
 Constants used for CEvntFeed.FeedStep
 
 - `kStepShow` | Shows the event aggregating by time
-- `kStepHide` | Withholds the even from the Symbol viewport
+- `kStepHide` | Withholds the event from the Symbol viewport
 - `kStepHalt` | Shows the previous event
 - `kStepNext` | Advances the step position
 
