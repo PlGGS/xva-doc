@@ -103,7 +103,7 @@ export class CEvntFeed
 
     /**
      * Reads an Event from position pSequ.
-     * @param {Number} pSequ - Amount of events within this sequence
+     * @param {Number} pSequ - Number identifying the position of the Event to read
      * @returns {Event} an event object.
      */
     FeedRead(pSequ)
@@ -435,7 +435,7 @@ export function onLoad()
 /**
  * Built in function that is called once for each event in the symbol Feed.
  * @param {CEvntFeed} pFeed - A CEvntFeed object with timestamps measured in nanoseconds with 56 bit precision
- * @param {Number} pSequ - Amount of events to read within this sequence
+ * @param {Number} pSequ - Number identifying the current Event's position in pFeed
  */
 export function onEvent(pFeed, pSequ)
 {
