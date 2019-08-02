@@ -94,10 +94,20 @@ export class CEvntFeed
     }
 
     /**
-     * Makes a CEvntFill object. (Users can make up to 4 CEvntFill objects per Pane)
+     * Makes a CEvntFill object.
      * @returns {CEvntFill} a trigger object.
      */
     MakeFill() {
+
+    }
+
+    /**
+     * Applies the attributes of a fill to the Event at the given position, pSequ.
+     * @param {Number} pSequ - Number identifying the position of the Event to read
+     * @param {CEvntFill} pFill - CEvntFill object used to apply attributes to the Event
+     * @returns {CEvntFill} a fill object.
+     */
+    FeedFill(pSequ, pFill) {
 
     }
 

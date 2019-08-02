@@ -462,6 +462,12 @@ window.esdocSearchIndex = [
     "member"
   ],
   [
+    "src/index.js~cevntfeed#feedfill",
+    "class/src/index.js~CEvntFeed.html#instance-method-FeedFill",
+    "src/index.js~CEvntFeed#FeedFill",
+    "method"
+  ],
+  [
     "src/index.js~cevntfeed#feedread",
     "class/src/index.js~CEvntFeed.html#instance-method-FeedRead",
     "src/index.js~CEvntFeed#FeedRead",
