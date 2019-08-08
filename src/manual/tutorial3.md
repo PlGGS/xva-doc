@@ -7,28 +7,28 @@ features vNine offers.
 
 [//]: # "Write detailed explanationss for object attributes"
 
-### Pane
+### [Pane](../class/src/index.js~CEvntPane.html)
 
 - title
 - fillStyle
 
-### Stat
+### [Stat](../class/src/index.js~CEvntStat.html)
 
 - title
 - textStyle
 
-### Draw
+### [Draw](../class/src/index.js~CEvntDraw.html)
 
 - lineWidth
 - strokeStyle
 
-### Trig
+### [Trig](../class/src/index.js~CEvntTrig.html)
 
 - title
 - textStyle
 - duration
 
-### Fill
+### [Fill](../class/src/index.js~CEvntFill.html)
 
 - fillStyle
 - textStyle

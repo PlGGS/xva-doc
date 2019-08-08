@@ -313,7 +313,7 @@ var tTick = pFeed.FeedRead(pSequ);
 ```
 
 - [FeedRead](../class/src/index.js~CEvntFeed.html#instance-method-FeedRead) ```pFeed.FeedRead(pSequ)```  
-Each event has a sequence value for indexing its position among all of the other [Events](../class/src/index.js~Event.html)
+Each event has a sequence value for indexing its position among all of the other [Events](../class/src/index.js~Event.html). 
 Using this sequence value, ```pSequ```, [FeedRead](../class/src/index.js~CEvntFeed.html#instance-method-FeedRead) 
 returns the [Event](../class/src/index.js~Event.html) at that spot in your symbol's [Feed](class/src/index.js~CEvntFeed.html).
 

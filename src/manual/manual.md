@@ -1,8 +1,6 @@
 # Manual
 
-## Getting Started
-
-### The Basics
+## The Basics
 
 This introduction will help you get your vNine dashboard up and running in no time.  
 Once you've gotten your first pane tracking a symbol, you'll see just how easy it is to 
@@ -12,17 +10,17 @@ If you're worried about the programming aspect of EVNTScript, fear not, because
 throughout this documentation, you'll find many different bits of programming 
 knowledge that will help you translate your predictions into code.
 
-#### Pane Creation
+### Pane Creation
 
 To get started, simply drag a new pane into your vNine dashboard from the context menu 
 on the left.
 
 <img src="asset/drag_pane.png" width="40%" height="40%">
 
-#### Opening the editor
+### Opening the editor
 
 Click the JS button to open up the Javascript style editor. 
-You should be presented with an empty sample script corresponding to your new pane.  
+You should be presented with a default, empty sample script corresponding to your new pane.  
 
 It may seem daunting at first glance, but soon you'll come to find that nearly 
 everything in this sample script is crucial for contructing your own.
@@ -31,17 +29,29 @@ everything in this sample script is crucial for contructing your own.
 
 [//]: # "Replace this image when 'scripted stopped' is fixed"
 
-### Declaring your Variables
+### Testing a script
+
+Once in the editor, it's easy to run the default script by simply choosing a symbol and clicking the 
+start button.  
+
+You should see a series of [Events](../class/src/index.js~Event.html) fill the 
+[Pane](../class/src/index.js~CEvntPane), and notice that the start button has been greyed out. 
+
+<img src="asset/run_default.png" width="40%" height="40%">
+
+At this point, you can click the stop button to stop the default script and get to work on your own.
+
+## Declaring your Variables
 
 Once you've opened your Javascript editor, you should see your main CEVNTPane and 
 CEVNTFeed variables. These are foundational objects you're going to use most to 
 maintain the feed of the symbol you're tracking.
 
 ```js
+var gSymbolName = "";
 var gEvntPane;
 var gPaneFeed;
 var gFeedDraw;
-var gSymbolName = "";
 ```
 
 - [CEvntPane](../class/src/index.js~CEvntPane) ```gEvntPane```  
@@ -64,9 +74,9 @@ The symbol name is the technical name of the symbol we want to interpret.
 
 [//]: # "[symbols](link to symbol names)"
 
-#### Built-in Functions
+### Built-in Functions
 
-##### onLoad
+#### [onLoad](../function/index.html#static-function-onLoad)
 
 The built in onLoad function is called when the user clicks the run button shown below.  
 
@@ -102,7 +112,7 @@ the feed that will be tracked in your
 Returns a new [CEvntDraw](../class/src/index.js~CEvntDraw.html) object 
 based on your newly created feed. This will render your feed in your pane.
 
-##### onEvent
+#### [onEvent](../function/index.html#static-function-onEvent)
 
 The built in onEvent function is called once for each timestamp tracked in your symbol.  
 
@@ -123,7 +133,7 @@ A feed with timestamps measured in nanoseconds with 64 bit precision.
 - [Number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) ```pSequ```  
 A number that is used for Amount of events within this sequence. It defaults to 0.
 
-##### onOpen
+#### [onOpen](../function/index.html#static-function-onOpen)
 
 The built in onOpen function is called once the pane has properly loaded and rendered the Symbol information.
 
@@ -137,7 +147,7 @@ function onOpen ()
 }
 ```
 
-##### onStop
+#### [onStop](../function/index.html#static-function-onStop)
 
 The built in onStop function is called when the user clicks the stop button shown below.
 
@@ -169,7 +179,7 @@ var kSymbolName = "ESM9";
 
 ## Enumerated Constants
 
-### CEvntFeed.FeedStep
+### [CEvntFeed.FeedStep](../class/src/index.js~CEvntFeed.html#instance-method-FeedStep)
 
 Constants used for CEvntFeed.FeedStep
 
@@ -182,7 +192,7 @@ Constants used for CEvntFeed.FeedStep
 gPaneFeed.FeedStep = kStepHide; //This will hide the current event in the feed
 ```
 
-### kEvent.Type
+### [kEvent.Type](../class/src/index.js~Event.html#instance-member-Type)
 
 Enumerated types of events
 
@@ -200,7 +210,7 @@ if (tTick.Type == kEvent.Type.Trade)
 }
 ```
 
-### kEvent.Trade.Aggressor
+### [kEvent.Trade.Aggressor](../class/src/index.js~Trade.html#instance-member-Aggressor)
 
 Enumerated values for getting the type of aggressor of a trade event
 
@@ -217,7 +227,7 @@ if (tTick.Type == kEvent.Type.Trade)
 }
 ```
 
-### kEvent.Bid.Type
+### [kEvent.Bid.Type](../class/src/index.js~Bid.html#instance-member-Type)
 
 Enumerated values for getting the type of a bid event
 
@@ -236,7 +246,7 @@ if (tTick.Bid.Type == kEvent.Bid.Type.New)
 }
 ```
 
-### kEvent.Ask.Type
+### [kEvent.Ask.Type](../class/src/index.js~Ask.html#instance-member-Type)
 
 Enumerated values for getting the type of an ask event
 
@@ -253,7 +263,7 @@ if (tTick.Ask.Type == kEvent.Ask.Type.New)
 }
 ```
 
-### CEvntPane.Wave
+### [CEvntPane.Wave](../class/src/index.js~CEvntPane.html#instance-method-PlayWave)
 
 Enumerated values for playing different audio files
 
