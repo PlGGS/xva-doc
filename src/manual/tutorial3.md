@@ -47,9 +47,9 @@ For certain periods throughout the day, EVNTScript will not be able to generate 
 This is because the vNine platform makes use of the time in which the exchange is down to process and archive data. 
 Below is a chart containing weekly hours of downtime.
 
-| Monday        | Tuesday       | Wednesday     | Thursday      | Friday  | Saturday | Sunday  |
-|---------------|---------------|---------------|---------------|---------|----------|---------|
-| 4:00pm-5:00pm | 4:00pm-5:00pm | 4:00pm-5:00pm | 4:00pm-5:00pm | 4:00pm- | -        | -5:00pm |
+| Monday        | Tuesday       | Wednesday     | Thursday      | Friday  | Saturday   | Sunday  |
+|---------------|---------------|---------------|---------------|---------|:----------:|---------|
+| 4:00pm-5:00pm | 4:00pm-5:00pm | 4:00pm-5:00pm | 4:00pm-5:00pm | 4:00pm- | -          | -5:00pm |
 
 Also, please note that some contracts also stop the exchange from 3:15pm-3:30pm on weekdays.
 

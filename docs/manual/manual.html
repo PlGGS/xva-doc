@@ -137,6 +137,34 @@ start button.  </p>
 <a href="./manual/../class/src/index.js~CEvntPane">Pane</a>, and notice that the start button has been greyed out. </p>
 <p><img src="./manual/asset/run_default.png" width="40%" height="40%"></p>
 <p>At this point, you can click the stop button to stop the default script and get to work on your own.</p>
+<p>For certain periods throughout the day, EVNTScript will not be able to generate charts. 
+This is because the vNine platform makes use of the time in which the exchange is down to process and archive data. 
+Below is a chart containing weekly hours of downtime.</p>
+<table>
+<thead>
+<tr>
+<th>Monday</th>
+<th>Tuesday</th>
+<th>Wednesday</th>
+<th>Thursday</th>
+<th>Friday</th>
+<th style="text-align:center">Saturday</th>
+<th>Sunday</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>4:00pm-5:00pm</td>
+<td>4:00pm-5:00pm</td>
+<td>4:00pm-5:00pm</td>
+<td>4:00pm-5:00pm</td>
+<td>4:00pm-</td>
+<td style="text-align:center">-</td>
+<td>-5:00pm</td>
+</tr>
+</tbody>
+</table>
+<p>Also, please note that some contracts also stop the exchange from 3:15pm-3:30pm on weekdays.</p>
 <h2 id="declaring-your-variables">Declaring your Variables</h2><p>Once you&apos;ve opened your Javascript editor, you should see your main CEVNTPane and 
 CEVNTFeed variables. These are foundational objects you&apos;re going to use most to 
 maintain the feed of the symbol you&apos;re tracking.</p>

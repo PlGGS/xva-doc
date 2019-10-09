@@ -41,6 +41,16 @@ You should see a series of [Events](../class/src/index.js~Event.html) fill the
 
 At this point, you can click the stop button to stop the default script and get to work on your own.
 
+For certain periods throughout the day, EVNTScript will not be able to generate charts. 
+This is because the vNine platform makes use of the time in which the exchange is down to process and archive data. 
+Below is a chart containing weekly hours of downtime.
+
+| Monday        | Tuesday       | Wednesday     | Thursday      | Friday  | Saturday   | Sunday  |
+|---------------|---------------|---------------|---------------|---------|:----------:|---------|
+| 4:00pm-5:00pm | 4:00pm-5:00pm | 4:00pm-5:00pm | 4:00pm-5:00pm | 4:00pm- | -          | -5:00pm |
+
+Also, please note that some contracts also stop the exchange from 3:15pm-3:30pm on weekdays.
+
 ## Declaring your Variables
 
 Once you've opened your Javascript editor, you should see your main CEVNTPane and 
