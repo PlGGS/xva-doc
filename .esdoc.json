@@ -19,7 +19,7 @@
           "title": "EVNTScript",
           "description": "EVNTScript is a Javascript-based parser that allows for easy understanding, calculating, and tracking of futures symbols in more than just real-time using vNine at https://vnine.vertex-analytics.com.",
           "repository": "https://github.com/plggs/vxa-doc",
-          "site": "https://vnine.vertex-analytics.com"
+          "site": "https://v9.vertex-analytics.com"
         }
       }
     },

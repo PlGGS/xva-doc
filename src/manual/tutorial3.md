@@ -33,8 +33,6 @@ features vNine offers.
 - fillStyle
 - textStyle
 
-## 
-
 ## Results
 
 #### Congratulations
