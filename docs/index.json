@@ -567,7 +567,7 @@
     "__docId__": 48,
     "kind": "file",
     "name": "src/index.js",
-    "content": "/**\r\n * Class representing the the pane that draws your symbol's Feed of Events.\r\n * @example\r\n * var gEvntPane;\r\n * function onLoad()\r\n * {\r\n *     gEvntPane = MakePane();\r\n *     //...\r\n * }\r\n */\r\nexport class CEvntPane\r\n{\r\n    /**\r\n     * Creates a CEvntPane object\r\n     */\r\n    constructor()\r\n    {\r\n        /**\r\n        * Text that appears at the top of the pane\r\n        * @type {String}\r\n        * @public\r\n        */\r\n        this.title = \"\";\r\n\r\n        /**\r\n        * String representing the pane's background color in hexadecimal as a String (Make sure to include a # at the beginning)\r\n        * @type {String}\r\n        * @public\r\n        */\r\n        this.fillStyle = \"#000000\";\r\n    }\r\n    \r\n    /**\r\n     * Makes a CEvntFeed object.\r\n     * @param {String} pSymb - Name of the symbol\r\n     * @returns {CEvntFeed} a calculation object.\r\n     */\r\n    MakeFeed(pSymb)\r\n    {\r\n\r\n    }\r\n\r\n    /**\r\n     * Makes a CEvntTrig object.\r\n     * @param {CEvntCalc} pItem - Calc object for your status object to read from\r\n     * @returns {CEvntStat} a status object.\r\n     */\r\n    MakeStat(pItem)\r\n    {\r\n\r\n    }\r\n\r\n    /**\r\n     * Make a CEvntDraw object.\r\n     * @param {CEvntCalc} pItem - Calc object for your draw object to read from\r\n     * @returns {CEvntDraw} a draw object.\r\n     */\r\n    MakeDraw(pItem)\r\n    {\r\n\r\n    }\r\n\r\n    /**\r\n     * Plays a selected sound from a set of available pre-existing files. (See manual for enumerated sound options)\r\n     * @param {Number} pWave - Enumerated wave files in CEvntPane.Wave (See manual for enumerated sound options)\r\n     */\r\n    PlayWave(pWave)\r\n    {\r\n\r\n    }\r\n}\r\n\r\n/**\r\n * Class representing an event feed. A CEvntFeed contains every single Event within a CEvntPane's provided symbol.\r\n */\r\nexport class CEvntFeed\r\n{\r\n    /**\r\n     * Makes a CEvntCalc object.\r\n     * @returns {CEvntCalc} a calculation object.\r\n     */\r\n    MakeCalc()\r\n    {\r\n\r\n    }\r\n\r\n    /**\r\n     * Makes a CEvntTrig object.\r\n     * @returns {CEvntTrig} a trigger object.\r\n     */\r\n    MakeTrig()\r\n    {\r\n\r\n    }\r\n\r\n    /**\r\n     * Makes a CEvntFill object.\r\n     * @returns {CEvntFill} a trigger object.\r\n     */\r\n    MakeFill() {\r\n\r\n    }\r\n\r\n    /**\r\n     * Applies the attributes of a fill to the Event at the given position, pSequ.\r\n     * @param {Number} pSequ - Number identifying the position of the Event to read\r\n     * @param {CEvntFill} pFill - CEvntFill object used to apply attributes to the Event\r\n     * @returns {CEvntFill} a fill object.\r\n     */\r\n    FeedFill(pSequ, pFill) {\r\n\r\n    }\r\n\r\n    /**\r\n     * Reads an Event from position pSequ.\r\n     * @param {Number} pSequ - Number identifying the position of the Event to read\r\n     * @returns {Event} an event object.\r\n     */\r\n    FeedRead(pSequ)\r\n    {\r\n\r\n    }\r\n\r\n    /**\r\n     * Assigns a step at the given position, pSequ.\r\n     * @param {Number} pSequ - Event position to set step\r\n     * @param {Number} pStep - Enumerated CEvntFeed FeedStep values in CEvntFeed.FeedStep (See manual for enumerated constants)\r\n     */\r\n    FeedStep(pSequ, pStep)\r\n    {\r\n\r\n    }\r\n\r\n    /**\r\n     * Assign a trigger at the given position, pSequ.\r\n     * @param {Number} pSequ - Event position to set step\r\n     * @param {Number} pTrig - Trigger you want to initialize\r\n     */\r\n    FeedTrig(pSequ, pTrig)\r\n    {\r\n\r\n    }\r\n}\r\n\r\n/**\r\n * Class representing a status indicator that displays the status of a stored variable in the top left of your Pane.\r\n */\r\nexport class CEvntStat\r\n{\r\n    /**\r\n     * Creates an CEvntStat object.\r\n     */\r\n    constructor()\r\n    {\r\n        /**\r\n         * Text color in hexadecimal as a String\r\n         * @type {String}\r\n         * @public\r\n         */\r\n        this.textStyle = textStyle;\r\n\r\n        /**\r\n         * Text corresponding to what the status is tracking\r\n         * @type {String}\r\n         * @public\r\n         */\r\n        this.title = title;\r\n    }\r\n}\r\n\r\n/**\r\n * Class that renders Events from a Feed object or lines between calculated values from a Calc object.\r\n */\r\nexport class CEvntDraw\r\n{\r\n    /**\r\n     * Creates an CEvntDraw object.\r\n     */\r\n    constructor()\r\n    {\r\n        /**\r\n         * Stroke width in pixels\r\n         * @type {Number}\r\n         * @public\r\n         */\r\n        this.lineWidth = lineWidth;\r\n\r\n        /**\r\n         * Stroke color in hexadecimal as a String\r\n         * @type {String}\r\n         * @public\r\n         */\r\n        this.strokeStyle = strokeStyle;\r\n    }\r\n}\r\n\r\n/**\r\n * Class that stores values at specfic locations in your Pane.\r\n */\r\nexport class CEvntCalc\r\n{\r\n    /**\r\n     * Reads a calculated value at position pSequ.\r\n     * @param {Number} pSequ - Event position to get data\r\n     * @returns {Number} a calculated data.\r\n     */\r\n    CalcRead(pSequ)\r\n    {\r\n\r\n    }\r\n\r\n    /**\r\n     * Saves a calculated value at position pSequ.\r\n     * @param {Number} pSequ - Event position to set data\r\n     * @param {String} pData - Data to store\r\n     */\r\n    CalcSave(pSequ, pData)\r\n    {\r\n\r\n    }\r\n}\r\n\r\n/**\r\n * Class representing an event trigger that notifies the user when something important occurs.\r\n */\r\nexport class CEvntTrig\r\n{\r\n    /**\r\n     * Creates an CEvntStat object.\r\n     */\r\n    constructor()\r\n    {\r\n        /**\r\n         * Text color in hexadecimal as a String\r\n         * @type {String}\r\n         * @public\r\n         */\r\n        this.fillStyle = \"#ffa43d\";\r\n\r\n        /**\r\n         * Text corresponding to the trigger's purpose\r\n         * @type {String}\r\n         * @public\r\n         */\r\n        this.title = \"\";\r\n\r\n        /**\r\n         * Length of time to display the trigger on screen in milliseconds\r\n         * @type {Number}\r\n         * @public\r\n         */\r\n        this.duration = 5000;\r\n    }\r\n}\r\n\r\n/**\r\n * Class representing a custom color scheme that may be used to apply its textStyle and fillStyle fields to events. (Users can make up to 4 CEvntFill objects per Pane)\r\n */\r\nexport class CEvntFill {\r\n    /**\r\n     * Creates an CEvntStat object.\r\n     */\r\n    constructor() {\r\n        /**\r\n         * Text fill color in hexadecimal as a String\r\n         * @type {String}\r\n         * @public\r\n         */\r\n        this.textStyle = \"#b26f00\";\r\n\r\n        /**\r\n         * Polyogn fill color in hexadecimal as a String\r\n         * @type {String}\r\n         * @public\r\n         */\r\n        this.fillStyle = \"#ffffff\";\r\n    }\r\n}\r\n\r\n/**\r\n * Class representing all other event types. (See manual for enumerated types of events)\r\n */\r\nexport class Event\r\n{\r\n    constructor()\r\n    {\r\n        /**\r\n         * Time in nanosecond with 56 bit precision\r\n         * @type {Number}\r\n         * @private\r\n         */\r\n        this.Time = 0;\r\n\r\n        /**\r\n         * Instrument ID\r\n         * @type {Number}\r\n         * @private\r\n         */\r\n        this.Instrument = 0;\r\n\r\n        /**\r\n         * Enumerated event type in kEvent.Type (See manual for event types)\r\n         * @type {Number}\r\n         * @public\r\n         */\r\n        this.Type =\r\n        {\r\n            Trade: 0,\r\n            Bid: 1,\r\n            Ask: 2,\r\n            ImpliedBid: 3,\r\n            ImpliedAsk: 4,\r\n            BookReset: 5,\r\n        };\r\n    }\r\n}\r\n\r\n/**\r\n * Class representing an event with Type trade. (Trade is not technically its own class. See manual for enumerated types of events)\r\n */\r\nexport class Trade extends Event\r\n{\r\n    constructor()\r\n    {\r\n        /**\r\n         * Price of the trade\r\n         * @type {Number}\r\n         * @private\r\n         */\r\n        this.Price = -1;\r\n\r\n        /**\r\n         * Quantity of the trade\r\n         * @type {Number}\r\n         * @private\r\n         */\r\n        this.Quantity = -1;\r\n\r\n        /**\r\n         * Enumerated event type in kEvent.Type (See manual for event types)\r\n         * @type {Number}\r\n         * @public\r\n         */\r\n        this.Aggressor =\r\n        {\r\n            Buy: 0,\r\n            Sell: 1,\r\n        };\r\n    }\r\n}\r\n/**\r\n * Class representing an event with Type bid. (Bid is not technically its own class. See manual for enumerated types of events)\r\n */\r\nexport class Bid extends Event\r\n{\r\n    constructor()\r\n    {\r\n        /**\r\n         * Price of the bid\r\n         * @type {Number}\r\n         * @private\r\n         */\r\n        this.Price = -1;\r\n\r\n        /**\r\n         * Quantity of the bid\r\n         * @type {Number}\r\n         * @private\r\n         */\r\n        this.Quantity = -1;\r\n\r\n        /**\r\n         * Enumerated bid type in kEvent.Bid.Type (See manual for event types)\r\n         * @type {Number}\r\n         * @public\r\n         */\r\n        this.Type =\r\n        {\r\n            New: 0,\r\n            Change: 1,\r\n            Delete: 2,\r\n            DeleteThru: 3,\r\n            DeleteFrom: 4,\r\n            Overlay: 5,\r\n            Replace: 6,\r\n        };\r\n    }\r\n}\r\n\r\n/**\r\n * Class representing an event with Type ask. (Ask is not technically its own class. See manual for enumerated types of events)\r\n */\r\nexport class Ask extends Event\r\n{\r\n    constructor()\r\n    {\r\n        /**\r\n         * Price of the bid\r\n         * @type {Number}\r\n         * @private\r\n         */\r\n        this.Price = -1;\r\n\r\n        /**\r\n         * Quantity of the bid\r\n         * @type {Number}\r\n         * @private\r\n         */\r\n        this.Quantity = -1;\r\n\r\n        /**\r\n         * Enumerated ask type in kEvent.Ask.Type (See manual for event types)\r\n         * @type {Number}\r\n         * @public\r\n         */\r\n        this.Type =\r\n        {\r\n            New: 0,\r\n            Change: 1,\r\n            Delete: 2,\r\n            DeleteThru: 3,\r\n            DeleteFrom: 4,\r\n        };\r\n    }\r\n}\r\n\r\n/**\r\n * Public function used to return a new Pane object. (All other object creation methods are inside CEvnt classes)\r\n * @example\r\n * gEvntPane = MakePane();\r\n */\r\nexport function MakePane()\r\n{\r\n\r\n}\r\n\r\n/**\r\n * Built in function that is called when the start button is pressed in order to initialize variables.\r\n */\r\nexport function onLoad()\r\n{\r\n\r\n}\r\n\r\n/**\r\n * Built in function that is called once for each event in the symbol Feed.\r\n * @param {CEvntFeed} pFeed - A CEvntFeed object with timestamps measured in nanoseconds with 56 bit precision\r\n * @param {Number} pSequ - Number identifying the current Event's position in pFeed\r\n */\r\nexport function onEvent(pFeed, pSequ)\r\n{\r\n\r\n}\r\n\r\n/**\r\n * Built in function that is called once the script has read every previous event in the symbol Feed.\r\n */\r\nexport function onOpen()\r\n{\r\n\r\n}\r\n\r\n/**\r\n * Built in function that is called when the stop button is pressed.\r\n */\r\nexport function onStop()\r\n{\r\n\r\n}",
+    "content": "/**\r\n * Class representing all other event types. (See manual for enumerated types of events)\r\n */\r\nexport class Event {\r\n    constructor() {\r\n        /**\r\n         * Time in nanosecond with 56 bit precision\r\n         * @type {Number}\r\n         * @private\r\n         */\r\n        this.Time = 0;\r\n\r\n        /**\r\n         * Instrument ID\r\n         * @type {Number}\r\n         * @private\r\n         */\r\n        this.Instrument = 0;\r\n\r\n        /**\r\n         * Enumerated event type in kEvent.Type (See manual for event types)\r\n         * @type {Number}\r\n         * @public\r\n         */\r\n        this.Type =\r\n            {\r\n                Trade: 0,\r\n                Bid: 1,\r\n                Ask: 2,\r\n                ImpliedBid: 3,\r\n                ImpliedAsk: 4,\r\n                BookReset: 5,\r\n            };\r\n    }\r\n}\r\n\r\n/**\r\n * Class representing an event with Type trade. (Trade is not technically its own class. See manual for enumerated types of events)\r\n */\r\nexport class Trade extends Event {\r\n    constructor() {\r\n        /**\r\n         * Price of the trade\r\n         * @type {Number}\r\n         * @private\r\n         */\r\n        this.Price = -1;\r\n\r\n        /**\r\n         * Quantity of the trade\r\n         * @type {Number}\r\n         * @private\r\n         */\r\n        this.Quantity = -1;\r\n\r\n        /**\r\n         * Enumerated event type in kEvent.Type (See manual for event types)\r\n         * @type {Number}\r\n         * @public\r\n         */\r\n        this.Aggressor =\r\n            {\r\n                Buy: 0,\r\n                Sell: 1,\r\n            };\r\n    }\r\n}\r\n/**\r\n * Class representing an event with Type bid. (Bid is not technically its own class. See manual for enumerated types of events)\r\n */\r\nexport class Bid extends Event {\r\n    constructor() {\r\n        /**\r\n         * Price of the bid\r\n         * @type {Number}\r\n         * @private\r\n         */\r\n        this.Price = -1;\r\n\r\n        /**\r\n         * Quantity of the bid\r\n         * @type {Number}\r\n         * @private\r\n         */\r\n        this.Quantity = -1;\r\n\r\n        /**\r\n         * Enumerated bid type in kEvent.Bid.Type (See manual for event types)\r\n         * @type {Number}\r\n         * @public\r\n         */\r\n        this.Type =\r\n            {\r\n                New: 0,\r\n                Change: 1,\r\n                Delete: 2,\r\n                DeleteThru: 3,\r\n                DeleteFrom: 4,\r\n                Overlay: 5,\r\n                Replace: 6,\r\n            };\r\n    }\r\n}\r\n\r\n/**\r\n * Class representing an event with Type ask. (Ask is not technically its own class. See manual for enumerated types of events)\r\n */\r\nexport class Ask extends Event {\r\n    constructor() {\r\n        /**\r\n         * Price of the bid\r\n         * @type {Number}\r\n         * @private\r\n         */\r\n        this.Price = -1;\r\n\r\n        /**\r\n         * Quantity of the bid\r\n         * @type {Number}\r\n         * @private\r\n         */\r\n        this.Quantity = -1;\r\n\r\n        /**\r\n         * Enumerated ask type in kEvent.Ask.Type (See manual for event types)\r\n         * @type {Number}\r\n         * @public\r\n         */\r\n        this.Type =\r\n            {\r\n                New: 0,\r\n                Change: 1,\r\n                Delete: 2,\r\n                DeleteThru: 3,\r\n                DeleteFrom: 4,\r\n            };\r\n    }\r\n}\r\n",
     "static": true,
     "longname": "C:/Users/Blake Reset/source/repos/PlGGS/vxa-doc/src/index.js",
     "access": "public",
@@ -576,850 +576,6 @@
   },
   {
     "__docId__": 49,
-    "kind": "class",
-    "name": "CEvntPane",
-    "memberof": "src/index.js",
-    "static": true,
-    "longname": "src/index.js~CEvntPane",
-    "access": "public",
-    "export": true,
-    "importPath": "evntscript/src/index.js",
-    "importStyle": "{CEvntPane}",
-    "description": "Class representing the the pane that draws your symbol's Feed of Events.",
-    "examples": [
-      "var gEvntPane;\nfunction onLoad()\n{\n    gEvntPane = MakePane();\n    //...\n}"
-    ],
-    "lineNumber": 11,
-    "interface": false
-  },
-  {
-    "__docId__": 50,
-    "kind": "constructor",
-    "name": "constructor",
-    "memberof": "src/index.js~CEvntPane",
-    "generator": false,
-    "async": false,
-    "static": false,
-    "longname": "src/index.js~CEvntPane#constructor",
-    "access": "public",
-    "description": "Creates a CEvntPane object",
-    "lineNumber": 16
-  },
-  {
-    "__docId__": 51,
-    "kind": "member",
-    "name": "title",
-    "memberof": "src/index.js~CEvntPane",
-    "static": false,
-    "longname": "src/index.js~CEvntPane#title",
-    "access": "public",
-    "description": "Text that appears at the top of the pane",
-    "lineNumber": 23,
-    "type": {
-      "nullable": null,
-      "types": [
-        "String"
-      ],
-      "spread": false,
-      "description": null
-    }
-  },
-  {
-    "__docId__": 52,
-    "kind": "member",
-    "name": "fillStyle",
-    "memberof": "src/index.js~CEvntPane",
-    "static": false,
-    "longname": "src/index.js~CEvntPane#fillStyle",
-    "access": "public",
-    "description": "String representing the pane's background color in hexadecimal as a String (Make sure to include a # at the beginning)",
-    "lineNumber": 30,
-    "type": {
-      "nullable": null,
-      "types": [
-        "String"
-      ],
-      "spread": false,
-      "description": null
-    }
-  },
-  {
-    "__docId__": 53,
-    "kind": "method",
-    "name": "MakeFeed",
-    "memberof": "src/index.js~CEvntPane",
-    "generator": false,
-    "async": false,
-    "static": false,
-    "longname": "src/index.js~CEvntPane#MakeFeed",
-    "access": "public",
-    "description": "Makes a CEvntFeed object.",
-    "lineNumber": 38,
-    "unknown": [
-      {
-        "tagName": "@returns",
-        "tagValue": "{CEvntFeed} a calculation object."
-      }
-    ],
-    "params": [
-      {
-        "nullable": null,
-        "types": [
-          "String"
-        ],
-        "spread": false,
-        "optional": false,
-        "name": "pSymb",
-        "description": "Name of the symbol"
-      }
-    ],
-    "return": {
-      "nullable": null,
-      "types": [
-        "CEvntFeed"
-      ],
-      "spread": false,
-      "description": "a calculation object."
-    }
-  },
-  {
-    "__docId__": 54,
-    "kind": "method",
-    "name": "MakeStat",
-    "memberof": "src/index.js~CEvntPane",
-    "generator": false,
-    "async": false,
-    "static": false,
-    "longname": "src/index.js~CEvntPane#MakeStat",
-    "access": "public",
-    "description": "Makes a CEvntTrig object.",
-    "lineNumber": 48,
-    "unknown": [
-      {
-        "tagName": "@returns",
-        "tagValue": "{CEvntStat} a status object."
-      }
-    ],
-    "params": [
-      {
-        "nullable": null,
-        "types": [
-          "CEvntCalc"
-        ],
-        "spread": false,
-        "optional": false,
-        "name": "pItem",
-        "description": "Calc object for your status object to read from"
-      }
-    ],
-    "return": {
-      "nullable": null,
-      "types": [
-        "CEvntStat"
-      ],
-      "spread": false,
-      "description": "a status object."
-    }
-  },
-  {
-    "__docId__": 55,
-    "kind": "method",
-    "name": "MakeDraw",
-    "memberof": "src/index.js~CEvntPane",
-    "generator": false,
-    "async": false,
-    "static": false,
-    "longname": "src/index.js~CEvntPane#MakeDraw",
-    "access": "public",
-    "description": "Make a CEvntDraw object.",
-    "lineNumber": 58,
-    "unknown": [
-      {
-        "tagName": "@returns",
-        "tagValue": "{CEvntDraw} a draw object."
-      }
-    ],
-    "params": [
-      {
-        "nullable": null,
-        "types": [
-          "CEvntCalc"
-        ],
-        "spread": false,
-        "optional": false,
-        "name": "pItem",
-        "description": "Calc object for your draw object to read from"
-      }
-    ],
-    "return": {
-      "nullable": null,
-      "types": [
-        "CEvntDraw"
-      ],
-      "spread": false,
-      "description": "a draw object."
-    }
-  },
-  {
-    "__docId__": 56,
-    "kind": "method",
-    "name": "PlayWave",
-    "memberof": "src/index.js~CEvntPane",
-    "generator": false,
-    "async": false,
-    "static": false,
-    "longname": "src/index.js~CEvntPane#PlayWave",
-    "access": "public",
-    "description": "Plays a selected sound from a set of available pre-existing files. (See manual for enumerated sound options)",
-    "lineNumber": 67,
-    "params": [
-      {
-        "nullable": null,
-        "types": [
-          "Number"
-        ],
-        "spread": false,
-        "optional": false,
-        "name": "pWave",
-        "description": "Enumerated wave files in CEvntPane.Wave (See manual for enumerated sound options)"
-      }
-    ],
-    "return": null
-  },
-  {
-    "__docId__": 57,
-    "kind": "class",
-    "name": "CEvntFeed",
-    "memberof": "src/index.js",
-    "static": true,
-    "longname": "src/index.js~CEvntFeed",
-    "access": "public",
-    "export": true,
-    "importPath": "evntscript/src/index.js",
-    "importStyle": "{CEvntFeed}",
-    "description": "Class representing an event feed. A CEvntFeed contains every single Event within a CEvntPane's provided symbol.",
-    "lineNumber": 76,
-    "interface": false
-  },
-  {
-    "__docId__": 58,
-    "kind": "method",
-    "name": "MakeCalc",
-    "memberof": "src/index.js~CEvntFeed",
-    "generator": false,
-    "async": false,
-    "static": false,
-    "longname": "src/index.js~CEvntFeed#MakeCalc",
-    "access": "public",
-    "description": "Makes a CEvntCalc object.",
-    "lineNumber": 82,
-    "unknown": [
-      {
-        "tagName": "@returns",
-        "tagValue": "{CEvntCalc} a calculation object."
-      }
-    ],
-    "return": {
-      "nullable": null,
-      "types": [
-        "CEvntCalc"
-      ],
-      "spread": false,
-      "description": "a calculation object."
-    },
-    "params": []
-  },
-  {
-    "__docId__": 59,
-    "kind": "method",
-    "name": "MakeTrig",
-    "memberof": "src/index.js~CEvntFeed",
-    "generator": false,
-    "async": false,
-    "static": false,
-    "longname": "src/index.js~CEvntFeed#MakeTrig",
-    "access": "public",
-    "description": "Makes a CEvntTrig object.",
-    "lineNumber": 91,
-    "unknown": [
-      {
-        "tagName": "@returns",
-        "tagValue": "{CEvntTrig} a trigger object."
-      }
-    ],
-    "return": {
-      "nullable": null,
-      "types": [
-        "CEvntTrig"
-      ],
-      "spread": false,
-      "description": "a trigger object."
-    },
-    "params": []
-  },
-  {
-    "__docId__": 60,
-    "kind": "method",
-    "name": "MakeFill",
-    "memberof": "src/index.js~CEvntFeed",
-    "generator": false,
-    "async": false,
-    "static": false,
-    "longname": "src/index.js~CEvntFeed#MakeFill",
-    "access": "public",
-    "description": "Makes a CEvntFill object.",
-    "lineNumber": 100,
-    "unknown": [
-      {
-        "tagName": "@returns",
-        "tagValue": "{CEvntFill} a trigger object."
-      }
-    ],
-    "return": {
-      "nullable": null,
-      "types": [
-        "CEvntFill"
-      ],
-      "spread": false,
-      "description": "a trigger object."
-    },
-    "params": []
-  },
-  {
-    "__docId__": 61,
-    "kind": "method",
-    "name": "FeedFill",
-    "memberof": "src/index.js~CEvntFeed",
-    "generator": false,
-    "async": false,
-    "static": false,
-    "longname": "src/index.js~CEvntFeed#FeedFill",
-    "access": "public",
-    "description": "Applies the attributes of a fill to the Event at the given position, pSequ.",
-    "lineNumber": 110,
-    "unknown": [
-      {
-        "tagName": "@returns",
-        "tagValue": "{CEvntFill} a fill object."
-      }
-    ],
-    "params": [
-      {
-        "nullable": null,
-        "types": [
-          "Number"
-        ],
-        "spread": false,
-        "optional": false,
-        "name": "pSequ",
-        "description": "Number identifying the position of the Event to read"
-      },
-      {
-        "nullable": null,
-        "types": [
-          "CEvntFill"
-        ],
-        "spread": false,
-        "optional": false,
-        "name": "pFill",
-        "description": "CEvntFill object used to apply attributes to the Event"
-      }
-    ],
-    "return": {
-      "nullable": null,
-      "types": [
-        "CEvntFill"
-      ],
-      "spread": false,
-      "description": "a fill object."
-    }
-  },
-  {
-    "__docId__": 62,
-    "kind": "method",
-    "name": "FeedRead",
-    "memberof": "src/index.js~CEvntFeed",
-    "generator": false,
-    "async": false,
-    "static": false,
-    "longname": "src/index.js~CEvntFeed#FeedRead",
-    "access": "public",
-    "description": "Reads an Event from position pSequ.",
-    "lineNumber": 119,
-    "unknown": [
-      {
-        "tagName": "@returns",
-        "tagValue": "{Event} an event object."
-      }
-    ],
-    "params": [
-      {
-        "nullable": null,
-        "types": [
-          "Number"
-        ],
-        "spread": false,
-        "optional": false,
-        "name": "pSequ",
-        "description": "Number identifying the position of the Event to read"
-      }
-    ],
-    "return": {
-      "nullable": null,
-      "types": [
-        "Event"
-      ],
-      "spread": false,
-      "description": "an event object."
-    }
-  },
-  {
-    "__docId__": 63,
-    "kind": "method",
-    "name": "FeedStep",
-    "memberof": "src/index.js~CEvntFeed",
-    "generator": false,
-    "async": false,
-    "static": false,
-    "longname": "src/index.js~CEvntFeed#FeedStep",
-    "access": "public",
-    "description": "Assigns a step at the given position, pSequ.",
-    "lineNumber": 129,
-    "params": [
-      {
-        "nullable": null,
-        "types": [
-          "Number"
-        ],
-        "spread": false,
-        "optional": false,
-        "name": "pSequ",
-        "description": "Event position to set step"
-      },
-      {
-        "nullable": null,
-        "types": [
-          "Number"
-        ],
-        "spread": false,
-        "optional": false,
-        "name": "pStep",
-        "description": "Enumerated CEvntFeed FeedStep values in CEvntFeed.FeedStep (See manual for enumerated constants)"
-      }
-    ],
-    "return": null
-  },
-  {
-    "__docId__": 64,
-    "kind": "method",
-    "name": "FeedTrig",
-    "memberof": "src/index.js~CEvntFeed",
-    "generator": false,
-    "async": false,
-    "static": false,
-    "longname": "src/index.js~CEvntFeed#FeedTrig",
-    "access": "public",
-    "description": "Assign a trigger at the given position, pSequ.",
-    "lineNumber": 139,
-    "params": [
-      {
-        "nullable": null,
-        "types": [
-          "Number"
-        ],
-        "spread": false,
-        "optional": false,
-        "name": "pSequ",
-        "description": "Event position to set step"
-      },
-      {
-        "nullable": null,
-        "types": [
-          "Number"
-        ],
-        "spread": false,
-        "optional": false,
-        "name": "pTrig",
-        "description": "Trigger you want to initialize"
-      }
-    ],
-    "return": null
-  },
-  {
-    "__docId__": 65,
-    "kind": "class",
-    "name": "CEvntStat",
-    "memberof": "src/index.js",
-    "static": true,
-    "longname": "src/index.js~CEvntStat",
-    "access": "public",
-    "export": true,
-    "importPath": "evntscript/src/index.js",
-    "importStyle": "{CEvntStat}",
-    "description": "Class representing a status indicator that displays the status of a stored variable in the top left of your Pane.",
-    "lineNumber": 148,
-    "interface": false
-  },
-  {
-    "__docId__": 66,
-    "kind": "constructor",
-    "name": "constructor",
-    "memberof": "src/index.js~CEvntStat",
-    "generator": false,
-    "async": false,
-    "static": false,
-    "longname": "src/index.js~CEvntStat#constructor",
-    "access": "public",
-    "description": "Creates an CEvntStat object.",
-    "lineNumber": 153
-  },
-  {
-    "__docId__": 67,
-    "kind": "member",
-    "name": "textStyle",
-    "memberof": "src/index.js~CEvntStat",
-    "static": false,
-    "longname": "src/index.js~CEvntStat#textStyle",
-    "access": "public",
-    "description": "Text color in hexadecimal as a String",
-    "lineNumber": 160,
-    "type": {
-      "nullable": null,
-      "types": [
-        "String"
-      ],
-      "spread": false,
-      "description": null
-    }
-  },
-  {
-    "__docId__": 68,
-    "kind": "member",
-    "name": "title",
-    "memberof": "src/index.js~CEvntStat",
-    "static": false,
-    "longname": "src/index.js~CEvntStat#title",
-    "access": "public",
-    "description": "Text corresponding to what the status is tracking",
-    "lineNumber": 167,
-    "type": {
-      "nullable": null,
-      "types": [
-        "String"
-      ],
-      "spread": false,
-      "description": null
-    }
-  },
-  {
-    "__docId__": 69,
-    "kind": "class",
-    "name": "CEvntDraw",
-    "memberof": "src/index.js",
-    "static": true,
-    "longname": "src/index.js~CEvntDraw",
-    "access": "public",
-    "export": true,
-    "importPath": "evntscript/src/index.js",
-    "importStyle": "{CEvntDraw}",
-    "description": "Class that renders Events from a Feed object or lines between calculated values from a Calc object.",
-    "lineNumber": 174,
-    "interface": false
-  },
-  {
-    "__docId__": 70,
-    "kind": "constructor",
-    "name": "constructor",
-    "memberof": "src/index.js~CEvntDraw",
-    "generator": false,
-    "async": false,
-    "static": false,
-    "longname": "src/index.js~CEvntDraw#constructor",
-    "access": "public",
-    "description": "Creates an CEvntDraw object.",
-    "lineNumber": 179
-  },
-  {
-    "__docId__": 71,
-    "kind": "member",
-    "name": "lineWidth",
-    "memberof": "src/index.js~CEvntDraw",
-    "static": false,
-    "longname": "src/index.js~CEvntDraw#lineWidth",
-    "access": "public",
-    "description": "Stroke width in pixels",
-    "lineNumber": 186,
-    "type": {
-      "nullable": null,
-      "types": [
-        "Number"
-      ],
-      "spread": false,
-      "description": null
-    }
-  },
-  {
-    "__docId__": 72,
-    "kind": "member",
-    "name": "strokeStyle",
-    "memberof": "src/index.js~CEvntDraw",
-    "static": false,
-    "longname": "src/index.js~CEvntDraw#strokeStyle",
-    "access": "public",
-    "description": "Stroke color in hexadecimal as a String",
-    "lineNumber": 193,
-    "type": {
-      "nullable": null,
-      "types": [
-        "String"
-      ],
-      "spread": false,
-      "description": null
-    }
-  },
-  {
-    "__docId__": 73,
-    "kind": "class",
-    "name": "CEvntCalc",
-    "memberof": "src/index.js",
-    "static": true,
-    "longname": "src/index.js~CEvntCalc",
-    "access": "public",
-    "export": true,
-    "importPath": "evntscript/src/index.js",
-    "importStyle": "{CEvntCalc}",
-    "description": "Class that stores values at specfic locations in your Pane.",
-    "lineNumber": 200,
-    "interface": false
-  },
-  {
-    "__docId__": 74,
-    "kind": "method",
-    "name": "CalcRead",
-    "memberof": "src/index.js~CEvntCalc",
-    "generator": false,
-    "async": false,
-    "static": false,
-    "longname": "src/index.js~CEvntCalc#CalcRead",
-    "access": "public",
-    "description": "Reads a calculated value at position pSequ.",
-    "lineNumber": 207,
-    "unknown": [
-      {
-        "tagName": "@returns",
-        "tagValue": "{Number} a calculated data."
-      }
-    ],
-    "params": [
-      {
-        "nullable": null,
-        "types": [
-          "Number"
-        ],
-        "spread": false,
-        "optional": false,
-        "name": "pSequ",
-        "description": "Event position to get data"
-      }
-    ],
-    "return": {
-      "nullable": null,
-      "types": [
-        "Number"
-      ],
-      "spread": false,
-      "description": "a calculated data."
-    }
-  },
-  {
-    "__docId__": 75,
-    "kind": "method",
-    "name": "CalcSave",
-    "memberof": "src/index.js~CEvntCalc",
-    "generator": false,
-    "async": false,
-    "static": false,
-    "longname": "src/index.js~CEvntCalc#CalcSave",
-    "access": "public",
-    "description": "Saves a calculated value at position pSequ.",
-    "lineNumber": 217,
-    "params": [
-      {
-        "nullable": null,
-        "types": [
-          "Number"
-        ],
-        "spread": false,
-        "optional": false,
-        "name": "pSequ",
-        "description": "Event position to set data"
-      },
-      {
-        "nullable": null,
-        "types": [
-          "String"
-        ],
-        "spread": false,
-        "optional": false,
-        "name": "pData",
-        "description": "Data to store"
-      }
-    ],
-    "return": null
-  },
-  {
-    "__docId__": 76,
-    "kind": "class",
-    "name": "CEvntTrig",
-    "memberof": "src/index.js",
-    "static": true,
-    "longname": "src/index.js~CEvntTrig",
-    "access": "public",
-    "export": true,
-    "importPath": "evntscript/src/index.js",
-    "importStyle": "{CEvntTrig}",
-    "description": "Class representing an event trigger that notifies the user when something important occurs.",
-    "lineNumber": 226,
-    "interface": false
-  },
-  {
-    "__docId__": 77,
-    "kind": "constructor",
-    "name": "constructor",
-    "memberof": "src/index.js~CEvntTrig",
-    "generator": false,
-    "async": false,
-    "static": false,
-    "longname": "src/index.js~CEvntTrig#constructor",
-    "access": "public",
-    "description": "Creates an CEvntStat object.",
-    "lineNumber": 231
-  },
-  {
-    "__docId__": 78,
-    "kind": "member",
-    "name": "fillStyle",
-    "memberof": "src/index.js~CEvntTrig",
-    "static": false,
-    "longname": "src/index.js~CEvntTrig#fillStyle",
-    "access": "public",
-    "description": "Text color in hexadecimal as a String",
-    "lineNumber": 238,
-    "type": {
-      "nullable": null,
-      "types": [
-        "String"
-      ],
-      "spread": false,
-      "description": null
-    }
-  },
-  {
-    "__docId__": 79,
-    "kind": "member",
-    "name": "title",
-    "memberof": "src/index.js~CEvntTrig",
-    "static": false,
-    "longname": "src/index.js~CEvntTrig#title",
-    "access": "public",
-    "description": "Text corresponding to the trigger's purpose",
-    "lineNumber": 245,
-    "type": {
-      "nullable": null,
-      "types": [
-        "String"
-      ],
-      "spread": false,
-      "description": null
-    }
-  },
-  {
-    "__docId__": 80,
-    "kind": "member",
-    "name": "duration",
-    "memberof": "src/index.js~CEvntTrig",
-    "static": false,
-    "longname": "src/index.js~CEvntTrig#duration",
-    "access": "public",
-    "description": "Length of time to display the trigger on screen in milliseconds",
-    "lineNumber": 252,
-    "type": {
-      "nullable": null,
-      "types": [
-        "Number"
-      ],
-      "spread": false,
-      "description": null
-    }
-  },
-  {
-    "__docId__": 81,
-    "kind": "class",
-    "name": "CEvntFill",
-    "memberof": "src/index.js",
-    "static": true,
-    "longname": "src/index.js~CEvntFill",
-    "access": "public",
-    "export": true,
-    "importPath": "evntscript/src/index.js",
-    "importStyle": "{CEvntFill}",
-    "description": "Class representing a custom color scheme that may be used to apply its textStyle and fillStyle fields to events. (Users can make up to 4 CEvntFill objects per Pane)",
-    "lineNumber": 259,
-    "interface": false
-  },
-  {
-    "__docId__": 82,
-    "kind": "constructor",
-    "name": "constructor",
-    "memberof": "src/index.js~CEvntFill",
-    "generator": false,
-    "async": false,
-    "static": false,
-    "longname": "src/index.js~CEvntFill#constructor",
-    "access": "public",
-    "description": "Creates an CEvntStat object.",
-    "lineNumber": 263
-  },
-  {
-    "__docId__": 83,
-    "kind": "member",
-    "name": "textStyle",
-    "memberof": "src/index.js~CEvntFill",
-    "static": false,
-    "longname": "src/index.js~CEvntFill#textStyle",
-    "access": "public",
-    "description": "Text fill color in hexadecimal as a String",
-    "lineNumber": 269,
-    "type": {
-      "nullable": null,
-      "types": [
-        "String"
-      ],
-      "spread": false,
-      "description": null
-    }
-  },
-  {
-    "__docId__": 84,
-    "kind": "member",
-    "name": "fillStyle",
-    "memberof": "src/index.js~CEvntFill",
-    "static": false,
-    "longname": "src/index.js~CEvntFill#fillStyle",
-    "access": "public",
-    "description": "Polyogn fill color in hexadecimal as a String",
-    "lineNumber": 276,
-    "type": {
-      "nullable": null,
-      "types": [
-        "String"
-      ],
-      "spread": false,
-      "description": null
-    }
-  },
-  {
-    "__docId__": 85,
     "kind": "class",
     "name": "Event",
     "memberof": "src/index.js",
@@ -1430,11 +586,11 @@
     "importPath": "evntscript/src/index.js",
     "importStyle": "{Event}",
     "description": "Class representing all other event types. (See manual for enumerated types of events)",
-    "lineNumber": 283,
+    "lineNumber": 4,
     "interface": false
   },
   {
-    "__docId__": 86,
+    "__docId__": 50,
     "kind": "constructor",
     "name": "constructor",
     "memberof": "src/index.js~Event",
@@ -1444,11 +600,11 @@
     "longname": "src/index.js~Event#constructor",
     "access": "public",
     "description": null,
-    "lineNumber": 285,
+    "lineNumber": 5,
     "undocument": true
   },
   {
-    "__docId__": 87,
+    "__docId__": 51,
     "kind": "member",
     "name": "Time",
     "memberof": "src/index.js~Event",
@@ -1456,7 +612,7 @@
     "longname": "src/index.js~Event#Time",
     "access": "private",
     "description": "Time in nanosecond with 56 bit precision",
-    "lineNumber": 292,
+    "lineNumber": 11,
     "type": {
       "nullable": null,
       "types": [
@@ -1467,7 +623,7 @@
     }
   },
   {
-    "__docId__": 88,
+    "__docId__": 52,
     "kind": "member",
     "name": "Instrument",
     "memberof": "src/index.js~Event",
@@ -1475,7 +631,7 @@
     "longname": "src/index.js~Event#Instrument",
     "access": "private",
     "description": "Instrument ID",
-    "lineNumber": 299,
+    "lineNumber": 18,
     "type": {
       "nullable": null,
       "types": [
@@ -1486,7 +642,7 @@
     }
   },
   {
-    "__docId__": 89,
+    "__docId__": 53,
     "kind": "member",
     "name": "Type",
     "memberof": "src/index.js~Event",
@@ -1494,7 +650,7 @@
     "longname": "src/index.js~Event#Type",
     "access": "public",
     "description": "Enumerated event type in kEvent.Type (See manual for event types)",
-    "lineNumber": 306,
+    "lineNumber": 25,
     "type": {
       "nullable": null,
       "types": [
@@ -1505,7 +661,7 @@
     }
   },
   {
-    "__docId__": 90,
+    "__docId__": 54,
     "kind": "class",
     "name": "Trade",
     "memberof": "src/index.js",
@@ -1516,14 +672,14 @@
     "importPath": "evntscript/src/index.js",
     "importStyle": "{Trade}",
     "description": "Class representing an event with Type trade. (Trade is not technically its own class. See manual for enumerated types of events)",
-    "lineNumber": 321,
+    "lineNumber": 40,
     "interface": false,
     "extends": [
       "Event"
     ]
   },
   {
-    "__docId__": 91,
+    "__docId__": 55,
     "kind": "constructor",
     "name": "constructor",
     "memberof": "src/index.js~Trade",
@@ -1533,11 +689,11 @@
     "longname": "src/index.js~Trade#constructor",
     "access": "public",
     "description": null,
-    "lineNumber": 323,
+    "lineNumber": 41,
     "undocument": true
   },
   {
-    "__docId__": 92,
+    "__docId__": 56,
     "kind": "member",
     "name": "Price",
     "memberof": "src/index.js~Trade",
@@ -1545,7 +701,716 @@
     "longname": "src/index.js~Trade#Price",
     "access": "private",
     "description": "Price of the trade",
-    "lineNumber": 330,
+    "lineNumber": 47,
+    "type": {
+      "nullable": null,
+      "types": [
+        "Number"
+      ],
+      "spread": false,
+      "description": null
+    }
+  },
+  {
+    "__docId__": 57,
+    "kind": "member",
+    "name": "Quantity",
+    "memberof": "src/index.js~Trade",
+    "static": false,
+    "longname": "src/index.js~Trade#Quantity",
+    "access": "private",
+    "description": "Quantity of the trade",
+    "lineNumber": 54,
+    "type": {
+      "nullable": null,
+      "types": [
+        "Number"
+      ],
+      "spread": false,
+      "description": null
+    }
+  },
+  {
+    "__docId__": 58,
+    "kind": "member",
+    "name": "Aggressor",
+    "memberof": "src/index.js~Trade",
+    "static": false,
+    "longname": "src/index.js~Trade#Aggressor",
+    "access": "public",
+    "description": "Enumerated event type in kEvent.Type (See manual for event types)",
+    "lineNumber": 61,
+    "type": {
+      "nullable": null,
+      "types": [
+        "Number"
+      ],
+      "spread": false,
+      "description": null
+    }
+  },
+  {
+    "__docId__": 59,
+    "kind": "class",
+    "name": "Bid",
+    "memberof": "src/index.js",
+    "static": true,
+    "longname": "src/index.js~Bid",
+    "access": "public",
+    "export": true,
+    "importPath": "evntscript/src/index.js",
+    "importStyle": "{Bid}",
+    "description": "Class representing an event with Type bid. (Bid is not technically its own class. See manual for enumerated types of events)",
+    "lineNumber": 71,
+    "interface": false,
+    "extends": [
+      "Event"
+    ]
+  },
+  {
+    "__docId__": 60,
+    "kind": "constructor",
+    "name": "constructor",
+    "memberof": "src/index.js~Bid",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/index.js~Bid#constructor",
+    "access": "public",
+    "description": null,
+    "lineNumber": 72,
+    "undocument": true
+  },
+  {
+    "__docId__": 61,
+    "kind": "member",
+    "name": "Price",
+    "memberof": "src/index.js~Bid",
+    "static": false,
+    "longname": "src/index.js~Bid#Price",
+    "access": "private",
+    "description": "Price of the bid",
+    "lineNumber": 78,
+    "type": {
+      "nullable": null,
+      "types": [
+        "Number"
+      ],
+      "spread": false,
+      "description": null
+    }
+  },
+  {
+    "__docId__": 62,
+    "kind": "member",
+    "name": "Quantity",
+    "memberof": "src/index.js~Bid",
+    "static": false,
+    "longname": "src/index.js~Bid#Quantity",
+    "access": "private",
+    "description": "Quantity of the bid",
+    "lineNumber": 85,
+    "type": {
+      "nullable": null,
+      "types": [
+        "Number"
+      ],
+      "spread": false,
+      "description": null
+    }
+  },
+  {
+    "__docId__": 63,
+    "kind": "member",
+    "name": "Type",
+    "memberof": "src/index.js~Bid",
+    "static": false,
+    "longname": "src/index.js~Bid#Type",
+    "access": "public",
+    "description": "Enumerated bid type in kEvent.Bid.Type (See manual for event types)",
+    "lineNumber": 92,
+    "type": {
+      "nullable": null,
+      "types": [
+        "Number"
+      ],
+      "spread": false,
+      "description": null
+    }
+  },
+  {
+    "__docId__": 64,
+    "kind": "class",
+    "name": "Ask",
+    "memberof": "src/index.js",
+    "static": true,
+    "longname": "src/index.js~Ask",
+    "access": "public",
+    "export": true,
+    "importPath": "evntscript/src/index.js",
+    "importStyle": "{Ask}",
+    "description": "Class representing an event with Type ask. (Ask is not technically its own class. See manual for enumerated types of events)",
+    "lineNumber": 108,
+    "interface": false,
+    "extends": [
+      "Event"
+    ]
+  },
+  {
+    "__docId__": 65,
+    "kind": "constructor",
+    "name": "constructor",
+    "memberof": "src/index.js~Ask",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/index.js~Ask#constructor",
+    "access": "public",
+    "description": null,
+    "lineNumber": 109,
+    "undocument": true
+  },
+  {
+    "__docId__": 66,
+    "kind": "member",
+    "name": "Price",
+    "memberof": "src/index.js~Ask",
+    "static": false,
+    "longname": "src/index.js~Ask#Price",
+    "access": "private",
+    "description": "Price of the bid",
+    "lineNumber": 115,
+    "type": {
+      "nullable": null,
+      "types": [
+        "Number"
+      ],
+      "spread": false,
+      "description": null
+    }
+  },
+  {
+    "__docId__": 67,
+    "kind": "member",
+    "name": "Quantity",
+    "memberof": "src/index.js~Ask",
+    "static": false,
+    "longname": "src/index.js~Ask#Quantity",
+    "access": "private",
+    "description": "Quantity of the bid",
+    "lineNumber": 122,
+    "type": {
+      "nullable": null,
+      "types": [
+        "Number"
+      ],
+      "spread": false,
+      "description": null
+    }
+  },
+  {
+    "__docId__": 68,
+    "kind": "member",
+    "name": "Type",
+    "memberof": "src/index.js~Ask",
+    "static": false,
+    "longname": "src/index.js~Ask#Type",
+    "access": "public",
+    "description": "Enumerated ask type in kEvent.Ask.Type (See manual for event types)",
+    "lineNumber": 129,
+    "type": {
+      "nullable": null,
+      "types": [
+        "Number"
+      ],
+      "spread": false,
+      "description": null
+    }
+  },
+  {
+    "__docId__": 69,
+    "kind": "file",
+    "name": "src/v9.js",
+    "content": "const qEditSymb = 2001;\r\nconst littleEndian = true;\r\n\r\n/**\r\n * Class representing the v9 backend\r\n * @example\r\n * <!doctype html>\r\n * <html>\r\n * <head>\r\n *   <script src=\"../_vxaapi-1.0.0/v9.js\"></script>\r\n *   <script>\r\n * \r\n *     class MyFeed extends v9.feed {\r\n *       onOpen(pMeta) {\r\n *       }\r\n *\r\n *       onLoad () {\r\n *       }\r\n *\r\n *       onStop () {\r\n *       }\r\n *\r\n *       onRender () {\r\n *       }\r\n * \r\n *       onEvent(pSymbol, pEvent, pRealTime) {\r\n *       }\r\n *     }\r\n *\r\n *     let\tfeed = new MyFeed(new v9.edit().symbol);\r\n *   </script>\r\n * </head>\r\n * <style>\r\n *   html, body, #container {\r\n *     width: 100%;\r\n *     height: 100%;\r\n *     margin: 0;\r\n *     padding: 0;\r\n *   }\r\n * </style>\r\n * <body>\r\n *   <div id=\"container\"></div>\r\n * </body>\r\n * </html>\r\n * \r\n */\r\n\r\n/*\r\nvar v9 = {\r\n\r\n    PRICE_NULL_32: 2147483647,\r\n    PRICE_NULL_64: 9223372036854775807n,\r\n    sGroupSettleID: 4294967293,\r\n\r\n    Aggressor:\r\n    {\r\n        NoAggressor: 0,\r\n        Buy: 1,\r\n        Sell: 2\r\n    },\r\n\r\n    HaltReason:\r\n    {\r\n        NotSet: 255,\r\n        GroupSchedule: 0,\r\n        SurveillanceIntervention: 1,\r\n        MarketEvent: 2,\r\n        InstrumentActivation: 3,\r\n        InstrumentExpiration: 4,\r\n        Unknown: 5,\r\n        RecoveryInProcess: 6\r\n    },\r\n\r\n    SecurityType:\r\n    {\r\n        NotSet: 0,\r\n        TradingHalt: 2,\r\n        Close: 4,\r\n        NewPriceIndication: 15,\r\n        ReadyToTrade: 17,\r\n        NotAvailableForTrading: 18,\r\n        UnknownorInvalid: 20,\r\n        PreOpen: 21,\r\n        PreCross: 24,\r\n        Cross: 25,\r\n        PostClose: 26,\r\n        NoChange: 103,\r\n        PreClos: 150,\r\n        Restricted: 200,\r\n        Freeze: 201\r\n    },\r\n\r\n    SecurityEvent:\r\n    {\r\n        NoEvent: 0,\r\n        NoCancel: 1,\r\n        ResetStatistics: 4,\r\n        ImpliedMatchingON: 5,\r\n        ImpliedMatchingOFF: 6\r\n    },\r\n\r\n    BookType:\r\n    {\r\n        NotSet: 85,\r\n        Bid: 66,\r\n        Ask: 83,\r\n        ImpliedBid: 98,\r\n        ImpliedAsk: 115,\r\n        BookReset: 82\r\n    },\r\n\r\n    DailyStatisticsType:\r\n    {\r\n        SettlementPrice: 54,\r\n        ClearedVolume: 66,\r\n        OpenInterest: 67,\r\n        FixingPrice: 87\r\n    },\r\n\r\n    BookAction:\r\n    {\r\n        NotSet: 255,\r\n        New: 0,\r\n        Change: 1,\r\n        Delete: 2,\r\n        DeleteThru: 3,\r\n        DeleteFrom: 4,\r\n        Overlay: 5,\r\n        Replace: 6\r\n    },\r\n\r\n    SessionStatisticsType:\r\n    {\r\n        NotSet: 127,\r\n        OpenPrice: 0,\r\n        HighTrade: 1,\r\n        LowTrade: 2,\r\n        LastTrade: 3,\r\n        HighestBid: 4,\r\n        LowestAsk: 5,\r\n        ClosePrice: 6\r\n    },\r\n\r\n\r\n    StateType:\r\n    {\r\n        NotSet: 255,\r\n        DailyOpenPrice: 0,\r\n        IndicativeOpeningPrice: 5,\r\n        DailyClosePrice: 10\r\n    },\r\n\r\n    PutOrCall:\r\n    {\r\n        NotSet: 255,\r\n        Put: 0,\r\n        Call: 1\r\n    },\r\n\r\n    SettleType:\r\n    {\r\n        Final: 1,\r\n        Actual: 2,\r\n        Rounded: 4,\r\n        Intraday: 8,\r\n        ReservedBits: 16,\r\n        NullValue: 128\r\n    },\r\n\r\n    TransactionType:\r\n    {\r\n        NotSet: 255,\r\n        TransactionStart: 0,\r\n        TransactionEnd: 1\r\n    },\r\n\r\n    EventIndicator:\r\n    {\r\n        NotSet: 0,\r\n        LastOfType: 1,\r\n        EndOfEvent: 128\r\n    },\r\n\r\n    UnionID:\r\n    {\r\n        NotSet: 255,\r\n        NotMapped: 250,\r\n        TradeSummary: 0,\r\n        TradeMatch: 1,\r\n        VolumeUpdate: 2,\r\n        BookLevel: 3,\r\n        OrderBook: 4,\r\n        SecurityStatus: 5,\r\n        DailyStatistics: 6,\r\n        SessionStatistics: 7,\r\n        LimitsBanding: 8,\r\n        ChannelReset: 9,\r\n        TransactionMarker: 10,\r\n        Test: 11,\r\n        ClearingPrice: 12\r\n    }\r\n};\r\n*/\r\n\r\nv9.edit = class {\r\n    constructor() {\r\n    }\r\n\r\n    set symbol(pSymb) {\r\n        return gHome._pagesave(gUniq, qEditSymb, pSymb);\r\n    }\r\n\r\n    get symbol() {\r\n        return gHome._pageread(gUniq, qEditSymb);\r\n    }\r\n}\r\n\r\nv9.lineChart = class {\r\n    constructor(pID) {\r\n        this.fLineEnum = gHome.MakeLine(gUniq, (pID) ? document.getElementById(pID) : null);\r\n    }\r\n\r\n    linePush(pItem, pRate, pTime) {\r\n        gHome.LinePush(gUniq, pItem.fCalcEnum, pRate, pTime);\r\n    }\r\n}\r\n\r\nv9.cubeChart = class {\r\n    constructor(pID) {\r\n        this.fCubeEnum = gHome.MakeCube(gUniq, (pID) ? document.getElementById(pID) : null);\r\n    }\r\n\r\n    cubePlus(pItem, pData, pSize) {\r\n        gHome.CubePlus(gUniq, pItem, pData, pSize);\r\n    }\r\n\r\n    cubeDele(pItem, pData) {\r\n        gHome.CubeDele(gUniq, pItem, pData);\r\n    }\r\n\r\n    cubeSave(pItem, pData, pSize) {\r\n        gHome.CubeSave(gUniq, pItem, pData, pSize);\r\n    }\r\n\r\n    cubeRead(pItem, pData) {\r\n        gHome.CubeRead(gUniq, pItem, pData);\r\n    }\r\n\r\n    cubeFree(pItem) {\r\n        gHome.CubeFree(gUniq, pItem);\r\n    }\r\n\r\n    cubePush(pItem, pSave) {\r\n        gHome.CubePush(gUniq, pItem, pSave);\r\n    }\r\n\r\n}\r\n\r\nv9.lineItem = class {\r\n    constructor(pPane) {\r\n        try {\r\n            this.fCalcEnum = gHome.MakeCalc(gUniq, this);\r\n        }\r\n        catch (e) {\r\n            gHome.PageErro(gUniq, \"MakeCalc\", e);\r\n        }\r\n    }\r\n\r\n    /**\r\n     * Stroke width in pixels\r\n     * @type {Number}\r\n     * @public\r\n     */\r\n    set lineWidth(pData) {\r\n        try {\r\n            this._lineWidth = pData;\r\n            gHome.Calc_lineWidth(gUniq, this.fCalcEnum, pData);\r\n        }\r\n        catch (e) {\r\n            gHome.PageErro(gUniq, \"lineWidth\", e);\r\n        }\r\n    }\r\n\r\n    /**\r\n     * Stroke color in hexadecimal as a String\r\n     * @type {String}\r\n     * @public\r\n     */\r\n    set strokeStyle(pData) {\r\n        try {\r\n            this._strokeStyle = pData;\r\n            gHome.Calc_strokeStyle(gUniq, this.fCalcEnum, pData);\r\n        }\r\n        catch (e) {\r\n            gHome.PageErroo(gUniq, \"strokeStyle\", e);\r\n        }\r\n    }\r\n\r\n    /**\r\n     * @todo figure out what this does\r\n     * @type {String}\r\n     * @public\r\n     */\r\n    set format(pData) {\r\n        try {\r\n            this._format = pData;\r\n            gHome.Calc_format(gUniq, this.fCalcEnum, pData);\r\n        }\r\n        catch (e) {\r\n            gHome.PageErro(gUniq, \"format\", e);\r\n        }\r\n    }\r\n\r\n    /**\r\n     * Text color in hexadecimal as a String\r\n     * @type {String}\r\n     * @public\r\n     */\r\n    set textStyle(pData) {\r\n        try {\r\n            this._textStyle = pData;\r\n            gHome.Calc_textStyle(gUniq, this.fCalcEnum, pData);\r\n        }\r\n        catch (e) {\r\n            gHome.PageErro(gUniq, \"textStyle\", e);\r\n        }\r\n    }\r\n\r\n    /**\r\n     * @todo figure out what this does\r\n     * @type {String}\r\n     * @public\r\n     */\r\n    set bodyStyle(pData) {\r\n        try {\r\n            this._bodyStyle = pData;\r\n            gHome.Calc_bodyStyle(gUniq, this.fCalcEnum, pData);\r\n        }\r\n        catch (e) {\r\n            gHome.PageErro(gUniq, \"textStyle\", e);\r\n        }\r\n    }\r\n\r\n    /**\r\n     * Text corresponding to current line price\r\n     * @type {String}\r\n     * @public\r\n     */\r\n    set title(pData) {\r\n        try {\r\n            this._title = pData;\r\n            gHome.Calc_title(gUniq, this.fCalcEnum, pData);\r\n        }\r\n        catch (e) {\r\n            gHome.PageErro(gUniq, \"title\", e);\r\n        }\r\n    }\r\n\r\n    /**\r\n     * @todo figure out what this does\r\n     * @type {String}\r\n     * @public\r\n     */\r\n    set name(pData) {\r\n        try {\r\n            this._name = pData;\r\n            gHome.Calc_name(gUniq, this.fCalcEnum, pData);\r\n        }\r\n        catch (e) {\r\n            gHome.PageErro(gUniq, \"name\", e);\r\n        }\r\n    }\r\n\r\n    /**\r\n     * Stroke width in pixels\r\n     * @type {Number}\r\n     * @public\r\n     */\r\n    get lineWidth() {\r\n        return this._lineWidth;\r\n    }\r\n\r\n    /**\r\n     * Stroke color in hexadecimal as a String\r\n     * @type {String}\r\n     * @public\r\n     */\r\n    get strokeStyle() {\r\n        return this._strokeStyle;\r\n    }\r\n\r\n    /**\r\n     * Text color in hexadecimal as a String\r\n     * @type {String}\r\n     * @public\r\n     */\r\n    get textStyle() {\r\n        return this._textStyle;\r\n    }\r\n\r\n    /**\r\n     * @todo figure out what this does\r\n     * @type {String}\r\n     * @readonly\r\n     */\r\n    get eventStyle() {\r\n        return this._eventStyle;\r\n    }\r\n\r\n    /**\r\n     * Text corresponding to current line price\r\n     * @type {String}\r\n     * @public\r\n     */\r\n    get title() {\r\n        return this._title;\r\n    }\r\n\r\n    /**\r\n     * @todo figure out what this does\r\n     * @type {String}\r\n     * @public\r\n     */\r\n    get format() {\r\n        return this._format;\r\n    }\r\n}\r\n\r\nv9.cubeItem = class {\r\n    constructor(pPane) {\r\n        try {\r\n            this.fCalcEnum = gHome.MakeCalc(gUniq, this);\r\n            this.fCubeMaps = new Map();\r\n        }\r\n        catch (e) {\r\n            gHome.PageErro(gUniq, \"MakeCalc\", e);\r\n        }\r\n    }\r\n\r\n    /**\r\n     * Stroke width in pixels\r\n     * @type {Number}\r\n     * @public\r\n     */\r\n    set lineWidth(pData) {\r\n        try {\r\n            this._lineWidth = pData;\r\n            gHome.Calc_lineWidth(gUniq, this.fCalcEnum, pData);\r\n        }\r\n        catch (e) {\r\n            gHome.PageErro(gUniq, \"lineWidth\", e);\r\n        }\r\n    }\r\n\r\n    /**\r\n     * Stroke color in hexadecimal as a String\r\n     * @type {String}\r\n     * @public\r\n     */\r\n    set strokeStyle(pData) {\r\n        try {\r\n            this._strokeStyle = pData;\r\n            gHome.Calc_strokeStyle(gUniq, this.fCalcEnum, pData);\r\n        }\r\n        catch (e) {\r\n            gHome.PageErroo(gUniq, \"strokeStyle\", e);\r\n        }\r\n    }\r\n\r\n    /**\r\n     * @todo figure out what this does\r\n     * @type {String}\r\n     * @readonly\r\n     */\r\n    set format(pData) {\r\n        try {\r\n            this._format = pData;\r\n            gHome.Calc_format(gUniq, this.fCalcEnum, pData);\r\n        }\r\n        catch (e) {\r\n            gHome.PageErro(gUniq, \"format\", e);\r\n        }\r\n    }\r\n\r\n    /**\r\n     * Text color in hexadecimal as a String\r\n     * @type {String}\r\n     * @public\r\n     */\r\n    set textStyle(pData) {\r\n        try {\r\n            this._textStyle = pData;\r\n            gHome.Calc_textStyle(gUniq, this.fCalcEnum, pData);\r\n        }\r\n        catch (e) {\r\n            gHome.PageErro(gUniq, \"textStyle\", e);\r\n        }\r\n    }\r\n\r\n    /**\r\n     * @todo figure out what this does\r\n     * @type {String}\r\n     * @public\r\n     */\r\n    set bodyStyle(pData) {\r\n        try {\r\n            this._bodyStyle = pData;\r\n            gHome.Calc_bodyStyle(gUniq, this.fCalcEnum, pData);\r\n        }\r\n        catch (e) {\r\n            gHome.PageErro(gUniq, \"textStyle\", e);\r\n        }\r\n    }\r\n\r\n    /**\r\n     * Text corresponding to current cube price\r\n     * @type {String}\r\n     * @public\r\n     */\r\n    set title(pData) {\r\n        try {\r\n            this._title = pData;\r\n            gHome.Calc_title(gUniq, this.fCalcEnum, pData);\r\n        }\r\n        catch (e) {\r\n            gHome.PageErro(gUniq, \"title\", e);\r\n        }\r\n    }\r\n\r\n    /**\r\n     * @todo figure out what this does\r\n     * @type {String}\r\n     * @public\r\n     */\r\n    set name(pData) {\r\n        try {\r\n            this._name = pData;\r\n            gHome.Calc_name(gUniq, this.fCalcEnum, pData);\r\n        }\r\n        catch (e) {\r\n            gHome.PageErro(gUniq, \"name\", e);\r\n        }\r\n    }\r\n\r\n    /**\r\n     * Stroke width in pixels\r\n     * @type {Number}\r\n     * @public\r\n     */\r\n    get lineWidth() {\r\n        return this._lineWidth;\r\n    }\r\n\r\n    /**\r\n     * Stroke color in hexadecimal as a String\r\n     * @type {String}\r\n     * @public\r\n     */\r\n    get strokeStyle() {\r\n        return this._strokeStyle;\r\n    }\r\n\r\n    /**\r\n     * Text color in hexadecimal as a String\r\n     * @type {String}\r\n     * @public\r\n     */\r\n    get textStyle() {\r\n        return this._textStyle;\r\n    }\r\n\r\n    /**\r\n     * @todo figure out what this does\r\n     * @type {String}\r\n     * @readonly \r\n     */\r\n    get eventStyle() {\r\n        return this._eventStyle;\r\n    }\r\n\r\n    /**\r\n     * Text corresponding to current cube price\r\n     * @type {String}\r\n     * @public\r\n     */\r\n    get title() {\r\n        return this._title;\r\n    }\r\n\r\n    /**\r\n     * @todo figure out what this does\r\n     * @type {String}\r\n     * @public\r\n     */\r\n    get format() {\r\n        return this._format;\r\n    }\r\n}\r\n\r\n/**\r\n * Returns a JSON object representing the provided event\r\n * @param {Event} pEvent\r\n */\r\nv9.eventToJson = function (pEvent) {\r\n    let tEvent = v9.eventCopy(pEvent);\r\n\r\n    if (tEvent !== undefined) {\r\n        let intCount = 0, repCount = 0;\r\n        const json = JSON.stringify(tEvent, (_, v) => {\r\n            if (typeof v === 'bigint') {\r\n                intCount++;\r\n                return `${v}#bigint`;\r\n            }\r\n            return v;\r\n        });\r\n        const res = json.replace(/\"(-?\\d+)#bigint\"/g, (_, a) => {\r\n            repCount++;\r\n            return a;\r\n        });\r\n        if (repCount > intCount) {\r\n            // You have a string somewhere that looks like \"123#bigint\";\r\n            throw new Error(`BigInt serialization pattern conflict with a string value.`);\r\n        }\r\n        return res;\r\n    }\r\n}\r\n\r\n/**\r\n * Returns a copy of a provided event\r\n * @param {Event} pEvent\r\n */\r\nv9.eventCopy = function (pEvent) {\r\n\r\n    let tEvent = {};\r\n\r\n    if (pEvent.header) {\r\n        tEvent.header = {};\r\n        tEvent.header = Object.assign(pEvent.header);\r\n    }\r\n\r\n    try {\r\n        switch (pEvent.header.unionID) {\r\n            case v9.UnionID.TransactionMarker:\r\n                tEvent.transactionMarker = {};\r\n                tEvent.transactionMarker = Object.assign(pEvent.transactionMarker);\r\n                break;\r\n            case v9.UnionID.ChannelReset:\r\n                tEvent.channelReset = {};\r\n                tEvent.channelReset = Object.assign(pEvent.channelReset);\r\n                break;\r\n            case v9.UnionID.TradeSummary:\r\n                tEvent.tradeSummary = {};\r\n                tEvent.tradeSummary = Object.assign(pEvent.tradeSummary);\r\n                break;\r\n            case v9.UnionID.TradeMatch:\r\n                tEvent.tradeMatch = {};\r\n                tEvent.tradeMatch = Object.assign(pEvent.tradeMatch);\r\n                break;\r\n            case v9.UnionID.VolumeUpdate:\r\n                tEvent.volumeUpdate = {};\r\n                tEvent.volumeUpdate = Object.assign(pEvent.volumeUpdate);\r\n                break;\r\n            case v9.UnionID.BookLevel:\r\n                tEvent.bookLevel = {};\r\n                tEvent.bookLevel = Object.assign(pEvent.bookLevel);\r\n                break;\r\n            case v9.UnionID.OrderBook:\r\n                tEvent.orderBook = {};\r\n                tEvent.orderBook = Object.assign(pEvent.orderBook);\r\n                break;\r\n            case v9.UnionID.SecurityStatus:\r\n                tEvent.securityStatus = {};\r\n                tEvent.securityStatus = Object.assign(pEvent.securityStatus);\r\n                break;\r\n            case v9.UnionID.DailyStatistics:\r\n                tEvent.dailyStatistics = {};\r\n                tEvent.dailyStatistics = Object.assign(pEvent.dailyStatistics);\r\n                break;\r\n            case v9.UnionID.SessionStatistics:\r\n                tEvent.sessionStatistics = {};\r\n                tEvent.sessionStatistics = Object.assign(pEvent.sessionStatistics);\r\n                break;\r\n            case v9.UnionID.LimitsBanding:\r\n                tEvent.limitsBanding = {};\r\n                tEvent.limitsBanding = Object.assign(pEvent.limitsBanding);\r\n                break;\r\n            case v9.UnionID.ClearingPrice:\r\n                tEvent.clearingPrice = {};\r\n                tEvent.clearingPrice = Object.assign(pEvent.clearingPrice);\r\n                break;\r\n        }\r\n    }\r\n    catch (e) {\r\n    }\r\n\r\n    return tEvent;\r\n}\r\n\r\n/**\r\n * \r\n */\r\nv9.feed = class {\r\n    constructor(pSymbol) {\r\n        gHome.MakeFeed(gUniq, pSymbol);\r\n        gFeed = this;\r\n    }\r\n\r\n    /**\r\n    * Built in feed function that is called when the start button is pressed in order to initialize variables.\r\n    */\r\n    onOpen(pMeta) {\r\n    }\r\n\r\n    /**\r\n    * Built in feed function that is called once the script has read every previous event in the symbol Feed.\r\n    */\r\n    onLoad() {\r\n    }\r\n\r\n    /**\r\n    * Built in feed function that is called once for each event in the symbol Feed.\r\n    * @param {String} pSymbol - Name of the current symbol\r\n    * @param {Event} pEvent - Current event being handled\r\n    * @param {Boolean} pRealTime - Boolean determining whether or not to only handle current events\r\n    */\r\n    onEvent(pSymbol, pEvent, pRealTime) {\r\n    }\r\n\r\n    /**\r\n    * Built in feed function that is called once for each frame that is rendered to the viewport.\r\n    */\r\n    onRender() {\r\n    }\r\n\r\n    /**\r\n    * Built in feed function that is called when the stop button is pressed.\r\n    */\r\n    onStop() {\r\n    }\r\n}\r\n\r\n/**\r\n* Built in feed function that is called when the start button is pressed in order to initialize variables.\r\n*/\r\nfunction onOpen(pMeta) {\r\n    if (!gFeed) return;\r\n    gFeed.onOpen(pMeta);\r\n}\r\n\r\n/**\r\n* Built in feed function that is called once the script has read every previous event in the symbol Feed.\r\n*/\r\nfunction onLoad() {\r\n    if (!gFeed) return;\r\n    gFeed.onLoad();\r\n}\r\n\r\n/**\r\n* Built in feed function that is called once for each event in the symbol Feed.\r\n* @param {String} pSymbol - Name of the current symbol\r\n* @param {Event} pEvent - Current event being handled\r\n* @param {Boolean} pRealTime - Boolean determining whether or not to only handle current events\r\n*/\r\nfunction onEvent(pSymbol, pEvent, pRealTime) {\r\n    if (!gFeed) return;\r\n    gFeed.onEvent(pSymbol, pEvent, pRealTime);\r\n}\r\n\r\n/**\r\n* Built in feed function that is called once for each frame that is rendered to the viewport.\r\n*/\r\nfunction onRender() {\r\n    if (!gFeed) return;\r\n    gFeed.onRender();\r\n}\r\n\r\n/**\r\n* Built in feed function that is called when the stop button is pressed.\r\n*/\r\nfunction onStop() {\r\n    if (!gFeed) return;\r\n    gFeed.onStop();\r\n}\r\n\r\n\r\n/**\r\n * Reports errors to the debugging window\r\n * @param {String} msg\r\n * @param {String} url\r\n * @param {Number} lineNo\r\n * @param {Number} columnNo\r\n * @param {any} error\r\n */\r\nwindow.onerror = function (msg, url, lineNo, columnNo, error) {\r\n    var string = msg.toLowerCase();\r\n    var substring = \"script error\";\r\n    if (string.indexOf(substring) > -1) {\r\n        gHome._pageerro(gUniq, 'Script Error: See Browser Console for Detail');\r\n    }\r\n    else {\r\n        //var message = [\r\n        //\t'Message: ' + msg,\r\n        //\t'URL: ' + url,\r\n        //\t'Line: ' + lineNo,\r\n        //\t'Column: ' + columnNo,\r\n        //\t'Error object: ' + JSON.stringify(error)\r\n        //].join(' - ');\r\n\r\n        var message = [\r\n            'Message: ' + msg,\r\n            'Line: ' + lineNo,\r\n            'Column: ' + columnNo\r\n        ].join(' - ');\r\n\r\n        gHome._pageerro(gUniq, message);\r\n    }\r\n}\r\n\r\nwindow.onfocus = function () {\r\n    gHome._pagesele(gUniq);\r\n};\r\n",
+    "static": true,
+    "longname": "C:/Users/Blake Reset/source/repos/PlGGS/vxa-doc/src/v9.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 70,
+    "kind": "variable",
+    "name": "qEditSymb",
+    "memberof": "src/v9.js",
+    "static": true,
+    "longname": "src/v9.js~qEditSymb",
+    "access": "public",
+    "export": false,
+    "importPath": "evntscript/src/v9.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 1,
+    "undocument": true,
+    "type": {
+      "types": [
+        "number"
+      ]
+    }
+  },
+  {
+    "__docId__": 71,
+    "kind": "variable",
+    "name": "littleEndian",
+    "memberof": "src/v9.js",
+    "static": true,
+    "longname": "src/v9.js~littleEndian",
+    "access": "public",
+    "export": false,
+    "importPath": "evntscript/src/v9.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 2,
+    "undocument": true,
+    "type": {
+      "types": [
+        "boolean"
+      ]
+    }
+  },
+  {
+    "__docId__": 72,
+    "kind": "class",
+    "name": "edit",
+    "memberof": "src/v9.js",
+    "static": true,
+    "longname": "src/v9.js~edit",
+    "access": "public",
+    "export": false,
+    "importPath": "evntscript/src/v9.js",
+    "importStyle": null,
+    "description": "Class representing the v9 backend",
+    "examples": [
+      "<!doctype html>\n<html>\n<head>\n  <script src=\"../_vxaapi-1.0.0/v9.js\"></script>\n  <script>\n\n    class MyFeed extends v9.feed {\n      onOpen(pMeta) {\n      }\n\n      onLoad () {\n      }\n\n      onStop () {\n      }\n\n      onRender () {\n      }\n\n      onEvent(pSymbol, pEvent, pRealTime) {\n      }\n    }\n\n    let\tfeed = new MyFeed(new v9.edit().symbol);\n  </script>\n</head>\n<style>\n  html, body, #container {\n    width: 100%;\n    height: 100%;\n    margin: 0;\n    padding: 0;\n  }\n</style>\n<body>\n  <div id=\"container\"></div>\n</body>\n</html>"
+    ],
+    "lineNumber": 205,
+    "interface": false
+  },
+  {
+    "__docId__": 73,
+    "kind": "constructor",
+    "name": "constructor",
+    "memberof": "src/v9.js~edit",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/v9.js~edit#constructor",
+    "access": "public",
+    "description": null,
+    "lineNumber": 206,
+    "undocument": true
+  },
+  {
+    "__docId__": 74,
+    "kind": "set",
+    "name": "symbol",
+    "memberof": "src/v9.js~edit",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/v9.js~edit#symbol",
+    "access": "public",
+    "description": null,
+    "lineNumber": 209,
+    "undocument": true
+  },
+  {
+    "__docId__": 75,
+    "kind": "get",
+    "name": "symbol",
+    "memberof": "src/v9.js~edit",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/v9.js~edit#symbol",
+    "access": "public",
+    "description": null,
+    "lineNumber": 213,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 76,
+    "kind": "class",
+    "name": "lineChart",
+    "memberof": "src/v9.js",
+    "static": true,
+    "longname": "src/v9.js~lineChart",
+    "access": "public",
+    "export": false,
+    "importPath": "evntscript/src/v9.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 218,
+    "undocument": true,
+    "interface": false
+  },
+  {
+    "__docId__": 77,
+    "kind": "constructor",
+    "name": "constructor",
+    "memberof": "src/v9.js~lineChart",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/v9.js~lineChart#constructor",
+    "access": "public",
+    "description": null,
+    "lineNumber": 219,
+    "undocument": true
+  },
+  {
+    "__docId__": 78,
+    "kind": "member",
+    "name": "fLineEnum",
+    "memberof": "src/v9.js~lineChart",
+    "static": false,
+    "longname": "src/v9.js~lineChart#fLineEnum",
+    "access": "public",
+    "description": null,
+    "lineNumber": 220,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 79,
+    "kind": "method",
+    "name": "linePush",
+    "memberof": "src/v9.js~lineChart",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/v9.js~lineChart#linePush",
+    "access": "public",
+    "description": null,
+    "lineNumber": 223,
+    "undocument": true,
+    "params": [
+      {
+        "name": "pItem",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "pRate",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "pTime",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 80,
+    "kind": "class",
+    "name": "cubeChart",
+    "memberof": "src/v9.js",
+    "static": true,
+    "longname": "src/v9.js~cubeChart",
+    "access": "public",
+    "export": false,
+    "importPath": "evntscript/src/v9.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 228,
+    "undocument": true,
+    "interface": false
+  },
+  {
+    "__docId__": 81,
+    "kind": "constructor",
+    "name": "constructor",
+    "memberof": "src/v9.js~cubeChart",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/v9.js~cubeChart#constructor",
+    "access": "public",
+    "description": null,
+    "lineNumber": 229,
+    "undocument": true
+  },
+  {
+    "__docId__": 82,
+    "kind": "member",
+    "name": "fCubeEnum",
+    "memberof": "src/v9.js~cubeChart",
+    "static": false,
+    "longname": "src/v9.js~cubeChart#fCubeEnum",
+    "access": "public",
+    "description": null,
+    "lineNumber": 230,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 83,
+    "kind": "method",
+    "name": "cubePlus",
+    "memberof": "src/v9.js~cubeChart",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/v9.js~cubeChart#cubePlus",
+    "access": "public",
+    "description": null,
+    "lineNumber": 233,
+    "undocument": true,
+    "params": [
+      {
+        "name": "pItem",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "pData",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "pSize",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 84,
+    "kind": "method",
+    "name": "cubeDele",
+    "memberof": "src/v9.js~cubeChart",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/v9.js~cubeChart#cubeDele",
+    "access": "public",
+    "description": null,
+    "lineNumber": 237,
+    "undocument": true,
+    "params": [
+      {
+        "name": "pItem",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "pData",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 85,
+    "kind": "method",
+    "name": "cubeSave",
+    "memberof": "src/v9.js~cubeChart",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/v9.js~cubeChart#cubeSave",
+    "access": "public",
+    "description": null,
+    "lineNumber": 241,
+    "undocument": true,
+    "params": [
+      {
+        "name": "pItem",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "pData",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "pSize",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 86,
+    "kind": "method",
+    "name": "cubeRead",
+    "memberof": "src/v9.js~cubeChart",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/v9.js~cubeChart#cubeRead",
+    "access": "public",
+    "description": null,
+    "lineNumber": 245,
+    "undocument": true,
+    "params": [
+      {
+        "name": "pItem",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "pData",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 87,
+    "kind": "method",
+    "name": "cubeFree",
+    "memberof": "src/v9.js~cubeChart",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/v9.js~cubeChart#cubeFree",
+    "access": "public",
+    "description": null,
+    "lineNumber": 249,
+    "undocument": true,
+    "params": [
+      {
+        "name": "pItem",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 88,
+    "kind": "method",
+    "name": "cubePush",
+    "memberof": "src/v9.js~cubeChart",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/v9.js~cubeChart#cubePush",
+    "access": "public",
+    "description": null,
+    "lineNumber": 253,
+    "undocument": true,
+    "params": [
+      {
+        "name": "pItem",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "pSave",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 89,
+    "kind": "class",
+    "name": "lineItem",
+    "memberof": "src/v9.js",
+    "static": true,
+    "longname": "src/v9.js~lineItem",
+    "access": "public",
+    "export": false,
+    "importPath": "evntscript/src/v9.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 259,
+    "undocument": true,
+    "interface": false
+  },
+  {
+    "__docId__": 90,
+    "kind": "constructor",
+    "name": "constructor",
+    "memberof": "src/v9.js~lineItem",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/v9.js~lineItem#constructor",
+    "access": "public",
+    "description": null,
+    "lineNumber": 260,
+    "undocument": true
+  },
+  {
+    "__docId__": 91,
+    "kind": "member",
+    "name": "fCalcEnum",
+    "memberof": "src/v9.js~lineItem",
+    "static": false,
+    "longname": "src/v9.js~lineItem#fCalcEnum",
+    "access": "public",
+    "description": null,
+    "lineNumber": 262,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 92,
+    "kind": "set",
+    "name": "lineWidth",
+    "memberof": "src/v9.js~lineItem",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/v9.js~lineItem#lineWidth",
+    "access": "public",
+    "description": "Stroke width in pixels",
+    "lineNumber": 274,
     "type": {
       "nullable": null,
       "types": [
@@ -1558,36 +1423,36 @@
   {
     "__docId__": 93,
     "kind": "member",
-    "name": "Quantity",
-    "memberof": "src/index.js~Trade",
+    "name": "_lineWidth",
+    "memberof": "src/v9.js~lineItem",
     "static": false,
-    "longname": "src/index.js~Trade#Quantity",
+    "longname": "src/v9.js~lineItem#_lineWidth",
     "access": "private",
-    "description": "Quantity of the trade",
-    "lineNumber": 337,
+    "description": null,
+    "lineNumber": 276,
+    "undocument": true,
     "type": {
-      "nullable": null,
       "types": [
-        "Number"
-      ],
-      "spread": false,
-      "description": null
+        "*"
+      ]
     }
   },
   {
     "__docId__": 94,
-    "kind": "member",
-    "name": "Aggressor",
-    "memberof": "src/index.js~Trade",
+    "kind": "set",
+    "name": "strokeStyle",
+    "memberof": "src/v9.js~lineItem",
+    "generator": false,
+    "async": false,
     "static": false,
-    "longname": "src/index.js~Trade#Aggressor",
+    "longname": "src/v9.js~lineItem#strokeStyle",
     "access": "public",
-    "description": "Enumerated event type in kEvent.Type (See manual for event types)",
-    "lineNumber": 344,
+    "description": "Stroke color in hexadecimal as a String",
+    "lineNumber": 289,
     "type": {
       "nullable": null,
       "types": [
-        "Number"
+        "String"
       ],
       "spread": false,
       "description": null
@@ -1595,69 +1460,78 @@
   },
   {
     "__docId__": 95,
-    "kind": "class",
-    "name": "Bid",
-    "memberof": "src/index.js",
-    "static": true,
-    "longname": "src/index.js~Bid",
-    "access": "public",
-    "export": true,
-    "importPath": "evntscript/src/index.js",
-    "importStyle": "{Bid}",
-    "description": "Class representing an event with Type bid. (Bid is not technically its own class. See manual for enumerated types of events)",
-    "lineNumber": 354,
-    "interface": false,
-    "extends": [
-      "Event"
-    ]
+    "kind": "member",
+    "name": "_strokeStyle",
+    "memberof": "src/v9.js~lineItem",
+    "static": false,
+    "longname": "src/v9.js~lineItem#_strokeStyle",
+    "access": "private",
+    "description": null,
+    "lineNumber": 291,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
   },
   {
     "__docId__": 96,
-    "kind": "constructor",
-    "name": "constructor",
-    "memberof": "src/index.js~Bid",
+    "kind": "set",
+    "name": "format",
+    "memberof": "src/v9.js~lineItem",
     "generator": false,
     "async": false,
     "static": false,
-    "longname": "src/index.js~Bid#constructor",
+    "longname": "src/v9.js~lineItem#format",
     "access": "public",
-    "description": null,
-    "lineNumber": 356,
-    "undocument": true
-  },
-  {
-    "__docId__": 97,
-    "kind": "member",
-    "name": "Price",
-    "memberof": "src/index.js~Bid",
-    "static": false,
-    "longname": "src/index.js~Bid#Price",
-    "access": "private",
-    "description": "Price of the bid",
-    "lineNumber": 363,
+    "description": "",
+    "lineNumber": 304,
+    "todo": [
+      "figure out what this does"
+    ],
     "type": {
       "nullable": null,
       "types": [
-        "Number"
+        "String"
       ],
       "spread": false,
       "description": null
     }
   },
   {
-    "__docId__": 98,
+    "__docId__": 97,
     "kind": "member",
-    "name": "Quantity",
-    "memberof": "src/index.js~Bid",
+    "name": "_format",
+    "memberof": "src/v9.js~lineItem",
     "static": false,
-    "longname": "src/index.js~Bid#Quantity",
+    "longname": "src/v9.js~lineItem#_format",
     "access": "private",
-    "description": "Quantity of the bid",
-    "lineNumber": 370,
+    "description": null,
+    "lineNumber": 306,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 98,
+    "kind": "set",
+    "name": "textStyle",
+    "memberof": "src/v9.js~lineItem",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/v9.js~lineItem#textStyle",
+    "access": "public",
+    "description": "Text color in hexadecimal as a String",
+    "lineNumber": 319,
     "type": {
       "nullable": null,
       "types": [
-        "Number"
+        "String"
       ],
       "spread": false,
       "description": null
@@ -1666,68 +1540,77 @@
   {
     "__docId__": 99,
     "kind": "member",
-    "name": "Type",
-    "memberof": "src/index.js~Bid",
+    "name": "_textStyle",
+    "memberof": "src/v9.js~lineItem",
     "static": false,
-    "longname": "src/index.js~Bid#Type",
+    "longname": "src/v9.js~lineItem#_textStyle",
+    "access": "private",
+    "description": null,
+    "lineNumber": 321,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 100,
+    "kind": "set",
+    "name": "bodyStyle",
+    "memberof": "src/v9.js~lineItem",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/v9.js~lineItem#bodyStyle",
     "access": "public",
-    "description": "Enumerated bid type in kEvent.Bid.Type (See manual for event types)",
-    "lineNumber": 377,
+    "description": "",
+    "lineNumber": 334,
+    "todo": [
+      "figure out what this does"
+    ],
     "type": {
       "nullable": null,
       "types": [
-        "Number"
+        "String"
       ],
       "spread": false,
       "description": null
     }
   },
   {
-    "__docId__": 100,
-    "kind": "class",
-    "name": "Ask",
-    "memberof": "src/index.js",
-    "static": true,
-    "longname": "src/index.js~Ask",
-    "access": "public",
-    "export": true,
-    "importPath": "evntscript/src/index.js",
-    "importStyle": "{Ask}",
-    "description": "Class representing an event with Type ask. (Ask is not technically its own class. See manual for enumerated types of events)",
-    "lineNumber": 393,
-    "interface": false,
-    "extends": [
-      "Event"
-    ]
-  },
-  {
     "__docId__": 101,
-    "kind": "constructor",
-    "name": "constructor",
-    "memberof": "src/index.js~Ask",
-    "generator": false,
-    "async": false,
+    "kind": "member",
+    "name": "_bodyStyle",
+    "memberof": "src/v9.js~lineItem",
     "static": false,
-    "longname": "src/index.js~Ask#constructor",
-    "access": "public",
+    "longname": "src/v9.js~lineItem#_bodyStyle",
+    "access": "private",
     "description": null,
-    "lineNumber": 395,
-    "undocument": true
+    "lineNumber": 336,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
   },
   {
     "__docId__": 102,
-    "kind": "member",
-    "name": "Price",
-    "memberof": "src/index.js~Ask",
+    "kind": "set",
+    "name": "title",
+    "memberof": "src/v9.js~lineItem",
+    "generator": false,
+    "async": false,
     "static": false,
-    "longname": "src/index.js~Ask#Price",
-    "access": "private",
-    "description": "Price of the bid",
-    "lineNumber": 402,
+    "longname": "src/v9.js~lineItem#title",
+    "access": "public",
+    "description": "Text corresponding to current line price",
+    "lineNumber": 349,
     "type": {
       "nullable": null,
       "types": [
-        "Number"
+        "String"
       ],
       "spread": false,
       "description": null
@@ -1736,36 +1619,39 @@
   {
     "__docId__": 103,
     "kind": "member",
-    "name": "Quantity",
-    "memberof": "src/index.js~Ask",
+    "name": "_title",
+    "memberof": "src/v9.js~lineItem",
     "static": false,
-    "longname": "src/index.js~Ask#Quantity",
+    "longname": "src/v9.js~lineItem#_title",
     "access": "private",
-    "description": "Quantity of the bid",
-    "lineNumber": 409,
+    "description": null,
+    "lineNumber": 351,
+    "undocument": true,
     "type": {
-      "nullable": null,
       "types": [
-        "Number"
-      ],
-      "spread": false,
-      "description": null
+        "*"
+      ]
     }
   },
   {
     "__docId__": 104,
-    "kind": "member",
-    "name": "Type",
-    "memberof": "src/index.js~Ask",
+    "kind": "set",
+    "name": "name",
+    "memberof": "src/v9.js~lineItem",
+    "generator": false,
+    "async": false,
     "static": false,
-    "longname": "src/index.js~Ask#Type",
+    "longname": "src/v9.js~lineItem#name",
     "access": "public",
-    "description": "Enumerated ask type in kEvent.Ask.Type (See manual for event types)",
-    "lineNumber": 416,
+    "description": "",
+    "lineNumber": 364,
+    "todo": [
+      "figure out what this does"
+    ],
     "type": {
       "nullable": null,
       "types": [
-        "Number"
+        "String"
       ],
       "spread": false,
       "description": null
@@ -1773,68 +1659,1013 @@
   },
   {
     "__docId__": 105,
-    "kind": "function",
-    "name": "MakePane",
-    "memberof": "src/index.js",
-    "generator": false,
-    "async": false,
-    "static": true,
-    "longname": "src/index.js~MakePane",
-    "access": "public",
-    "export": true,
-    "importPath": "evntscript/src/index.js",
-    "importStyle": "{MakePane}",
-    "description": "Public function used to return a new Pane object. (All other object creation methods are inside CEvnt classes)",
-    "examples": [
-      "gEvntPane = MakePane();"
-    ],
-    "lineNumber": 432,
-    "params": [],
-    "return": null
+    "kind": "member",
+    "name": "_name",
+    "memberof": "src/v9.js~lineItem",
+    "static": false,
+    "longname": "src/v9.js~lineItem#_name",
+    "access": "private",
+    "description": null,
+    "lineNumber": 366,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
   },
   {
     "__docId__": 106,
-    "kind": "function",
-    "name": "onLoad",
-    "memberof": "src/index.js",
+    "kind": "get",
+    "name": "lineWidth",
+    "memberof": "src/v9.js~lineItem",
     "generator": false,
     "async": false,
-    "static": true,
-    "longname": "src/index.js~onLoad",
+    "static": false,
+    "longname": "src/v9.js~lineItem#lineWidth",
     "access": "public",
-    "export": true,
-    "importPath": "evntscript/src/index.js",
-    "importStyle": "{onLoad}",
-    "description": "Built in function that is called when the start button is pressed in order to initialize variables.",
-    "lineNumber": 440,
-    "params": [],
-    "return": null
+    "description": "Stroke width in pixels",
+    "lineNumber": 379,
+    "type": {
+      "nullable": null,
+      "types": [
+        "Number"
+      ],
+      "spread": false,
+      "description": null
+    }
   },
   {
     "__docId__": 107,
+    "kind": "get",
+    "name": "strokeStyle",
+    "memberof": "src/v9.js~lineItem",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/v9.js~lineItem#strokeStyle",
+    "access": "public",
+    "description": "Stroke color in hexadecimal as a String",
+    "lineNumber": 388,
+    "type": {
+      "nullable": null,
+      "types": [
+        "String"
+      ],
+      "spread": false,
+      "description": null
+    }
+  },
+  {
+    "__docId__": 108,
+    "kind": "get",
+    "name": "textStyle",
+    "memberof": "src/v9.js~lineItem",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/v9.js~lineItem#textStyle",
+    "access": "public",
+    "description": "Text color in hexadecimal as a String",
+    "lineNumber": 397,
+    "type": {
+      "nullable": null,
+      "types": [
+        "String"
+      ],
+      "spread": false,
+      "description": null
+    }
+  },
+  {
+    "__docId__": 109,
+    "kind": "get",
+    "name": "eventStyle",
+    "memberof": "src/v9.js~lineItem",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/v9.js~lineItem#eventStyle",
+    "access": "public",
+    "description": "",
+    "lineNumber": 406,
+    "todo": [
+      "figure out what this does"
+    ],
+    "unknown": [
+      {
+        "tagName": "@readonly",
+        "tagValue": ""
+      }
+    ],
+    "type": {
+      "nullable": null,
+      "types": [
+        "String"
+      ],
+      "spread": false,
+      "description": null
+    }
+  },
+  {
+    "__docId__": 110,
+    "kind": "get",
+    "name": "title",
+    "memberof": "src/v9.js~lineItem",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/v9.js~lineItem#title",
+    "access": "public",
+    "description": "Text corresponding to current line price",
+    "lineNumber": 415,
+    "type": {
+      "nullable": null,
+      "types": [
+        "String"
+      ],
+      "spread": false,
+      "description": null
+    }
+  },
+  {
+    "__docId__": 111,
+    "kind": "get",
+    "name": "format",
+    "memberof": "src/v9.js~lineItem",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/v9.js~lineItem#format",
+    "access": "public",
+    "description": "",
+    "lineNumber": 424,
+    "todo": [
+      "figure out what this does"
+    ],
+    "type": {
+      "nullable": null,
+      "types": [
+        "String"
+      ],
+      "spread": false,
+      "description": null
+    }
+  },
+  {
+    "__docId__": 112,
+    "kind": "class",
+    "name": "cubeItem",
+    "memberof": "src/v9.js",
+    "static": true,
+    "longname": "src/v9.js~cubeItem",
+    "access": "public",
+    "export": false,
+    "importPath": "evntscript/src/v9.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 429,
+    "undocument": true,
+    "interface": false
+  },
+  {
+    "__docId__": 113,
+    "kind": "constructor",
+    "name": "constructor",
+    "memberof": "src/v9.js~cubeItem",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/v9.js~cubeItem#constructor",
+    "access": "public",
+    "description": null,
+    "lineNumber": 430,
+    "undocument": true
+  },
+  {
+    "__docId__": 114,
+    "kind": "member",
+    "name": "fCalcEnum",
+    "memberof": "src/v9.js~cubeItem",
+    "static": false,
+    "longname": "src/v9.js~cubeItem#fCalcEnum",
+    "access": "public",
+    "description": null,
+    "lineNumber": 432,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 115,
+    "kind": "member",
+    "name": "fCubeMaps",
+    "memberof": "src/v9.js~cubeItem",
+    "static": false,
+    "longname": "src/v9.js~cubeItem#fCubeMaps",
+    "access": "public",
+    "description": null,
+    "lineNumber": 433,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 116,
+    "kind": "set",
+    "name": "lineWidth",
+    "memberof": "src/v9.js~cubeItem",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/v9.js~cubeItem#lineWidth",
+    "access": "public",
+    "description": "Stroke width in pixels",
+    "lineNumber": 445,
+    "type": {
+      "nullable": null,
+      "types": [
+        "Number"
+      ],
+      "spread": false,
+      "description": null
+    }
+  },
+  {
+    "__docId__": 117,
+    "kind": "member",
+    "name": "_lineWidth",
+    "memberof": "src/v9.js~cubeItem",
+    "static": false,
+    "longname": "src/v9.js~cubeItem#_lineWidth",
+    "access": "private",
+    "description": null,
+    "lineNumber": 447,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 118,
+    "kind": "set",
+    "name": "strokeStyle",
+    "memberof": "src/v9.js~cubeItem",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/v9.js~cubeItem#strokeStyle",
+    "access": "public",
+    "description": "Stroke color in hexadecimal as a String",
+    "lineNumber": 460,
+    "type": {
+      "nullable": null,
+      "types": [
+        "String"
+      ],
+      "spread": false,
+      "description": null
+    }
+  },
+  {
+    "__docId__": 119,
+    "kind": "member",
+    "name": "_strokeStyle",
+    "memberof": "src/v9.js~cubeItem",
+    "static": false,
+    "longname": "src/v9.js~cubeItem#_strokeStyle",
+    "access": "private",
+    "description": null,
+    "lineNumber": 462,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 120,
+    "kind": "set",
+    "name": "format",
+    "memberof": "src/v9.js~cubeItem",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/v9.js~cubeItem#format",
+    "access": "public",
+    "description": "",
+    "lineNumber": 475,
+    "todo": [
+      "figure out what this does"
+    ],
+    "unknown": [
+      {
+        "tagName": "@readonly",
+        "tagValue": ""
+      }
+    ],
+    "type": {
+      "nullable": null,
+      "types": [
+        "String"
+      ],
+      "spread": false,
+      "description": null
+    }
+  },
+  {
+    "__docId__": 121,
+    "kind": "member",
+    "name": "_format",
+    "memberof": "src/v9.js~cubeItem",
+    "static": false,
+    "longname": "src/v9.js~cubeItem#_format",
+    "access": "private",
+    "description": null,
+    "lineNumber": 477,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 122,
+    "kind": "set",
+    "name": "textStyle",
+    "memberof": "src/v9.js~cubeItem",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/v9.js~cubeItem#textStyle",
+    "access": "public",
+    "description": "Text color in hexadecimal as a String",
+    "lineNumber": 490,
+    "type": {
+      "nullable": null,
+      "types": [
+        "String"
+      ],
+      "spread": false,
+      "description": null
+    }
+  },
+  {
+    "__docId__": 123,
+    "kind": "member",
+    "name": "_textStyle",
+    "memberof": "src/v9.js~cubeItem",
+    "static": false,
+    "longname": "src/v9.js~cubeItem#_textStyle",
+    "access": "private",
+    "description": null,
+    "lineNumber": 492,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 124,
+    "kind": "set",
+    "name": "bodyStyle",
+    "memberof": "src/v9.js~cubeItem",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/v9.js~cubeItem#bodyStyle",
+    "access": "public",
+    "description": "",
+    "lineNumber": 505,
+    "todo": [
+      "figure out what this does"
+    ],
+    "type": {
+      "nullable": null,
+      "types": [
+        "String"
+      ],
+      "spread": false,
+      "description": null
+    }
+  },
+  {
+    "__docId__": 125,
+    "kind": "member",
+    "name": "_bodyStyle",
+    "memberof": "src/v9.js~cubeItem",
+    "static": false,
+    "longname": "src/v9.js~cubeItem#_bodyStyle",
+    "access": "private",
+    "description": null,
+    "lineNumber": 507,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 126,
+    "kind": "set",
+    "name": "title",
+    "memberof": "src/v9.js~cubeItem",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/v9.js~cubeItem#title",
+    "access": "public",
+    "description": "Text corresponding to current cube price",
+    "lineNumber": 520,
+    "type": {
+      "nullable": null,
+      "types": [
+        "String"
+      ],
+      "spread": false,
+      "description": null
+    }
+  },
+  {
+    "__docId__": 127,
+    "kind": "member",
+    "name": "_title",
+    "memberof": "src/v9.js~cubeItem",
+    "static": false,
+    "longname": "src/v9.js~cubeItem#_title",
+    "access": "private",
+    "description": null,
+    "lineNumber": 522,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 128,
+    "kind": "set",
+    "name": "name",
+    "memberof": "src/v9.js~cubeItem",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/v9.js~cubeItem#name",
+    "access": "public",
+    "description": "",
+    "lineNumber": 535,
+    "todo": [
+      "figure out what this does"
+    ],
+    "type": {
+      "nullable": null,
+      "types": [
+        "String"
+      ],
+      "spread": false,
+      "description": null
+    }
+  },
+  {
+    "__docId__": 129,
+    "kind": "member",
+    "name": "_name",
+    "memberof": "src/v9.js~cubeItem",
+    "static": false,
+    "longname": "src/v9.js~cubeItem#_name",
+    "access": "private",
+    "description": null,
+    "lineNumber": 537,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 130,
+    "kind": "get",
+    "name": "lineWidth",
+    "memberof": "src/v9.js~cubeItem",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/v9.js~cubeItem#lineWidth",
+    "access": "public",
+    "description": "Stroke width in pixels",
+    "lineNumber": 550,
+    "type": {
+      "nullable": null,
+      "types": [
+        "Number"
+      ],
+      "spread": false,
+      "description": null
+    }
+  },
+  {
+    "__docId__": 131,
+    "kind": "get",
+    "name": "strokeStyle",
+    "memberof": "src/v9.js~cubeItem",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/v9.js~cubeItem#strokeStyle",
+    "access": "public",
+    "description": "Stroke color in hexadecimal as a String",
+    "lineNumber": 559,
+    "type": {
+      "nullable": null,
+      "types": [
+        "String"
+      ],
+      "spread": false,
+      "description": null
+    }
+  },
+  {
+    "__docId__": 132,
+    "kind": "get",
+    "name": "textStyle",
+    "memberof": "src/v9.js~cubeItem",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/v9.js~cubeItem#textStyle",
+    "access": "public",
+    "description": "Text color in hexadecimal as a String",
+    "lineNumber": 568,
+    "type": {
+      "nullable": null,
+      "types": [
+        "String"
+      ],
+      "spread": false,
+      "description": null
+    }
+  },
+  {
+    "__docId__": 133,
+    "kind": "get",
+    "name": "eventStyle",
+    "memberof": "src/v9.js~cubeItem",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/v9.js~cubeItem#eventStyle",
+    "access": "public",
+    "description": "",
+    "lineNumber": 577,
+    "todo": [
+      "figure out what this does"
+    ],
+    "unknown": [
+      {
+        "tagName": "@readonly",
+        "tagValue": ""
+      }
+    ],
+    "type": {
+      "nullable": null,
+      "types": [
+        "String"
+      ],
+      "spread": false,
+      "description": null
+    }
+  },
+  {
+    "__docId__": 134,
+    "kind": "get",
+    "name": "title",
+    "memberof": "src/v9.js~cubeItem",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/v9.js~cubeItem#title",
+    "access": "public",
+    "description": "Text corresponding to current cube price",
+    "lineNumber": 586,
+    "type": {
+      "nullable": null,
+      "types": [
+        "String"
+      ],
+      "spread": false,
+      "description": null
+    }
+  },
+  {
+    "__docId__": 135,
+    "kind": "get",
+    "name": "format",
+    "memberof": "src/v9.js~cubeItem",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/v9.js~cubeItem#format",
+    "access": "public",
+    "description": "",
+    "lineNumber": 595,
+    "todo": [
+      "figure out what this does"
+    ],
+    "type": {
+      "nullable": null,
+      "types": [
+        "String"
+      ],
+      "spread": false,
+      "description": null
+    }
+  },
+  {
+    "__docId__": 136,
     "kind": "function",
-    "name": "onEvent",
-    "memberof": "src/index.js",
+    "name": "eventToJson",
+    "memberof": "src/v9.js",
     "generator": false,
     "async": false,
     "static": true,
-    "longname": "src/index.js~onEvent",
+    "longname": "src/v9.js~eventToJson",
     "access": "public",
-    "export": true,
-    "importPath": "evntscript/src/index.js",
-    "importStyle": "{onEvent}",
-    "description": "Built in function that is called once for each event in the symbol Feed.",
-    "lineNumber": 450,
+    "export": false,
+    "importPath": "evntscript/src/v9.js",
+    "importStyle": null,
+    "description": "Returns a JSON object representing the provided event",
+    "lineNumber": 604,
     "params": [
       {
         "nullable": null,
         "types": [
-          "CEvntFeed"
+          "Event"
         ],
         "spread": false,
         "optional": false,
-        "name": "pFeed",
-        "description": "A CEvntFeed object with timestamps measured in nanoseconds with 56 bit precision"
+        "name": "pEvent",
+        "description": ""
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 137,
+    "kind": "function",
+    "name": "eventCopy",
+    "memberof": "src/v9.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/v9.js~eventCopy",
+    "access": "public",
+    "export": false,
+    "importPath": "evntscript/src/v9.js",
+    "importStyle": null,
+    "description": "Returns a copy of a provided event",
+    "lineNumber": 632,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Event"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "pEvent",
+        "description": ""
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 138,
+    "kind": "class",
+    "name": "feed",
+    "memberof": "src/v9.js",
+    "static": true,
+    "longname": "src/v9.js~feed",
+    "access": "public",
+    "export": false,
+    "importPath": "evntscript/src/v9.js",
+    "importStyle": null,
+    "description": "",
+    "lineNumber": 702,
+    "interface": false
+  },
+  {
+    "__docId__": 139,
+    "kind": "constructor",
+    "name": "constructor",
+    "memberof": "src/v9.js~feed",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/v9.js~feed#constructor",
+    "access": "public",
+    "description": null,
+    "lineNumber": 703,
+    "undocument": true
+  },
+  {
+    "__docId__": 140,
+    "kind": "method",
+    "name": "onOpen",
+    "memberof": "src/v9.js~feed",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/v9.js~feed#onOpen",
+    "access": "public",
+    "description": "Built in feed function that is called when the start button is pressed in order to initialize variables.",
+    "lineNumber": 711,
+    "params": [
+      {
+        "name": "pMeta",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 141,
+    "kind": "method",
+    "name": "onLoad",
+    "memberof": "src/v9.js~feed",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/v9.js~feed#onLoad",
+    "access": "public",
+    "description": "Built in feed function that is called once the script has read every previous event in the symbol Feed.",
+    "lineNumber": 717,
+    "params": [],
+    "return": null
+  },
+  {
+    "__docId__": 142,
+    "kind": "method",
+    "name": "onEvent",
+    "memberof": "src/v9.js~feed",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/v9.js~feed#onEvent",
+    "access": "public",
+    "description": "Built in feed function that is called once for each event in the symbol Feed.",
+    "lineNumber": 726,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "String"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "pSymbol",
+        "description": "Name of the current symbol"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Event"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "pEvent",
+        "description": "Current event being handled"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Boolean"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "pRealTime",
+        "description": "Boolean determining whether or not to only handle current events"
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 143,
+    "kind": "method",
+    "name": "onRender",
+    "memberof": "src/v9.js~feed",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/v9.js~feed#onRender",
+    "access": "public",
+    "description": "Built in feed function that is called once for each frame that is rendered to the viewport.",
+    "lineNumber": 732,
+    "params": [],
+    "return": null
+  },
+  {
+    "__docId__": 144,
+    "kind": "method",
+    "name": "onStop",
+    "memberof": "src/v9.js~feed",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/v9.js~feed#onStop",
+    "access": "public",
+    "description": "Built in feed function that is called when the stop button is pressed.",
+    "lineNumber": 738,
+    "params": [],
+    "return": null
+  },
+  {
+    "__docId__": 145,
+    "kind": "function",
+    "name": "onOpen",
+    "memberof": "src/v9.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/v9.js~onOpen",
+    "access": "public",
+    "export": false,
+    "importPath": "evntscript/src/v9.js",
+    "importStyle": null,
+    "description": "Built in feed function that is called when the start button is pressed in order to initialize variables.",
+    "lineNumber": 745,
+    "params": [
+      {
+        "name": "pMeta",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 146,
+    "kind": "function",
+    "name": "onLoad",
+    "memberof": "src/v9.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/v9.js~onLoad",
+    "access": "public",
+    "export": false,
+    "importPath": "evntscript/src/v9.js",
+    "importStyle": null,
+    "description": "Built in feed function that is called once the script has read every previous event in the symbol Feed.",
+    "lineNumber": 753,
+    "params": [],
+    "return": null
+  },
+  {
+    "__docId__": 147,
+    "kind": "function",
+    "name": "onEvent",
+    "memberof": "src/v9.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/v9.js~onEvent",
+    "access": "public",
+    "export": false,
+    "importPath": "evntscript/src/v9.js",
+    "importStyle": null,
+    "description": "Built in feed function that is called once for each event in the symbol Feed.",
+    "lineNumber": 764,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "String"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "pSymbol",
+        "description": "Name of the current symbol"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Event"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "pEvent",
+        "description": "Current event being handled"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Boolean"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "pRealTime",
+        "description": "Boolean determining whether or not to only handle current events"
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 148,
+    "kind": "function",
+    "name": "onRender",
+    "memberof": "src/v9.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/v9.js~onRender",
+    "access": "public",
+    "export": false,
+    "importPath": "evntscript/src/v9.js",
+    "importStyle": null,
+    "description": "Built in feed function that is called once for each frame that is rendered to the viewport.",
+    "lineNumber": 772,
+    "params": [],
+    "return": null
+  },
+  {
+    "__docId__": 149,
+    "kind": "function",
+    "name": "onStop",
+    "memberof": "src/v9.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/v9.js~onStop",
+    "access": "public",
+    "export": false,
+    "importPath": "evntscript/src/v9.js",
+    "importStyle": null,
+    "description": "Built in feed function that is called when the stop button is pressed.",
+    "lineNumber": 780,
+    "params": [],
+    "return": null
+  },
+  {
+    "__docId__": 150,
+    "kind": "function",
+    "name": "onerror",
+    "memberof": "src/v9.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/v9.js~onerror",
+    "access": "public",
+    "export": false,
+    "importPath": "evntscript/src/v9.js",
+    "importStyle": null,
+    "description": "Reports errors to the debugging window",
+    "lineNumber": 794,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "String"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "msg",
+        "description": ""
+      },
+      {
+        "nullable": null,
+        "types": [
+          "String"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "url",
+        "description": ""
       },
       {
         "nullable": null,
@@ -1843,51 +2674,54 @@
         ],
         "spread": false,
         "optional": false,
-        "name": "pSequ",
-        "description": "Number identifying the current Event's position in pFeed"
+        "name": "lineNo",
+        "description": ""
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "columnNo",
+        "description": ""
+      },
+      {
+        "nullable": null,
+        "types": [
+          "any"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "error",
+        "description": ""
       }
     ],
     "return": null
   },
   {
-    "__docId__": 108,
+    "__docId__": 151,
     "kind": "function",
-    "name": "onOpen",
-    "memberof": "src/index.js",
+    "name": "onfocus",
+    "memberof": "src/v9.js",
     "generator": false,
     "async": false,
     "static": true,
-    "longname": "src/index.js~onOpen",
+    "longname": "src/v9.js~onfocus",
     "access": "public",
-    "export": true,
-    "importPath": "evntscript/src/index.js",
-    "importStyle": "{onOpen}",
-    "description": "Built in function that is called once the script has read every previous event in the symbol Feed.",
-    "lineNumber": 458,
-    "params": [],
-    "return": null
-  },
-  {
-    "__docId__": 109,
-    "kind": "function",
-    "name": "onStop",
-    "memberof": "src/index.js",
-    "generator": false,
-    "async": false,
-    "static": true,
-    "longname": "src/index.js~onStop",
-    "access": "public",
-    "export": true,
-    "importPath": "evntscript/src/index.js",
-    "importStyle": "{onStop}",
-    "description": "Built in function that is called when the stop button is pressed.",
-    "lineNumber": 466,
+    "export": false,
+    "importPath": "evntscript/src/v9.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 819,
+    "undocument": true,
     "params": [],
     "return": null
   },
   {
     "kind": "index",
-    "content": "![logo](https://c.smartrecruiters.com/sr-company-logo-prod/59b85cbfe4b0081548fcf4d6/huge?r=s3&_1507067621421)\r\n# Vertex Analytics | EVNTScript\r\n\r\nEVNTScript is a Javascript-based parser that allows for easy \r\nunderstanding, calculating, and tracking of futures symbols in more \r\nthan just real-time using vNine at [vnine.vertex-analytics.com](https://vnine.vertex-analytics.com).\r\n\r\nContact: [support@vertex-analytics.com](mailto:support@vertex-analytics.com)\r\n\r\n###### Documentation by [Blake Boris](https://blakeboris.com)\r\n",
+    "content": "<img src=\"src/asset/brand_logo.png\" alt=\"logo\" width=\"160\"/>\r\n# Vertex Analytics | EVNTScript\r\n\r\nEVNTScript is a Javascript-based parser that allows for easy \r\nunderstanding, calculating, and tracking of futures symbols in more \r\nthan just real-time using vNine at [v9.vertex-analytics.com](https://vnine.vertex-analytics.com).\r\n\r\nContact: [support@vertex-analytics.com](mailto:support@vertex-analytics.com)\r\n\r\n###### Documentation by [Blake Boris](https://blakeboris.com)\r\n",
     "longname": "C:\\Users\\Blake Reset\\source\\repos\\PlGGS\\vxa-doc\\README.md",
     "name": "./README.md",
     "static": true,

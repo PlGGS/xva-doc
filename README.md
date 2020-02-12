@@ -1,4 +1,4 @@
-<img src="image/brand_logo.png" alt="logo" width="160"/>
+<img src="src/asset/brand_logo.png" alt="logo" width="160"/>
 # Vertex Analytics | EVNTScript
 
 EVNTScript is a Javascript-based parser that allows for easy 
