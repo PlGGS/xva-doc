@@ -1,129 +1,81 @@
 window.esdocSearchIndex = [
   [
-    "evntscript/src/index.js~ask",
-    "class/src/index.js~Ask.html",
-    "<span>Ask</span> <span class=\"search-result-import-path\">evntscript/src/index.js</span>",
+    "evntscript/src/index.js~cubechart",
+    "class/src/index.js~cubeChart.html",
+    "<span>cubeChart</span> <span class=\"search-result-import-path\">evntscript/src/index.js</span>",
     "class"
   ],
   [
-    "evntscript/src/index.js~bid",
-    "class/src/index.js~Bid.html",
-    "<span>Bid</span> <span class=\"search-result-import-path\">evntscript/src/index.js</span>",
+    "evntscript/src/index.js~cubeitem",
+    "class/src/index.js~cubeItem.html",
+    "<span>cubeItem</span> <span class=\"search-result-import-path\">evntscript/src/index.js</span>",
     "class"
   ],
   [
-    "evntscript/src/index.js~event",
-    "class/src/index.js~Event.html",
-    "<span>Event</span> <span class=\"search-result-import-path\">evntscript/src/index.js</span>",
+    "evntscript/src/index.js~edit",
+    "class/src/index.js~edit.html",
+    "<span>edit</span> <span class=\"search-result-import-path\">evntscript/src/index.js</span>",
     "class"
   ],
   [
-    "evntscript/src/index.js~trade",
-    "class/src/index.js~Trade.html",
-    "<span>Trade</span> <span class=\"search-result-import-path\">evntscript/src/index.js</span>",
-    "class"
-  ],
-  [
-    "evntscript/src/v9.js~cubechart",
-    "class/src/v9.js~cubeChart.html",
-    "<span>cubeChart</span> <span class=\"search-result-import-path\">evntscript/src/v9.js</span>",
-    "class"
-  ],
-  [
-    "evntscript/src/v9.js~cubeitem",
-    "class/src/v9.js~cubeItem.html",
-    "<span>cubeItem</span> <span class=\"search-result-import-path\">evntscript/src/v9.js</span>",
-    "class"
-  ],
-  [
-    "evntscript/src/v9.js~edit",
-    "class/src/v9.js~edit.html",
-    "<span>edit</span> <span class=\"search-result-import-path\">evntscript/src/v9.js</span>",
-    "class"
-  ],
-  [
-    "evntscript/src/v9.js~eventcopy",
+    "evntscript/src/index.js~eventcopy",
     "function/index.html#static-function-eventCopy",
-    "<span>eventCopy</span> <span class=\"search-result-import-path\">evntscript/src/v9.js</span>",
+    "<span>eventCopy</span> <span class=\"search-result-import-path\">evntscript/src/index.js</span>",
     "function"
   ],
   [
-    "evntscript/src/v9.js~eventtojson",
+    "evntscript/src/index.js~eventtojson",
     "function/index.html#static-function-eventToJson",
-    "<span>eventToJson</span> <span class=\"search-result-import-path\">evntscript/src/v9.js</span>",
+    "<span>eventToJson</span> <span class=\"search-result-import-path\">evntscript/src/index.js</span>",
     "function"
   ],
   [
-    "evntscript/src/v9.js~feed",
-    "class/src/v9.js~feed.html",
-    "<span>feed</span> <span class=\"search-result-import-path\">evntscript/src/v9.js</span>",
+    "evntscript/src/index.js~feed",
+    "class/src/index.js~feed.html",
+    "<span>feed</span> <span class=\"search-result-import-path\">evntscript/src/index.js</span>",
     "class"
   ],
   [
-    "evntscript/src/v9.js~linechart",
-    "class/src/v9.js~lineChart.html",
-    "<span>lineChart</span> <span class=\"search-result-import-path\">evntscript/src/v9.js</span>",
+    "evntscript/src/index.js~linechart",
+    "class/src/index.js~lineChart.html",
+    "<span>lineChart</span> <span class=\"search-result-import-path\">evntscript/src/index.js</span>",
     "class"
   ],
   [
-    "evntscript/src/v9.js~lineitem",
-    "class/src/v9.js~lineItem.html",
-    "<span>lineItem</span> <span class=\"search-result-import-path\">evntscript/src/v9.js</span>",
+    "evntscript/src/index.js~lineitem",
+    "class/src/index.js~lineItem.html",
+    "<span>lineItem</span> <span class=\"search-result-import-path\">evntscript/src/index.js</span>",
     "class"
   ],
   [
-    "evntscript/src/v9.js~littleendian",
+    "evntscript/src/index.js~littleendian",
     "variable/index.html#static-variable-littleEndian",
-    "<span>littleEndian</span> <span class=\"search-result-import-path\">evntscript/src/v9.js</span>",
+    "<span>littleEndian</span> <span class=\"search-result-import-path\">evntscript/src/index.js</span>",
     "variable"
   ],
   [
-    "evntscript/src/v9.js~onevent",
-    "function/index.html#static-function-onEvent",
-    "<span>onEvent</span> <span class=\"search-result-import-path\">evntscript/src/v9.js</span>",
-    "function"
-  ],
-  [
-    "evntscript/src/v9.js~onload",
-    "function/index.html#static-function-onLoad",
-    "<span>onLoad</span> <span class=\"search-result-import-path\">evntscript/src/v9.js</span>",
-    "function"
-  ],
-  [
-    "evntscript/src/v9.js~onopen",
-    "function/index.html#static-function-onOpen",
-    "<span>onOpen</span> <span class=\"search-result-import-path\">evntscript/src/v9.js</span>",
-    "function"
-  ],
-  [
-    "evntscript/src/v9.js~onrender",
-    "function/index.html#static-function-onRender",
-    "<span>onRender</span> <span class=\"search-result-import-path\">evntscript/src/v9.js</span>",
-    "function"
-  ],
-  [
-    "evntscript/src/v9.js~onstop",
-    "function/index.html#static-function-onStop",
-    "<span>onStop</span> <span class=\"search-result-import-path\">evntscript/src/v9.js</span>",
-    "function"
-  ],
-  [
-    "evntscript/src/v9.js~onerror",
+    "evntscript/src/index.js~onerror",
     "function/index.html#static-function-onerror",
-    "<span>onerror</span> <span class=\"search-result-import-path\">evntscript/src/v9.js</span>",
+    "<span>onerror</span> <span class=\"search-result-import-path\">evntscript/src/index.js</span>",
     "function"
   ],
   [
-    "evntscript/src/v9.js~onfocus",
+    "evntscript/src/index.js~onfocus",
     "function/index.html#static-function-onfocus",
-    "<span>onfocus</span> <span class=\"search-result-import-path\">evntscript/src/v9.js</span>",
+    "<span>onfocus</span> <span class=\"search-result-import-path\">evntscript/src/index.js</span>",
     "function"
   ],
   [
-    "evntscript/src/v9.js~qeditsymb",
+    "evntscript/src/index.js~qeditsymb",
     "variable/index.html#static-variable-qEditSymb",
-    "<span>qEditSymb</span> <span class=\"search-result-import-path\">evntscript/src/v9.js</span>",
+    "<span>qEditSymb</span> <span class=\"search-result-import-path\">evntscript/src/index.js</span>",
     "variable"
+  ],
+  [
+    "evntscript/src/index.js~v9",
+    "class/src/index.js~v9.html",
+    "<span>v9</span> <span class=\"search-result-import-path\">evntscript/src/index.js</span>",
+    "class"
   ],
   [
     "src/.external-ecmascript.js~array",
@@ -414,495 +366,411 @@ window.esdocSearchIndex = [
     "file"
   ],
   [
-    "src/index.js~ask#price",
-    "class/src/index.js~Ask.html#instance-member-Price",
-    "src/index.js~Ask#Price",
-    "member"
-  ],
-  [
-    "src/index.js~ask#quantity",
-    "class/src/index.js~Ask.html#instance-member-Quantity",
-    "src/index.js~Ask#Quantity",
-    "member"
-  ],
-  [
-    "src/index.js~ask#type",
-    "class/src/index.js~Ask.html#instance-member-Type",
-    "src/index.js~Ask#Type",
-    "member"
-  ],
-  [
-    "src/index.js~ask#constructor",
-    "class/src/index.js~Ask.html#instance-constructor-constructor",
-    "src/index.js~Ask#constructor",
+    "src/index.js~cubechart#constructor",
+    "class/src/index.js~cubeChart.html#instance-constructor-constructor",
+    "src/index.js~cubeChart#constructor",
     "method"
   ],
   [
-    "src/index.js~bid#price",
-    "class/src/index.js~Bid.html#instance-member-Price",
-    "src/index.js~Bid#Price",
-    "member"
-  ],
-  [
-    "src/index.js~bid#quantity",
-    "class/src/index.js~Bid.html#instance-member-Quantity",
-    "src/index.js~Bid#Quantity",
-    "member"
-  ],
-  [
-    "src/index.js~bid#type",
-    "class/src/index.js~Bid.html#instance-member-Type",
-    "src/index.js~Bid#Type",
-    "member"
-  ],
-  [
-    "src/index.js~bid#constructor",
-    "class/src/index.js~Bid.html#instance-constructor-constructor",
-    "src/index.js~Bid#constructor",
+    "src/index.js~cubechart#cubedele",
+    "class/src/index.js~cubeChart.html#instance-method-cubeDele",
+    "src/index.js~cubeChart#cubeDele",
     "method"
   ],
   [
-    "src/index.js~event#instrument",
-    "class/src/index.js~Event.html#instance-member-Instrument",
-    "src/index.js~Event#Instrument",
-    "member"
-  ],
-  [
-    "src/index.js~event#time",
-    "class/src/index.js~Event.html#instance-member-Time",
-    "src/index.js~Event#Time",
-    "member"
-  ],
-  [
-    "src/index.js~event#type",
-    "class/src/index.js~Event.html#instance-member-Type",
-    "src/index.js~Event#Type",
-    "member"
-  ],
-  [
-    "src/index.js~event#constructor",
-    "class/src/index.js~Event.html#instance-constructor-constructor",
-    "src/index.js~Event#constructor",
+    "src/index.js~cubechart#cubefree",
+    "class/src/index.js~cubeChart.html#instance-method-cubeFree",
+    "src/index.js~cubeChart#cubeFree",
     "method"
   ],
   [
-    "src/index.js~trade#aggressor",
-    "class/src/index.js~Trade.html#instance-member-Aggressor",
-    "src/index.js~Trade#Aggressor",
-    "member"
-  ],
-  [
-    "src/index.js~trade#price",
-    "class/src/index.js~Trade.html#instance-member-Price",
-    "src/index.js~Trade#Price",
-    "member"
-  ],
-  [
-    "src/index.js~trade#quantity",
-    "class/src/index.js~Trade.html#instance-member-Quantity",
-    "src/index.js~Trade#Quantity",
-    "member"
-  ],
-  [
-    "src/index.js~trade#constructor",
-    "class/src/index.js~Trade.html#instance-constructor-constructor",
-    "src/index.js~Trade#constructor",
+    "src/index.js~cubechart#cubeplus",
+    "class/src/index.js~cubeChart.html#instance-method-cubePlus",
+    "src/index.js~cubeChart#cubePlus",
     "method"
   ],
   [
-    "src/v9.js",
-    "file/src/v9.js.html",
-    "src/v9.js",
-    "file"
-  ],
-  [
-    "src/v9.js~cubechart#constructor",
-    "class/src/v9.js~cubeChart.html#instance-constructor-constructor",
-    "src/v9.js~cubeChart#constructor",
+    "src/index.js~cubechart#cubepush",
+    "class/src/index.js~cubeChart.html#instance-method-cubePush",
+    "src/index.js~cubeChart#cubePush",
     "method"
   ],
   [
-    "src/v9.js~cubechart#cubedele",
-    "class/src/v9.js~cubeChart.html#instance-method-cubeDele",
-    "src/v9.js~cubeChart#cubeDele",
+    "src/index.js~cubechart#cuberead",
+    "class/src/index.js~cubeChart.html#instance-method-cubeRead",
+    "src/index.js~cubeChart#cubeRead",
     "method"
   ],
   [
-    "src/v9.js~cubechart#cubefree",
-    "class/src/v9.js~cubeChart.html#instance-method-cubeFree",
-    "src/v9.js~cubeChart#cubeFree",
+    "src/index.js~cubechart#cubesave",
+    "class/src/index.js~cubeChart.html#instance-method-cubeSave",
+    "src/index.js~cubeChart#cubeSave",
     "method"
   ],
   [
-    "src/v9.js~cubechart#cubeplus",
-    "class/src/v9.js~cubeChart.html#instance-method-cubePlus",
-    "src/v9.js~cubeChart#cubePlus",
+    "src/index.js~cubechart#fcubeenum",
+    "class/src/index.js~cubeChart.html#instance-member-fCubeEnum",
+    "src/index.js~cubeChart#fCubeEnum",
+    "member"
+  ],
+  [
+    "src/index.js~cubeitem#_bodystyle",
+    "class/src/index.js~cubeItem.html#instance-member-_bodyStyle",
+    "src/index.js~cubeItem#_bodyStyle",
+    "member"
+  ],
+  [
+    "src/index.js~cubeitem#_format",
+    "class/src/index.js~cubeItem.html#instance-member-_format",
+    "src/index.js~cubeItem#_format",
+    "member"
+  ],
+  [
+    "src/index.js~cubeitem#_linewidth",
+    "class/src/index.js~cubeItem.html#instance-member-_lineWidth",
+    "src/index.js~cubeItem#_lineWidth",
+    "member"
+  ],
+  [
+    "src/index.js~cubeitem#_name",
+    "class/src/index.js~cubeItem.html#instance-member-_name",
+    "src/index.js~cubeItem#_name",
+    "member"
+  ],
+  [
+    "src/index.js~cubeitem#_strokestyle",
+    "class/src/index.js~cubeItem.html#instance-member-_strokeStyle",
+    "src/index.js~cubeItem#_strokeStyle",
+    "member"
+  ],
+  [
+    "src/index.js~cubeitem#_textstyle",
+    "class/src/index.js~cubeItem.html#instance-member-_textStyle",
+    "src/index.js~cubeItem#_textStyle",
+    "member"
+  ],
+  [
+    "src/index.js~cubeitem#_title",
+    "class/src/index.js~cubeItem.html#instance-member-_title",
+    "src/index.js~cubeItem#_title",
+    "member"
+  ],
+  [
+    "src/index.js~cubeitem#bodystyle",
+    "class/src/index.js~cubeItem.html#instance-set-bodyStyle",
+    "src/index.js~cubeItem#bodyStyle",
+    "member"
+  ],
+  [
+    "src/index.js~cubeitem#constructor",
+    "class/src/index.js~cubeItem.html#instance-constructor-constructor",
+    "src/index.js~cubeItem#constructor",
     "method"
   ],
   [
-    "src/v9.js~cubechart#cubepush",
-    "class/src/v9.js~cubeChart.html#instance-method-cubePush",
-    "src/v9.js~cubeChart#cubePush",
+    "src/index.js~cubeitem#eventstyle",
+    "class/src/index.js~cubeItem.html#instance-get-eventStyle",
+    "src/index.js~cubeItem#eventStyle",
+    "member"
+  ],
+  [
+    "src/index.js~cubeitem#fcalcenum",
+    "class/src/index.js~cubeItem.html#instance-member-fCalcEnum",
+    "src/index.js~cubeItem#fCalcEnum",
+    "member"
+  ],
+  [
+    "src/index.js~cubeitem#fcubemaps",
+    "class/src/index.js~cubeItem.html#instance-member-fCubeMaps",
+    "src/index.js~cubeItem#fCubeMaps",
+    "member"
+  ],
+  [
+    "src/index.js~cubeitem#format",
+    "class/src/index.js~cubeItem.html#instance-get-format",
+    "src/index.js~cubeItem#format",
+    "member"
+  ],
+  [
+    "src/index.js~cubeitem#format",
+    "class/src/index.js~cubeItem.html#instance-set-format",
+    "src/index.js~cubeItem#format",
+    "member"
+  ],
+  [
+    "src/index.js~cubeitem#linewidth",
+    "class/src/index.js~cubeItem.html#instance-set-lineWidth",
+    "src/index.js~cubeItem#lineWidth",
+    "member"
+  ],
+  [
+    "src/index.js~cubeitem#linewidth",
+    "class/src/index.js~cubeItem.html#instance-get-lineWidth",
+    "src/index.js~cubeItem#lineWidth",
+    "member"
+  ],
+  [
+    "src/index.js~cubeitem#name",
+    "class/src/index.js~cubeItem.html#instance-set-name",
+    "src/index.js~cubeItem#name",
+    "member"
+  ],
+  [
+    "src/index.js~cubeitem#strokestyle",
+    "class/src/index.js~cubeItem.html#instance-get-strokeStyle",
+    "src/index.js~cubeItem#strokeStyle",
+    "member"
+  ],
+  [
+    "src/index.js~cubeitem#strokestyle",
+    "class/src/index.js~cubeItem.html#instance-set-strokeStyle",
+    "src/index.js~cubeItem#strokeStyle",
+    "member"
+  ],
+  [
+    "src/index.js~cubeitem#textstyle",
+    "class/src/index.js~cubeItem.html#instance-set-textStyle",
+    "src/index.js~cubeItem#textStyle",
+    "member"
+  ],
+  [
+    "src/index.js~cubeitem#textstyle",
+    "class/src/index.js~cubeItem.html#instance-get-textStyle",
+    "src/index.js~cubeItem#textStyle",
+    "member"
+  ],
+  [
+    "src/index.js~cubeitem#title",
+    "class/src/index.js~cubeItem.html#instance-set-title",
+    "src/index.js~cubeItem#title",
+    "member"
+  ],
+  [
+    "src/index.js~cubeitem#title",
+    "class/src/index.js~cubeItem.html#instance-get-title",
+    "src/index.js~cubeItem#title",
+    "member"
+  ],
+  [
+    "src/index.js~edit#constructor",
+    "class/src/index.js~edit.html#instance-constructor-constructor",
+    "src/index.js~edit#constructor",
     "method"
   ],
   [
-    "src/v9.js~cubechart#cuberead",
-    "class/src/v9.js~cubeChart.html#instance-method-cubeRead",
-    "src/v9.js~cubeChart#cubeRead",
+    "src/index.js~edit#symbol",
+    "class/src/index.js~edit.html#instance-get-symbol",
+    "src/index.js~edit#symbol",
+    "member"
+  ],
+  [
+    "src/index.js~edit#symbol",
+    "class/src/index.js~edit.html#instance-set-symbol",
+    "src/index.js~edit#symbol",
+    "member"
+  ],
+  [
+    "src/index.js~feed#constructor",
+    "class/src/index.js~feed.html#instance-constructor-constructor",
+    "src/index.js~feed#constructor",
     "method"
   ],
   [
-    "src/v9.js~cubechart#cubesave",
-    "class/src/v9.js~cubeChart.html#instance-method-cubeSave",
-    "src/v9.js~cubeChart#cubeSave",
+    "src/index.js~feed#onevent",
+    "class/src/index.js~feed.html#instance-method-onEvent",
+    "src/index.js~feed#onEvent",
     "method"
   ],
   [
-    "src/v9.js~cubechart#fcubeenum",
-    "class/src/v9.js~cubeChart.html#instance-member-fCubeEnum",
-    "src/v9.js~cubeChart#fCubeEnum",
-    "member"
-  ],
-  [
-    "src/v9.js~cubeitem#_bodystyle",
-    "class/src/v9.js~cubeItem.html#instance-member-_bodyStyle",
-    "src/v9.js~cubeItem#_bodyStyle",
-    "member"
-  ],
-  [
-    "src/v9.js~cubeitem#_format",
-    "class/src/v9.js~cubeItem.html#instance-member-_format",
-    "src/v9.js~cubeItem#_format",
-    "member"
-  ],
-  [
-    "src/v9.js~cubeitem#_linewidth",
-    "class/src/v9.js~cubeItem.html#instance-member-_lineWidth",
-    "src/v9.js~cubeItem#_lineWidth",
-    "member"
-  ],
-  [
-    "src/v9.js~cubeitem#_name",
-    "class/src/v9.js~cubeItem.html#instance-member-_name",
-    "src/v9.js~cubeItem#_name",
-    "member"
-  ],
-  [
-    "src/v9.js~cubeitem#_strokestyle",
-    "class/src/v9.js~cubeItem.html#instance-member-_strokeStyle",
-    "src/v9.js~cubeItem#_strokeStyle",
-    "member"
-  ],
-  [
-    "src/v9.js~cubeitem#_textstyle",
-    "class/src/v9.js~cubeItem.html#instance-member-_textStyle",
-    "src/v9.js~cubeItem#_textStyle",
-    "member"
-  ],
-  [
-    "src/v9.js~cubeitem#_title",
-    "class/src/v9.js~cubeItem.html#instance-member-_title",
-    "src/v9.js~cubeItem#_title",
-    "member"
-  ],
-  [
-    "src/v9.js~cubeitem#bodystyle",
-    "class/src/v9.js~cubeItem.html#instance-set-bodyStyle",
-    "src/v9.js~cubeItem#bodyStyle",
-    "member"
-  ],
-  [
-    "src/v9.js~cubeitem#constructor",
-    "class/src/v9.js~cubeItem.html#instance-constructor-constructor",
-    "src/v9.js~cubeItem#constructor",
+    "src/index.js~feed#onload",
+    "class/src/index.js~feed.html#instance-method-onLoad",
+    "src/index.js~feed#onLoad",
     "method"
   ],
   [
-    "src/v9.js~cubeitem#eventstyle",
-    "class/src/v9.js~cubeItem.html#instance-get-eventStyle",
-    "src/v9.js~cubeItem#eventStyle",
-    "member"
-  ],
-  [
-    "src/v9.js~cubeitem#fcalcenum",
-    "class/src/v9.js~cubeItem.html#instance-member-fCalcEnum",
-    "src/v9.js~cubeItem#fCalcEnum",
-    "member"
-  ],
-  [
-    "src/v9.js~cubeitem#fcubemaps",
-    "class/src/v9.js~cubeItem.html#instance-member-fCubeMaps",
-    "src/v9.js~cubeItem#fCubeMaps",
-    "member"
-  ],
-  [
-    "src/v9.js~cubeitem#format",
-    "class/src/v9.js~cubeItem.html#instance-set-format",
-    "src/v9.js~cubeItem#format",
-    "member"
-  ],
-  [
-    "src/v9.js~cubeitem#format",
-    "class/src/v9.js~cubeItem.html#instance-get-format",
-    "src/v9.js~cubeItem#format",
-    "member"
-  ],
-  [
-    "src/v9.js~cubeitem#linewidth",
-    "class/src/v9.js~cubeItem.html#instance-set-lineWidth",
-    "src/v9.js~cubeItem#lineWidth",
-    "member"
-  ],
-  [
-    "src/v9.js~cubeitem#linewidth",
-    "class/src/v9.js~cubeItem.html#instance-get-lineWidth",
-    "src/v9.js~cubeItem#lineWidth",
-    "member"
-  ],
-  [
-    "src/v9.js~cubeitem#name",
-    "class/src/v9.js~cubeItem.html#instance-set-name",
-    "src/v9.js~cubeItem#name",
-    "member"
-  ],
-  [
-    "src/v9.js~cubeitem#strokestyle",
-    "class/src/v9.js~cubeItem.html#instance-set-strokeStyle",
-    "src/v9.js~cubeItem#strokeStyle",
-    "member"
-  ],
-  [
-    "src/v9.js~cubeitem#strokestyle",
-    "class/src/v9.js~cubeItem.html#instance-get-strokeStyle",
-    "src/v9.js~cubeItem#strokeStyle",
-    "member"
-  ],
-  [
-    "src/v9.js~cubeitem#textstyle",
-    "class/src/v9.js~cubeItem.html#instance-get-textStyle",
-    "src/v9.js~cubeItem#textStyle",
-    "member"
-  ],
-  [
-    "src/v9.js~cubeitem#textstyle",
-    "class/src/v9.js~cubeItem.html#instance-set-textStyle",
-    "src/v9.js~cubeItem#textStyle",
-    "member"
-  ],
-  [
-    "src/v9.js~cubeitem#title",
-    "class/src/v9.js~cubeItem.html#instance-get-title",
-    "src/v9.js~cubeItem#title",
-    "member"
-  ],
-  [
-    "src/v9.js~cubeitem#title",
-    "class/src/v9.js~cubeItem.html#instance-set-title",
-    "src/v9.js~cubeItem#title",
-    "member"
-  ],
-  [
-    "src/v9.js~edit#constructor",
-    "class/src/v9.js~edit.html#instance-constructor-constructor",
-    "src/v9.js~edit#constructor",
+    "src/index.js~feed#onopen",
+    "class/src/index.js~feed.html#instance-method-onOpen",
+    "src/index.js~feed#onOpen",
     "method"
   ],
   [
-    "src/v9.js~edit#symbol",
-    "class/src/v9.js~edit.html#instance-set-symbol",
-    "src/v9.js~edit#symbol",
-    "member"
-  ],
-  [
-    "src/v9.js~edit#symbol",
-    "class/src/v9.js~edit.html#instance-get-symbol",
-    "src/v9.js~edit#symbol",
-    "member"
-  ],
-  [
-    "src/v9.js~feed#constructor",
-    "class/src/v9.js~feed.html#instance-constructor-constructor",
-    "src/v9.js~feed#constructor",
+    "src/index.js~feed#onrender",
+    "class/src/index.js~feed.html#instance-method-onRender",
+    "src/index.js~feed#onRender",
     "method"
   ],
   [
-    "src/v9.js~feed#onevent",
-    "class/src/v9.js~feed.html#instance-method-onEvent",
-    "src/v9.js~feed#onEvent",
+    "src/index.js~feed#onstop",
+    "class/src/index.js~feed.html#instance-method-onStop",
+    "src/index.js~feed#onStop",
     "method"
   ],
   [
-    "src/v9.js~feed#onload",
-    "class/src/v9.js~feed.html#instance-method-onLoad",
-    "src/v9.js~feed#onLoad",
+    "src/index.js~linechart#constructor",
+    "class/src/index.js~lineChart.html#instance-constructor-constructor",
+    "src/index.js~lineChart#constructor",
     "method"
   ],
   [
-    "src/v9.js~feed#onopen",
-    "class/src/v9.js~feed.html#instance-method-onOpen",
-    "src/v9.js~feed#onOpen",
+    "src/index.js~linechart#flineenum",
+    "class/src/index.js~lineChart.html#instance-member-fLineEnum",
+    "src/index.js~lineChart#fLineEnum",
+    "member"
+  ],
+  [
+    "src/index.js~linechart#linepush",
+    "class/src/index.js~lineChart.html#instance-method-linePush",
+    "src/index.js~lineChart#linePush",
     "method"
   ],
   [
-    "src/v9.js~feed#onrender",
-    "class/src/v9.js~feed.html#instance-method-onRender",
-    "src/v9.js~feed#onRender",
+    "src/index.js~lineitem#_bodystyle",
+    "class/src/index.js~lineItem.html#instance-member-_bodyStyle",
+    "src/index.js~lineItem#_bodyStyle",
+    "member"
+  ],
+  [
+    "src/index.js~lineitem#_format",
+    "class/src/index.js~lineItem.html#instance-member-_format",
+    "src/index.js~lineItem#_format",
+    "member"
+  ],
+  [
+    "src/index.js~lineitem#_linewidth",
+    "class/src/index.js~lineItem.html#instance-member-_lineWidth",
+    "src/index.js~lineItem#_lineWidth",
+    "member"
+  ],
+  [
+    "src/index.js~lineitem#_name",
+    "class/src/index.js~lineItem.html#instance-member-_name",
+    "src/index.js~lineItem#_name",
+    "member"
+  ],
+  [
+    "src/index.js~lineitem#_strokestyle",
+    "class/src/index.js~lineItem.html#instance-member-_strokeStyle",
+    "src/index.js~lineItem#_strokeStyle",
+    "member"
+  ],
+  [
+    "src/index.js~lineitem#_textstyle",
+    "class/src/index.js~lineItem.html#instance-member-_textStyle",
+    "src/index.js~lineItem#_textStyle",
+    "member"
+  ],
+  [
+    "src/index.js~lineitem#_title",
+    "class/src/index.js~lineItem.html#instance-member-_title",
+    "src/index.js~lineItem#_title",
+    "member"
+  ],
+  [
+    "src/index.js~lineitem#bodystyle",
+    "class/src/index.js~lineItem.html#instance-set-bodyStyle",
+    "src/index.js~lineItem#bodyStyle",
+    "member"
+  ],
+  [
+    "src/index.js~lineitem#constructor",
+    "class/src/index.js~lineItem.html#instance-constructor-constructor",
+    "src/index.js~lineItem#constructor",
     "method"
   ],
   [
-    "src/v9.js~feed#onstop",
-    "class/src/v9.js~feed.html#instance-method-onStop",
-    "src/v9.js~feed#onStop",
+    "src/index.js~lineitem#eventstyle",
+    "class/src/index.js~lineItem.html#instance-get-eventStyle",
+    "src/index.js~lineItem#eventStyle",
+    "member"
+  ],
+  [
+    "src/index.js~lineitem#fcalcenum",
+    "class/src/index.js~lineItem.html#instance-member-fCalcEnum",
+    "src/index.js~lineItem#fCalcEnum",
+    "member"
+  ],
+  [
+    "src/index.js~lineitem#format",
+    "class/src/index.js~lineItem.html#instance-set-format",
+    "src/index.js~lineItem#format",
+    "member"
+  ],
+  [
+    "src/index.js~lineitem#format",
+    "class/src/index.js~lineItem.html#instance-get-format",
+    "src/index.js~lineItem#format",
+    "member"
+  ],
+  [
+    "src/index.js~lineitem#linewidth",
+    "class/src/index.js~lineItem.html#instance-get-lineWidth",
+    "src/index.js~lineItem#lineWidth",
+    "member"
+  ],
+  [
+    "src/index.js~lineitem#linewidth",
+    "class/src/index.js~lineItem.html#instance-set-lineWidth",
+    "src/index.js~lineItem#lineWidth",
+    "member"
+  ],
+  [
+    "src/index.js~lineitem#name",
+    "class/src/index.js~lineItem.html#instance-set-name",
+    "src/index.js~lineItem#name",
+    "member"
+  ],
+  [
+    "src/index.js~lineitem#strokestyle",
+    "class/src/index.js~lineItem.html#instance-get-strokeStyle",
+    "src/index.js~lineItem#strokeStyle",
+    "member"
+  ],
+  [
+    "src/index.js~lineitem#strokestyle",
+    "class/src/index.js~lineItem.html#instance-set-strokeStyle",
+    "src/index.js~lineItem#strokeStyle",
+    "member"
+  ],
+  [
+    "src/index.js~lineitem#textstyle",
+    "class/src/index.js~lineItem.html#instance-set-textStyle",
+    "src/index.js~lineItem#textStyle",
+    "member"
+  ],
+  [
+    "src/index.js~lineitem#textstyle",
+    "class/src/index.js~lineItem.html#instance-get-textStyle",
+    "src/index.js~lineItem#textStyle",
+    "member"
+  ],
+  [
+    "src/index.js~lineitem#title",
+    "class/src/index.js~lineItem.html#instance-set-title",
+    "src/index.js~lineItem#title",
+    "member"
+  ],
+  [
+    "src/index.js~lineitem#title",
+    "class/src/index.js~lineItem.html#instance-get-title",
+    "src/index.js~lineItem#title",
+    "member"
+  ],
+  [
+    "src/index.js~v9#price_null_32",
+    "class/src/index.js~v9.html#instance-member-PRICE_NULL_32",
+    "src/index.js~v9#PRICE_NULL_32",
+    "member"
+  ],
+  [
+    "src/index.js~v9#price_null_64",
+    "class/src/index.js~v9.html#instance-member-PRICE_NULL_64",
+    "src/index.js~v9#PRICE_NULL_64",
+    "member"
+  ],
+  [
+    "src/index.js~v9#constructor",
+    "class/src/index.js~v9.html#instance-constructor-constructor",
+    "src/index.js~v9#constructor",
     "method"
-  ],
-  [
-    "src/v9.js~linechart#constructor",
-    "class/src/v9.js~lineChart.html#instance-constructor-constructor",
-    "src/v9.js~lineChart#constructor",
-    "method"
-  ],
-  [
-    "src/v9.js~linechart#flineenum",
-    "class/src/v9.js~lineChart.html#instance-member-fLineEnum",
-    "src/v9.js~lineChart#fLineEnum",
-    "member"
-  ],
-  [
-    "src/v9.js~linechart#linepush",
-    "class/src/v9.js~lineChart.html#instance-method-linePush",
-    "src/v9.js~lineChart#linePush",
-    "method"
-  ],
-  [
-    "src/v9.js~lineitem#_bodystyle",
-    "class/src/v9.js~lineItem.html#instance-member-_bodyStyle",
-    "src/v9.js~lineItem#_bodyStyle",
-    "member"
-  ],
-  [
-    "src/v9.js~lineitem#_format",
-    "class/src/v9.js~lineItem.html#instance-member-_format",
-    "src/v9.js~lineItem#_format",
-    "member"
-  ],
-  [
-    "src/v9.js~lineitem#_linewidth",
-    "class/src/v9.js~lineItem.html#instance-member-_lineWidth",
-    "src/v9.js~lineItem#_lineWidth",
-    "member"
-  ],
-  [
-    "src/v9.js~lineitem#_name",
-    "class/src/v9.js~lineItem.html#instance-member-_name",
-    "src/v9.js~lineItem#_name",
-    "member"
-  ],
-  [
-    "src/v9.js~lineitem#_strokestyle",
-    "class/src/v9.js~lineItem.html#instance-member-_strokeStyle",
-    "src/v9.js~lineItem#_strokeStyle",
-    "member"
-  ],
-  [
-    "src/v9.js~lineitem#_textstyle",
-    "class/src/v9.js~lineItem.html#instance-member-_textStyle",
-    "src/v9.js~lineItem#_textStyle",
-    "member"
-  ],
-  [
-    "src/v9.js~lineitem#_title",
-    "class/src/v9.js~lineItem.html#instance-member-_title",
-    "src/v9.js~lineItem#_title",
-    "member"
-  ],
-  [
-    "src/v9.js~lineitem#bodystyle",
-    "class/src/v9.js~lineItem.html#instance-set-bodyStyle",
-    "src/v9.js~lineItem#bodyStyle",
-    "member"
-  ],
-  [
-    "src/v9.js~lineitem#constructor",
-    "class/src/v9.js~lineItem.html#instance-constructor-constructor",
-    "src/v9.js~lineItem#constructor",
-    "method"
-  ],
-  [
-    "src/v9.js~lineitem#eventstyle",
-    "class/src/v9.js~lineItem.html#instance-get-eventStyle",
-    "src/v9.js~lineItem#eventStyle",
-    "member"
-  ],
-  [
-    "src/v9.js~lineitem#fcalcenum",
-    "class/src/v9.js~lineItem.html#instance-member-fCalcEnum",
-    "src/v9.js~lineItem#fCalcEnum",
-    "member"
-  ],
-  [
-    "src/v9.js~lineitem#format",
-    "class/src/v9.js~lineItem.html#instance-set-format",
-    "src/v9.js~lineItem#format",
-    "member"
-  ],
-  [
-    "src/v9.js~lineitem#format",
-    "class/src/v9.js~lineItem.html#instance-get-format",
-    "src/v9.js~lineItem#format",
-    "member"
-  ],
-  [
-    "src/v9.js~lineitem#linewidth",
-    "class/src/v9.js~lineItem.html#instance-set-lineWidth",
-    "src/v9.js~lineItem#lineWidth",
-    "member"
-  ],
-  [
-    "src/v9.js~lineitem#linewidth",
-    "class/src/v9.js~lineItem.html#instance-get-lineWidth",
-    "src/v9.js~lineItem#lineWidth",
-    "member"
-  ],
-  [
-    "src/v9.js~lineitem#name",
-    "class/src/v9.js~lineItem.html#instance-set-name",
-    "src/v9.js~lineItem#name",
-    "member"
-  ],
-  [
-    "src/v9.js~lineitem#strokestyle",
-    "class/src/v9.js~lineItem.html#instance-get-strokeStyle",
-    "src/v9.js~lineItem#strokeStyle",
-    "member"
-  ],
-  [
-    "src/v9.js~lineitem#strokestyle",
-    "class/src/v9.js~lineItem.html#instance-set-strokeStyle",
-    "src/v9.js~lineItem#strokeStyle",
-    "member"
-  ],
-  [
-    "src/v9.js~lineitem#textstyle",
-    "class/src/v9.js~lineItem.html#instance-get-textStyle",
-    "src/v9.js~lineItem#textStyle",
-    "member"
-  ],
-  [
-    "src/v9.js~lineitem#textstyle",
-    "class/src/v9.js~lineItem.html#instance-set-textStyle",
-    "src/v9.js~lineItem#textStyle",
-    "member"
-  ],
-  [
-    "src/v9.js~lineitem#title",
-    "class/src/v9.js~lineItem.html#instance-get-title",
-    "src/v9.js~lineItem#title",
-    "member"
-  ],
-  [
-    "src/v9.js~lineitem#title",
-    "class/src/v9.js~lineItem.html#instance-set-title",
-    "src/v9.js~lineItem#title",
-    "member"
   ]
 ]
