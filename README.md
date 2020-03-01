@@ -1,10 +1,9 @@
-<img src="src/asset/brand_logo.png" alt="logo" width="160"/>
-# Vertex Analytics | EVNTScript
+<img src="https://user-images.githubusercontent.com/20197872/75621709-66065a80-5b5d-11ea-9636-ef2afea2f8dd.png" alt="logo" width="200"/>
 
-EVNTScript is a Javascript-based parser that allows for easy 
-understanding, calculating, and tracking of futures symbols in more 
-than just real-time using vNine at [v9.vertex-analytics.com](https://vnine.vertex-analytics.com).
+# Vertex Analytics | v9 API
+
+v9 is an analytical product for tracking past and current futures contracts. It allows you to programmatically perform actions based on incoming CME WebSocket event data with nanosecond precision.
 
 Contact: [support@vertex-analytics.com](mailto:support@vertex-analytics.com)
 
-###### Documentation by [Blake Boris](https://blakeboris.com)
+###### Documentation by [Blake Boris](https://blakeboris.com), [William Leiby](https://williamleiby.com), and David Salvador
